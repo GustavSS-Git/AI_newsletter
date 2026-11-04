@@ -10,7 +10,7 @@
   {% if lead %}<h2 class="story__headline">{{ s.headline }}</h2>{% else %}<h3 class="story__headline">{{ s.headline }}</h3>{% endif %}
   <p class="story__summary">{{ s.summary }}</p>
   <p class="story__why"><strong>Why it matters:</strong> {{ s.why_it_matters }}</p>
-  {% if s.material == "headline_only" %}<p class="story__note">Based on headlines only; full reporting is paywalled.</p>{% endif %}
+  {% if s.material == "headline_only" %}<p class="story__note">Summary based on headlines only; open article text was not available.</p>{% endif %}
   {{ sources(s.sources) }}
 </article>
 {%- endmacro %}

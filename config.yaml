@@ -22,7 +22,7 @@ pipeline:
   brief_threshold: 5            # min importance for Europe / Business & Finance briefs
   brief_max: 2
   followup_min_score: 7         # covered-before stories may return only as flagged follow-ups at >= this
-  headline_only_min_score: 8    # paywalled-only clusters: keep headline-only at >= this, else drop
+  headline_only_min_score: 8    # clusters with no open article text or snippets (paywalled or Google-News-only): keep headline-only at >= this, else drop
   min_main_stories: 4           # validation gate
   title_similarity: 88          # rapidfuzz token_set_ratio threshold for duplicate titles
   max_items_to_triage: 600      # safety cap on triage input size

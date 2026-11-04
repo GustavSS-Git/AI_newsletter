@@ -27,3 +27,11 @@ def test_display_links_one_per_publisher_and_limit():
                        publisher_url=f"ex{i % 3}.com") for i in range(9)]
     links = display_links(make_cluster("c01", items=items), PAYWALLED, limit=4)
     assert len(links) == 3 and len({l["name"] for l in links}) == 3
+
+
+def test_clean_display_url():
+    from newsletter.enrich import clean_display_url
+    assert clean_display_url("https://www.bloomberg.com/a?accessToken=xyz&utm_source=x") == "https://www.bloomberg.com/a"
+    assert clean_display_url("https://ex.com/a?id=5&utm_medium=rss") == "https://ex.com/a?id=5"
+    gn = "https://news.google.com/rss/articles/abc?oc=5"
+    assert clean_display_url(gn) == gn

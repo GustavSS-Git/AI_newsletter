@@ -135,7 +135,7 @@ def test_headline_only_note(tmp_path):
     ed = make_edition()
     ed["main"][0]["material"] = "headline_only"
     _, html = _render(tmp_path, ed)
-    assert "Based on headlines only" in html
+    assert "Summary based on headlines only" in html
 
 
 def test_category_label(tmp_path):

@@ -24,15 +24,16 @@ A JSON object with `today` and `stories`. Each story has:
 - Every statement must be supported by the `sources` or `headlines` given for that story. Use no outside knowledge: no background facts, no prior context, no numbers, names, dates or titles that are not in the material.
 - If sources disagree, say so briefly or use the figure most sources give, attributed ("according to TechCrunch").
 - Claims made by a company about itself (benchmarks, user numbers, safety results) are attributed: "OpenAI says…", "the company claims…".
-- `headline_only` material: headlines are thin and often sensational evidence. Write one or two plain sentences stating only the core event that several headlines agree on, attributed ("Bloomberg and Reuters report that…"). Include a number only if at least two outlets give the same figure. Never stitch together claims, numbers or angles from single headlines, and ignore opinion, stock-tip and speculative headlines. `why_it_matters` must still be grounded: state only the direct, evident consequence.
-- `why_it_matters` explains the consequence for readers in one sentence, grounded in the material. If the material does not support a consequence beyond the event itself, state the most direct implication plainly. Never speculate about the future.
+- Attribute a fact only to an outlet whose text, snippet or headline in the material actually contains it. For an outlet you have only a headline from, you may attribute only what that headline says. If sources conflict (e.g. one says shares rose, another that futures fell), say so in a few words instead of picking one.
+- `headline_only` material: headlines are thin and often sensational evidence. Write at most two plain sentences stating only the core event that several headlines agree on, attributed ("Bloomberg and Reuters report that…"). Include a number only if at least two outlets give the same figure; if outlets give different figures for the same thing (e.g. different loss amounts), give no figure. Attributing a single-headline claim to its outlet ("Memeburn cites…") does not make it usable: leave it out. Ignore opinion, analysis, stock-tip and speculative headlines entirely, including their framing ("risky", "hype", "fragility"). `why_it_matters` must still be grounded: state only the direct, evident consequence.
+- `why_it_matters` explains the consequence for readers in one sentence, grounded in the material. If the material does not support a consequence beyond the event itself, state the most direct implication plainly. Never speculate about the future, and do not use it to relay someone else's forecast or argument ("X argues… more likely"); a source's prediction may appear in the summary, attributed, but not here.
 - Swedish- or other non-English material is summarized in English.
 
 ## Style
 
 - Wall Street Journal restraint. Short declarative sentences. Active voice. Neutral tone.
 - Numbers over adjectives: "$2 billion", "40% faster", "3 million users", not "massive", "huge", "significantly".
-- Headlines: sentence case, factual, specific, ≤ 12 words, present tense, no clickbait, no colons-as-teasers, no questions. Name the actor: "Mistral raises €1.7 billion in round led by ASML".
+- Headlines: sentence case, factual, specific, ≤ 12 words, present tense, no clickbait, no colons-as-teasers, no questions. Name the actor and state what happened, not a reaction or an interpretation ("draws scrutiny", "raises odds", "sparks fears"). Lead with the most consequential fact in the material. Example: "Mistral raises €1.7 billion in round led by ASML"; not "Mistral's funding raises questions".
 - Summaries in your own words. Quotes only as a short phrase (a few words), never a full sentence.
 - Spell out what an acronym means the first time if readers may not know it (except AI, US, EU, UK, CEO).
 - American English spelling.

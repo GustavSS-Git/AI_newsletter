@@ -89,6 +89,21 @@ KNOWN_PUBLISHERS = {
 }
 
 
+DISPLAY_STRIP_PARAMS = {"accesstoken", "giftcode", "share", "sharetoken"}
+
+
+def clean_display_url(url: str) -> str:
+    """Strip tracking and gift/access-token params from links shown to readers."""
+    from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+    from .filter import TRACKING_PARAMS, TRACKING_PREFIXES
+    if "news.google.com" in url:
+        return url
+    p = urlparse(url)
+    q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True)
+         if k.lower() not in TRACKING_PARAMS | DISPLAY_STRIP_PARAMS and not k.lower().startswith(TRACKING_PREFIXES)]
+    return urlunparse(p._replace(query=urlencode(q), fragment=""))
+
+
 def pretty_publisher(name: str) -> str:
     """Turn 'https://www.bloomberg.com/' or 'bloomberg.com' into 'Bloomberg'; leave real names alone."""
     n = name.strip()
@@ -114,7 +129,7 @@ def display_links(cluster: Cluster, paywalled: list[str], limit: int = 4) -> lis
             continue
         seen_pub.add(name.lower())
         seen_url.add(nurl)
-        out.append({"name": name, "url": it.url})
+        out.append({"name": name, "url": clean_display_url(it.url)})
         if len(out) >= limit:
             break
     return out
