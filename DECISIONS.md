@@ -101,3 +101,5 @@ Effect on the re-run: both briefs filled (2 Europe, 2 finance), and headlines an
 - **404 page**: `site/404.html`, served through `not_found_handling: "404-page"` in `wrangler.jsonc`.
 - **`--render-only`**: rebuilds the site from saved editions without API calls (template or design changes).
 - **Feed check from CI**: a separate manual workflow, because news sites sometimes block cloud IP ranges that work from home.
+- **First CI dry run (2026-11-05)** failed on the API call because the `ANTHROPIC_API_KEY` secret held a pasted `curl` example, not just the key. `run.py` now checks the key's format at startup (single line, starts with `sk-ant-`, no quotes or `NAME=`). It strips surrounding whitespace and exits with code 2 and a clear message that never includes the key.
+- **tech.eu** returns 403 to GitHub Actions runners, though it works locally, so it now goes through a Google News `site:tech.eu AI` search.

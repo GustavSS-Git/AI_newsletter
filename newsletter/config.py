@@ -26,3 +26,20 @@ def load_env() -> None:
 
 def has_api_key() -> bool:
     return bool(os.environ.get("ANTHROPIC_API_KEY"))
+
+
+def api_key_problem() -> str | None:
+    """Describe what's wrong with ANTHROPIC_API_KEY, or None if it looks valid.
+    Never includes the key itself. Surrounding whitespace is stripped in place."""
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not key.strip():
+        return "ANTHROPIC_API_KEY is not set (looked in the environment, .env.local and .env)"
+    stripped = key.strip()
+    if stripped != key:
+        os.environ["ANTHROPIC_API_KEY"] = stripped
+    if any(c.isspace() for c in stripped) or stripped.startswith(("curl", '"', "'")) or "=" in stripped:
+        return ("ANTHROPIC_API_KEY contains spaces, line breaks, quotes or '=': it should be only the key "
+                "itself (one line starting with 'sk-ant-'), not a curl command or 'NAME=value'")
+    if not stripped.startswith("sk-ant-"):
+        return "ANTHROPIC_API_KEY does not start with 'sk-ant-'; check that the whole key was copied"
+    return None

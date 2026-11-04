@@ -15,7 +15,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 from newsletter import filter as flt
-from newsletter.config import ROOT, has_api_key, load_config, load_env
+from newsletter.config import ROOT, api_key_problem, load_config, load_env
 from newsletter.ingest import fetch_all
 from newsletter.llm import Usage
 from newsletter.select import has_open_source, select
@@ -93,8 +93,9 @@ def main(argv: list[str] | None = None) -> int:
         log.info("rendered %s from %s (+ %d archive pages)", out.relative_to(ROOT), editions[-1]["date"], len(editions))
         return 0
 
-    if not has_api_key():
-        log.error("ANTHROPIC_API_KEY not set (looked in .env.local and .env)")
+    problem = api_key_problem()
+    if problem:
+        log.error(problem)
         return 2
 
     import anthropic

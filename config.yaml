@@ -221,9 +221,8 @@ sources:
     tags: [europe]
   - name: tech.eu
     role: press
-    type: rss
-    url: https://tech.eu/feed/
-    ai_filter: true
+    type: google_news   # direct feed returns 403 to GitHub Actions runners (works locally; checked 2026-11-05)
+    query: "site:tech.eu AI"
     tags: [europe]
   - name: Rapporteur (ex-Euractiv)
     role: press
