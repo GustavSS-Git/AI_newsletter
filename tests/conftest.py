@@ -61,7 +61,6 @@ def make_story(sid: str, *, headline: str | None = None, urls: list[str] | None 
         "id": sid,
         "headline": headline if headline is not None else f"Headline {sid}",
         "summary": f"Summary of {sid}.",
-        "why_it_matters": f"Why {sid} matters.",
         "category": category,
         "sources": sources if sources is not None else [{"name": f"Pub {sid}", "url": u} for u in urls],
         "importance": 7,
@@ -74,9 +73,8 @@ def make_story(sid: str, *, headline: str | None = None, urls: list[str] | None 
 
 
 def make_brief(bid: str, **overrides) -> dict:
-    """A schema-valid Brief dict (a Story without why_it_matters / category)."""
+    """A schema-valid Brief dict (a Story without category)."""
     b = make_story(bid, **overrides)
-    b.pop("why_it_matters", None)
     b.pop("category", None)
     return b
 

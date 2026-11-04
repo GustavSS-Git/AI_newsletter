@@ -63,7 +63,7 @@ def validate_edition(edition: dict, cfg: dict, previous: dict | None = None,
         errors.append(f"only {n} main stories (minimum {p['min_main_stories']})")
 
     # 3. No empty fields
-    story_fields = ("headline", "summary", "why_it_matters", "category")
+    story_fields = ("headline", "summary", "category")
     for s in [edition["lead"], *edition["main"]]:
         for f in _empty_fields(s, story_fields):
             errors.append(f"story {s['id']}: empty field '{f}'")

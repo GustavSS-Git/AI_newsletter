@@ -36,7 +36,7 @@ A full run takes about 3 minutes and costs about $0.06–0.07. Exit codes:
 | Triage | `newsletter/triage.py` + `prompts/triage.md` | Haiku clusters items into stories and scores each: importance, category, `european`, `finance_consulting`. |
 | Select | `newsletter/select.py` | Picks the top N (lead included), then the Europe and Business & Finance briefs. The quota rules are code, not prompt. |
 | Enrich | `newsletter/enrich.py` | Fetches article text with trafilatura from open sources; falls back to snippets, then headline-only. Never fetches paywalled sites. |
-| Write | `newsletter/write.py` + `prompts/write.md` | Sonnet writes headlines, summaries and "why it matters". Links come from the data, not the model. |
+| Write | `newsletter/write.py` + `prompts/write.md` | Sonnet writes headlines and summaries. Links come from the data, not the model. |
 | Validate | `newsletter/validate.py` | Checks the schema, story count, empty fields, working links and that the edition differs from yesterday's. |
 | Render | `newsletter/render.py` + `templates/` | Saves the edition JSON (with every triage score) and renders `site/index.html` with Jinja2. |
 

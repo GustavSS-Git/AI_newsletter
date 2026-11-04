@@ -5,7 +5,7 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2  # v2: removed why_it_matters (2026-11-04)
 Category = Literal["models", "products", "research", "business/funding", "policy/regulation", "other"]
 
 
@@ -22,7 +22,6 @@ class Story(Strict):
     id: str                       # cluster id within this edition
     headline: str
     summary: str
-    why_it_matters: str
     category: Category
     sources: list[Link] = Field(min_length=1)
     importance: int

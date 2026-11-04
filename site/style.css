@@ -22,7 +22,7 @@ body {
 .story--lead .story__headline { font-size: 1.9rem; line-height: 1.2; }
 .story__headline, .brief-item__headline { margin: 0.2rem 0 0.5rem; line-height: 1.25; }
 .kicker { margin: 0; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
-.story__summary, .story__why, .brief-item__summary { margin: 0.4rem 0; }
+.story__summary, .brief-item__summary { margin: 0.4rem 0; }
 .story__note { font-size: 0.85rem; color: var(--muted); font-style: italic; }
 .sources { font-size: 0.8rem; color: var(--muted); margin: 0.5rem 0 0; }
 .sources a { color: inherit; }

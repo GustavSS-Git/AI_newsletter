@@ -50,7 +50,6 @@ def _entry(c: Cluster, ctx: StoryContext, w: dict, brief: bool) -> dict:
         "item_titles": [i.title for i in c.items],
     }
     if not brief:
-        e["why_it_matters"] = w.get("why_it_matters", "").strip()
         e["category"] = w.get("category") or c.category
     return e
 

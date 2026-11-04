@@ -23,7 +23,6 @@ class WrittenStory(BaseModel):
     story_id: str
     headline: str
     summary: str
-    why_it_matters: str
     category: Category
 
 
@@ -73,7 +72,7 @@ def estimate_write_cost(selection: Selection, contexts: dict[str, StoryContext],
 def write_edition(selection: Selection, contexts: dict[str, StoryContext], *, cfg: dict,
                   client: anthropic.Anthropic, usage: Usage, today: date | None = None
                   ) -> dict[str, dict]:
-    """Returns {cluster_id: {headline, summary, why_it_matters?, category?}}."""
+    """Returns {cluster_id: {headline, summary, category?}}."""
     m = cfg["models"]
     out = parse_call(
         client=client, model=m["write"], system=load_prompt("write.md"),

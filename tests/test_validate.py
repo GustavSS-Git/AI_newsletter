@@ -96,7 +96,7 @@ def test_exactly_min_story_count_ok():
 
 # ---------------------------------------------------------------- empty fields
 
-@pytest.mark.parametrize("field", ["headline", "summary", "why_it_matters"])
+@pytest.mark.parametrize("field", ["headline", "summary"])
 @pytest.mark.parametrize("value", ["", "   \n\t"])
 def test_empty_story_field(ed, field, value):
     ed["main"][0][field] = value

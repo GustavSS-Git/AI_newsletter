@@ -15,7 +15,7 @@ A JSON object with `today` and `stories`. Each story has:
 
 ## Output
 
-- For `lead` and `main` stories → an entry in `stories`: `headline`, `summary` (2–4 sentences; the lead may use 4), `why_it_matters` (one sentence), `category`.
+- For `lead` and `main` stories → an entry in `stories`: `headline`, `summary` (2–4 sentences; the lead may use 4), `category`.
 - For `europe` and `finance` stories → an entry in `briefs`: `headline`, `summary` (1–2 sentences).
 - Every story you receive appears exactly once in the output. Never leave a field empty.
 
@@ -25,8 +25,8 @@ A JSON object with `today` and `stories`. Each story has:
 - If sources disagree, say so briefly or use the figure most sources give, attributed ("according to TechCrunch").
 - Claims made by a company about itself (benchmarks, user numbers, safety results) are attributed: "OpenAI says…", "the company claims…".
 - Attribute a fact only to an outlet whose text, snippet or headline in the material actually contains it. For an outlet you have only a headline from, you may attribute only what that headline says. If sources conflict (e.g. one says shares rose, another that futures fell), say so in a few words instead of picking one.
-- `headline_only` material: headlines are thin and often sensational evidence. Write at most two plain sentences stating only the core event that several headlines agree on, attributed ("Bloomberg and Reuters report that…"). Include a number only if at least two outlets give the same figure; if outlets give different figures for the same thing (e.g. different loss amounts), give no figure. Attributing a single-headline claim to its outlet ("Memeburn cites…") does not make it usable: leave it out. Ignore opinion, analysis, stock-tip and speculative headlines entirely, including their framing ("risky", "hype", "fragility"). `why_it_matters` must still be grounded: state only the direct, evident consequence.
-- `why_it_matters` explains the consequence for readers in one sentence, grounded in the material. If the material does not support a consequence beyond the event itself, state the most direct implication plainly. Never speculate about the future, and do not use it to relay someone else's forecast or argument ("X argues… more likely"); a source's prediction may appear in the summary, attributed, but not here.
+- `headline_only` material: headlines are thin and often sensational evidence. Write at most two plain sentences stating only the core event that several headlines agree on, attributed ("Bloomberg and Reuters report that…"). Include a number only if at least two outlets give the same figure; if outlets give different figures for the same thing (e.g. different loss amounts), give no figure. Attributing a single-headline claim to its outlet ("Memeburn cites…") does not make it usable: leave it out. Ignore opinion, analysis, stock-tip and speculative headlines entirely, including their framing ("risky", "hype", "fragility").
+- Report what happened; do not tell readers why it matters or what it means for them. Never speculate about the future. A source's forecast or argument may appear only if it is central to the story, attributed ("Transformer argues…"), and never as the final sentence.
 - Swedish- or other non-English material is summarized in English.
 
 ## Style
@@ -74,7 +74,6 @@ Material (abridged): Article says Acme Labs released Atlas 3, an open-weights la
 Output:
 - headline: "Acme Labs releases Atlas 3 as open-weights model"
 - summary: "Acme Labs released Atlas 3, a 70-billion-parameter language model, with weights published under the Apache 2.0 license. The company says it scores 84% on a coding benchmark, up from 71% for its predecessor. The model runs on a single high-end GPU."
-- why_it_matters: "A permissive license and single-GPU footprint let companies run a capable model on their own hardware without usage fees."
 - category: "models"
 
 ### Example 2 (brief, finance section, material: snippet)
@@ -92,5 +91,4 @@ Material: Headlines: "Regulator opens probe into Vexa AI chatbot data practices"
 Output:
 - headline: "EU regulator opens inquiry into Vexa's chatbot data practices"
 - summary: "The Financial Times and Bloomberg report that a regulator has opened an inquiry into how Vexa's AI chatbot handles data. Details of the probe were not available in open sources."
-- why_it_matters: "The inquiry puts Vexa's data practices under formal regulatory review."
 - category: "policy/regulation"
