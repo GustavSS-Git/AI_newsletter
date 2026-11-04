@@ -62,3 +62,12 @@ Non-trivial choices made while building v0, newest at the bottom of each section
 ## Front end
 
 - Bare semantic HTML with a Georgia serif font, single column, black on off-white. The template is split into `base.html.j2`, `edition.html.j2` and `partials/story.html.j2`; CSS lives in `templates/style.css` and is copied to `site/`. The class names are stable hooks for the later redesign. The highlights (v3) and signup (v2) placeholders are present as `hidden` sections.
+
+## Editorial review of the first edition (2026-11-04)
+
+An independent reviewer agent checked the edition: it judged the selection, checked style, and fetched the sources of 4 or more stories to verify grounding. Applied:
+- **write.md**: headline-only stories may give no figures when outlets disagree, and a claim from a single headline can't be used even with attribution. A fact may be attributed only to an outlet whose material contains it, and conflicts between sources must be stated. Headlines state the event, not a reaction ("draws scrutiny", "raises odds"). "Why it matters" may not pass on someone else's forecast.
+- **triage.md**: hard limits on scores (a single outlet without a curator scores at most 5; a company's claim about itself in one or two outlets at most 5; a concrete event in 8+ outlets, or a curator plus 3+, at least 6). A floor for concrete European or finance actions. A rule to give clusters with similar evidence the same score. No grab-bag clusters. Market-bubble commentary is not `finance_consulting`.
+- Display links have tracking and gift-token parameters removed. The headline-only note no longer says "paywalled", since Google-News-only stories aren't paywalled.
+
+Effect on the re-run: both briefs filled (2 Europe, 2 finance), and headlines and "why it matters" are factual. Open, for Gustav to decide (see the v0 report): how to handle Google-News-only stories, the headline-only gate and the brief threshold.
