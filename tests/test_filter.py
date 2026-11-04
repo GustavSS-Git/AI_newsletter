@@ -323,3 +323,15 @@ class TestCovered:
         items = [make_item("x story"), make_item("y story")]
         kept, dropped = drop_covered(items, set(), [], THRESHOLD)
         assert kept == items and dropped == []
+
+
+def test_cap_items_keeps_direct_feeds_and_curators_first():
+    from datetime import timedelta
+    from newsletter.filter import cap_items
+    from tests.conftest import NOW, make_item
+    gn = make_item("gn", published=NOW, extra={"google_news": True})
+    press_old = make_item("press", published=NOW - timedelta(hours=10))
+    curator = make_item("cur", role="curator", published=NOW - timedelta(hours=20))
+    kept = cap_items([gn, press_old, curator], 2)
+    assert [i.title for i in kept] == ["press", "cur"]          # newest first, GN dropped
+    assert len(cap_items([gn, press_old], 5)) == 2              # no-op under the cap

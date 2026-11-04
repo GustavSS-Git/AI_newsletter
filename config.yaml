@@ -28,7 +28,8 @@ pipeline:
   brief_headline_only_min_publishers: 2 # briefs: at least this many outlets (brief_threshold also applies)
   min_main_stories: 4           # validation gate
   title_similarity: 88          # rapidfuzz token_set_ratio threshold for duplicate titles
-  max_items_to_triage: 800      # safety cap on triage input size
+  max_items_to_triage: 750      # safety cap on triage input size
+  max_triage_input_tokens: 95000 # trim further if needed: Haiku 5.5 is cheaper up to 100K prompt tokens
   enrich_max_chars: 6000        # cap per article text passed to the writer
   cost_stop_usd: 1.00           # abort before the write call if estimated run cost exceeds this
 

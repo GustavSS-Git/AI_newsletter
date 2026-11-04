@@ -9,7 +9,8 @@ from typing import Literal
 import anthropic
 from pydantic import BaseModel
 
-from .llm import Usage, load_prompt, parse_call
+from .filter import cap_items
+from .llm import Usage, count_tokens, load_prompt, parse_call
 from .models import CATEGORIES, Cluster, Item
 
 log = logging.getLogger(__name__)
@@ -84,6 +85,25 @@ def to_clusters(out: TriageOutput, items: list[Item]) -> list[Cluster]:
     if unknown:
         log.warning("triage referenced %d unknown item ids (ignored)", unknown)
     return clusters
+
+
+def fit_token_budget(items: list[Item], today: date, recent_headlines: list[str], *, cfg: dict,
+                     client: anthropic.Anthropic) -> list[Item]:
+    """Trim the lowest-priority items until the triage prompt fits max_triage_input_tokens
+    (keeps Haiku in its cheaper <=100K-token price tier). count_tokens is free."""
+    budget = cfg["pipeline"].get("max_triage_input_tokens")
+    if not budget:
+        return items
+    model, system = cfg["models"]["triage"], load_prompt("triage.md")
+    for _ in range(5):
+        n_tok = count_tokens(client, model, system, build_user_message(items, today, recent_headlines))
+        if n_tok <= budget:
+            log.info("triage input: %d items, %d tokens (budget %d)", len(items), n_tok, budget)
+            return items
+        target = max(1, int(len(items) * budget / n_tok * 0.97))
+        log.warning("triage input %d tokens > budget %d; trimming %d → %d items", n_tok, budget, len(items), target)
+        items = cap_items(items, target)
+    return items
 
 
 def triage(items: list[Item], today: date, recent_headlines: list[str], *, cfg: dict,

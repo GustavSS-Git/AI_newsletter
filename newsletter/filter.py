@@ -114,6 +114,22 @@ def dedupe(items: list[Item], title_threshold: int) -> list[Item]:
     return out
 
 
+ROLE_RANK = {"curator": 0, "primary": 1, "press": 2}
+
+
+def triage_priority(item: Item) -> tuple:
+    """Lower sorts first = kept first when capping: direct feeds before Google News results,
+    then curators, primary, press; newest first within each group."""
+    return (item.extra.get("google_news", False), ROLE_RANK.get(item.role, 3), -item.published.timestamp())
+
+
+def cap_items(items: list[Item], n: int) -> list[Item]:
+    """Keep the `n` highest-priority items, returned newest first. No-op if len <= n."""
+    if len(items) <= n:
+        return list(items)
+    return sorted(sorted(items, key=triage_priority)[:n], key=lambda i: i.published, reverse=True)
+
+
 def assign_ids(items: list[Item]) -> list[Item]:
     for n, it in enumerate(items, 1):
         it.id = f"i{n:03d}"

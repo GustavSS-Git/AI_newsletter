@@ -86,5 +86,5 @@ Effect on the re-run: both briefs filled (2 Europe, 2 finance), and headlines an
 
   The rule lives in `select.headline_only_ok` and is used both before selection (paywalled-only clusters) and after enrichment (clusters with no text).
 - `brief_threshold` 5 → 4 (approved).
-- `max_items_to_triage` 600 → 800, for the larger source list. That keeps triage input around 75K tokens, under Haiku 5.5's 100K price tier.
+- `max_items_to_triage` 600 → 800 → **750** (Gustav), plus `max_triage_input_tokens: 95000`: before triage, the input is counted with `count_tokens` (free), and the lowest-priority items (Google News first, then press, oldest first) are trimmed until it fits. This keeps triage in Haiku 5.5's cheaper ≤100K-token price tier whatever the item sizes. A typical day is about 105 tokens per item, so 750 items is about 80K tokens.
 - **Note on the 2026-11-04 lead.** It is headline-only because Anthropic filed its S-1 on 2026-11-02, so the direct coverage (SiliconANGLE, HN) is older than the 30-hour window. Only Google News follow-ups were left. This is expected on a first edition with no history; in daily operation the previous edition would have covered it, and the covered check would hold back the follow-ups.

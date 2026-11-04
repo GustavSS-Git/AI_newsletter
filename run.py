@@ -79,23 +79,20 @@ def main(argv: list[str] | None = None) -> int:
     kept, covered = flt.drop_covered(in_window, cov_urls, cov_titles, p["title_similarity"])
     deduped = flt.dedupe(kept, p["title_similarity"])
     # Safety cap: prefer curators/primary and items with snippets if over the limit.
-    if len(deduped) > p["max_items_to_triage"]:
-        # Keep direct feeds first (curators, then primary, then press), Google News results last.
-        role_rank = {"curator": 0, "primary": 1, "press": 2}
-        deduped.sort(key=lambda i: (i.extra.get("google_news", False), role_rank.get(i.role, 3),
-                                    -i.published.timestamp()))
-        deduped = deduped[: p["max_items_to_triage"]]
-        deduped.sort(key=lambda i: i.published, reverse=True)
+    n_deduped = len(deduped)
+    deduped = flt.cap_items(deduped, p["max_items_to_triage"])
     flt.assign_ids(deduped)
 
     per_source = Counter(it.source for it in in_window)
-    log.info("ingest: %d items from %d sources (%d failed); %d in %dh window; %d already covered; %d after dedupe",
-             len(items), len(results), len(failures), len(in_window), p["window_hours"], len(covered), len(deduped))
+    log.info("ingest: %d items from %d sources (%d failed); %d in %dh window; %d already covered; %d after dedupe"
+             "%s", len(items), len(results), len(failures), len(in_window), p["window_hours"], len(covered), n_deduped,
+             f"; capped to {len(deduped)}" if len(deduped) < n_deduped else "")
     for r in failures:
         log.warning("  source failed: %s — %s", r.name, r.error)
 
     # 3. Triage -----------------------------------------------------------------
-    from newsletter.triage import triage
+    from newsletter.triage import fit_token_budget, triage
+    deduped = fit_token_budget(deduped, today, cov_headlines, cfg=cfg, client=client)
     clusters = triage(deduped, today, cov_headlines, cfg=cfg, client=client, usage=usage)
     log.info("triage: %d clusters from %d items (cost so far $%.4f)", len(clusters), len(deduped), usage.total_cost)
 
