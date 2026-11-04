@@ -19,13 +19,16 @@ pipeline:
   window_hours: 30              # fixed look-back window; deliberately not "since last run"
   covered_lookback_editions: 3  # already-covered check looks at this many previous editions
   main_stories: 6               # N, counts the lead story
-  brief_threshold: 5            # min importance for Europe / Business & Finance briefs
+  brief_threshold: 4            # min importance for Europe / Business & Finance briefs (5 → 4 after first review)
   brief_max: 2
   followup_min_score: 7         # covered-before stories may return only as flagged follow-ups at >= this
-  headline_only_min_score: 8    # clusters with no open article text or snippets (paywalled or Google-News-only): keep headline-only at >= this, else drop
+  # Headline-only gate: clusters with no open article text or snippets (paywalled or Google-News-only).
+  headline_only_min_score: 6            # main/lead: need score >= this …
+  headline_only_min_publishers: 3       # … and at least this many distinct outlets
+  brief_headline_only_min_publishers: 2 # briefs: at least this many outlets (brief_threshold also applies)
   min_main_stories: 4           # validation gate
   title_similarity: 88          # rapidfuzz token_set_ratio threshold for duplicate titles
-  max_items_to_triage: 600      # safety cap on triage input size
+  max_items_to_triage: 800      # safety cap on triage input size
   enrich_max_chars: 6000        # cap per article text passed to the writer
   cost_stop_usd: 1.00           # abort before the write call if estimated run cost exceeds this
 
@@ -129,6 +132,66 @@ sources:
     type: google_news   # direct feed returns 429 to scripted clients (checked 2026-11-04)
     query: "site:venturebeat.com AI"
 
+  # Direct press feeds added 2026-11-04 so fewer stories depend on Google News only
+  - name: The Guardian AI
+    role: press
+    type: rss
+    url: https://www.theguardian.com/technology/artificialintelligenceai/rss
+  - name: CNBC Technology
+    role: press
+    type: rss
+    url: https://www.cnbc.com/id/19854910/device/rss/rss.html
+    ai_filter: true
+  - name: Axios
+    role: press
+    type: rss
+    url: https://api.axios.com/feed/
+    ai_filter: true
+  - name: The Register AI
+    role: press
+    type: rss
+    url: https://www.theregister.com/software/ai_ml/headlines.atom
+  - name: The Decoder
+    role: press
+    type: rss
+    url: https://the-decoder.com/feed/
+  - name: SiliconANGLE AI
+    role: press
+    type: rss
+    url: https://siliconangle.com/category/ai/feed/
+  - name: Engadget
+    role: press
+    type: rss
+    url: https://www.engadget.com/rss.xml
+    ai_filter: true
+  - name: ZDNet AI
+    role: press
+    type: rss
+    url: https://www.zdnet.com/topic/artificial-intelligence/rss.xml
+  - name: Fortune
+    role: press
+    type: rss
+    url: https://fortune.com/feed/
+    ai_filter: true
+  - name: BBC Technology
+    role: press
+    type: rss
+    url: https://feeds.bbci.co.uk/news/technology/rss.xml
+    ai_filter: true
+  - name: IEEE Spectrum AI
+    role: press
+    type: rss
+    url: https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss
+  - name: The Next Web
+    role: press
+    type: rss
+    url: https://thenextweb.com/feed
+    ai_filter: true
+  - name: Wired AI
+    role: press
+    type: rss
+    url: https://www.wired.com/feed/tag/ai/latest/rss
+
   # --- Breadth (Google News searches) ---
   - name: "Google News: artificial intelligence"
     role: press
@@ -179,11 +242,71 @@ sources:
     locale: "sv:SE"
     tags: [europe, swedish]
 
+  - name: Politico Europe Tech
+    role: press
+    type: rss
+    url: https://www.politico.eu/section/technology/feed/
+    ai_filter: true
+    tags: [europe]
+  - name: Silicon Republic
+    role: press
+    type: rss
+    url: https://www.siliconrepublic.com/feed
+    ai_filter: true
+    tags: [europe]
+  - name: UKTN
+    role: press
+    type: rss
+    url: https://www.uktech.news/feed
+    ai_filter: true
+    tags: [europe]
+  - name: Computer Sweden
+    role: press
+    type: rss
+    url: https://computersweden.se/feed/
+    ai_filter: true
+    tags: [europe, swedish]
+
   # --- Finance & consulting ---
   - name: Finextra
     role: press
     type: rss
     url: https://www.finextra.com/rss/headlines.aspx
+    ai_filter: true
+    tags: [finance]
+  - name: Finextra AI
+    role: press
+    type: rss
+    url: https://www.finextra.com/rss/channel.aspx?channel=ai
+    tags: [finance]
+  - name: PYMNTS
+    role: press
+    type: rss
+    url: https://www.pymnts.com/feed/
+    ai_filter: true
+    tags: [finance]
+  - name: Banking Dive
+    role: press
+    type: rss
+    url: https://www.bankingdive.com/feeds/news/
+    ai_filter: true
+    tags: [finance]
+  - name: The Fintech Times
+    role: press
+    type: rss
+    url: https://thefintechtimes.com/feed/
+    ai_filter: true
+    tags: [finance]
+  - name: Private Equity Wire
+    role: press
+    type: rss
+    url: https://www.privateequitywire.co.uk/feed/
+    ai_filter: true
+    tags: [finance]
+  - name: Insurance Journal
+    role: press
+    type: rss
+    url: https://www.insurancejournal.com/rss/news/
     ai_filter: true
     tags: [finance]
   - name: "Google News: AI bank"

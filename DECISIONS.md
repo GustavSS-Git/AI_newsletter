@@ -29,7 +29,7 @@ Non-trivial choices made while building v0, newest at the bottom of each section
 - **Google News company searches** (Anthropic, Meta AI, Mistral) are role `press`, not `primary`. They return press coverage, not the company's own posts, and the triage prompt treats `primary` as self-promotion. Labeling them `primary` also caused a real bug (see below).
 - Hacker News: Algolia `search_by_date`, points > 100, last 48 hours, then filtered by an AI keyword regex on the title. The 30-hour window is applied later, as for every source.
 - HF Daily Papers: the top 10 by upvotes from the daily list. They link to the HF paper page; text is fetched from arXiv.
-- **Google News terms**: the RSS feed says it is for "personal, non-commercial use". This is fine for a private hobby run; revisit before the site is public, or treat Google News as discovery only.
+- **Google News terms**: the RSS feed says it is for "personal, non-commercial use". Gustav confirmed the project is non-commercial and completely free (2026-11-04), so Google News searches stay in.
 
 ## Google News links
 
@@ -71,3 +71,19 @@ An independent reviewer agent checked the edition: it judged the selection, chec
 - Display links have tracking and gift-token parameters removed. The headline-only note no longer says "paywalled", since Google-News-only stories aren't paywalled.
 
 Effect on the re-run: both briefs filled (2 Europe, 2 finance), and headlines and "why it matters" are factual. Open, for Gustav to decide (see the v0 report): how to handle Google-News-only stories, the headline-only gate and the brief threshold.
+
+## Follow-up decisions (2026-11-04, after the v0 report)
+
+- **More direct press feeds** (option C), so fewer stories depend on Google News alone. There are 23 new sources, for 54 in total, and all pass `check_feeds.py`:
+  - **General press:** The Guardian AI, CNBC Technology, Axios, The Register AI, The Decoder, SiliconANGLE AI, Engadget, ZDNet AI, Fortune, BBC Technology, IEEE Spectrum AI, The Next Web, Wired AI.
+  - **Europe:** Politico Europe Tech, Silicon Republic, UKTN, Computer Sweden.
+  - **Finance:** Finextra AI channel, PYMNTS, Banking Dive, The Fintech Times, Private Equity Wire, Insurance Journal.
+
+  General-interest feeds use `ai_filter`. Wired stays on the paywall list: it counts toward coverage but is not fetched. Not available: Reuters (no public RSS; it stays as a Google News coverage signal), AP (403), Semafor (404), Fintech Futures (403), Consultancy.eu/.uk (no feed), American Banker and The Financial Brand (malformed XML).
+- **Headline-only gate** (reviewer's suggestion, approved), now set by section:
+  - **Main/lead:** score ≥ 6 and ≥ 3 distinct outlets (was score ≥ 8).
+  - **Briefs:** ≥ 2 outlets.
+
+  The rule lives in `select.headline_only_ok` and is used both before selection (paywalled-only clusters) and after enrichment (clusters with no text).
+- `brief_threshold` 5 → 4 (approved).
+- `max_items_to_triage` 600 → 800, for the larger source list. That keeps triage input around 75K tokens, under Haiku 5.5's 100K price tier.

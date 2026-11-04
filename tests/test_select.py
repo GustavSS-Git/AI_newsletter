@@ -214,3 +214,31 @@ class TestEligibility:
         assert is_paywalled("FT.com", PAYWALLED)
         assert is_paywalled("www.wsj.com", PAYWALLED)
         assert not is_paywalled("", PAYWALLED)
+
+
+class TestHeadlineOnlyGate:
+    """Paywalled-only clusters must pass the section-specific headline-only gate."""
+    GATE = dict(threshold=4, headline_only_min=6, headline_only_min_publishers=3, brief_min_publishers=2)
+
+    def test_main_needs_score_and_publishers(self):
+        weak = make_cluster("c1", 7, n_publishers=2, publisher_url="wsj.com")
+        strong = make_cluster("c2", 6, n_publishers=3, publisher_url="wsj.com")
+        low = make_cluster("c3", 5, n_publishers=5, publisher_url="wsj.com")
+        sel = run([weak, strong, low], **self.GATE)
+        assert ids(sel.all) == ["c2"]
+
+    def test_brief_uses_publisher_gate_only(self):
+        main = [make_cluster(f"m{i}", 9, n_publishers=3) for i in range(6)]
+        eu_two = make_cluster("e1", 4, n_publishers=2, european=True, publisher_url="ft.com")
+        eu_one = make_cluster("e2", 5, n_publishers=1, european=True, publisher_url="ft.com")
+        sel = run(main + [eu_two, eu_one], **self.GATE)
+        assert ids(sel.europe) == ["e1"]
+
+    def test_headline_only_ok_helper(self):
+        from newsletter.select import headline_only_ok
+        c = make_cluster("c1", 6, n_publishers=3)
+        kw = dict(headline_only_min=6, headline_only_min_publishers=3, brief_min_publishers=2)
+        assert headline_only_ok(c, "main", **kw) and headline_only_ok(c, "lead", **kw)
+        assert not headline_only_ok(make_cluster("c2", 6, n_publishers=2), "main", **kw)
+        assert headline_only_ok(make_cluster("c3", 4, n_publishers=2), "finance", **kw)
+        assert not headline_only_ok(make_cluster("c4", 9, n_publishers=1), "europe", **kw)

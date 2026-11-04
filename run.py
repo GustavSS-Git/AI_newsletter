@@ -103,6 +103,8 @@ def main(argv: list[str] | None = None) -> int:
         n_main=p["main_stories"], threshold=p["brief_threshold"], brief_max=p["brief_max"],
         paywalled=cfg["paywalled_domains"], followup_min=p["followup_min_score"],
         headline_only_min=p["headline_only_min_score"],
+        headline_only_min_publishers=p.get("headline_only_min_publishers", 1),
+        brief_min_publishers=p.get("brief_headline_only_min_publishers", 1),
     )
 
     if args.dry_run:
@@ -123,7 +125,7 @@ def main(argv: list[str] | None = None) -> int:
         contexts, unusable = enrich_selection(selection, cfg, enrich_cache)
         if not unusable:
             break
-        log.info("enrich: %d stories unusable (no open text, below headline-only score); re-selecting", len(unusable))
+        log.info("enrich: %d stories unusable (headline-only, fails the headline-only gate); re-selecting", len(unusable))
         exclude |= unusable
     else:
         log.warning("enrich: still unusable stories after retries; dropping them")

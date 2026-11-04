@@ -20,12 +20,27 @@ def rank_key(c: Cluster) -> tuple:
     return (-c.importance, -len(c.publishers), not c.has_curator, c.id)
 
 
-def is_eligible(c: Cluster, *, paywalled: list[str], followup_min: int, headline_only_min: int) -> bool:
+def headline_only_ok(c: Cluster, section: str, *, headline_only_min: int,
+                     headline_only_min_publishers: int = 1, brief_min_publishers: int = 1) -> bool:
+    """May this cluster run without open article text or snippets (headline-only)?
+    Main/lead: score >= headline_only_min and >= headline_only_min_publishers outlets.
+    Briefs: >= brief_min_publishers outlets (the brief score threshold applies separately)."""
+    if section in ("europe", "finance"):
+        return len(c.publishers) >= brief_min_publishers
+    return c.importance >= headline_only_min and len(c.publishers) >= headline_only_min_publishers
+
+
+def is_eligible(c: Cluster, *, paywalled: list[str], followup_min: int, headline_only_min: int,
+                section: str = "main", headline_only_min_publishers: int = 1,
+                brief_min_publishers: int = 1) -> bool:
     # Already covered in a recent edition: only back in as a substantial, high-scoring follow-up.
     if c.covered_before and not (c.new_development and c.importance >= followup_min):
         return False
-    # Paywalled-only: keep headline-only if important enough, else drop.
-    if not has_open_source(c, paywalled) and c.importance < headline_only_min:
+    # Paywalled-only clusters will be headline-only: apply the headline-only gate up front.
+    if not has_open_source(c, paywalled) and not headline_only_ok(
+            c, section, headline_only_min=headline_only_min,
+            headline_only_min_publishers=headline_only_min_publishers,
+            brief_min_publishers=brief_min_publishers):
         return False
     return True
 
@@ -52,18 +67,19 @@ class Selection:
 
 def select(clusters: list[Cluster], *, n_main: int, threshold: int, brief_max: int,
            paywalled: list[str], followup_min: int, headline_only_min: int,
+           headline_only_min_publishers: int = 1, brief_min_publishers: int = 1,
            exclude: set[str] = frozenset()) -> Selection:
     """Top `n_main` eligible clusters (lead included) by rank; then up to `brief_max`
     european and `brief_max` finance_consulting clusters not already shown with
     importance >= threshold. A cluster appears in at most one section."""
-    pool = sorted(
-        (c for c in clusters if c.id not in exclude and is_eligible(
-            c, paywalled=paywalled, followup_min=followup_min, headline_only_min=headline_only_min)),
-        key=rank_key,
-    )
-    top = pool[:n_main]
+    gates = dict(paywalled=paywalled, followup_min=followup_min, headline_only_min=headline_only_min,
+                 headline_only_min_publishers=headline_only_min_publishers,
+                 brief_min_publishers=brief_min_publishers)
+    candidates = sorted((c for c in clusters if c.id not in exclude), key=rank_key)
+    top = [c for c in candidates if is_eligible(c, section="main", **gates)][:n_main]
     shown = {c.id for c in top}
-    rest = [c for c in pool if c.id not in shown and c.importance >= threshold]
+    rest = [c for c in candidates if c.id not in shown and c.importance >= threshold
+            and is_eligible(c, section="europe", **gates)]
 
     europe = [c for c in rest if c.european][:brief_max]
     shown |= {c.id for c in europe}

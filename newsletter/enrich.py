@@ -15,7 +15,7 @@ import trafilatura
 
 from .filter import normalize_url
 from .models import Cluster, Item
-from .select import Selection, is_paywalled
+from .select import Selection, headline_only_ok, is_paywalled
 
 log = logging.getLogger(__name__)
 
@@ -159,8 +159,8 @@ def enrich_cluster(cluster: Cluster, cfg: dict) -> StoryContext:
 def enrich_selection(selection: Selection, cfg: dict, cache: dict[str, StoryContext] | None = None
                      ) -> tuple[dict[str, StoryContext], set[str]]:
     """Returns (contexts by cluster id, ids of clusters that are unusable: headline-only but
-    below the headline-only score threshold). Pass the same `cache` across re-selections."""
-    min_score = cfg["pipeline"]["headline_only_min_score"]
+    failing the headline-only gate for their section). Pass the same `cache` across re-selections."""
+    p = cfg["pipeline"]
     cache = {} if cache is None else cache
     clusters = selection.all
     todo = [c for c in clusters if c.id not in cache]
@@ -169,5 +169,8 @@ def enrich_selection(selection: Selection, cfg: dict, cache: dict[str, StoryCont
             cache[c.id] = ctx
     contexts = {c.id: cache[c.id] for c in clusters}
     unusable = {c.id for c in clusters
-                if contexts[c.id].text_source == "headline_only" and c.importance < min_score}
+                if contexts[c.id].text_source == "headline_only" and not headline_only_ok(
+                    c, selection.section_of(c.id), headline_only_min=p["headline_only_min_score"],
+                    headline_only_min_publishers=p.get("headline_only_min_publishers", 1),
+                    brief_min_publishers=p.get("brief_headline_only_min_publishers", 1))}
     return contexts, unusable
