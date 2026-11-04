@@ -65,7 +65,7 @@ Never use these or close variants. The list is intentionally extendable.
 
 ## Examples
 
-<!-- TODO(Gustav): replace these three examples with your own hand-written summaries. They are placeholders drafted to show format and tone; they describe invented events and must not be treated as facts. -->
+<!-- These three examples show format and tone. They describe invented events and must not be treated as facts. Gustav reviewed the resulting style on 2026-11-05 and kept them. -->
 
 ### Example 1 (main story, material: fulltext)
 

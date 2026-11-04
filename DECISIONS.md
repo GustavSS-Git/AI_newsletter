@@ -103,3 +103,14 @@ Effect on the re-run: both briefs filled (2 Europe, 2 finance), and headlines an
 - **Feed check from CI**: a separate manual workflow, because news sites sometimes block cloud IP ranges that work from home.
 - **First CI dry run (2026-11-05)** failed on the API call because the `ANTHROPIC_API_KEY` secret held a pasted `curl` example, not just the key. `run.py` now checks the key's format at startup (single line, starts with `sk-ant-`, no quotes or `NAME=`). It strips surrounding whitespace and exits with code 2 and a clear message that never includes the key.
 - **tech.eu** returns 403 to GitHub Actions runners, though it works locally, so it now goes through a Google News `site:tech.eu AI` search.
+
+## v2: email via Buttondown (2026-11-05)
+
+These choices come from Buttondown's docs, which a research agent read on 2026-11-05.
+- **Free plan**: free up to 100 subscribers, including API drafting and sending and a custom sending domain. Free emails carry Buttondown branding in the footer; removing it costs extra and isn't worth it for a hobby project. New accounts go through a manual review of 1–3 business days before they can send.
+- **Body**: an HTML fragment with inline styles that match the site. It starts with `<!-- buttondown-editor-mode: fancy -->` so Buttondown treats it as HTML. Buttondown wraps it in its own template, which adds the newsletter name and the unsubscribe link, so the fragment has no masthead of its own. ("Naked" mode, without Buttondown's wrapper, needs a paid plan.)
+- **Modes**: `email.mode`. It starts at `draft`, so Gustav can check real output (Buttondown's "Send test") before switching to `send`. API version is pinned with `X-API-Version: 2026-04-01`.
+- **No duplicate sends**: before creating an email, the script lists today's API-created emails and matches `metadata.edition`. The create request also sends `X-Idempotency-Key: ai-daily-<date>-<mode>`. Emailing is a separate script and workflow step that runs after the edition is committed. An email failure fails the job (so Gustav gets an email), but the website edition is already published.
+- **Buttondown's own archive is off** per email (`archival_mode: disabled`); our archive is canonical (`canonical_url`).
+- **Signup**: a plain HTML form POST to `https://buttondown.com/api/emails/embed-subscribe/<username>` with the hidden field `embed=1`, opening in a new tab. Buttondown's docs say not to submit it with fetch, because of CAPTCHA and validation. Double opt-in is on, which Buttondown requires. The form only renders when `email.buttondown_username` is set.
+- **Sending domain**: Buttondown's managed setup on `mail.slanesens.com`, with two NS records that let Buttondown handle SPF and DKIM. It can't be `news.slanesens.com`, which is taken by the website. Plus a DMARC TXT record at `_dmarc.slanesens.com` with `p=none` to start.

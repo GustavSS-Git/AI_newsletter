@@ -188,3 +188,14 @@ def test_canonical_link_uses_base_url(tmp_path):
     ed = make_edition()
     render_site(ed, cfg, tmp_path / "site", editions_dir=tmp_path / "none")
     assert '<link rel="canonical" href="https://news.example.com/">' in (tmp_path / "site" / "index.html").read_text()
+
+
+def test_signup_form_only_when_username_set(tmp_path):
+    ed = make_edition()
+    render_site(ed, CFG, tmp_path / "a")
+    assert "embed-subscribe" not in (tmp_path / "a" / "index.html").read_text()
+    cfg = {**CFG, "email": {"buttondown_username": "aidaily"}}
+    render_site(ed, cfg, tmp_path / "b")
+    html = (tmp_path / "b" / "index.html").read_text()
+    assert 'action="https://buttondown.com/api/emails/embed-subscribe/aidaily"' in html
+    assert 'name="email"' in html and 'name="embed" value="1"' in html

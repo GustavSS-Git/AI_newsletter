@@ -5,6 +5,13 @@ publication:
   footer: "Curated and summarized with AI"
   base_url: "https://news.slanesens.com"   # no trailing slash
 
+email:
+  # off   = never email
+  # draft = create a Buttondown draft each morning (review it, "Send test" to yourself, send by hand)
+  # send  = send to all subscribers automatically after each edition
+  mode: draft
+  buttondown_username: ""       # your Buttondown username; when set, the site shows a signup form
+
 models:
   # Verified against Anthropic docs 2026-11-04. Change here, never in code.
   triage: "claude-haiku-5-5"

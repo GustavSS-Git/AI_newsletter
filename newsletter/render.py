@@ -123,6 +123,9 @@ def render_site(edition: dict, cfg: dict, site_dir: Path, templates_dir: Path | 
     templates_dir = templates_dir or ROOT / "templates"
     env = _env(templates_dir)
     pub = cfg["publication"]
+    username = (cfg.get("email") or {}).get("buttondown_username", "").strip()
+    env.globals["signup_action"] = (
+        f"https://buttondown.com/api/emails/embed-subscribe/{username}" if username else None)
     site_dir.mkdir(parents=True, exist_ok=True)
 
     out = site_dir / "index.html"

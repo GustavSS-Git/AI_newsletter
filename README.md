@@ -53,7 +53,17 @@ Live at **https://news.slanesens.com**.
 - `site/archive/` has one page per edition plus an index. All archive pages are rebuilt on every run, so template changes apply to old editions too.
 - The API key is the `ANTHROPIC_API_KEY` repository secret (Settings → Secrets and variables → Actions).
 
+## Email (v2)
+
+- Each morning, after the edition is committed, the workflow runs `scripts/send_email.py`. It sends the edition through Buttondown, as set by `email.mode` in `config.yaml`:
+  - `off`: no email.
+  - `draft`: a Buttondown draft for review.
+  - `send`: sent to all subscribers.
+- It skips quietly until the `BUTTONDOWN_API_KEY` repository secret exists.
+- At most one email per edition date: it checks the Buttondown API for an existing email and sends an idempotency key. Re-running the workflow is safe.
+- `python scripts/send_email.py --preview` writes the email as a local HTML file, without an API call.
+- Setting `email.buttondown_username` adds a signup form to the site. Buttondown sends each new subscriber a confirmation email (double opt-in).
+
 ## Roadmap
 
-- **v2**: email via Buttondown, signup form, SPF/DKIM/DMARC.
 - **v3**: Week / Month / Year highlights built from stored importance scores.

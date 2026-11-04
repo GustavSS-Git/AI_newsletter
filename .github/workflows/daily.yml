@@ -54,3 +54,11 @@ jobs:
           git commit -m "Edition $(date -u +%F)"
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Email edition (Buttondown)
+        if: ${{ !inputs.dry_run }}
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        # Mode comes from config.yaml (email.mode). Skips quietly if the secret isn't set yet.
+        # Safe to re-run: one email per edition date (checked via the API + idempotency key).
+        run: python scripts/send_email.py
