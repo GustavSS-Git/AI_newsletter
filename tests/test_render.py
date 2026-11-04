@@ -143,3 +143,48 @@ def test_category_label(tmp_path):
     ed["main"][0]["category"] = "business/funding"
     _, html = _render(tmp_path, ed)
     assert "Business &amp; Funding" in html
+
+
+# ---------------------------------------------------------------- archive (v1)
+
+def _save(ed_dir, d, n):
+    ed = make_edition(date_str=d, edition_number=n)
+    ed["lead"]["headline"] = f"Lead {d}"
+    save_edition(ed, ed_dir)
+    return ed
+
+
+def test_render_site_builds_archive_and_404(tmp_path):
+    ed_dir, site = tmp_path / "editions", tmp_path / "site"
+    _save(ed_dir, "2026-11-03", 1)
+    latest = _save(ed_dir, "2026-11-04", 2)
+    render_site(latest, CFG, site, editions_dir=ed_dir)
+
+    assert (site / "404.html").exists()
+    index = (site / "index.html").read_text()
+    assert "Lead 2026-11-04" in index and 'href="archive/"' in index and 'href="style.css"' in index
+
+    listing = (site / "archive" / "index.html").read_text()
+    assert listing.index("Lead 2026-11-04") < listing.index("Lead 2026-11-03")  # newest first
+    assert 'href="2026-11-03.html"' in listing and 'href="../style.css"' in listing
+
+    older = (site / "archive" / "2026-11-03.html").read_text()
+    assert 'href="2026-11-04.html"' in older and "← Previous" not in older   # next only
+    newer = (site / "archive" / "2026-11-04.html").read_text()
+    assert 'href="2026-11-03.html"' in newer and "Next →" not in newer
+
+
+def test_render_site_includes_unsaved_edition_in_archive(tmp_path):
+    ed_dir, site = tmp_path / "editions", tmp_path / "site"
+    _save(ed_dir, "2026-11-03", 1)
+    new = make_edition()
+    new["date"], new["edition_number"] = "2026-11-04", 2
+    render_site(new, CFG, site, editions_dir=ed_dir)
+    assert (site / "archive" / "2026-11-04.html").exists()
+
+
+def test_canonical_link_uses_base_url(tmp_path):
+    cfg = {"publication": {**CFG["publication"], "base_url": "https://news.example.com"}}
+    ed = make_edition()
+    render_site(ed, cfg, tmp_path / "site", editions_dir=tmp_path / "none")
+    assert '<link rel="canonical" href="https://news.example.com/">' in (tmp_path / "site" / "index.html").read_text()

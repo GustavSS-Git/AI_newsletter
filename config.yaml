@@ -3,6 +3,7 @@ publication:
   name: "AI Daily"
   tagline: "The day's most important AI news, briefly."
   footer: "Curated and summarized with AI"
+  base_url: "https://news.slanesens.com"   # no trailing slash
 
 models:
   # Verified against Anthropic docs 2026-11-04. Change here, never in code.

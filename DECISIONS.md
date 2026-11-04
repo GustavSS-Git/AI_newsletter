@@ -90,3 +90,14 @@ Effect on the re-run: both briefs filled (2 Europe, 2 finance), and headlines an
 - **Note on the 2026-11-04 lead.** It is headline-only because Anthropic filed its S-1 on 2026-11-02, so the direct coverage (SiliconANGLE, HN) is older than the 30-hour window. Only Google News follow-ups were left. This is expected on a first edition with no history; in daily operation the previous edition would have covered it, and the covered check would hold back the follow-ups.
 - **Removed "why it matters"** (Gustav, 2026-11-04): its value differs by reader, and the news plus sources is enough. It is gone from the writing prompt, the output schema, the edition schema (now `schema_version: 2`), the template and validation. The prompt now says to report what happened, without telling readers why it matters.
 - **Hosting**: Cloudflare's dashboard now creates Git-connected sites as *Workers with static assets* (the older Pages flow is no longer the default). `wrangler.jsonc` points `assets.directory` at `./site`, so Cloudflare's default deploy command (`npx wrangler deploy`) publishes the generated HTML without a build step. Cloudflare redeploys on each push to `main`, so v1's GitHub Action only needs to commit the new edition and needs no Cloudflare token.
+
+## v1: automation and archive (2026-11-04)
+
+- **Schedule**: GitHub Actions cron `0 5 * * *` (UTC), plus `workflow_dispatch` with a `dry_run` option. The job runs the unit tests before `run.py`, so a broken commit fails the run before any API spend. Python 3.12 in CI; the code stays 3.11-compatible.
+- **Commit back**: the workflow commits `editions/` and `site/` as `github-actions[bot]`, with `pull --rebase` before pushing so it doesn't conflict with commits of mine. Permissions are `contents: write` only. Each push to `main` triggers Cloudflare's redeploy, so no Cloudflare token is needed in GitHub.
+- **Failure path**: `run.py` exits non-zero on validation failure, so the job fails, nothing is committed, the site keeps the previous edition, and GitHub emails Gustav (Actions notifications enabled for failures).
+- **Job summary**: each run writes a table of the selected stories (section, score, material, headline), the cost and any failed sources to the Actions run page.
+- **Archive**: `site/archive/YYYY-MM-DD.html` with previous, next and latest links, plus `site/archive/index.html` (newest first, with each lead headline). Every page is rebuilt from `editions/*.json` on each run. Paths are relative (`root` = `""` or `"../"`) so pages also work when opened locally. There are canonical links to `publication.base_url` (`https://news.slanesens.com`).
+- **404 page**: `site/404.html`, served through `not_found_handling: "404-page"` in `wrangler.jsonc`.
+- **`--render-only`**: rebuilds the site from saved editions without API calls (template or design changes).
+- **Feed check from CI**: a separate manual workflow, because news sites sometimes block cloud IP ranges that work from home.

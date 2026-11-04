@@ -1,0 +1,21 @@
+{% extends "base.html.j2" %}
+{% from "partials/chrome.html.j2" import masthead, footer %}
+
+{% block title %}{{ pub.name }} — Archive{% endblock %}
+
+{% block body %}
+{{ masthead(pub, root) }}
+<main class="archive">
+  <h2 class="section-title">Archive</h2>
+  <ol class="archive-list" reversed>
+    {% for e in editions %}
+    <li class="archive-list__item">
+      <a href="{{ e.date }}.html"><time datetime="{{ e.date }}">{{ e.date | long_date }}</time></a>
+      <span class="archive-list__number">No. {{ e.edition_number }}</span>
+      <p class="archive-list__lead">{{ e.lead_headline }}</p>
+    </li>
+    {% endfor %}
+  </ol>
+</main>
+{{ footer(pub, root) }}
+{% endblock %}

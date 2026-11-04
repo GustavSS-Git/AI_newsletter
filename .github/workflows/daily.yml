@@ -1,0 +1,56 @@
+name: Daily edition
+
+on:
+  schedule:
+    - cron: "0 5 * * *"        # 05:00 UTC daily (GitHub may start scheduled runs a few minutes late)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run: ingest + triage only, print ranked clusters, commit nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write              # commit the new edition back to main
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Unit tests
+        run: python -m pytest -q
+
+      - name: Build edition
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        # Exits non-zero on validation failure: the job fails, nothing is committed, GitHub emails you.
+        run: python run.py ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Commit and push edition
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add editions site
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Edition $(date -u +%F)"
+          git pull --rebase origin main
+          git push origin HEAD:main

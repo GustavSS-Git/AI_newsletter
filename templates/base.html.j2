@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ pub.name }}{% endblock %}</title>
   <meta name="description" content="{{ pub.tagline }}">
-  <link rel="stylesheet" href="style.css">
+  {% if pub.base_url and canonical_path is defined %}<link rel="canonical" href="{{ pub.base_url }}{{ canonical_path }}">{% endif %}
+  <link rel="stylesheet" href="{{ root }}style.css">
 </head>
 <body>
   {% block body %}{% endblock %}

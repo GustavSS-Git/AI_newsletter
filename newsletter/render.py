@@ -91,14 +91,60 @@ def save_edition(edition: dict, editions_dir: Path) -> Path:
     return path
 
 
-def render_site(edition: dict, cfg: dict, site_dir: Path, templates_dir: Path | None = None) -> Path:
-    templates_dir = templates_dir or ROOT / "templates"
+def _env(templates_dir: Path) -> Environment:
     env = Environment(loader=FileSystemLoader(templates_dir), autoescape=select_autoescape(["html", "j2"]))
     env.filters["category_label"] = lambda c: CATEGORY_LABELS.get(c, c)
     env.filters["long_date"] = lambda d: date.fromisoformat(d).strftime("%A, %B %-d, %Y")
-    html = env.get_template("edition.html.j2").render(edition=edition, pub=cfg["publication"])
+    return env
+
+
+def _write(path: Path, html: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(html, encoding="utf-8")
+
+
+def load_editions(editions_dir: Path) -> list[dict]:
+    """All saved editions, oldest first. Unreadable files are skipped."""
+    out = []
+    for f in sorted(editions_dir.glob("*.json")):
+        try:
+            date.fromisoformat(f.stem)
+            out.append(json.loads(f.read_text(encoding="utf-8")))
+        except (ValueError, OSError):
+            continue
+    return out
+
+
+def render_site(edition: dict, cfg: dict, site_dir: Path, templates_dir: Path | None = None,
+                editions_dir: Path | None = None) -> Path:
+    """Render index.html (this edition), style.css and 404.html. With `editions_dir`, also
+    rebuild the full archive: archive/YYYY-MM-DD.html for every saved edition plus
+    archive/index.html. Rebuilding everything keeps old pages in sync with template changes."""
+    templates_dir = templates_dir or ROOT / "templates"
+    env = _env(templates_dir)
+    pub = cfg["publication"]
     site_dir.mkdir(parents=True, exist_ok=True)
+
     out = site_dir / "index.html"
-    out.write_text(html, encoding="utf-8")
+    _write(out, env.get_template("edition.html.j2").render(edition=edition, pub=pub, root="", canonical_path="/"))
+    _write(site_dir / "404.html", env.get_template("404.html.j2").render(pub=pub, root="/"))
     shutil.copyfile(templates_dir / "style.css", site_dir / "style.css")
+
+    if editions_dir is not None:
+        editions = load_editions(editions_dir)
+        # Make sure the edition being published is included even if not yet saved.
+        if not any(e.get("date") == edition["date"] for e in editions):
+            editions.append(edition)
+            editions.sort(key=lambda e: e["date"])
+        dates = [e["date"] for e in editions]
+        tpl = env.get_template("edition.html.j2")
+        for i, e in enumerate(editions):
+            nav = {"prev": dates[i - 1] if i > 0 else None, "next": dates[i + 1] if i + 1 < len(dates) else None}
+            _write(site_dir / "archive" / f"{e['date']}.html",
+                   tpl.render(edition=e, pub=pub, root="../", nav=nav, canonical_path=f"/archive/{e['date']}.html"))
+        listing = [{"date": e["date"], "edition_number": e.get("edition_number"),
+                    "lead_headline": (e.get("lead") or {}).get("headline", "")} for e in reversed(editions)]
+        _write(site_dir / "archive" / "index.html",
+               env.get_template("archive.html.j2").render(editions=listing, pub=pub, root="../",
+                                                          canonical_path="/archive/"))
     return out

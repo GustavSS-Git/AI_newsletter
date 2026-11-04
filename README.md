@@ -17,6 +17,7 @@ echo 'ANTHROPIC_API_KEY=sk-ant-...' > .env.local   # or .env; both are gitignore
 ```bash
 .venv/bin/python run.py              # full run → editions/YYYY-MM-DD.json + site/index.html
 .venv/bin/python run.py --dry-run    # ingest → filter → triage, print ranked clusters (≈ $0.02)
+.venv/bin/python run.py --render-only  # rebuild site/ (index, archive, 404) from saved editions, no API calls
 .venv/bin/python scripts/check_feeds.py   # health check of every source
 .venv/bin/python -m pytest -q        # unit tests (pure logic, no network)
 ```
@@ -42,8 +43,17 @@ A full run takes about 3 minutes and costs about $0.06–0.07. Exit codes:
 
 Everything tunable is in `config.yaml`: sources, N, thresholds, window, model names and the paywall list. The prompts are plain Markdown in `prompts/`. Design choices are logged in `DECISIONS.md`.
 
+## Automation (v1)
+
+Live at **https://news.slanesens.com**.
+
+- `.github/workflows/daily.yml` runs at 05:00 UTC every day. It installs dependencies, runs the tests, then runs `run.py`, and commits `editions/` and `site/` back to `main`. A failed check fails the job, nothing is committed, and GitHub emails you. You can also start it by hand from the Actions tab (**Daily edition → Run workflow**), optionally as a dry run.
+- Cloudflare (Workers static assets, configured in `wrangler.jsonc`) redeploys `site/` on every push to `main`.
+- `.github/workflows/feed-check.yml` runs `check_feeds.py` from GitHub's servers when started by hand. Use it if a source works locally but fails in the daily job.
+- `site/archive/` has one page per edition plus an index. All archive pages are rebuilt on every run, so template changes apply to old editions too.
+- The API key is the `ANTHROPIC_API_KEY` repository secret (Settings → Secrets and variables → Actions).
+
 ## Roadmap
 
-- **v1**: GitHub Actions cron (~05:00 UTC), auto-commit, Cloudflare Pages deploy, archive pages.
 - **v2**: email via Buttondown, signup form, SPF/DKIM/DMARC.
 - **v3**: Week / Month / Year highlights built from stored importance scores.

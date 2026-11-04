@@ -30,3 +30,12 @@ body {
 .brief-item__headline { font-size: 1.05rem; }
 .site-footer { padding-top: 2rem; padding-bottom: 3rem; font-size: 0.85rem; color: var(--muted); text-align: center; }
 .todo { font-style: italic; }
+.masthead__name a { color: inherit; text-decoration: none; }
+.edition-nav { display: flex; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; font-size: 0.85rem; border-bottom: 1px solid var(--rule); }
+.edition-nav a { color: inherit; }
+.archive, .not-found { max-width: var(--measure); margin: 0 auto; padding: 0 1rem; }
+.archive-list { list-style: none; padding: 0; }
+.archive-list__item { padding: 0.9rem 0; border-bottom: 1px solid var(--rule); }
+.archive-list__item a { color: inherit; font-weight: bold; }
+.archive-list__number { margin-left: 0.5rem; font-size: 0.8rem; color: var(--muted); }
+.archive-list__lead { margin: 0.25rem 0 0; color: var(--muted); }

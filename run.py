@@ -3,6 +3,7 @@
     python run.py              # full run for today (UTC)
     python run.py --dry-run    # ingest → filter → triage, print ranked clusters, no writing model
     python run.py --date 2026-11-04
+    python run.py --render-only  # rebuild site/ from saved editions (no API calls)
 """
 from __future__ import annotations
 
@@ -43,10 +44,33 @@ def print_clusters(clusters, selection=None, limit: int = 40) -> None:
     print()
 
 
+def write_job_summary(edition: dict, usage: Usage) -> None:
+    """Append a short Markdown summary to the GitHub Actions job page, when running there."""
+    import os
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not path:
+        return
+    st = edition["stats"]
+    lines = [f"## {edition['publication']} No. {edition['edition_number']} ({edition['date']})", "",
+             f"{st['items_fetched']} items fetched, {st['items_in_window']} in window, "
+             f"{st['items_triaged']} triaged, {st['clusters']} clusters. Cost ${usage.total_cost:.3f}.", ""]
+    if st.get("failed_sources"):
+        lines += ["**Failed sources:** " + ", ".join(st["failed_sources"]), ""]
+    lines += ["| Section | Score | Material | Headline |", "|---|---|---|---|"]
+    rows = [("lead", edition["lead"])] + [("main", s) for s in edition["main"]] + \
+           [("europe", b) for b in edition["europe_brief"]] + [("finance", b) for b in edition["finance_brief"]]
+    def cell(text: str) -> str:
+        return text.replace("|", "\\|")
+    lines += [f"| {sec} | {s['importance']} | {s['material']} | {cell(s['headline'])} |" for sec, s in rows]
+    with open(path, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dry-run", action="store_true", help="stop after triage; print ranked clusters")
     ap.add_argument("--date", help="edition date YYYY-MM-DD (default: today UTC)")
+    ap.add_argument("--render-only", action="store_true", help="rebuild site/ from saved editions, no API calls")
     ap.add_argument("--config", default=None)
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args(argv)
@@ -58,6 +82,16 @@ def main(argv: list[str] | None = None) -> int:
     now = datetime.now(timezone.utc)
     today = date.fromisoformat(args.date) if args.date else now.date()
     editions_dir = ROOT / "editions"
+
+    if args.render_only:
+        from newsletter.render import load_editions, render_site
+        editions = load_editions(editions_dir)
+        if not editions:
+            log.error("no saved editions in %s", editions_dir)
+            return 1
+        out = render_site(editions[-1], cfg, ROOT / "site", editions_dir=editions_dir)
+        log.info("rendered %s from %s (+ %d archive pages)", out.relative_to(ROOT), editions[-1]["date"], len(editions))
+        return 0
 
     if not has_api_key():
         log.error("ANTHROPIC_API_KEY not set (looked in .env.local and .env)")
@@ -171,8 +205,9 @@ def main(argv: list[str] | None = None) -> int:
 
     # 8. Save + render -------------------------------------------------------------
     path = save_edition(edition, editions_dir)
-    out = render_site(edition, cfg, ROOT / "site")
+    out = render_site(edition, cfg, ROOT / "site", editions_dir=editions_dir)
     log.info("wrote %s and %s", path.relative_to(ROOT), out.relative_to(ROOT))
+    write_job_summary(edition, usage)
     log.info("run cost: $%.4f (%s)", usage.total_cost,
              ", ".join(f"{c['step']} {c['model']} {c['input_tokens']}in/{c['output_tokens']}out" for c in usage.calls))
     return 0

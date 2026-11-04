@@ -1,0 +1,13 @@
+{% extends "base.html.j2" %}
+{% from "partials/chrome.html.j2" import masthead, footer %}
+
+{% block title %}{{ pub.name }} — Page not found{% endblock %}
+
+{% block body %}
+{{ masthead(pub, root) }}
+<main class="not-found">
+  <h2>Page not found</h2>
+  <p>That page doesn't exist. Read <a href="{{ root }}">today's edition</a> or browse the <a href="{{ root }}archive/">archive</a>.</p>
+</main>
+{{ footer(pub, root) }}
+{% endblock %}

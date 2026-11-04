@@ -1,20 +1,21 @@
 {% extends "base.html.j2" %}
 {% from "partials/story.html.j2" import story, brief %}
+{% from "partials/chrome.html.j2" import masthead, footer %}
 
 {% block title %}{{ pub.name }} — {{ edition.date | long_date }}{% endblock %}
 
 {% block body %}
-<header class="masthead">
-  <h1 class="masthead__name">{{ pub.name }}</h1>
-  <p class="masthead__tagline">{{ pub.tagline }}</p>
-  <p class="dateline">
-    <time datetime="{{ edition.date }}">{{ edition.date | long_date }}</time>
-    <span class="dateline__sep">·</span>
-    <span class="dateline__number">No. {{ edition.edition_number }}</span>
-  </p>
-</header>
+{{ masthead(pub, root, edition) }}
 
 <main class="edition">
+  {% if nav is defined and nav %}
+  <nav class="edition-nav" aria-label="Edition navigation">
+    {% if nav.prev %}<a class="edition-nav__prev" href="{{ nav.prev }}.html">← Previous</a>{% endif %}
+    <a class="edition-nav__latest" href="{{ root }}">Latest</a>
+    {% if nav.next %}<a class="edition-nav__next" href="{{ nav.next }}.html">Next →</a>{% endif %}
+  </nav>
+  {% endif %}
+
   <section class="lead" aria-label="Lead story">
     {{ story(edition.lead, lead=True) }}
   </section>
@@ -46,8 +47,5 @@
   <section class="signup signup--placeholder" aria-label="Subscribe" hidden></section>
 </main>
 
-<footer class="site-footer">
-  <p>{{ pub.footer }}.</p>
-  <p><a class="archive-link" href="#">Archive</a> <span class="todo">(coming soon)</span></p>
-</footer>
+{{ footer(pub, root) }}
 {% endblock %}
