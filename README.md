@@ -1,0 +1,49 @@
+# AI Daily
+
+A daily, AI-curated digest of general AI news, published as a single static page.
+
+Each run collects about 30 news sources, clusters and scores the stories with a cheap model, picks the edition in plain Python, and writes short, grounded summaries with a stronger model.
+
+## Setup
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+echo 'ANTHROPIC_API_KEY=sk-ant-...' > .env.local   # or .env; both are gitignored
+```
+
+## Usage
+
+```bash
+.venv/bin/python run.py              # full run → editions/YYYY-MM-DD.json + site/index.html
+.venv/bin/python run.py --dry-run    # ingest → filter → triage, print ranked clusters (≈ $0.02)
+.venv/bin/python scripts/check_feeds.py   # health check of every source
+.venv/bin/python -m pytest -q        # unit tests (pure logic, no network)
+```
+
+A full run takes about 3 minutes and costs about $0.06–0.07. Exit codes:
+- `0`: OK.
+- `1`: validation failed or no stories. Nothing is written.
+- `2`: no API key.
+- `3`: estimated cost is above `cost_stop_usd`.
+
+## Pipeline
+
+| Step | Module | What it does |
+|---|---|---|
+| Ingest | `newsletter/ingest.py` | Fetches RSS, Hacker News (Algolia), HF Daily Papers and Google News searches. A failing source is logged and skipped. |
+| Filter | `newsletter/filter.py` | Applies the fixed 30-hour window, drops stories already shown in the last 3 editions, normalizes URLs and merges duplicates. |
+| Triage | `newsletter/triage.py` + `prompts/triage.md` | Haiku clusters items into stories and scores each: importance, category, `european`, `finance_consulting`. |
+| Select | `newsletter/select.py` | Picks the top N (lead included), then the Europe and Business & Finance briefs. The quota rules are code, not prompt. |
+| Enrich | `newsletter/enrich.py` | Fetches article text with trafilatura from open sources; falls back to snippets, then headline-only. Never fetches paywalled sites. |
+| Write | `newsletter/write.py` + `prompts/write.md` | Sonnet writes headlines, summaries and "why it matters". Links come from the data, not the model. |
+| Validate | `newsletter/validate.py` | Checks the schema, story count, empty fields, working links and that the edition differs from yesterday's. |
+| Render | `newsletter/render.py` + `templates/` | Saves the edition JSON (with every triage score) and renders `site/index.html` with Jinja2. |
+
+Everything tunable is in `config.yaml`: sources, N, thresholds, window, model names and the paywall list. The prompts are plain Markdown in `prompts/`. Design choices are logged in `DECISIONS.md`.
+
+## Roadmap
+
+- **v1**: GitHub Actions cron (~05:00 UTC), auto-commit, Cloudflare Pages deploy, archive pages.
+- **v2**: email via Buttondown, signup form, SPF/DKIM/DMARC.
+- **v3**: Week / Month / Year highlights built from stored importance scores.
