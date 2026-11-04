@@ -49,3 +49,71 @@ def make_cluster(cid: str, importance: int = 5, *, items: list[Item] | None = No
 @pytest.fixture
 def now() -> datetime:
     return NOW
+
+
+# ---------------------------------------------------------------- edition dicts
+
+def make_story(sid: str, *, headline: str | None = None, urls: list[str] | None = None,
+               sources: list[dict] | None = None, category: str = "products", **overrides) -> dict:
+    """A schema-valid Story dict. `urls` sets item_urls; sources default to one link per url."""
+    urls = urls if urls is not None else [f"https://example.com/{sid}"]
+    s = {
+        "id": sid,
+        "headline": headline if headline is not None else f"Headline {sid}",
+        "summary": f"Summary of {sid}.",
+        "why_it_matters": f"Why {sid} matters.",
+        "category": category,
+        "sources": sources if sources is not None else [{"name": f"Pub {sid}", "url": u} for u in urls],
+        "importance": 7,
+        "material": "fulltext",
+        "item_urls": list(urls),
+        "item_titles": [f"Title {sid}"] * len(urls),
+    }
+    s.update(overrides)
+    return s
+
+
+def make_brief(bid: str, **overrides) -> dict:
+    """A schema-valid Brief dict (a Story without why_it_matters / category)."""
+    b = make_story(bid, **overrides)
+    b.pop("why_it_matters", None)
+    b.pop("category", None)
+    return b
+
+
+def make_cluster_record(cid: str, section: str | None = None) -> dict:
+    return {
+        "id": cid, "label": f"label {cid}", "importance": 6, "category": "products",
+        "european": section == "europe", "finance_consulting": section == "finance",
+        "reason": "test", "covered_before": False, "new_development": False,
+        "n_items": 1, "n_publishers": 1, "section": section,
+        "items": [{"title": f"Title {cid}", "url": f"https://example.com/{cid}"}],
+    }
+
+
+def make_edition(*, n_main: int = 5, n_europe: int = 1, n_finance: int = 0, prefix: str = "c",
+                 date_str: str = "2026-11-04", edition_number: int = 1) -> dict:
+    """A schema-valid Edition dict: lead + n_main main stories + briefs + cluster records."""
+    lead = make_story(f"{prefix}0", category="models")
+    main = [make_story(f"{prefix}{i}") for i in range(1, n_main + 1)]
+    europe = [make_brief(f"{prefix}e{i}") for i in range(n_europe)]
+    finance = [make_brief(f"{prefix}f{i}") for i in range(n_finance)]
+    clusters = ([make_cluster_record(lead["id"], "lead")]
+                + [make_cluster_record(s["id"], "main") for s in main]
+                + [make_cluster_record(b["id"], "europe") for b in europe]
+                + [make_cluster_record(b["id"], "finance") for b in finance]
+                + [make_cluster_record(f"{prefix}x", None)])
+    return {
+        "schema_version": 1,
+        "publication": "AI Daily",
+        "date": date_str,
+        "edition_number": edition_number,
+        "generated_at": f"{date_str}T06:00:00+00:00",
+        "lead": lead,
+        "main": main,
+        "europe_brief": europe,
+        "finance_brief": finance,
+        "clusters": clusters,
+        "models": {"triage": "claude-haiku-5-5", "write": "claude-sonnet-5-5"},
+        "stats": {"items": 42},
+    }

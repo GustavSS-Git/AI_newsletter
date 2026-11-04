@@ -26,7 +26,7 @@ def edition_number(editions_dir: Path, today: date) -> int:
     if existing.exists():
         try:
             return int(json.loads(existing.read_text(encoding="utf-8"))["edition_number"])
-        except (OSError, ValueError, KeyError):
+        except (OSError, ValueError, KeyError, TypeError):
             pass
     earlier = 0
     for f in editions_dir.glob("*.json"):

@@ -80,7 +80,10 @@ def main(argv: list[str] | None = None) -> int:
     deduped = flt.dedupe(kept, p["title_similarity"])
     # Safety cap: prefer curators/primary and items with snippets if over the limit.
     if len(deduped) > p["max_items_to_triage"]:
-        deduped.sort(key=lambda i: (i.role == "press", i.extra.get("google_news", False), -i.published.timestamp()))
+        # Keep direct feeds first (curators, then primary, then press), Google News results last.
+        role_rank = {"curator": 0, "primary": 1, "press": 2}
+        deduped.sort(key=lambda i: (i.extra.get("google_news", False), role_rank.get(i.role, 3),
+                                    -i.published.timestamp()))
         deduped = deduped[: p["max_items_to_triage"]]
         deduped.sort(key=lambda i: i.published, reverse=True)
     flt.assign_ids(deduped)

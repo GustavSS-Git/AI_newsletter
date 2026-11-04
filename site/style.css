@@ -1,0 +1,32 @@
+/* Deliberately bare v0 styling. Real design comes later; class names are stable hooks. */
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #555;
+  --rule: #d8d4ca;
+  --measure: 40rem;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 18px/1.55 Georgia, "Times New Roman", serif;
+}
+.masthead, .edition, .site-footer { max-width: var(--measure); margin: 0 auto; padding: 0 1rem; }
+.masthead { text-align: center; border-bottom: 3px double var(--ink); padding-top: 2rem; padding-bottom: 1rem; }
+.masthead__name { font-size: 2.6rem; margin: 0; letter-spacing: 0.02em; }
+.masthead__tagline { margin: 0.25rem 0; color: var(--muted); font-style: italic; }
+.dateline { margin: 0.5rem 0 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.story, .brief-item { padding: 1.25rem 0; border-bottom: 1px solid var(--rule); }
+.story--lead .story__headline { font-size: 1.9rem; line-height: 1.2; }
+.story__headline, .brief-item__headline { margin: 0.2rem 0 0.5rem; line-height: 1.25; }
+.kicker { margin: 0; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.story__summary, .story__why, .brief-item__summary { margin: 0.4rem 0; }
+.story__note { font-size: 0.85rem; color: var(--muted); font-style: italic; }
+.sources { font-size: 0.8rem; color: var(--muted); margin: 0.5rem 0 0; }
+.sources a { color: inherit; }
+.section-title { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; border-top: 2px solid var(--ink); padding-top: 0.75rem; margin-top: 2rem; }
+.brief-item__headline { font-size: 1.05rem; }
+.site-footer { padding-top: 2rem; padding-bottom: 3rem; font-size: 0.85rem; color: var(--muted); text-align: center; }
+.todo { font-style: italic; }

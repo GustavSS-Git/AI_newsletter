@@ -39,6 +39,8 @@ def story_fingerprint(edition: dict) -> frozenset[str]:
     urls = set()
     for s in shown_entries(edition):
         urls.update(normalize_url(u) for u in s.get("item_urls", []))
+        urls.update(normalize_url(src.get("url", "")) for src in s.get("sources", []))
+    urls.discard("")
     return frozenset(urls)
 
 
@@ -90,9 +92,11 @@ def validate_edition(edition: dict, cfg: dict, previous: dict | None = None,
 
     # 5. Not identical to the previous edition
     if previous is not None:
-        if story_fingerprint(edition) == story_fingerprint(previous):
+        fp = story_fingerprint(edition)
+        if fp and fp == story_fingerprint(previous):
             errors.append("edition is identical to the previous edition (same set of stories)")
-        elif [s["headline"] for s in shown_entries(edition)] == [s.get("headline") for s in shown_entries(previous)]:
+        elif sorted(s["headline"] for s in shown_entries(edition)) == \
+                sorted(s.get("headline") or "" for s in shown_entries(previous)):
             errors.append("edition headlines are identical to the previous edition")
 
     return errors

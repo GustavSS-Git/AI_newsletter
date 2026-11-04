@@ -24,7 +24,7 @@ A JSON object with `today` and `stories`. Each story has:
 - Every statement must be supported by the `sources` or `headlines` given for that story. Use no outside knowledge: no background facts, no prior context, no numbers, names, dates or titles that are not in the material.
 - If sources disagree, say so briefly or use the figure most sources give, attributed ("according to TechCrunch").
 - Claims made by a company about itself (benchmarks, user numbers, safety results) are attributed: "OpenAI says…", "the company claims…".
-- `headline_only` material: write one or two plain sentences that restate only what the headlines say, attributed to the outlet ("Bloomberg reports that…"). Do not add detail. `why_it_matters` must still be grounded: state only the direct, evident consequence.
+- `headline_only` material: headlines are thin and often sensational evidence. Write one or two plain sentences stating only the core event that several headlines agree on, attributed ("Bloomberg and Reuters report that…"). Include a number only if at least two outlets give the same figure. Never stitch together claims, numbers or angles from single headlines, and ignore opinion, stock-tip and speculative headlines. `why_it_matters` must still be grounded: state only the direct, evident consequence.
 - `why_it_matters` explains the consequence for readers in one sentence, grounded in the material. If the material does not support a consequence beyond the event itself, state the most direct implication plainly. Never speculate about the future.
 - Swedish- or other non-English material is summarized in English.
 
