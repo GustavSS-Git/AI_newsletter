@@ -77,6 +77,28 @@ def fetch_text(url: str, cfg: dict) -> str | None:
     return text
 
 
+KNOWN_PUBLISHERS = {
+    "bloomberg.com": "Bloomberg", "nytimes.com": "The New York Times", "wsj.com": "The Wall Street Journal",
+    "ft.com": "Financial Times", "reuters.com": "Reuters", "axios.com": "Axios", "theverge.com": "The Verge",
+    "techcrunch.com": "TechCrunch", "arstechnica.com": "Ars Technica", "cnbc.com": "CNBC",
+    "theinformation.com": "The Information", "github.com": "GitHub", "arxiv.org": "arXiv",
+    "openai.com": "OpenAI", "anthropic.com": "Anthropic", "blog.google": "Google", "politico.com": "Politico",
+    "politico.eu": "Politico Europe", "wired.com": "Wired", "theguardian.com": "The Guardian",
+    "businessinsider.com": "Business Insider", "semafor.com": "Semafor", "cnn.com": "CNN", "bbc.co.uk": "BBC",
+    "bbc.com": "BBC", "economist.com": "The Economist", "fortune.com": "Fortune", "forbes.com": "Forbes",
+}
+
+
+def pretty_publisher(name: str) -> str:
+    """Turn 'https://www.bloomberg.com/' or 'bloomberg.com' into 'Bloomberg'; leave real names alone."""
+    n = name.strip()
+    if n.startswith(("http://", "https://")) or ("." in n and " " not in n):
+        from .ingest import domain_of
+        dom = domain_of(n if "://" in n else "https://" + n).rstrip("/")
+        return KNOWN_PUBLISHERS.get(dom, dom)
+    return n
+
+
 def display_links(cluster: Cluster, paywalled: list[str], limit: int = 4) -> list[dict]:
     """Up to `limit` links, one per publisher: direct open links first, then paywalled
     direct links, then Google News links. Links are taken from the data, never from the LLM."""
@@ -86,7 +108,7 @@ def display_links(cluster: Cluster, paywalled: list[str], limit: int = 4) -> lis
 
     seen_pub, seen_url, out = set(), set(), []
     for it in sorted(cluster.items, key=pref):
-        name = it.publisher or it.source
+        name = pretty_publisher(it.publisher or it.source)
         nurl = normalize_url(it.url)
         if name.lower() in seen_pub or nurl in seen_url:
             continue
