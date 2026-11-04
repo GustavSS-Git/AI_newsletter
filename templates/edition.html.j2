@@ -1,0 +1,53 @@
+{% extends "base.html.j2" %}
+{% from "partials/story.html.j2" import story, brief %}
+
+{% block title %}{{ pub.name }} — {{ edition.date | long_date }}{% endblock %}
+
+{% block body %}
+<header class="masthead">
+  <h1 class="masthead__name">{{ pub.name }}</h1>
+  <p class="masthead__tagline">{{ pub.tagline }}</p>
+  <p class="dateline">
+    <time datetime="{{ edition.date }}">{{ edition.date | long_date }}</time>
+    <span class="dateline__sep">·</span>
+    <span class="dateline__number">No. {{ edition.edition_number }}</span>
+  </p>
+</header>
+
+<main class="edition">
+  <section class="lead" aria-label="Lead story">
+    {{ story(edition.lead, lead=True) }}
+  </section>
+
+  {% if edition.main %}
+  <section class="main-stories" aria-label="Top stories">
+    {% for s in edition.main %}{{ story(s) }}{% endfor %}
+  </section>
+  {% endif %}
+
+  {% if edition.europe_brief %}
+  <section class="brief brief--europe" aria-labelledby="europe-h">
+    <h2 id="europe-h" class="section-title">Europe</h2>
+    {% for b in edition.europe_brief %}{{ brief(b) }}{% endfor %}
+  </section>
+  {% endif %}
+
+  {% if edition.finance_brief %}
+  <section class="brief brief--finance" aria-labelledby="finance-h">
+    <h2 id="finance-h" class="section-title">Business &amp; Finance</h2>
+    {% for b in edition.finance_brief %}{{ brief(b) }}{% endfor %}
+  </section>
+  {% endif %}
+
+  {# v3: Week / Month / Year highlights #}
+  <section class="highlights highlights--placeholder" aria-label="Highlights" hidden></section>
+
+  {# v2: newsletter signup (Buttondown) #}
+  <section class="signup signup--placeholder" aria-label="Subscribe" hidden></section>
+</main>
+
+<footer class="site-footer">
+  <p>{{ pub.footer }}.</p>
+  <p><a class="archive-link" href="#">Archive</a> <span class="todo">(coming soon)</span></p>
+</footer>
+{% endblock %}

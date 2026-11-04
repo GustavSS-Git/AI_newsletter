@@ -1,0 +1,24 @@
+{% macro sources(links) -%}
+<p class="sources">Sources:
+  {%- for l in links %} <a href="{{ l.url }}" rel="noopener">{{ l.name }}</a>{% if not loop.last %},{% endif %}{% endfor %}
+</p>
+{%- endmacro %}
+
+{% macro story(s, lead=False) -%}
+<article class="story{% if lead %} story--lead{% endif %}" id="{{ s.id }}">
+  <p class="kicker">{{ s.category | category_label }}</p>
+  {% if lead %}<h2 class="story__headline">{{ s.headline }}</h2>{% else %}<h3 class="story__headline">{{ s.headline }}</h3>{% endif %}
+  <p class="story__summary">{{ s.summary }}</p>
+  <p class="story__why"><strong>Why it matters:</strong> {{ s.why_it_matters }}</p>
+  {% if s.material == "headline_only" %}<p class="story__note">Based on headlines only; full reporting is paywalled.</p>{% endif %}
+  {{ sources(s.sources) }}
+</article>
+{%- endmacro %}
+
+{% macro brief(b) -%}
+<article class="brief-item" id="{{ b.id }}">
+  <h3 class="brief-item__headline">{{ b.headline }}</h3>
+  <p class="brief-item__summary">{{ b.summary }}</p>
+  {{ sources(b.sources) }}
+</article>
+{%- endmacro %}

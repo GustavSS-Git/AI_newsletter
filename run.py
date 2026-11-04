@@ -114,9 +114,10 @@ def main(argv: list[str] | None = None) -> int:
     # 4–5. Select + enrich (re-select if a story turns out unusable) -------------
     from newsletter.enrich import enrich_selection
     exclude: set[str] = set()
+    enrich_cache: dict = {}
     for _ in range(5):
         selection = select(clusters, exclude=exclude, **sel_kwargs)
-        contexts, unusable = enrich_selection(selection, cfg)
+        contexts, unusable = enrich_selection(selection, cfg, enrich_cache)
         if not unusable:
             break
         log.info("enrich: %d stories unusable (no open text, below headline-only score); re-selecting", len(unusable))
@@ -124,7 +125,7 @@ def main(argv: list[str] | None = None) -> int:
     else:
         log.warning("enrich: still unusable stories after retries; dropping them")
         selection = select(clusters, exclude=exclude, **sel_kwargs)
-        contexts, _ = enrich_selection(selection, cfg)
+        contexts, _ = enrich_selection(selection, cfg, enrich_cache)
     if selection.lead is None:
         log.error("no eligible stories today")
         return 1
@@ -136,13 +137,13 @@ def main(argv: list[str] | None = None) -> int:
 
     # 6. Write ------------------------------------------------------------------
     from newsletter.write import estimate_write_cost, write_edition
-    est = usage.total_cost + estimate_write_cost(selection, contexts, cfg, client)
+    est = usage.total_cost + estimate_write_cost(selection, contexts, cfg, client, today)
     log.info("estimated total run cost before writing: $%.3f", est)
     if est > p["cost_stop_usd"]:
         log.error("estimated cost $%.2f exceeds cost_stop_usd=$%.2f — stopping before the write call",
                   est, p["cost_stop_usd"])
         return 3
-    written = write_edition(selection, contexts, cfg=cfg, client=client, usage=usage)
+    written = write_edition(selection, contexts, cfg=cfg, client=client, usage=usage, today=today)
 
     # 7. Assemble + validate -----------------------------------------------------
     from newsletter.render import build_edition, render_site, save_edition
