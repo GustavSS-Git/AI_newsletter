@@ -1,0 +1,208 @@
+# AI Daily — pipeline configuration
+publication:
+  name: "AI Daily"
+  tagline: "The day's most important AI news, briefly."
+  footer: "Curated and summarized with AI"
+
+models:
+  # Verified against Anthropic docs 2026-11-04. Change here, never in code.
+  triage: "claude-haiku-5-5"
+  triage_effort: "medium"
+  write: "claude-sonnet-5-5"
+  write_effort: "medium"
+  # USD per million tokens (input, output) — used for the cost estimate only.
+  pricing:
+    claude-haiku-5-5: [0.10, 0.50]
+    claude-sonnet-5-5: [2.00, 10.00]
+
+pipeline:
+  window_hours: 30              # fixed look-back window; deliberately not "since last run"
+  covered_lookback_editions: 3  # already-covered check looks at this many previous editions
+  main_stories: 6               # N, counts the lead story
+  brief_threshold: 5            # min importance for Europe / Business & Finance briefs
+  brief_max: 2
+  followup_min_score: 7         # covered-before stories may return only as flagged follow-ups at >= this
+  headline_only_min_score: 8    # paywalled-only clusters: keep headline-only at >= this, else drop
+  min_main_stories: 4           # validation gate
+  title_similarity: 88          # rapidfuzz token_set_ratio threshold for duplicate titles
+  max_items_to_triage: 400      # safety cap on triage input size
+  enrich_max_chars: 6000        # cap per article text passed to the writer
+  cost_stop_usd: 1.00           # abort before the write call if estimated run cost exceeds this
+
+http:
+  timeout_seconds: 20
+  user_agent: "AI-Daily-digest/0.1 (+https://slanesens.com)"
+
+# Never fetch article text from these domains (links may still be shown).
+paywalled_domains:
+  - wsj.com
+  - ft.com
+  - bloomberg.com
+  - theinformation.com
+  - economist.com
+  - nytimes.com
+  - businessinsider.com
+  - barrons.com
+  - di.se
+  - wired.com
+
+# Roles: curator = signals importance; primary = news originates there; press = context/breadth.
+# type: rss | hn_algolia | hf_daily_papers | google_news
+# tags (optional): hints passed to triage, e.g. europe, finance, swedish
+sources:
+  # --- Curators ---
+  - name: Techmeme
+    role: curator
+    type: rss
+    url: https://www.techmeme.com/feed.xml
+  - name: Hacker News
+    role: curator
+    type: hn_algolia
+    min_points: 100
+    keywords: ["AI", "LLM", "GPT", "OpenAI", "Anthropic", "Claude", "Gemini", "DeepMind", "Mistral", "Llama",
+               "machine learning", "neural", "model", "agent", "Nvidia", "transformer", "diffusion",
+               "chatbot", "Copilot", "inference", "AGI"]
+  - name: Hugging Face Daily Papers
+    role: curator
+    type: hf_daily_papers
+    url: https://huggingface.co/api/daily_papers
+    top_n: 10
+
+  # --- Primary ---
+  - name: OpenAI
+    role: primary
+    type: rss
+    url: https://openai.com/news/rss.xml
+  - name: Google DeepMind
+    role: primary
+    type: rss
+    url: https://deepmind.google/blog/rss.xml
+  - name: Google AI Blog
+    role: primary
+    type: rss
+    url: https://blog.google/technology/ai/rss/
+  - name: Google Research
+    role: primary
+    type: rss
+    url: https://research.google/blog/rss/
+  - name: Hugging Face Blog
+    role: primary
+    type: rss
+    url: https://huggingface.co/blog/feed.xml
+  - name: Microsoft Research
+    role: primary
+    type: rss
+    url: https://www.microsoft.com/en-us/research/feed/
+  - name: "Google News: Anthropic"
+    role: primary
+    type: google_news
+    query: "Anthropic"
+  - name: "Google News: Meta AI"
+    role: primary
+    type: google_news
+    query: '"Meta AI" OR "Meta Superintelligence"'
+  - name: "Google News: Mistral AI"
+    role: primary
+    type: google_news
+    query: '"Mistral AI"'
+    tags: [europe]
+
+  # --- Press ---
+  - name: TechCrunch AI
+    role: press
+    type: rss
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+  - name: The Verge AI
+    role: press
+    type: rss
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+  - name: Ars Technica AI
+    role: press
+    type: rss
+    url: https://arstechnica.com/ai/feed/
+  - name: MIT Technology Review AI
+    role: press
+    type: rss
+    url: https://www.technologyreview.com/topic/artificial-intelligence/feed
+  - name: VentureBeat AI
+    role: press
+    type: google_news   # direct feed returns 429 to scripted clients (checked 2026-11-04)
+    query: "site:venturebeat.com AI"
+
+  # --- Breadth (Google News searches) ---
+  - name: "Google News: artificial intelligence"
+    role: press
+    type: google_news
+    query: '"artificial intelligence"'
+  - name: "Google News: OpenAI"
+    role: press
+    type: google_news
+    query: "OpenAI"
+  - name: "Google News: Nvidia AI"
+    role: press
+    type: google_news
+    query: "Nvidia AI"
+  - name: "Google News: AI regulation"
+    role: press
+    type: google_news
+    query: '"AI regulation" OR "AI Act"'
+
+  # --- Europe ---
+  - name: Sifted
+    role: press
+    type: rss
+    url: https://sifted.eu/feed
+    ai_filter: true
+    tags: [europe]
+  - name: tech.eu
+    role: press
+    type: rss
+    url: https://tech.eu/feed/
+    ai_filter: true
+    tags: [europe]
+  - name: Rapporteur (ex-Euractiv)
+    role: press
+    type: rss
+    url: https://www.rapporteur.com/feed/   # euractiv.com now redirects here; no working tech-only feed
+    ai_filter: true
+    tags: [europe]
+  - name: Breakit
+    role: press
+    type: rss
+    url: https://www.breakit.se/feed/artiklar
+    ai_filter: true
+    tags: [europe, swedish]
+  - name: Ny Teknik
+    role: press
+    type: google_news   # site has no public RSS (all candidate URLs 404, checked 2026-11-04)
+    query: "site:nyteknik.se AI"
+    locale: "sv:SE"
+    tags: [europe, swedish]
+
+  # --- Finance & consulting ---
+  - name: Finextra
+    role: press
+    type: rss
+    url: https://www.finextra.com/rss/headlines.aspx
+    ai_filter: true
+    tags: [finance]
+  - name: "Google News: AI bank"
+    role: press
+    type: google_news
+    query: 'AI bank OR banking "artificial intelligence"'
+    tags: [finance]
+  - name: "Google News: AI consulting"
+    role: press
+    type: google_news
+    query: 'AI consulting McKinsey OR Accenture OR Deloitte OR BCG OR PwC'
+    tags: [finance]
+  - name: "Google News: AI private equity"
+    role: press
+    type: google_news
+    query: '"private equity" AI'
+    tags: [finance]
+  - name: "Google News: AI hedge fund"
+    role: press
+    type: google_news
+    query: '"hedge fund" AI'
+    tags: [finance]
