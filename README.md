@@ -1,69 +1,98 @@
 # AI Daily
 
-A daily, AI-curated digest of general AI news, published as a single static page.
+**A daily AI news digest that curates, ranks and summarizes itself.** Every morning at 05:00 Swedish time, a pipeline reads 54 news sources, groups the articles into stories, picks the most important ones and writes short, sourced summaries. The result is published as a newspaper-style web page and sent as an email newsletter. Nobody edits it by hand.
 
-Each run collects about 30 news sources, clusters and scores the stories with a cheap model, picks the edition in plain Python, and writes short, grounded summaries with a stronger model.
+- **Live site:** [news.slanesens.com](https://news.slanesens.com), with an archive of every edition and a signup form for the newsletter.
+- **Audience:** informed professionals who want to keep up with AI, not ML researchers.
+- **Running cost:** about $0.07 per day in API calls. Hosting and email are on free plans.
 
-## Setup
+## How it works
 
-```bash
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-echo 'ANTHROPIC_API_KEY=sk-ant-...' > .env.local   # or .env; both are gitignored
+```
+ 54 sources ──► Ingest ──► Filter ──► Triage (LLM) ──► Select (code) ──► Enrich ──► Write (LLM) ──► Validate ──► Publish
+ RSS, APIs      ~700 items  30-h window   cluster + score    rank + quotas     article text  summaries      quality gate   site + email
 ```
 
-## Usage
+### 1. Collecting the news
 
-```bash
-.venv/bin/python run.py              # full run → editions/YYYY-MM-DD.json + site/index.html
-.venv/bin/python run.py --dry-run    # ingest → filter → triage, print ranked clusters (≈ $0.02)
-.venv/bin/python run.py --render-only  # rebuild site/ (index, archive, 404) from saved editions, no API calls
-.venv/bin/python scripts/check_feeds.py   # health check of every source
-.venv/bin/python -m pytest -q        # unit tests (pure logic, no network)
+Sources are listed in [config.yaml](config.yaml) and fall into three roles:
+
+- **Curators:** Techmeme, Hacker News (front-page AI stories via the Algolia API) and Hugging Face Daily Papers. These signal what the field is paying attention to.
+- **Primary sources:** the official blogs of OpenAI, Google DeepMind, Google Research, Hugging Face and Microsoft Research.
+- **Press:** about 45 outlets and searches. These cover general tech (The Verge, TechCrunch, Ars Technica, MIT Technology Review and others), European tech (Sifted, tech.eu, Breakit and others) and finance (Finextra, Banking Dive and others), plus Google News searches for companies that have no feed.
+
+The pipeline reads RSS feeds and public APIs. It doesn't crawl websites. Full article text is fetched only from open sites, and never from paywalled ones (WSJ, FT, Bloomberg and others are on a blocklist). A paywalled story can still be included through its headline and open coverage elsewhere.
+
+### 2. Filtering
+
+- Only items from the last 30 hours are kept.
+- Stories already covered in the last three editions are dropped, unless there is a real new development.
+- Duplicates are merged by normalized URL and fuzzy title matching.
+- What remains is capped at about 750 items, and the token count is checked so the next step stays within the model's cheaper price tier.
+
+### 3. Ranking: the model judges, the code decides
+
+The pipeline makes two LLM calls: a cheap, fast model for triage and a stronger model for writing. Both use structured JSON output, and all model names live in the config.
+
+- **Triage** ([prompts/triage.md](prompts/triage.md)). Claude Haiku groups the items into stories ("clusters") and scores each one from 1 to 10. It also labels the category and flags whether the story is European or about AI in finance or consulting. The prompt has explicit scoring rules. For example, a story reported by a single outlet, or a company's own claims, can score at most 5. Broad coverage across many outlets raises the minimum score.
+- **Selection** ([newsletter/select.py](newsletter/select.py)) is plain Python, not a prompt, so the rules are predictable and unit-tested:
+  - The top 6 stories become the lead and the main section.
+  - A Europe brief and a Business & Finance brief take the best remaining stories in those areas.
+  - A story with no open article text needs a high score and several independent publishers to qualify.
+
+Every cluster's score is saved with the edition, whether or not it was selected.
+
+### 4. Writing and quality control
+
+- **Writing** ([prompts/write.md](prompts/write.md)). Claude Sonnet writes a headline and a 2–4 sentence summary for each story, in a Wall Street Journal-like style. It only uses facts from the fetched article text and attributes claims to their source. Links come from the data, never from the model.
+- **Validation** ([newsletter/validate.py](newsletter/validate.py)) is a final gate before anything is published. It checks the schema, the minimum number of stories, empty fields and broken links, and confirms the edition isn't a repeat of yesterday's. If any check fails, nothing is published and the previous edition stays live.
+
+## Infrastructure
+
+| Piece | Role |
+|---|---|
+| **GitHub Actions** ([.github/workflows/daily.yml](.github/workflows/daily.yml)) | Runs the unit tests, then the pipeline, each morning. Commits the new edition and the rebuilt site back to the repo, then hands the email to Buttondown. A small gate job keeps the 05:00 start in Swedish time across daylight saving time changes. API keys are stored as repository secrets. |
+| **Cloudflare** ([wrangler.jsonc](wrangler.jsonc)) | Serves the static site from `site/` at news.slanesens.com. It redeploys automatically on every push to `main`, so GitHub needs no Cloudflare credentials. |
+| **Buttondown** ([newsletter/send.py](newsletter/send.py)) | Email delivery, the subscriber list, double opt-in and unsubscribes. The pipeline creates each email through Buttondown's API, and an idempotency check makes sure an edition is never sent twice. Mail goes out from a custom domain with SPF, DKIM and DMARC records set up. |
+
+The repo itself is the database. Each edition is stored as a JSON file in `editions/`, so the archive and the site can be rebuilt at any time without API calls.
+
+## Repository structure
+
+```
+├── run.py                  # entry point: runs the whole pipeline
+├── config.yaml             # sources, thresholds, model names, paywall list
+├── prompts/                # LLM instructions (triage.md, write.md)
+├── newsletter/             # the pipeline, one module per step
+│   ├── ingest.py           #   fetch RSS / APIs
+│   ├── filter.py           #   time window, dedupe, already-covered check
+│   ├── triage.py           #   LLM call 1: cluster + score
+│   ├── select.py           #   ranking and section rules
+│   ├── enrich.py           #   fetch open article text
+│   ├── write.py            #   LLM call 2: headlines + summaries
+│   ├── validate.py         #   quality gate
+│   ├── render.py           #   HTML site + archive (Jinja2)
+│   ├── email.py, send.py   #   email body + Buttondown API
+│   └── schema.py           #   edition JSON schema (pydantic)
+├── templates/              # HTML/CSS templates for site and email
+├── scripts/                # feed health check, email sender
+├── tests/                  # unit tests (pytest; no network or API calls)
+├── editions/               # one JSON file per day: the stored output
+├── site/                   # generated website, deployed by Cloudflare
+├── .github/workflows/      # daily run + manual feed check
+└── DECISIONS.md            # log of design decisions and trade-offs
 ```
 
-A full run takes about 3 minutes and costs about $0.06–0.07. Exit codes:
-- `0`: OK.
-- `1`: validation failed or no stories. Nothing is written.
-- `2`: no API key.
-- `3`: estimated cost is above `cost_stop_usd`.
+## Running it locally
 
-## Pipeline
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+echo 'ANTHROPIC_API_KEY=sk-ant-...' > .env.local     # gitignored
 
-| Step | Module | What it does |
-|---|---|---|
-| Ingest | `newsletter/ingest.py` | Fetches RSS, Hacker News (Algolia), HF Daily Papers and Google News searches. A failing source is logged and skipped. |
-| Filter | `newsletter/filter.py` | Applies the fixed 30-hour window, drops stories already shown in the last 3 editions, normalizes URLs and merges duplicates. |
-| Triage | `newsletter/triage.py` + `prompts/triage.md` | Haiku clusters items into stories and scores each: importance, category, `european`, `finance_consulting`. |
-| Select | `newsletter/select.py` | Picks the top N (lead included), then the Europe and Business & Finance briefs. The quota rules are code, not prompt. |
-| Enrich | `newsletter/enrich.py` | Fetches article text with trafilatura from open sources; falls back to snippets, then headline-only. Never fetches paywalled sites. |
-| Write | `newsletter/write.py` + `prompts/write.md` | Sonnet writes headlines and summaries. Links come from the data, not the model. |
-| Validate | `newsletter/validate.py` | Checks the schema, story count, empty fields, working links and that the edition differs from yesterday's. |
-| Render | `newsletter/render.py` + `templates/` | Saves the edition JSON (with every triage score) and renders `site/index.html` with Jinja2. |
+.venv/bin/python run.py --dry-run       # ingest + triage, print the ranked stories (≈ $0.02)
+.venv/bin/python run.py                 # full run: writes editions/ and site/
+.venv/bin/python run.py --render-only   # rebuild the site from saved editions, no API calls
+.venv/bin/python -m pytest -q           # unit tests
+```
 
-Everything tunable is in `config.yaml`: sources, N, thresholds, window, model names and the paywall list. The prompts are plain Markdown in `prompts/`. Design choices are logged in `DECISIONS.md`.
-
-## Automation (v1)
-
-Live at **https://news.slanesens.com**.
-
-- `.github/workflows/daily.yml` runs at 05:00 Swedish time every day (CET/CEST; a small gate job picks the right UTC cron). It installs dependencies, runs the tests, then runs `run.py`, and commits `editions/` and `site/` back to `main`. A failed check fails the job, nothing is committed, and GitHub emails you. You can also start it by hand from the Actions tab (**Daily edition → Run workflow**), optionally as a dry run.
-- Cloudflare (Workers static assets, configured in `wrangler.jsonc`) redeploys `site/` on every push to `main`.
-- `.github/workflows/feed-check.yml` runs `check_feeds.py` from GitHub's servers when started by hand. Use it if a source works locally but fails in the daily job.
-- `site/archive/` has one page per edition plus an index. All archive pages are rebuilt on every run, so template changes apply to old editions too.
-- The API key is the `ANTHROPIC_API_KEY` repository secret (Settings → Secrets and variables → Actions).
-
-## Email (v2)
-
-- Each morning, after the edition is committed, the workflow runs `scripts/send_email.py`. It sends the edition through Buttondown, as set by `email.mode` in `config.yaml`:
-  - `off`: no email.
-  - `draft`: a Buttondown draft for review.
-  - `send`: sent to all subscribers.
-- It skips quietly until the `BUTTONDOWN_API_KEY` repository secret exists.
-- At most one email per edition date: it checks the Buttondown API for an existing email and sends an idempotency key. Re-running the workflow is safe.
-- `python scripts/send_email.py --preview` writes the email as a local HTML file, without an API call.
-- Setting `email.buttondown_username` adds a signup form to the site. Buttondown sends each new subscriber a confirmation email (double opt-in).
-
-## Roadmap
-
-- **v3**: Week / Month / Year highlights built from stored importance scores.
+Built with Python, the Anthropic API (Claude Haiku and Sonnet), feedparser, trafilatura, Jinja2 and pydantic.
