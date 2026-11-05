@@ -47,7 +47,7 @@ Everything tunable is in `config.yaml`: sources, N, thresholds, window, model na
 
 Live at **https://news.slanesens.com**.
 
-- `.github/workflows/daily.yml` runs at 05:00 UTC every day. It installs dependencies, runs the tests, then runs `run.py`, and commits `editions/` and `site/` back to `main`. A failed check fails the job, nothing is committed, and GitHub emails you. You can also start it by hand from the Actions tab (**Daily edition → Run workflow**), optionally as a dry run.
+- `.github/workflows/daily.yml` runs at 05:00 Swedish time every day (CET/CEST; a small gate job picks the right UTC cron). It installs dependencies, runs the tests, then runs `run.py`, and commits `editions/` and `site/` back to `main`. A failed check fails the job, nothing is committed, and GitHub emails you. You can also start it by hand from the Actions tab (**Daily edition → Run workflow**), optionally as a dry run.
 - Cloudflare (Workers static assets, configured in `wrangler.jsonc`) redeploys `site/` on every push to `main`.
 - `.github/workflows/feed-check.yml` runs `check_feeds.py` from GitHub's servers when started by hand. Use it if a source works locally but fails in the daily job.
 - `site/archive/` has one page per edition plus an index. All archive pages are rebuilt on every run, so template changes apply to old editions too.

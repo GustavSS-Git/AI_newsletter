@@ -5,10 +5,10 @@ CFG = {"publication": {"name": "AI Daily", "tagline": "Tagline.", "footer": "Cur
                        "base_url": "https://news.example.com"}}
 
 
-def test_subject_uses_lead_headline():
-    ed = make_edition()
+def test_subject_is_name_and_date():
+    ed = make_edition(date_str="2026-11-05")
     ed["lead"]["headline"] = "Acme ships Atlas 3"
-    assert subject_for(ed, CFG) == "AI Daily: Acme ships Atlas 3"
+    assert subject_for(ed, CFG) == "AI Daily · Thursday, November 5"
 
 
 def test_email_contains_all_stories_links_and_web_url():

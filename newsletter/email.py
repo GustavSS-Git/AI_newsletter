@@ -1,6 +1,7 @@
 """Build the email version of an edition. Sending lives in newsletter/send.py."""
 from __future__ import annotations
 
+from datetime import date
 from pathlib import Path
 
 from .config import ROOT
@@ -11,7 +12,11 @@ HTML_MARKER = "<!-- buttondown-editor-mode: fancy -->"
 
 
 def subject_for(edition: dict, cfg: dict) -> str:
-    return f"{cfg['publication']['name']}: {edition['lead']['headline']}"
+    """"AI Daily · Thursday, November 5". Buttondown shows the subject as the email's big title;
+    the date keeps subjects unique, so mail clients don't thread every edition together.
+    The lead headline goes in the preview text (`description`) instead."""
+    d = date.fromisoformat(edition["date"])
+    return f"{cfg['publication']['name']} · {d:%A}, {d:%B} {d.day}"
 
 
 def web_url(edition: dict, cfg: dict) -> str:

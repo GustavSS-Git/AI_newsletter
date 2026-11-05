@@ -2,7 +2,11 @@ name: Daily edition
 
 on:
   schedule:
-    - cron: "0 5 * * *"        # 05:00 UTC daily (GitHub may start scheduled runs a few minutes late)
+    # Target: 05:00 Swedish time all year. GitHub cron is UTC only, so both candidates fire and the
+    # gate job keeps the one that matches today's offset: 03:00 UTC in summer (CEST), 04:00 UTC in
+    # winter (CET). GitHub may start scheduled runs some minutes late; the gate doesn't care.
+    - cron: "0 3 * * *"
+    - cron: "0 4 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -18,7 +22,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [ "$EVENT" != "schedule" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "$(TZ=Europe/Stockholm date +%z)" = "+0200" ]; then want="0 3 * * *"; else want="0 4 * * *"; fi
+          if [ "$SCHEDULE" = "$want" ]; then run=true; else run=false; fi
+          echo "schedule='$SCHEDULE' want='$want' run=$run"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
   edition:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
