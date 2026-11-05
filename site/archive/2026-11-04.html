@@ -116,6 +116,18 @@
   <section class="highlights highlights--placeholder" aria-label="Highlights" hidden></section>
 
   
+  <section class="signup" aria-labelledby="signup-h">
+    <h2 id="signup-h" class="section-title">Get it by email</h2>
+    <p class="signup__text">One email each morning with the day's stories. Free; unsubscribe anytime.</p>
+    <form class="signup__form" action="https://buttondown.com/api/emails/embed-subscribe/aidaily" method="post" target="_blank">
+      <label class="signup__label" for="signup-email">Email address</label>
+      <input class="signup__input" id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      <input type="hidden" name="embed" value="1">
+      <button class="signup__button" type="submit">Subscribe</button>
+    </form>
+    <p class="signup__note">You'll get an email to confirm your address.</p>
+  </section>
+  
 </main>
 
 <footer class="site-footer">

@@ -10,7 +10,7 @@ email:
   # draft = create a Buttondown draft each morning (review it, "Send test" to yourself, send by hand)
   # send  = send to all subscribers automatically after each edition
   mode: draft
-  buttondown_username: ""       # your Buttondown username; when set, the site shows a signup form
+  buttondown_username: "aidaily"       # your Buttondown username; when set, the site shows a signup form
 
 models:
   # Verified against Anthropic docs 2026-11-04. Change here, never in code.
