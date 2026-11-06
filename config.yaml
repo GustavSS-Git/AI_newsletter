@@ -9,7 +9,7 @@ email:
   # off   = never email
   # draft = create a Buttondown draft each morning (review it, "Send test" to yourself, send by hand)
   # send  = send to all subscribers automatically after each edition
-  mode: draft
+  mode: send
   buttondown_username: "aidaily"       # your Buttondown username; when set, the site shows a signup form
 
 models:
