@@ -13,6 +13,10 @@ on:
         description: "Dry run: ingest + triage only, print ranked clusters, commit nothing"
         type: boolean
         default: false
+      email_only:
+        description: "Email only: skip the build and (re)send the latest saved edition"
+        type: boolean
+        default: false
 
 permissions:
   contents: write              # commit the new edition back to main
@@ -58,13 +62,14 @@ jobs:
         run: python -m pytest -q
 
       - name: Build edition
+        if: ${{ !inputs.email_only }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         # Exits non-zero on validation failure: the job fails, nothing is committed, GitHub emails you.
         run: python run.py ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Commit and push edition
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !inputs.email_only }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

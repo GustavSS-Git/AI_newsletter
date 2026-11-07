@@ -43,6 +43,13 @@ def test_send_mode_uses_about_to_send():
     s = FakeSession()
     send_edition(make_edition(), CFG, mode="send", key="k", session=s)
     assert s.posts[0][1]["status"] == "about_to_send"
+    assert s.posts[0][2]["X-Buttondown-Live-Dangerously"] == "true"
+
+
+def test_draft_mode_omits_live_header():
+    s = FakeSession()
+    send_edition(make_edition(), CFG, mode="draft", key="k", session=s)
+    assert "X-Buttondown-Live-Dangerously" not in s.posts[0][2]
 
 
 def test_existing_email_for_edition_is_not_recreated():

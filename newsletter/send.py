@@ -69,8 +69,12 @@ def send_edition(edition: dict, cfg: dict, *, mode: str, key: str | None = None,
         "description": edition["lead"]["headline"],
         "metadata": {"edition": edition["date"], "edition_number": edition["edition_number"]},
     }
-    r = session.post(f"{API}/emails", json=payload, timeout=60,
-                     headers=_headers(key, idempotency_key=f"ai-daily-{edition['date']}-{mode}"))
+    headers = _headers(key, idempotency_key=f"ai-daily-{edition['date']}-{mode}")
+    if mode == "send":
+        # Buttondown refuses the first live send from a new API key without this header
+        # (error "sending_requires_confirmation", seen 2026-11-07). Sending it every time is harmless.
+        headers["X-Buttondown-Live-Dangerously"] = "true"
+    r = session.post(f"{API}/emails", json=payload, timeout=60, headers=headers)
     if r.status_code >= 400:
         raise SendError(f"creating email failed: HTTP {r.status_code}: {r.text[:300]}")
     email = r.json()
