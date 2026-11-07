@@ -35,7 +35,7 @@ def test_draft_mode_creates_draft_with_headers_and_metadata():
     assert url.endswith("/v1/emails") and payload["status"] == "draft"
     assert payload["metadata"]["edition"] == "2026-11-04" and payload["archival_mode"] == "disabled"
     assert payload["body"].startswith("<!-- buttondown-editor-mode: fancy -->")
-    assert headers["Authorization"] == "Token k" and headers["X-Idempotency-Key"] == "ai-daily-2026-11-04-draft"
+    assert headers["Authorization"] == "Token k" and headers["X-Idempotency-Key"].startswith("ai-daily-2026-11-04-draft-")
     assert payload["canonical_url"] == "https://news.example.com/archive/2026-11-04"
 
 
@@ -75,3 +75,13 @@ def test_missing_key_and_bad_mode(monkeypatch):
         send_edition(make_edition(), CFG, mode="draft", session=FakeSession())
     with pytest.raises(ValueError):
         send_edition(make_edition(), CFG, mode="blast", key="k", session=FakeSession())
+
+
+def test_idempotency_key_differs_per_run(monkeypatch):
+    keys = []
+    for run in ("111", "222"):
+        monkeypatch.setenv("GITHUB_RUN_ID", run)
+        s = FakeSession()
+        send_edition(make_edition(), CFG, mode="send", key="k", session=s)
+        keys.append(s.posts[0][2]["X-Idempotency-Key"])
+    assert keys[0] != keys[1] and keys[0].startswith("ai-daily-2026-11-04-send-111")

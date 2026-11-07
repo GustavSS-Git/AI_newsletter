@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import logging
 import os
+import uuid
 
 import requests
 
@@ -69,7 +70,13 @@ def send_edition(edition: dict, cfg: dict, *, mode: str, key: str | None = None,
         "description": edition["lead"]["headline"],
         "metadata": {"edition": edition["date"], "edition_number": edition["edition_number"]},
     }
-    headers = _headers(key, idempotency_key=f"ai-daily-{edition['date']}-{mode}")
+    # The idempotency key guards against duplicate creates within one run (network retries).
+    # Across runs, find_existing() above prevents duplicates. The key must differ per run:
+    # Buttondown stores the response for a key, error responses included, and replays it. A
+    # retried run that reused a date-only key just got the first run's 400 back (2026-11-07).
+    run = os.environ.get("GITHUB_RUN_ID") or uuid.uuid4().hex[:12]
+    attempt = os.environ.get("GITHUB_RUN_ATTEMPT", "1")
+    headers = _headers(key, idempotency_key=f"ai-daily-{edition['date']}-{mode}-{run}-{attempt}")
     if mode == "send":
         # Buttondown refuses the first live send from a new API key without this header
         # (error "sending_requires_confirmation", seen 2026-11-07). Sending it every time is harmless.
