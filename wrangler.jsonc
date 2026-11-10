@@ -1,10 +1,17 @@
-// Cloudflare Workers static-assets config: publishes the generated site/ folder as-is.
+// Cloudflare Workers config: publishes the generated site/ folder as static assets, and a cron
+// trigger that starts the daily GitHub Actions run on time (see worker/index.js).
 // Cloudflare redeploys automatically on every push to main (Workers Builds, Git integration).
 {
   "name": "ai-newsletter",
   "compatibility_date": "2026-11-01",
+  "main": "worker/index.js",
   "assets": {
     "directory": "./site",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
+  },
+  "triggers": {
+    // UTC. The worker dispatches only on the one that is 05:00 in Stockholm (03:00 CEST / 04:00 CET).
+    "crons": ["0 3 * * *", "0 4 * * *"]
   }
 }
