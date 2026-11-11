@@ -10,6 +10,10 @@
     "binding": "ASSETS",
     "not_found_handling": "404-page"
   },
+  // Keep Worker logs (incl. cron runs), so a failed 05:00 dispatch leaves its error message.
+  "observability": {
+    "enabled": true
+  },
   "triggers": {
     // UTC. The worker dispatches only on the one that is 05:00 in Stockholm (03:00 CEST / 04:00 CET).
     "crons": ["0 3 * * *", "0 4 * * *"]
