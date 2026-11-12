@@ -3,12 +3,12 @@ name: Daily edition
 on:
   schedule:
     # FALLBACK ONLY. The on-time trigger is the Cloudflare Worker cron (worker/index.js), which
-    # dispatches this workflow at 05:00 Swedish time. GitHub's schedule is best-effort and started
+    # dispatches this workflow at 06:30 Swedish time. GitHub's schedule is best-effort and started
     # runs 5–8 hours late (Nov 2026), so these runs only build an edition if none exists yet today.
     # GitHub cron is UTC only, so both candidates fire and the gate keeps the one that matches
-    # today's offset: 03:00 UTC in summer (CEST), 04:00 UTC in winter (CET).
-    - cron: "0 3 * * *"
-    - cron: "0 4 * * *"
+    # today's offset: 04:30 UTC in summer (CEST), 05:30 UTC in winter (CET).
+    - cron: "30 4 * * *"
+    - cron: "30 5 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -43,7 +43,7 @@ jobs:
         # on-time (dispatched) run just pushed is visible here.
         run: |
           if [ "$EVENT" != "schedule" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
-          if [ "$(TZ=Europe/Stockholm date +%z)" = "+0200" ]; then want="0 3 * * *"; else want="0 4 * * *"; fi
+          if [ "$(TZ=Europe/Stockholm date +%z)" = "+0200" ]; then want="30 4 * * *"; else want="30 5 * * *"; fi
           if [ "$SCHEDULE" != "$want" ]; then
             echo "schedule='$SCHEDULE' want='$want': not today's slot"; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0
           fi

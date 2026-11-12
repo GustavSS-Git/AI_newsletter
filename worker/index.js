@@ -1,10 +1,10 @@
 // Cloudflare Worker for news.slanesens.com.
 //
 // fetch:     serves the static site from site/ (same as before; assets binding).
-// scheduled: starts the daily GitHub Actions run at 05:00 Swedish time. GitHub's own `schedule`
+// scheduled: starts the daily GitHub Actions run at 06:30 Swedish time. GitHub's own `schedule`
 //            trigger is best-effort and started runs 5–8 hours late (Nov 2026), while Cloudflare
-//            cron triggers fire on time. Both UTC candidates fire (03:00 and 04:00, see
-//            wrangler.jsonc) and only the one that is 05:00 in Stockholm dispatches, so this
+//            cron triggers fire on time. Both UTC candidates fire (04:30 and 05:30, see
+//            wrangler.jsonc) and only the one that is 06:30 in Stockholm dispatches, so this
 //            follows daylight saving time like the gate job in daily.yml.
 //
 // Needs the secret GITHUB_TOKEN: a fine-grained token for this repo only, permission
@@ -27,8 +27,8 @@ export default {
 
   async scheduled(controller, env) {
     const hour = stockholmHour(new Date(controller.scheduledTime));
-    if (hour !== "05") {
-      console.log(`cron ${controller.cron}: ${hour}:00 in Stockholm, not 05:00; skipping`);
+    if (hour !== "06") {
+      console.log(`cron ${controller.cron}: hour ${hour} in Stockholm, not 06; skipping`);
       return;
     }
     if (!env.GITHUB_TOKEN) throw new Error("GITHUB_TOKEN secret is not set");

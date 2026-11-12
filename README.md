@@ -1,6 +1,6 @@
 # AI Daily
 
-**A daily AI news digest that curates, ranks and summarizes itself.** Every morning at 05:00 Swedish time, a pipeline reads 54 news sources, groups the articles into stories, picks the most important ones and writes short, sourced summaries. The result is published as a newspaper-style web page and sent as an email newsletter. Nobody edits it by hand.
+**A daily AI news digest that curates, ranks and summarizes itself.** Every morning at 06:30 Swedish time, a pipeline reads 54 news sources, groups the articles into stories, picks the most important ones and writes short, sourced summaries. The result is published as a newspaper-style web page and sent as an email newsletter. Nobody edits it by hand.
 
 - **Live site:** [news.slanesens.com](https://news.slanesens.com), with an archive of every edition and a signup form for the newsletter.
 - **Audience:** informed professionals who want to keep up with AI, not ML researchers.
@@ -52,7 +52,7 @@ Every cluster's score is saved with the edition, whether or not it was selected.
 | Piece | Role |
 |---|---|
 | **GitHub Actions** ([.github/workflows/daily.yml](.github/workflows/daily.yml)) | Runs the unit tests, then the pipeline, each morning. Commits the new edition and the rebuilt site back to the repo, then hands the email to Buttondown. API keys are stored as repository secrets. GitHub's own schedule runs hours late, so it is only a fallback: it builds an edition only if none exists yet that day. |
-| **Cloudflare** ([wrangler.jsonc](wrangler.jsonc), [worker/index.js](worker/index.js)) | Serves the static site from `site/` at news.slanesens.com. It redeploys automatically on every push to `main`, so GitHub needs no Cloudflare credentials. A cron trigger on the same Worker starts the daily run at 05:00 Swedish time (following daylight saving time) through GitHub's `workflow_dispatch` API. |
+| **Cloudflare** ([wrangler.jsonc](wrangler.jsonc), [worker/index.js](worker/index.js)) | Serves the static site from `site/` at news.slanesens.com. It redeploys automatically on every push to `main`, so GitHub needs no Cloudflare credentials. A cron trigger on the same Worker starts the daily run at 06:30 Swedish time (following daylight saving time) through GitHub's `workflow_dispatch` API. |
 | **Buttondown** ([newsletter/send.py](newsletter/send.py)) | Email delivery, the subscriber list, double opt-in and unsubscribes. The pipeline creates each email through Buttondown's API, and an idempotency check makes sure an edition is never sent twice. Mail goes out from a custom domain with SPF, DKIM and DMARC records set up. |
 
 The repo itself is the database. Each edition is stored as a JSON file in `editions/`, so the archive and the site can be rebuilt at any time without API calls.
