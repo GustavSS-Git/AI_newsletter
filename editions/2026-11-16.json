@@ -1,0 +1,2354 @@
+{
+  "schema_version": 2,
+  "publication": "AI Daily",
+  "date": "2026-11-16",
+  "edition_number": 13,
+  "generated_at": "2026-11-16T05:30:39+00:00",
+  "lead": {
+    "id": "c01",
+    "headline": "Anthropic expected to debut on Nasdaq Thursday at $70-$78 a share",
+    "summary": "Anthropic is expected to list on the Nasdaq on Thursday, with the IPO price currently expected at $70 to $78 a share, CNBC reports. Yahoo Finance reports the offering was oversubscribed seven times. AMD, Broadcom, Google, Micron, Microsoft, Nvidia and Taiwan Semiconductor Manufacturing Company are collectively investing $26 billion at the IPO price. Anthropic's prospectus shows spending commitments above $900 billion and a net loss of $104 billion for the first nine months of 2026. CNBC says the IPO could raise more than $90 billion, on top of $132 billion in existing cash.",
+    "sources": [
+      {
+        "name": "CNBC Technology",
+        "url": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html"
+      },
+      {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/features/2026-11-15/anthropic-s-ipo-makes-dario-amodei-the-new-face-of-the-ai-boom"
+      },
+      {
+        "name": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQckw3X3Rrb0lZaUgyX3ljNzhPQW1PdUFhR3k2c2txMjdGNHBzQ1JoTXk5NlZLU2xKWlNrU2U0SkZKZzJRNnFycWtjdnVmWmdwTW9adlBubnhvS3Y3VTFsSkY3bzFVRDd1eTZ2ME03RXZNTXRNcHFlbl9GaEFST2VXZ2xkcnkxSXhTUEo3dGZYQngySHpFWkREZ3NPclEwYl9IY1pGNlR4dDJGdw?oc=5"
+      },
+      {
+        "name": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPa3g3MVMxZ2lSN1ZpTmpaWkdYR25ZdDZ4M3BELXQ3ZC1PZDhtNTVjYmpQdHlJZUFtLWxiUkFLbXhUVHM0OHNScEUyTWFHUU5MMmZYb0EyVW51dXd1OWJFak1NbVFwazhlVzBIcHB3TENzRG1IZ2FvVFlpS0xubFBadXlPYw?oc=5"
+      }
+    ],
+    "importance": 9,
+    "material": "fulltext",
+    "item_urls": [
+      "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQckw3X3Rrb0lZaUgyX3ljNzhPQW1PdUFhR3k2c2txMjdGNHBzQ1JoTXk5NlZLU2xKWlNrU2U0SkZKZzJRNnFycWtjdnVmWmdwTW9adlBubnhvS3Y3VTFsSkY3bzFVRDd1eTZ2ME03RXZNTXRNcHFlbl9GaEFST2VXZ2xkcnkxSXhTUEo3dGZYQngySHpFWkREZ3NPclEwYl9IY1pGNlR4dDJGdw?oc=5",
+      "https://news.google.com/rss/articles/CBMigwFBVV95cUxPa3g3MVMxZ2lSN1ZpTmpaWkdYR25ZdDZ4M3BELXQ3ZC1PZDhtNTVjYmpQdHlJZUFtLWxiUkFLbXhUVHM0OHNScEUyTWFHUU5MMmZYb0EyVW51dXd1OWJFak1NbVFwazhlVzBIcHB3TENzRG1IZ2FvVFlpS0xubFBadXlPYw?oc=5",
+      "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRTd6eHRac3JHWEQ5TElWUXZZUWRsMHdXckRQbjJ6X3ZvOFUtVHZDcjFBVWVqOE9LVnNPS3NWeDROZUtsRFdEdklzRzctYlpWbWszbElsMU94VWxtUm5OZ1ozdUxWWnVGRlpGM3ozYWxISG5fS1Y5QlB1bVQ0Z09sVGphWmgzMlpKMWduNkZYX0N1b1Br?oc=5",
+      "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWlpFRjlPc245WVF2Y2dZajdoZjlTVkowQ3dyWTMyejd2NHFSNWpDQzNGcDdSUnFlX2tQOXI2SU9wYmFsWHg2YW0xMWQtVU5ablhiTUFINDJSTGVEZ25KT2hob1BLZGhGWV9ibndrMUQ1bFdoZmxMYjhhRTZfTHhxRGdJdE1EdkY2SFdSNC0xdHNvNzI0UTFVcGw3OXVuTnh4UXZQYl9pUWV0Sy1KRFMwMEhkT1JBNUJmLU5qbTFBSUk?oc=5",
+      "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5RWXl0T0lpR1J0WE1VZ050anMwUlhTeUEzVGtGcDhYUTNKUnpsMDlkZHV2ZEpGanBNc0Vxb3VueVBYQ19pc2xlWTVvdw?oc=5",
+      "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
+      "https://news.google.com/rss/articles/CBMihwFBVV95cUxPX0RWQ19WVmdZdzNSV2VQcV9TM2c1UGlEdjM5TUVWRmwtTXltMnZ5MTA0a3phZ2xVMjBsbjVmTUNycmhUMi14STh5N2dwTUxpVGhkdUFWbHdrQ1V6ekJ2OFd0UVp1UjM2Y0VhUTI0NWRQVElBdWsyUU5Zdzlud2J5VXZhVDZfNmc?oc=5",
+      "https://news.google.com/rss/articles/CBMijgFBVV95cUxNX01aN0Vqc2Iwc1F5UlFFQTh6RkFXUS0wSjVkY1o3dmZyOG82MjhUZXJGa2RSMktDaGxUT0JiaTQtWUg3bUx3eXdzeTRZeFpjaXBIS1NiMmxRZVFMa0EzaUhiMkxhbG42bDBGMXl6VlJIZkpwUHpEODBrT1h3V3ZzSXQ4UmZIeW5oZ3FZUEV3?oc=5",
+      "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZlQxdnNRcUFscFMzSXdmVE9MMkh6eUF4TmlmQ0ZfRHNUSGlFQm44YW96RFBreF9Dc1lLOS0zYV9PUVNQQ04xMXlxM0p3NVM0Q3ZCOW5tdy1vb1Vqdlk4ZVVfSVB1cHFfVDlQVkVNbFVXX1BvSFJyQU9lLXdwOEJhdWRuQnVKdw?oc=5",
+      "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWEN6Mk43NjhtMVJzaVNhWTRvOUtSZ3NLd1I4UWtRTHI1Vk9RTGRSbFlHZ1g4bTY0MnVqb0ltNEh1NTVqVmpLb2tCTGp2dTBNUHpfWFI1aDB1VjBmcFNseG9KbHNkbXVUV2JIdEI0ZlNPVW13Q0IxTTZWZkxnSHJPRC1oOWlScHJkSVhzZGltSEtzVFdPZzUtMVByU0ZMZExMbXFsREFlclVMbldRRWd1TmoyVQ?oc=5",
+      "https://news.google.com/rss/articles/CBMikgJBVV95cUxPS1dFZHhta3VVdEhkN3F0bXhvS2cxSDVBZWJHazBFa2ZOamFqUVd3bUxkaUdqT3p5WWdIZ2RFVG9yTzE0eENSTTdVYmQzRTI3SlFzMzJ3S19yRGtlSjdyTm15SG9NRXVNSmRGVnZsLTI2NURGaDdtdTVCeUxfSTBmWFBIMjl0d0RoX3NiWWxOVm5QY2lqSEVGSE5ncmdpUWpWZVlZLVZ5VHBjTzQtQjRFRkdZTjlLWHlOd2RYYXc4MWI5R3Y0WUdTYlpmTEVDVlhBNnJLcC1mam9FcW5HMUNmWDVCaHR0MENYY3ZYeV91Z0FKeGV5Wno4WFpkd3FqMjRRUnNGbzI0dUlVUHhWcW1MbVRB?oc=5",
+      "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYXc4RnJvSkdnTzNUZnpmZ2FhWVhzcXRkNWdPWE5oNkdGZlZuU0J0T2RWY3lYazcyMEROaXgtWXczMjBPWVA5QUQyOHNVSFJuMnRUd0Y4Q1Jta2xoRHVCZC1rM1hnbUcyemRyOVBCNkF2MVp5VlNFT1l0NlplN0pIbzNFNHF0VkkzRGRzTDlmeVpqX0F5eGVmb0NxUQ?oc=5",
+      "https://news.google.com/rss/articles/CBMihwFBVV95cUxPX0pLWkFQUS1aWU9PNE9idXJzdThYRm9SVjZGOUpkcU1IZE42OTZpZllLM2taOGhRYTRSUEg0ZGEzb1QwbFhBQVoyNklvbk1XV0Yyek45REloWC1mWjBWOGJQQm9uS1ZfMy1hVUFQempXaEpERWh2YmJWajhsbS1MX2Zla29VcDg?oc=5",
+      "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdEJ1X2RvWFE1cjAwY3lxdndBWkVCQzQ1TU1YdFBXdVphRVBwN3BSdm9YRHlTWVNROUFXaUpYUWFXU2tRbUpSN2VseWYtc2p0Szh4QzBpNFFQWW0yV0t5VnlRTHJLZ183U3l1V2pvM19Wem54aWc2TW1pOE0yRmI4Y2Q4UVZvMXZ0ZGxZOWRGY0xqY2s0Zk9jT3lpaVhUQklZb3dfUjAzdnhGeC1FT0JDQWpkTQ?oc=5",
+      "https://news.google.com/rss/articles/CBMiekFVX3lxTE9vc2JoVGI2aTdJQ01weHBLSXpQM3lqd3JJWjVXY0x0dHdhdmNvYUtpemU2QWhWNEJrV3ZUbkY3WW5CVDVFcW5ESFA0Z2YtWlc0c3hHZ19UUHkxQnB5enp2MFNQc0lsN0Z3VkFNb3lFY0pJT2lZZjU3SVdB?oc=5",
+      "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQ2N3REtRVnl6VUJiQkVOc0cyNndhTFRmNUhHaFNzb3ZRdjNLWXVHVVFIMklvcXhDWENOUXFWb0dKZlR2VG9NaHdHamtnMGs3b1J1QjRFcy1ZUVhXcXdxMkdyZnY1ZUU2LVduZzV1S1ZHN28xSkJpTU04RUtmN0ZPdVhVZ1BoV3NTd0ZGbHhoM1h4bHU4?oc=5",
+      "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRGowX3ljRUhFOUtMR2diRUJHR2xTalpGZExTNFRKTExUQTQ2cUtNQXZfWEVRM3BMYldsOEh2czRtSmJZVExCakN0Q2VaWVRWWmFSYjRsRFBqNzRucXh1c2pIcW84aDUzdkhjY3pyZFFkVjRSN2gzU0dNM1NEWXI2WHIxdXl0OTB4OVM3QVVsSXg5V2NUQVVLVmZJWURyaWhXOUxyTWE3cm1qVXRQTFktZWQ0Y3hmaWlaenFrTi1jc3ZPSTFlWUVEbXRaYUVQOU0?oc=5",
+      "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNS1UtN25Ubm41Nnc2ZU5PYzB1T1h4S09PUktGOFQ2NG1WOFJRd09LNVZCT2NzRTlabHd4SHhDVVN2VENlM2xEeDlEbTViem9ZM3pVYlRUazh1a2drOG9MSGlFS05UcGg1VVZVZ3NmdUY3MGozbmJnR1FfaHZVZmFEM0dkamVYOENLY2xkVzhDVndYUjZqU0wwbkdIMENVY1B5SDNlVFFKZDRveGVXck0tQlpsQ0NZTDFHRUFQZUUxcXNoazA?oc=5",
+      "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQ0FXWUttSDRhNUNacC1GM0hiUWtnSVRoamZreG5QRkFqNlZVTHdSUjNNeHNCNmhGWWZBcGxiaTBIcDhvSDZxNExuclFYRlBJTXFuRXdjd2xzNkdpZ2RkblFZYlFNNnBkcHdfU0VRQXhvaWNaamU2SUNNdDNCVTctZnB5cUZiVmFuXy1aWFNqRWlXQ3pZSl9NcGQ1MFFnWEZBTHdaZE9GNGI5cEJSaG1pQkhGNA?oc=5",
+      "https://news.google.com/rss/articles/CBMihAFBVV95cUxOelhLb2QtNy1faTdqOEwwQVNzSk5IX25mc0VOQjQzVTdPc3pZdUMyOE9EWkxVd1pJX0huTDZMMTBNR0ZLV0E2WHVkb1Vuam1vMjJ3TUptVGloS2VhWFlmYW1ITGJvVjJpNzNCdkYyQ3hTdXIzUlhaUElJN01UQzVWc2NfSjE?oc=5",
+      "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYkJJWlZTMDFaT1M1N1QwVzRsMXc4ZHZsN2ZDeFJiY0diRlFObkZzU1psOVRMaUZLVGdSLUNIcm5BUlNpbFNMcl9sWGtTRjhjWU9RTE51OEtQSV9ZOUEwLS1wSkpCbzJMSkdOMXkxZ3JlbVhTc2JWcDJPVHE3djBDRWpoZlkwVm92TUlrUmN3akdZcHVPeDl2TjljSUQxMXVwUnhqU29kVGRvSmxJNFdOZVplUHBhVTdIRG1GQW9WeEw2Mjh1R21ORHpB?oc=5",
+      "https://news.google.com/rss/articles/CBMikwFBVV95cUxObmQ5V0gzY0Q0T3lqQ25CUG5NRng1NWZUVTdUeF9XeG8xYXVpUlBCNEtkZGRNV2NvT19NTHFxWHdFZWZGbXYyYThpN1l2dzYwXy1lRjVvV0k1RC0xbDRFUnRrU01EeXBkRUlkZWgxY1BURUxQdTlmMnZQQVBUa2l0Y3hCN3kxOUsxckZhRTZaYWsxZkU?oc=5",
+      "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbTBKTWc2Y1k4cXU1MGwwTUk3NnBndW9FQ2xTS0lkR21nVnpRRlRSNVZWZE95dUFKTzBBdkx4VVZyOWU2TDB3ejNZYVpzX3NQQno3OVJxNnpFWG8tUjdiNGpVZ1ZNRVVUVkhXTVRzU3FoZVZkcGMxZzQ5QlpLM3BFc2ZwMjI4YWlmNGluY01Hc3RIZEx2RzlVLW5ydzhiR1gy?oc=5",
+      "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWF8xNENwM04xaGVLVHA2cEhqamRIZC1PejdHLXlDb0dHejk2Q2QwQTl5RDlOVTluMUszN1pueW5zN2ppRjN6Mmc3ZXhmZTZPZXRMZVE5c3p6NW1iMHFWMFVta3A3bVB4STd6RzRtY1U2N2dkNlhCenV4Y0wza25VdVl5ZmJmZ2liUHFDZjQwamthQTRiRzVSNkFjTGxYcVZkUDREUUlybUE?oc=5",
+      "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMEFCc1RYenNXbXpFQ2R6dXl5eWphbE4taTBCU0N3aGZoVFNsMVdKb094eEpBU3JIdDNsbzB2V1VNXzNRVjNLT1gzd2VDTEZUS0JwTXd0RC1HbEktc1VSTUw4bVloREZ5LWlXZl8zd2dnVGVBejNMMngwRnlDemE2TUFfcnllNnFlQzNkc3lYNDc1MTJybHA3WllGUzVDc0RRMlhJUUVmbEV3RTRjZ0ZYVUhMREVQUEJTbzVJaEhzMGZNQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zZXFQWTBFTndVNnhOd3JEWDZUcm9GcEJtR182Z1RoVkxZVnVRYWh0akNXUHVESUVJdWhkLVBPRm41MTVfMWVLMHl2YU1LcFV3c1dmTA?oc=5",
+      "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qUUxGOFUzY2I1c3lpSnlxTGlmWFZxcHpCNUlFZGpjSnk2TDNOUE9DZy1CY2NjVzhKSk9BdHVUdVdUaFkwZWV3ajVrM3hDOXkwc3JFRGRuTkM?oc=5",
+      "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVHlmX09MNndOVkxaaklyWmREeS1wTWFoV2FUUEZWWXRRVWNiNEdyeUEyQmRlUDBXZTBLLXB5Y0ZINmxDZG96R0w3TTNzWkNPUW1PNVY0WDN3aTd2S1JwSUcxQVFsSS1kVGprRHltYUR4RUdCMWhvVVBkVWd0aXpXQlFQcGFmRG4zMkhUdDJQTHFQZGJYR0ZKeFd1ZXdwT3dmY29rVzNMbHlUQkdaSWM5b25IZU5feVpsTmNYQ1JXaTk3NmRTOVE?oc=5",
+      "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLVEzLXhWMVFyT2NNQlB0R29hTGVmaHl5blRjNXEyQUo1eHBxSml0eGl3NUF2LTV3Zld5SWJfNk5PWFlhNnp0bXBrd0tPSnFiLVJXaHYwd3JMaVFQMFlXQ2c2MzFJRGc4TFJibmVsX2FwMnV2SDhudDM0Z2xad0syVThDZHgzeEV2NG1ZUEpJYUc3b2ljS3Mzd0gwcTRIcUhBWlpHaE1xRmEybEdwbVR3ZHNBNVZOWkFuVGdEZS1FR2Nocy05bGw2S2diYlFrWkZtUjVKWkRoVQ?oc=5",
+      "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcDlQQXRRTW1SQk1YR1Rfd1ZZQkhfZVF2SEpfMUJLSEk3d21tWE5telBvb0VmOFpjTG1mdzd0cmFMZE1JeGRNRkU1ZmxxaUp5eGdUZXNXRTg1enlkU0tSS2RKeUhjbFBaeF9EVGhhTWd0ZHdrWE1jT0p2S0Fka2hVWExfZzA?oc=5",
+      "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQmxNT1EtbEVyR3VoLWlSb0llcU94cllCWmQySXFjQzYwR2RJdjQ3d20zSnBSSWZ6OHpON1l0Y2pIMWRBVm8xTFo1d05OUzNwUjNsajE4SWkwaS1HNzBIQ1pfZWxnUFhPRzlnQUtMaHpQS2h0M3pQVjM5M3g2YU5pZEY5X2MwSnhxSVZoMTk4OG11bW1xZjJTYUl4S2FCOVVVZWdz?oc=5",
+      "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbi13RWVLQVd5WUloaHlWWk9KMVd3Xy02UjlkV2h3QkdONXZHd3lRNWtwb2YzbGJvOEpGZTlFMWxNVTFJS3AzYmtHVGxxdlhuMWpzM0NqbVoxSEFjLTA4RkFDNXVYM0tzQXVTSVJWR3ZWUm9ySGhjV1NUWXdQNDdBOFRvbnpIMHJ2M3c?oc=5",
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZEhmQUdXRVh3Z3JUcGtnTXZGNVlZbnhWYUFwWlUxa19QelNaek1yM3UyV0g5WUxydGoyREFYdUlyYV9wRk96ZGdpd2FVaTNZNWQ2NElZR3hQVTAzcVFvSnVvOS1CLWpUYzUzRzNUU2JkUnZhS1otaVBieUR2TzV0UExqbENqMkxGTmlSd3h0WE1fUldkTHBLMjJoX1dOUWJISFhLcXg2cThDZlZUOWVlRnFMc3U2M1RzelJOMG5JeS1wMGYxWDV0QnNya2RSMkxW?oc=5",
+      "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRDg3bEFRUGF4c0lmWEhTOTQ0TkxPWC13eTJ3WFN4azY4QUp2bWQtZmFETHB0a2U0X1NOcDhkQ2RFbHZRYS16aEhkLTlXVTRDSi05QVY1a0w2ZDgxQ3ZhMmlxQk1PX2VJRWsyd3JwbjFKZ1NoeVBGalJmSGd4bmlvWTFVbW11dFluLVZYYjQzSldKbnJ1a3ZBb1lUN3Rsa0FERTdV?oc=5",
+      "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdlRTbTgxMXEtcUJadGlXdFdjdzdNY2dGZU11aUZtMDdOV0dBaXFfYjl2ZFhiZ19hdzFzVEhzM2VPUEFkUVM0VG9JTUdjdHNSbFc1Y3dHOXdWVzN0ajEwMVRMdkwzNFpoT0dQd1hmYmxjMl9wMzJZRVJ0b1dibDd1RHV2amtyUmgzSFNEZEM5c9IBnwFBVV95cUxNNTJWdG56cEJKTi1QWHZHR3FYNmJ0NmIxNnRkWm10QWt2X0hDYlg0dUR4bFlMRDdBTmR3SHN0RzVpNkQxZzV6WkNfUTFtVS01R3FfTzlJRmNtZzlwS2dkOTIwUTlOVVd2Y1JETFpOeC1iT1JhZjVhakJvZ0c2aTNYMkVkZmRVV1F0OGRCSnBfZk9wVlpIWmpKNGFjOW52ZFU?oc=5",
+      "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWUVHbXhqTmZkX2RjWTI4amZVbUVDcWo5R2x1cTdtb3JGbWMyWFUwU2NVSW1KQ0VHWF9kUGZLQm9yVFBVTnMwaTRvalVqQ1pyQW9iTTYwRzlsNDdreUpsNEpFcmdPLTM5bHpHbEVHZzAxZ21jQTZIcW5hRkc1UUJTOTJzMnBPNzA?oc=5",
+      "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNndlLUNaaXpuNWpjS21LYVQ5akxCcGxuVmZIT29sZ0ZrYWY5elFpel9feUd4R3JZbVMtc1czOGhIeEY0ZUprVDVuaFJTZWl4MGVMV0NiS3ZrV2prN2NaZGtSOUIyVUVzRVluQXZER1hIZjlaQlZWQjNrajhRV3NrLVNLRlNsV2I2RmU1MHI0RDYzWUk5VWFoMGE0VEtwY09zSVBR?oc=5",
+      "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWDRPRDljTWxRcmN6RFJIUGE3SnJDRHJ1LVQyUWsyLVBiQnBGVUE3ZVh2ZUh1TlVXMUhGcTZTQlZaT3lXaVEwN3IyV21POHhvbjhDZ1ZOZHA4YjdLd2lacWszeWN4dFd6aXZpY0JSdGNOcW44dF85amVmbDVJSUM4UzB5MTlwTWEyNDlaaEV0WU8?oc=5",
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNmhFRmwxdkRGU0Z0dU1fSFloOUM5ZmhCTnpVR2VQQzhleGpBbnhuQkJLXzVYU1QyVm1QLUNTLUI0Sjc5UWY2UUFjN0lrR0hvZ1E2VXMwVmtIT2EweEhzYnN4dmVHaXhXdldReTFfdWM1M1RfZlZrQ3FLY1c4cC1IY3lmVjE4MnpOSHJTZk1HbzRTVWdGWUczYjNfcTRWUnlxaHZJeEM0aFF3STRWV0FIWjBka2RZWGN6UmVKelR4LXhhOXRNdGtxLUxyX1NHZWZ1?oc=5",
+      "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Hekk0ZGdVemJjUks5NzZMeUpwaGRWN05WTDBzWTc4QlhlWThjRXRCenFsMHd6dEhmZnc4a1lmWnB4REJzWndkNUg3eDZKTkJWYl9CNmVtSXBjOXZhS285eWdtZXh1Y29PSW1mTDZTZEJaVTRPc1E?oc=5",
+      "https://news.google.com/rss/articles/CBMixAFBVV95cUxOOHRmdnFxRElCVVhhQ2Y0d2VkMVZyNkdaQ0J2U2h6WThfc2ZPTThmSFFTZU1VT19Pbm9aZ2xwTzI2eUdTMDhXYXBlRnA0NEdneU1Yamhqa0JCa1lfRWhaNlh3bU9GVmRIQ01Bdi1sSTM2d1B4UmM3bXZYX2o4VXA4ZGZ5SnJYQjU5eUZMNi1FRUh3U1ExcC1RTldvV3BiNDcyV1l1S1hTcG1qNUZFQmd6YWJJSlRHTWRqS25RZG80ZkpyNDdL?oc=5",
+      "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOUE5dWpLdm8wOE1ZbHNPNi1taVJvZFR5ZF9NYndUcUlYN000R2RKT1VHSmlfV092OTM4bDR2NDZDRTlxTTF3TWNWRjR6M1BDNzdkT0g0NUtZaXpiTEs2MXFtMkRYYU9UUUVQOGRkLUdud3NadFZTM0NyUkljNkdVbF9wNkZadUdYOUlraXptSDMxenV3WWIxT2R6UXp1cmM?oc=5",
+      "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVTJLUmxrVEVXMnFKTFU3VmhIV1pfdDlzb2hUcTV5OEs4RUdibU5RLVVjT3ZsODFmd3A3U3R1UmRFdGljSHFCU1k2OHBKazk3WGdnZ0R6OE9DeDN1MktzNDVSQWpOeFJnSHVqMkJqN01KbEV3VExvb2NRY2l2bW95aXNJcDNhVWpqMjBVemF3?oc=5",
+      "https://news.google.com/rss/articles/CBMidkFVX3lxTE41VVZJSUNWa0JqVmhrWlVoM1lpRUhjRFMta2NIVkYyM1QyY0Z3ODh0UEhFOVhldlB4VkNCWkdGSmZ2eUItRjhYbWFNUDFNZjd4MGFINUF1cGpOWHREb3JzSEdhZnZ0Z0dvUEtRWjJZY1otbnZoZGc?oc=5",
+      "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0bDdBVlVjS0RNUHFRM2hUa1pldy1mMlRqa3pnbDItM1VlN2EyMDlQOGRDQVh2UDRDTUlFNTRxbWR1ZDNENm9qRWFlYzF0c0lkVG9uVWVXektpbnRsR2M4dnhQX3ZqNWN2RHZkYVN3VFBpZjJCbHVGMDVLeVlzOWs?oc=5",
+      "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPZEdOTThyeVJTN0dPZ01rVkxqQnRnRU12WnRLUU9OTU9GemhpZmdRNGN4cjE2NVVPXzBWN1lrYzZlMFphM3JvcUVGS0FTTmdEUm9HdVMtUWM3cFhtQUNkaFNlUnhFTVhBWTFGMGJPdTJGRVdHbFBlc1FRSTJRNDJ6VmlXYURzTTZGZGEzZ3MtVmw5ZUt1OXVzd0FoVE9odHdXSFFHQ0g3RVc5R3R2MllVcWh4M1dJdVE3Rk5jajZicGxqQjlTRElQMUFEa2xyajIxbUxERm8yMlN2TG9JUDViWXYtWVRqSDFScEpIMzdXN1NEeDVTSkMw?oc=5",
+      "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYk95VDRCMTB3LXZadloxTXJMdHZiT0dwMTMyX3hUNzhpTGd3QlRuUkxrT0owNXFVYUxhQU9CejJlTTFGcVRtZzYxMmtuRnhOc0lEYmZpMS1Zd3dQQVZwaDVqLTZOSFBzODllSlZKcm5KRVFtZl9Sem90TjNaZ0hkdXVJaURqV0FUZkN1YVhBUG9FYm9TbTRLckhqS0tvdXdIcHREN2JQcmZBOVdNRlVzQndLakRlVGhROVVpZ3lhQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd1hYb1FrRnZSdXkxMmtoTEZxdDRnTVRaSDRBdTMyVjVFU1FNOUdOTjVMcFpGSjRzNXE2d2U2TUFJVHg5N3VJR2ZKZFFvQjBBT2pMWFQ0R2VLOUhuMVNrdEl4NHNEcDdFMzg4bDlIMWFmdDlKa3hsNThHSW5OQ2Q0UlpFQUN4V1daTVp3T1NnOElWX0hlbndHNkh6cw?oc=5",
+      "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaDdkN3JhRHlQT0huQ3g1cVAweHp0VDJLWDBLekFlM1lNTmc1S3VBM0FqNU1EbGRtb1VPVlRlZC1TQ2FhQ294MkZNSGZvSDJrMVcxR21lZWJhcnBzNHp0ZUJyMkZiTFVIcnlCTFJ1dTB1UEhMakVFaU1maFRxcnVhV0lfLVYzQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMiekFVX3lxTE9BaGxqUzJkcmduSjFQeWREVGJROGt1eHk1N2VHSkhfQnQ1WUk0Rld0YUN4T2pHMEpsUE9aTVUwNm8tQlhLV0ZSeU8zU1RtWWVFeGZvVTktTkhxTUliYTdLVDN6QlZzUVR4Y0tPRTM1SGt5Vk40VmdYSUFn0gGOAUFVX3lxTE8xSG8zTW5uVXNKcnlEVXBHQkFtbmZBcUthX3RsR2llbFZ2dTNVNzh3VnYybTlYZHRKaWhhUnZreGxVRTMwNFIwM0h5R3l2a0p1c291OHlSN3pXRVcxQmJka0pnTVhOeUdoeTRTNnlkMm9pUEFQQUQ0bjVuZm5scWdOYlhtdDdidlJKdGVTZnc?oc=5",
+      "https://news.google.com/rss/articles/CBMingFBVV95cUxOdkRIUk1sZkdTMXJTRk5VM05iZ1AzOFBGY1VtUUFCZTZmVUpFdWNacmNneXJCLWlQRmxGUUhmRnBISlpIc1dzZWNVbGVOeXpXT2dNMDlOei0xX1VMdHBmTTdyT3hXZF9UR3kzYjhsMk1ZeXhZSGN4VmotOWlvcS1USGRfcTBUdGFPajZGYl9WZFlEYXdrM3J2RUZ1Q2hSQdIBrgFBVV95cUxPWS12azhtU2xTUzV1anRxSTV3YUZJMzVZMDZyZmRnVV8tYU00dThkdVo0MDhUT2cwaDVWLVM3bktLVndRSGZCN2pnWE52MG9HM0pQTUc5dzYtN0lZZVdtY295Uk5kc3U3VVloQWZ4THc0TlNSUUUtRjlKbVQ5bHN4MG9HOEVncEtvd3poSHFYV1Y1NW9faGp0bVBBaklveU1vd2dUbklFb2RlS1RrVmc?oc=5",
+      "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa0E5Z0ZIZDR2Nm1zM2xobkpzZUdJVlFhSTVUd0dJSURzbmxzMUlmdHplcEY4T2xPdlZLekR2RlpZVXlPSW5zel94WG9aQTBpU2JOWkR6Qzdsa1RWU3hqYnlHWGtKYXJZM3AzUjJ1c2ZnUkstZVJWNGU1R1NROXJVN3NFaVVLVXNUM3hmQ2VfbE9wVUJa?oc=5",
+      "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaTQ4RGZ2UDVkLThIaUptc0tTeXJsOUtURWFUd2FSazIyUnFMWnFlaHp0SndhdV9pRGNyeWNuTzNObXZVejhGb3EzSW53YmhPYkxzY1hYNDJ0ZHhJdF9yV3BzcjJkTDBYUWpOaUpQVms3M3h3N3o2c3ZBYmxzeVVETnlFTElGY3RZUWxjNDV3azJpVk1xVGtQS3ZYSlRpb25laDFLamFUSDdkaDd0Vl8wdDRJaXloOUpSR3pMVGZBMVpHQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMiekFVX3lxTE9Qb3RhX0oxSzV6UlF5RDF2dGhRYk9qSW93cjdGZF96T2N2dHBkYnJSMThxc0NoN1NPMXFNbnpYeVpsLTF0YVNRWXVIS2N6eHNWQmJ0dFBKVVJUZ1g5US0tZ1duNzRMTXdxVDBPT1N0a1RTSUMtcWdxQ0hR0gGOAUFVX3lxTFBiRDF5OEtIcnRkTG93TXVqODZnRXZUUzA1UlpZeDZIR2JwejVlUGJ5aGhOcWt0a25Ya2pRR3ZiN1BBc0FHYjN0N2hRSzBFQnlra285TjliZzJCTkNsZjdNRlVMZ3dFNUY2RGNkM0FaMVgxNnExZXZ0djRRMXBfdHN4MXhkUmRRVVNXVHBKaWc?oc=5",
+      "https://news.google.com/rss/articles/CBMingFBVV95cUxQNEhOYlJvYTBPYkhSeUdDanpla0VMdTV4UkJVVno2cHRsNGljVlFDdVYxRnRCVFowTXRJYUNjd2lteWRlQUdJdlZtZTI5SFZ6WTJScktvYW1wMDJJcmxUR3NBSHBUdXhBQ0kwdV9CLWluY3lXRlVheE5pSGllYVNWbVAtNnBwRzBHWnQwWi1ieHlQMXlkSW1CdWtCMGo1UQ?oc=5",
+      "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUTNfbmpJYnd5VjIxcGpDNFFYNFJydzVaakZHSmdDMVJwX25aU2Q0ODh2U0w4dUI1N21rWTBhZ185VkdfUkx2d2pNMEg1enREclhJQ0pESklKbFVpUmxGdnh6NEswdmZjaTBRanhfNjBPNFNSOVZoV191dXoyR1AtcmxON3NZem1tX3Ztclh5TTJXUklDbTJtOVFncHVmNmNDbUlRakN6Sk0wWmc?oc=5",
+      "https://www.bloomberg.com/news/features/2026-11-15/anthropic-s-ipo-makes-dario-amodei-the-new-face-of-the-ai-boom"
+    ],
+    "item_titles": [
+      "Anthropic IPO Reportedly Oversubscribed 7 Times – But Will The AI Euphoria Survive The Stock Market Debut?",
+      "Asian shares fall before Nvidia earnings, Anthropic IPO test tech rally",
+      "Anthropic’s giant IPO puts the heat on OpenAI",
+      "Anthropic’s trillion-dollar IPO is open to Australians. There’s a catch for small investors",
+      "Anthropic News: Latest Updates on the AI Company Behind Claude",
+      "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+      "A Human Reads the Anthropic I.P.O. Filing",
+      "Anthropic IPO: the age of miracles, priced at $78 a share",
+      "Anthropic IPO set to define AI trade",
+      "The SpaceX IPO Had Musk’s Star Power. Anthropic’s Has FOMO.",
+      "Anthropic promises to pursue humanity's benefit. Its IPO filing gives it wiggle room",
+      "Anthropic's record IPO faces some big questions",
+      "Watch Anthropic IPO, Nvidia Fallout in Focus; World Leaders Gather in Asia",
+      "VC Firm Run by Madonna’s Manager Has $7 Billion Anthropic Stake",
+      "Stock Futures Are Rising Ahead of Nvidia’s Earnings, Anthropic’s IPO",
+      "Nvidia earnings and Anthropic IPO lead crucial week for AI bulls",
+      "Nvidia's first post-Jensen earnings and Anthropic's IPO: What to watch this week",
+      "Shareholders Are Bankrolling AI Giants They Can’t Control",
+      "Anthropic Is About to Become the World’s Most Important AI Stock",
+      "Anthropic’s IPO is the next big test for AI",
+      "Could Anthropic And SpaceX Lose Their Founders After NVIDIA Lost Jensen Huang?",
+      "Anthropic IPO Arrives at a Pivotal AI Moment",
+      "Anthropic Just Delivered Great News for AMD Investors and Bad News for Nvidia",
+      "Anthropic’s IPO: A make-or-break test for the trillion-dollar AI trade",
+      "Nvidia, Anthropic, Walmart, Home Depot, the Fed, Home Sales, and More to Watch This Week",
+      "Anthropic Set for Nov. 19 Nasdaq IPO, With $900 Billion in Commitments Testing AI Tech Rebound",
+      "Anthropic heads to market with billions riding on AI's promise",
+      "Anthropic IPO Is Coming Up: Top Companies Set to Benefit if ANT Stock Jumps",
+      "This Week: Nvidia Earnings, Anthropic’s Nasdaq Listing, and Fed Minutes in Focus",
+      "Anthropic IPO to further fuel the AI news cycle",
+      "Nvidia’s Earnings on Deck; Anthropic’s Public Debut",
+      "Markets Brace For Nvidia’s Earnings And Anthropic’s IPO",
+      "Will the Anthropic IPO create a disturbance in the broader U.S. equity market, like SpaceX did?",
+      "Anthropic's blockbuster IPO \"draws its sword\" this week—does the U.S. stock market's AI faith face its toughest test yet?",
+      "Will Anthropic's IPO lead to better AI regulation?",
+      "This week on the stock market: the Anthropic IPO and Nvidia’s earnings",
+      "Nvidia Earnings And Anthropic's IPO Could Trigger A Market Reckoning",
+      "Wall Street futures edge higher as Nvidia earnings, Anthropic IPO loom",
+      "Stock Futures Edge Higher as Traders Await Nvidia Earnings, Anthropic IPO",
+      "Nvidia Earnings and Anthropic's Record IPO Debut to Test Wall Street's AI Faith",
+      "Asian investors chase indirect access to Anthropic shares amid IPO fever",
+      "Anthropic’s IPO is about more than huge fees for bankers",
+      "When it comes to Anthropic stock, should I take the Warren Buffett approach?",
+      "Anthropic CEO pitches safety, culture ahead of IPO",
+      "Opinion | The Flaw at the Heart of Anthropic’s I.P.O.",
+      "Nasdaq's Best Two-Month Week Ends With A Key-Level Failure As Nvidia (NASDAQ: NVDA) Earnings And Anthropic IPO Approach",
+      "Some Asian investors offer 30% premiums for indirect stakes in Anthropic before its IPO, Nikkei reports",
+      "Anthropic's IPO is oversubscribed sevenfold, seen as a barometer for the AI industry",
+      "‘It feels like a game of Jenga’: Why activists are protesting Anthropic’s mega-IPO",
+      "Anthropic IPO excludes China and Hong Kong investors amid U.S. AI security push",
+      "Anthropic IPO orders hit nearly 7 times shares on offer",
+      "Anthropic's $64 billion IPO lands in the middle of an AI selloff",
+      "Sound Ventures Invests in Anthropic, Stake Valued at $7 Billion",
+      "Anthropic CEO cites compute crunch as key IPO driver and urges cautious valuation",
+      "Anthropic’s $90 Billion IPO Tests Investor Confidence in the Global AI Boom",
+      "Anthropic’s IPO marks a new phase in the rivalry among AI labs",
+      "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to raise up to $90.4B via the IPO and a separate private placement (Bloomberg)"
+    ],
+    "category": "business/funding"
+  },
+  "main": [
+    {
+      "id": "c03",
+      "headline": "Trump administration plans to name AI 'national champions' including Nvidia and OpenAI",
+      "summary": "The Trump administration plans to name Nvidia, Amazon, Microsoft, OpenAI and Anthropic among 24 or more AI \"national champions,\" the Wall Street Journal reports, citing sources. The program is meant to help US AI companies win business overseas.",
+      "sources": [
+        {
+          "name": "The Wall Street Journal",
+          "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344"
+        },
+        {
+          "name": "Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOemJiejJ6X1h6blBrVnJsX0t2ZnlCblk0VEVaV19rWW1mMndaQjVHeVg4UkxFNUFtUUp6ZFJxX0otWEZxTFdmU3dzUUY2RGJDb2V1VmtvTHYxWU9ZVVFpUkRmUUUxQ1VlVmZMNl91cVZuZ0VPWGhMOHFXUGlIN3QtR29xTW1ZRVBwTjlTVGJ0UWctTmJtelFFZ3NBbW9GTWhR?oc=5"
+        },
+        {
+          "name": "breakingthenews.net",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPU1JSaEVhejBGYnVyTmh3aTJ3THpGMHZpRU1fc092YmwyTHpmT1lFbU95WlB4cUdpMWh1MUFLSUNqazNQM1lPZW5lZ1dfU1pkMHg0bFRKVW00WEstYThhR3Qtb3J0TjhOeFdROERxeUJkdDRjaUxQQTJpaFFFUHBaUmFhSHJST0g3RngtSTRkMUtGVEQ5UERpLUhGcEYyN05PY0cw?oc=5"
+        },
+        {
+          "name": "moneycontrol.com",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNjc3bTVnUFpsdl9BdzI5RGZPYmszQVNsZmJEZzNhQlNndnZOQzFBYmtQbGw1djFpVGszc3dPSDJJYjgwSUhobWo1VjBIbmlNWlFyVkMtSl9vQnI0UDQ4Q1IzMm5ENnA5dlMzT3hPTzg2V3BQTE5QSXF4QlVadUQtcjhUSXh0YXFYcFJ1ZFJqOFVFRmp0T2ZoNGpIcmkybnR6b3NEdmJRQzZCa2lIa1M2X1V0THA0OFFWcVBKamVmYjVpVUcyVzhsTEREUXUtcjRrbUZmdUpoR1piY29R0gHiAUFVX3lxTFBtQzlzemtEVFVQeWNFd2FLZ3BMckRoc1hzblZBdHo4aEVKSVlqLWFNM1poZ3dTOVAwVXdtN1Q5Wndfb1M1XzRheHoycm94Z0hsVWxVNEVXdnB3ZWlWRkptbUNOb3k2bzlsa0ttYUhzbmdlS2RNRk9GbjRtUGJUVXRnRnB3ay1ST2xsUlAwNjFSQTBGTlpsYTlHUjR4dEtZSXNvbUJ1ZWVreDhNeGJyUml6bGZvNmhGbEt2d3BqX0ZzdGpCWTcyUVZDRE5nMFktMm5uRklNMGJGeTRTWVh0d28xVHc?oc=5"
+        }
+      ],
+      "importance": 7,
+      "material": "snippet",
+      "item_urls": [
+        "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOemJiejJ6X1h6blBrVnJsX0t2ZnlCblk0VEVaV19rWW1mMndaQjVHeVg4UkxFNUFtUUp6ZFJxX0otWEZxTFdmU3dzUUY2RGJDb2V1VmtvTHYxWU9ZVVFpUkRmUUUxQ1VlVmZMNl91cVZuZ0VPWGhMOHFXUGlIN3QtR29xTW1ZRVBwTjlTVGJ0UWctTmJtelFFZ3NBbW9GTWhR?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxPU1JSaEVhejBGYnVyTmh3aTJ3THpGMHZpRU1fc092YmwyTHpmT1lFbU95WlB4cUdpMWh1MUFLSUNqazNQM1lPZW5lZ1dfU1pkMHg0bFRKVW00WEstYThhR3Qtb3J0TjhOeFdROERxeUJkdDRjaUxQQTJpaFFFUHBaUmFhSHJST0g3RngtSTRkMUtGVEQ5UERpLUhGcEYyN05PY0cw?oc=5",
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNjc3bTVnUFpsdl9BdzI5RGZPYmszQVNsZmJEZzNhQlNndnZOQzFBYmtQbGw1djFpVGszc3dPSDJJYjgwSUhobWo1VjBIbmlNWlFyVkMtSl9vQnI0UDQ4Q1IzMm5ENnA5dlMzT3hPTzg2V3BQTE5QSXF4QlVadUQtcjhUSXh0YXFYcFJ1ZFJqOFVFRmp0T2ZoNGpIcmkybnR6b3NEdmJRQzZCa2lIa1M2X1V0THA0OFFWcVBKamVmYjVpVUcyVzhsTEREUXUtcjRrbUZmdUpoR1piY29R0gHiAUFVX3lxTFBtQzlzemtEVFVQeWNFd2FLZ3BMckRoc1hzblZBdHo4aEVKSVlqLWFNM1poZ3dTOVAwVXdtN1Q5Wndfb1M1XzRheHoycm94Z0hsVWxVNEVXdnB3ZWlWRkptbUNOb3k2bzlsa0ttYUhzbmdlS2RNRk9GbjRtUGJUVXRnRnB3ay1ST2xsUlAwNjFSQTBGTlpsYTlHUjR4dEtZSXNvbUJ1ZWVreDhNeGJyUml6bGZvNmhGbEt2d3BqX0ZzdGpCWTcyUVZDRE5nMFktMm5uRklNMGJGeTRTWVh0d28xVHc?oc=5",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbVZuRkZvWWp2cTVZRkh3Tm96YThHTGFtSmk4TjhOMWZqT0xsSXZkbEFQRzRZcWFaMHlzNGYxZHBzTF9YYUZJa0ktNFNua1ZiLTVvNDRNZGViZlFxMVVsQlZXM09faWZOSDZkNDRiaTJjYXFfMUgxN3p1UWZkZXVuOEQxUFJRSHI4TG9yRU1kT0Rlb2ZoUGQtQUNndkdnajdTZmc?oc=5",
+        "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbzFERGNkd2ZLODdReVZtV3pnNVdJT3RyNDdpbUZQRXZHUEgzbVYtZTBwelhfV1hRbVVfOGsxeDJURWd2bEJubFlFUjFXZC1HM2Z4U3l2TXVhTXR3OTFPZ2xUaDhOVlBDWF93dDE0V2lsOEI3bGFGWXlmbnVldjNCQkJKQlFNbDVfaWR6cGpJdktZWlJXcEdNQkZnWWsxSlZGX19tQTIxYW5NVWQxb2NQclEza1JHaHBma3lmaFNzQWRtQld0UkRwT01IZEY0eUk?oc=5",
+        "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbktOLUVLT2ZSYmhUM1VDUG1ud2kxZGRpUllLMjhZR2NBcjI4aTM4cWs4LWp4ODFwQzBQVk1YY01jU1Z6Y2pOZDdvU0Z3R3hnakJ2ZGFXMnlMYmViQUhUelRGcGJjcmQ5b2VsYkNYZlpoZzc0SXJGZ0diZWxuaVFsS3Vn?oc=5",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZWExcER0NE5sSDg1Y0FKN3AxVU1XUWJUcjAtLUgySUhkU1dwN3FhczM2Tmt3UnlPeTVRcjIzWXBiTmI0dk9TSC1SNm5CSzlZcXJnMDM1WkxYUnpiRzhRSGUxb0J0a0lRQkVVblZKZFhMLVpPd21YeEgtVTIwdTlrQ2tfWUJfMktFY1Fzc1F1LW1DUXpiZXFaZ3hNNEJ5M0JNbzNUbThvRVBwNERXU0FieC1FbWRwc0NSZG03aw?oc=5",
+        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdG1zSzdQMVhqVnhlRDZFZEFUS1QxMi1LRDR5SEFZeVg0eHlUXzdCb040TmJsbjNUa3A0MjZyQUktbUUwcjVPTV9DMC13UHY1LXRhMWQ0bUR3RnVGSlRoNUpFeUY2SkUxYnFJNkY5QkZ1Y01sRjZ3UTN6bjdjNTBsWlpFYkItUmQ1RUN5U1BHMDRidUJycjFBX01QWWVnU2VTUE1ackZtemItVENndGkybGhmOGRONlFuTXNCMkItMzFkZ0g4dVFJWmJjb215OEFmTEMw?oc=5",
+        "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LZWZiQU1wUS1LR19OUF9sNHVzSE50WU04cXV6RDlqTE1yeExFcGkzd1JaSXNBb1phd3hrWjI1QjFjRXA3MDczRTEwXzF1d01qYkdTaFA3bWpvME9FTi13?oc=5",
+        "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBLelRHUV9HQWowMmVyMWhwak9CTFhqU0lONVhDdGFVSjRCS0F4RWp1Tm4xUEl5SGlUY19iZWxPeURPUUVFY1IzQ3hHWkI1ck43SHNYSA?oc=5"
+      ],
+      "item_titles": [
+        "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI \"national champions\" to help them win overseas business (Wall Street Journal)",
+        "Amazon, Microsoft, OpenAI, Anthropic to be named AI ‘national champions’: WSJ",
+        "US said to name Nvidia, Anthropic AI 'national champions'",
+        "Trump picks Nvidia, OpenAI, Microsoft among AI 'national champions' to take on China: Report",
+        "Exclusive | Trump Administration to Name Nvidia Among AI ‘National Champions’",
+        "Trump administration to name Nvidia, other AI firms as US 'national champions', WSJ reports",
+        "Trump administration plans to name Nvidia an AI national champion",
+        "U.S. plans to name Nvidia among AI ‘national champions’, WSJ reports",
+        "Trump Administration To Name Nvidia Among Ai 'National Champions' - WSJ",
+        "Donald Trump to name dozen AI firms as 'national champions'",
+        "Trump Administration to Name Nvidia, 20-Plus Firms as US 'AI National Champions'"
+      ],
+      "category": "policy/regulation"
+    },
+    {
+      "id": "c04",
+      "headline": "Jensen Huang discusses return as Nvidia CEO, FT reports",
+      "summary": "Jensen Huang has discussed a possible return as Nvidia's CEO with allies, days after he resigned, the Financial Times reports. Nvidia investors Brad Gerstner and Gavin Baker wrote to the board urging a slow search that includes \"the potential return of Jensen Huang.\" Treasury Secretary Scott Bessent said Sunday that Nvidia should look outside the company for its next chief. Nvidia reports results Tuesday under interim CEO Colette Kress, and a board inquiry run by Wachtell Lipton is ongoing.",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed"
+        },
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/jensen-huang-is-discussing-a-return-to-nvidia-ft-reports"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/"
+        },
+        {
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1"
+        }
+      ],
+      "importance": 7,
+      "material": "fulltext",
+      "item_urls": [
+        "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
+        "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1",
+        "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+        "https://thenextweb.com/news/jensen-huang-is-discussing-a-return-to-nvidia-ft-reports",
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbFZxVFh3T0hqYnIySTZ0RzRNR0FWN3FkNWxMN2NTbDI5RjlNLUo4Z05mZFEwbzR2YW52bGdzdTZjWEJEM2JvQ01Bd2ZrYXNBa0E2c1Z3SWJSQ1ZIdVZXSEJyTXo3SXVFMXZRZEFSM0xSMHJoSDJPWG9qX2xIeHpLYThFWURtaFRwVC1OU2dKUUR1Wmd5ZnhYQ21FZ3l1N2RuSzJ5cmpQSmpPQUV5S29aUngtUjB6QQ?oc=5",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxOa3E3cUNQYmpNNDRkbXlac1dOeC1qWWF3cjdUcnRPLWtONW5QM3FUVk1PVXBuamhCQzdZOHdMYUdxMHd0LTNkTFF3UVV2VzFFenAzaGtEYnFsY3BuOVU4VVp6YmRpSExBUm9PSjhaXzVzWE1mbmx2R2pKa2tGM2V0bDRrMlNJMEZqLWVGYXVvUlY1ek9lQm9UOFRBeUdrNkU4UVhuVlBTSlFJcWFtVzMwQ1VNM2RsaDlwcm10Vg?oc=5",
+        "https://news.google.com/rss/articles/CBMiigJBVV95cUxOTHhsQ2k2SHVzbU9YMFVMU2RNTnB5anNMT1REeTc1U2M5NjByeFdKWmJoZkdOUC1LTUNKc00wdUVuc0JFS3BTRktOd0pkdjdfMlFaRk1tUWlOOTZ5SE9RTFkzY0xlTXAyYVVIM0ZVV016YVk0ZGNlVFM2MXdIVG5FVExURG1UclVBWF9VNjJxQ3hWQVB2X2J1RTlYU0NTc1NSMm5oeXVxREdmRWZNbmpFWjB5bTkwLWxYT1hBa01fQlVFd2I2ODlUZGRhajBCakdQVmxYdjhUQjdhZkcxSUpkN3JkenBnU091NHp2eURUN3AxSWtQSmd1MjdfREFXelh2dnZFd3A5aVFBUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd2dxek1Bdm8wTXhxZGM3QmlEcW1IM1E3ZVk2eHdiSXl3Q3I5VU1ic1UtSFkydmExVG1pdVBOSy1faFNYb2lrS2pWam45ekw0cWlVSU5NMGlRWTZOWVBPdDJsYllkdXBSUnZaMjk2MjYzX0RzdHU4eVdmWDZ1WnpnUzluM1R5ekRIdldSZUJlY1BiT1JGRGc?oc=5"
+      ],
+      "item_titles": [
+        "Jensen Huang might return to Nvidia as CEO",
+        "Jensen Huang discusses comeback as Nvidia CEO with allies",
+        "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
+        "Jensen Huang is discussing a return to Nvidia, FT reports",
+        "Jensen Huang Comeback Report Primes Nvidia Shares for a Bounce",
+        "Jensen Huang Is Already Considering Returning To Nvidia, Report Says",
+        "Jensen Huang weighs comeback as Nvidia CEO as allies lobby board, FT reports; Bessent calls for ‘dramatic shakeup’",
+        "2 Hedge Fund Managers Want Jensen Huang Back. Could He Return as Nvidia CEO?"
+      ],
+      "category": "other"
+    },
+    {
+      "id": "c05",
+      "headline": "Bessent urges Nvidia to pick outside CEO, calls for 'dramatic shakeup'",
+      "summary": "Treasury Secretary Scott Bessent said on Fox News that Nvidia's board should look outside the company for its next CEO and that the company needs a \"dramatic shakeup.\" He questioned whether Nvidia pressed \"seemingly illicit sales\" to boost revenue and earnings. He said a bank with similar compliance failures would see many executives removed by its regulator. Bessent also said Treasury and other agencies had favored placing Megaspeed on the export blacklist for months, but \"Commerce has the pen.\"",
+      "sources": [
+        {
+          "name": "CNBC Technology",
+          "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html"
+        },
+        {
+          "name": "Axios",
+          "url": "https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo"
+        },
+        {
+          "name": "Fortune",
+          "url": "https://fortune.com/2026/11/15/treasury-secretary-scott-bessent-nvidia-jensen-huang-nvidia-china-spy-scandal/"
+        },
+        {
+          "name": "shattered.io",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE55M3FIWm96YWs3N3RrbFBjWHpPWkhRYktoWG0xUFlaQV92TmVyUF83Qnh3UURwOThIR0VRY2ZJcnZ3Q2t5ZzRjdVpqTWlTbEwyRU1qaHVuak5NTjVGcU1iMHNWSmpzeUVHNlMyN1hYUzFGZw?oc=5"
+        }
+      ],
+      "importance": 7,
+      "material": "fulltext",
+      "item_urls": [
+        "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+        "https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo",
+        "https://fortune.com/2026/11/15/treasury-secretary-scott-bessent-nvidia-jensen-huang-nvidia-china-spy-scandal/",
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZVBETnNKak9BME5HaDEzOXN3TzctS3kzWUVadDVaem9wVDExVFJqb0NSMEdoZG01cXFmLTJSaFJzSkhxOTRYelRQcXYxSTl6OUdzaTE3LW9KM3FTRWh0bUZWY1BKMmNaUWVvN1luaTczdVhWTXZHVnFJSWwzZ3Z5R1JIYVljbUl5UmY3bGZfWW1tZnJOaUMwYnpQVElIekFHMjJyUDR3a0NBYVNKZkhtbGdJSQ?oc=5",
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxNelVNRDFXQmNHV3JpOFRyaWl2N3h1WnNXNXNXS2FOOHg4dklQNVZfNktCNUdyZ3pNSGtENWRIbE1sYThZZk1QODBNTndERElkRmQ0MHlReHJQU2ZlRDdaYTFqdzA5anBUTXJjVmwwV0hvcW1hS1pPc01zSF9lTXFrTC15RnFzdlJfN2VuYzVuUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMickFVX3lxTE55M3FIWm96YWs3N3RrbFBjWHpPWkhRYktoWG0xUFlaQV92TmVyUF83Qnh3UURwOThIR0VRY2ZJcnZ3Q2t5ZzRjdVpqTWlTbEwyRU1qaHVuak5NTjVGcU1iMHNWSmpzeUVHNlMyN1hYUzFGZw?oc=5",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxNS1ZOWlF3ZUlxWGYyZm9kX3NnZUsyNEpjYXhKaWMxY3hPbnRvSlJYeHc3ak9lejRYcHdmWjB2dk54cmMweklHdXdpVDdmRm9yNE91LWJKV2VoUC16bF9sdzRTM2NhWk5MMnBROXJ2UHA2SU0tSDNpeEZLZkxJZGg4T1laVHUyU1Fid0dtYjQ3c0tHMFRsOVp3TndoeEUzaElUSkxVT3hlOGQyZTVPZDF3emxB?oc=5"
+      ],
+      "item_titles": [
+        "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
+        "Bessent questions did Nvidia \"goose\" earnings with suspect China chip sales",
+        "Treasury Secretary Scott Bessent says if Nvidia was a bank, ‘a lot of the executives would be removed’ — while Huang reportedly eyes return",
+        "Nvidia’s CEO Search Draws Fire With Bessent’s ‘Shakeup’ Call",
+        "Bessent Urges Nvidia to Pick Outsider as Next CEO",
+        "Bessent Wants Outside CEO at Nvidia, Answers in 10 Days",
+        "Nvidia Feels the Heat on CEO Search as Bessent Calls for Shakeup"
+      ],
+      "category": "policy/regulation"
+    },
+    {
+      "id": "c06",
+      "headline": "Megaspeed arranged nearly $12 billion of Nvidia chip orders for China",
+      "summary": "Megaspeed arranged nearly $12 billion in orders for Nvidia chips from Chinese companies between March 2024 and June 2025, according to documents reviewed by the Wall Street Journal. The Singapore-based cloud company is linked to Alice Huang, who is the former partner of ousted Nvidia CEO Jensen Huang. Megaspeed says she left the company on Aug. 30, 2025, and that reports about its business are not supported by verifiable evidence. The company says it has hired outside counsel for an internal investigation.",
+      "sources": [
+        {
+          "name": "CNBC Technology",
+          "url": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/"
+        },
+        {
+          "name": "BBC Technology",
+          "url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "name": "The Times",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUW01Z3lLam43aV93VTlvUjE0QWR6YzhNLU9LekIwWGFPNXl6dDhjYUFkcm40R2E5UjBPeFh5azVBTTRIc1NNTlR0Z3czTzRwZWxlUmVPSFB0R1BnS3hkM2M0M0UyVThid1ZCaWhBUTRxMHlmUWlyVzBtUGpZLVFzZFFOUV9KLVV4TmZJeG9keHU5Nk5UUGxCei1LTEVBYXI5QmxVd3Q0Z09LU2JhSzl5M3JjdzBreWM?oc=5"
+        }
+      ],
+      "importance": 7,
+      "material": "fulltext",
+      "item_urls": [
+        "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
+        "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
+        "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
+        "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUW01Z3lLam43aV93VTlvUjE0QWR6YzhNLU9LekIwWGFPNXl6dDhjYUFkcm40R2E5UjBPeFh5azVBTTRIc1NNTlR0Z3czTzRwZWxlUmVPSFB0R1BnS3hkM2M0M0UyVThid1ZCaWhBUTRxMHlmUWlyVzBtUGpZLVFzZFFOUV9KLVV4TmZJeG9keHU5Nk5UUGxCei1LTEVBYXI5QmxVd3Q0Z09LU2JhSzl5M3JjdzBreWM?oc=5",
+        "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTV9DNlYweDNld3Y4QUE2eWtwdHNHOUtwS2hrNDdZNThZaTBMNHA0cVJ5YTNDc1ptTkdxNXV5Um1Sb2xKeW8td1VyNlFNR2VoODV6TWRmRk1iYlc0VW1xMnlUelhNWnJyUUJ6ZDN3YzZiN1F2TW1iUjYtRXJKS0tpdFlWYW51YS0zSm9FVQ?oc=5"
+      ],
+      "item_titles": [
+        "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
+        "Firm linked to Jensen Huang's ex-lover reportedly brokered nearly $12 billion in Nvidia chip orders for China",
+        "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+        "Nvidia ordered to explain $12bn supply of AI chips to China",
+        "Megaspeed says Alice Huang left company in 2025, denies wrongdoing amid Nvidia scandal"
+      ],
+      "category": "policy/regulation"
+    },
+    {
+      "id": "c02",
+      "headline": "Alibaba releases Qwen4-Max, a 2.4-trillion-parameter flagship model",
+      "summary": "Alibaba released Qwen4-Max, which has 2.4 trillion parameters and a 1-million-token context window. The company says it beats Qwen3.8-Max with up to about 50% fewer tokens, and beats Fable 5.1 and Kimi K3.1 Pro on coding benchmarks, according to Bloomberg. The model is not open weight, though Alibaba plans to release weights for smaller Qwen4 models. Artificial Analysis gives Qwen4-Max an Intelligence Index score of 43, ahead of Qwen3.8 Max at about 67% lower cost per task but behind Kimi K3.1 Pro.",
+      "sources": [
+        {
+          "name": "scmp.com",
+          "url": "http://www.scmp.com/"
+        },
+        {
+          "name": "artificialanalysis.ai",
+          "url": "https://artificialanalysis.ai/"
+        },
+        {
+          "name": "qwen.ai",
+          "url": "https://qwen.ai/blog?id=qwen4-max"
+        },
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals"
+        }
+      ],
+      "importance": 7,
+      "material": "fulltext",
+      "item_urls": [
+        "http://www.scmp.com/",
+        "https://artificialanalysis.ai/",
+        "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
+        "https://qwen.ai/blog?id=qwen4-max"
+      ],
+      "item_titles": [
+        "Alibaba says it filtered Qwen4-Max's training data to remove offensive cyber capabilities and mitigate chemical, biological, radiological, and nuclear risks (Ann Cao/South China Morning Post)",
+        "Qwen4-Max scores 43 on the Artificial Analysis Intelligence Index, beating Qwen3.8 Max at ~67% lower cost per task but trailing Kimi K3.1 Pro at ~11% lower cost (Artificial Analysis)",
+        "Alibaba says Qwen4-Max, which isn't open weight, beats Fable 5.1 and Kimi K3.1 Pro in coding benchmarks, and plans to release weights for smaller Qwen4 models (Luz Ding/Bloomberg)",
+        "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens (Qwen)"
+      ],
+      "category": "models"
+    }
+  ],
+  "europe_brief": [
+    {
+      "id": "c25",
+      "headline": "Italian startup Mosaico raises €7.5 million in seed funding",
+      "summary": "Mosaico raised €7.5 million in seed funding, Sifted reports. The startup helps robotics companies manage the sensor data needed to develop AI-powered robots.",
+      "sources": [
+        {
+          "name": "Sifted",
+          "url": "https://sifted.eu/articles/robotics-software-ai-funding-round-mosaico/"
+        }
+      ],
+      "importance": 5,
+      "material": "fulltext",
+      "item_urls": [
+        "https://sifted.eu/articles/robotics-software-ai-funding-round-mosaico/"
+      ],
+      "item_titles": [
+        "Exclusive: Italian robotics startup Mosaico raises €7.5m to tackle AI’s data problem"
+      ]
+    },
+    {
+      "id": "c26",
+      "headline": "Starling founder Anne Boden is building Lockwood, a bank for AI agents",
+      "summary": "Anne Boden, who stepped down as Starling's CEO three years ago, is building Lockwood, a digital bank designed to let AI agents make payments for customers, Sifted reports. She is investing proceeds from her Starling share sales in it.",
+      "sources": [
+        {
+          "name": "Sifted",
+          "url": "https://sifted.eu/articles/starling-founder-anne-boden-plots-new-ai-powered-bank/"
+        }
+      ],
+      "importance": 4,
+      "material": "fulltext",
+      "item_urls": [
+        "https://sifted.eu/articles/starling-founder-anne-boden-plots-new-ai-powered-bank/"
+      ],
+      "item_titles": [
+        "Starling founder Anne Boden plots new AI-powered bank"
+      ]
+    }
+  ],
+  "finance_brief": [],
+  "clusters": [
+    {
+      "id": "c01",
+      "label": "Anthropic IPO nears pricing, about 7x oversubscribed",
+      "importance": 9,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Dozens of outlets; Bloomberg reports new ~7x oversubscription figure; IPO is the defining AI financing event this week",
+      "covered_before": true,
+      "new_development": true,
+      "n_items": 57,
+      "n_publishers": 53,
+      "items": [
+        {
+          "title": "Anthropic IPO Reportedly Oversubscribed 7 Times – But Will The AI Euphoria Survive The Stock Market Debut?",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQckw3X3Rrb0lZaUgyX3ljNzhPQW1PdUFhR3k2c2txMjdGNHBzQ1JoTXk5NlZLU2xKWlNrU2U0SkZKZzJRNnFycWtjdnVmWmdwTW9adlBubnhvS3Y3VTFsSkY3bzFVRDd1eTZ2ME03RXZNTXRNcHFlbl9GaEFST2VXZ2xkcnkxSXhTUEo3dGZYQngySHpFWkREZ3NPclEwYl9IY1pGNlR4dDJGdw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "Asian shares fall before Nvidia earnings, Anthropic IPO test tech rally",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPa3g3MVMxZ2lSN1ZpTmpaWkdYR25ZdDZ4M3BELXQ3ZC1PZDhtNTVjYmpQdHlJZUFtLWxiUkFLbXhUVHM0OHNScEUyTWFHUU5MMmZYb0EyVW51dXd1OWJFak1NbVFwazhlVzBIcHB3TENzRG1IZ2FvVFlpS0xubFBadXlPYw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Reuters"
+        },
+        {
+          "title": "Anthropic’s giant IPO puts the heat on OpenAI",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRTd6eHRac3JHWEQ5TElWUXZZUWRsMHdXckRQbjJ6X3ZvOFUtVHZDcjFBVWVqOE9LVnNPS3NWeDROZUtsRFdEdklzRzctYlpWbWszbElsMU94VWxtUm5OZ1ozdUxWWnVGRlpGM3ozYWxISG5fS1Y5QlB1bVQ0Z09sVGphWmgzMlpKMWduNkZYX0N1b1Br?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "The Economist"
+        },
+        {
+          "title": "Anthropic’s trillion-dollar IPO is open to Australians. There’s a catch for small investors",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWlpFRjlPc245WVF2Y2dZajdoZjlTVkowQ3dyWTMyejd2NHFSNWpDQzNGcDdSUnFlX2tQOXI2SU9wYmFsWHg2YW0xMWQtVU5ablhiTUFINDJSTGVEZ25KT2hob1BLZGhGWV9ibndrMUQ1bFdoZmxMYjhhRTZfTHhxRGdJdE1EdkY2SFdSNC0xdHNvNzI0UTFVcGw3OXVuTnh4UXZQYl9pUWV0Sy1KRFMwMEhkT1JBNUJmLU5qbTFBSUk?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "The Conversation"
+        },
+        {
+          "title": "Anthropic News: Latest Updates on the AI Company Behind Claude",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5RWXl0T0lpR1J0WE1VZ050anMwUlhTeUEzVGtGcDhYUTNKUnpsMDlkZHV2ZEpGanBNc0Vxb3VueVBYQ19pc2xlWTVvdw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Bloomberg"
+        },
+        {
+          "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+          "url": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
+          "source": "CNBC Technology",
+          "publisher": "CNBC Technology"
+        },
+        {
+          "title": "A Human Reads the Anthropic I.P.O. Filing",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPX0RWQ19WVmdZdzNSV2VQcV9TM2c1UGlEdjM5TUVWRmwtTXltMnZ5MTA0a3phZ2xVMjBsbjVmTUNycmhUMi14STh5N2dwTUxpVGhkdUFWbHdrQ1V6ekJ2OFd0UVp1UjM2Y0VhUTI0NWRQVElBdWsyUU5Zdzlud2J5VXZhVDZfNmc?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "The New York Times"
+        },
+        {
+          "title": "Anthropic IPO: the age of miracles, priced at $78 a share",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNX01aN0Vqc2Iwc1F5UlFFQTh6RkFXUS0wSjVkY1o3dmZyOG82MjhUZXJGa2RSMktDaGxUT0JiaTQtWUg3bUx3eXdzeTRZeFpjaXBIS1NiMmxRZVFMa0EzaUhiMkxhbG42bDBGMXl6VlJIZkpwUHpEODBrT1h3V3ZzSXQ4UmZIeW5oZ3FZUEV3?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Asia Times"
+        },
+        {
+          "title": "Anthropic IPO set to define AI trade",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZlQxdnNRcUFscFMzSXdmVE9MMkh6eUF4TmlmQ0ZfRHNUSGlFQm44YW96RFBreF9Dc1lLOS0zYV9PUVNQQ04xMXlxM0p3NVM0Q3ZCOW5tdy1vb1Vqdlk4ZVVfSVB1cHFfVDlQVkVNbFVXX1BvSFJyQU9lLXdwOEJhdWRuQnVKdw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Semafor"
+        },
+        {
+          "title": "The SpaceX IPO Had Musk’s Star Power. Anthropic’s Has FOMO.",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWEN6Mk43NjhtMVJzaVNhWTRvOUtSZ3NLd1I4UWtRTHI1Vk9RTGRSbFlHZ1g4bTY0MnVqb0ltNEh1NTVqVmpLb2tCTGp2dTBNUHpfWFI1aDB1VjBmcFNseG9KbHNkbXVUV2JIdEI0ZlNPVW13Q0IxTTZWZkxnSHJPRC1oOWlScHJkSVhzZGltSEtzVFdPZzUtMVByU0ZMZExMbXFsREFlclVMbldRRWd1TmoyVQ?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "WSJ"
+        },
+        {
+          "title": "Anthropic promises to pursue humanity's benefit. Its IPO filing gives it wiggle room",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPS1dFZHhta3VVdEhkN3F0bXhvS2cxSDVBZWJHazBFa2ZOamFqUVd3bUxkaUdqT3p5WWdIZ2RFVG9yTzE0eENSTTdVYmQzRTI3SlFzMzJ3S19yRGtlSjdyTm15SG9NRXVNSmRGVnZsLTI2NURGaDdtdTVCeUxfSTBmWFBIMjl0d0RoX3NiWWxOVm5QY2lqSEVGSE5ncmdpUWpWZVlZLVZ5VHBjTzQtQjRFRkdZTjlLWHlOd2RYYXc4MWI5R3Y0WUdTYlpmTEVDVlhBNnJLcC1mam9FcW5HMUNmWDVCaHR0MENYY3ZYeV91Z0FKeGV5Wno4WFpkd3FqMjRRUnNGbzI0dUlVUHhWcW1MbVRB?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Bozeman Daily Chronicle"
+        },
+        {
+          "title": "Anthropic's record IPO faces some big questions",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYXc4RnJvSkdnTzNUZnpmZ2FhWVhzcXRkNWdPWE5oNkdGZlZuU0J0T2RWY3lYazcyMEROaXgtWXczMjBPWVA5QUQyOHNVSFJuMnRUd0Y4Q1Jta2xoRHVCZC1rM1hnbUcyemRyOVBCNkF2MVp5VlNFT1l0NlplN0pIbzNFNHF0VkkzRGRzTDlmeVpqX0F5eGVmb0NxUQ?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "Watch Anthropic IPO, Nvidia Fallout in Focus; World Leaders Gather in Asia",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPX0pLWkFQUS1aWU9PNE9idXJzdThYRm9SVjZGOUpkcU1IZE42OTZpZllLM2taOGhRYTRSUEg0ZGEzb1QwbFhBQVoyNklvbk1XV0Yyek45REloWC1mWjBWOGJQQm9uS1ZfMy1hVUFQempXaEpERWh2YmJWajhsbS1MX2Zla29VcDg?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Bloomberg.com"
+        },
+        {
+          "title": "VC Firm Run by Madonna’s Manager Has $7 Billion Anthropic Stake",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdEJ1X2RvWFE1cjAwY3lxdndBWkVCQzQ1TU1YdFBXdVphRVBwN3BSdm9YRHlTWVNROUFXaUpYUWFXU2tRbUpSN2VseWYtc2p0Szh4QzBpNFFQWW0yV0t5VnlRTHJLZ183U3l1V2pvM19Wem54aWc2TW1pOE0yRmI4Y2Q4UVZvMXZ0ZGxZOWRGY0xqY2s0Zk9jT3lpaVhUQklZb3dfUjAzdnhGeC1FT0JDQWpkTQ?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Bloomberg.com"
+        },
+        {
+          "title": "Stock Futures Are Rising Ahead of Nvidia’s Earnings, Anthropic’s IPO",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9vc2JoVGI2aTdJQ01weHBLSXpQM3lqd3JJWjVXY0x0dHdhdmNvYUtpemU2QWhWNEJrV3ZUbkY3WW5CVDVFcW5ESFA0Z2YtWlc0c3hHZ19UUHkxQnB5enp2MFNQc0lsN0Z3VkFNb3lFY0pJT2lZZjU3SVdB?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Barron's"
+        },
+        {
+          "title": "Nvidia earnings and Anthropic IPO lead crucial week for AI bulls",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQ2N3REtRVnl6VUJiQkVOc0cyNndhTFRmNUhHaFNzb3ZRdjNLWXVHVVFIMklvcXhDWENOUXFWb0dKZlR2VG9NaHdHamtnMGs3b1J1QjRFcy1ZUVhXcXdxMkdyZnY1ZUU2LVduZzV1S1ZHN28xSkJpTU04RUtmN0ZPdVhVZ1BoV3NTd0ZGbHhoM1h4bHU4?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "The National"
+        },
+        {
+          "title": "Nvidia's first post-Jensen earnings and Anthropic's IPO: What to watch this week",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRGowX3ljRUhFOUtMR2diRUJHR2xTalpGZExTNFRKTExUQTQ2cUtNQXZfWEVRM3BMYldsOEh2czRtSmJZVExCakN0Q2VaWVRWWmFSYjRsRFBqNzRucXh1c2pIcW84aDUzdkhjY3pyZFFkVjRSN2gzU0dNM1NEWXI2WHIxdXl0OTB4OVM3QVVsSXg5V2NUQVVLVmZJWURyaWhXOUxyTWE3cm1qVXRQTFktZWQ0Y3hmaWlaenFrTi1jc3ZPSTFlWUVEbXRaYUVQOU0?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "Shareholders Are Bankrolling AI Giants They Can’t Control",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNS1UtN25Ubm41Nnc2ZU5PYzB1T1h4S09PUktGOFQ2NG1WOFJRd09LNVZCT2NzRTlabHd4SHhDVVN2VENlM2xEeDlEbTViem9ZM3pVYlRUazh1a2drOG9MSGlFS05UcGg1VVZVZ3NmdUY3MGozbmJnR1FfaHZVZmFEM0dkamVYOENLY2xkVzhDVndYUjZqU0wwbkdIMENVY1B5SDNlVFFKZDRveGVXck0tQlpsQ0NZTDFHRUFQZUUxcXNoazA?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Bloomberg.com"
+        },
+        {
+          "title": "Anthropic Is About to Become the World’s Most Important AI Stock",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQ0FXWUttSDRhNUNacC1GM0hiUWtnSVRoamZreG5QRkFqNlZVTHdSUjNNeHNCNmhGWWZBcGxiaTBIcDhvSDZxNExuclFYRlBJTXFuRXdjd2xzNkdpZ2RkblFZYlFNNnBkcHdfU0VRQXhvaWNaamU2SUNNdDNCVTctZnB5cUZiVmFuXy1aWFNqRWlXQ3pZSl9NcGQ1MFFnWEZBTHdaZE9GNGI5cEJSaG1pQkhGNA?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Bloomberg.com"
+        },
+        {
+          "title": "Anthropic’s IPO is the next big test for AI",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOelhLb2QtNy1faTdqOEwwQVNzSk5IX25mc0VOQjQzVTdPc3pZdUMyOE9EWkxVd1pJX0huTDZMMTBNR0ZLV0E2WHVkb1Vuam1vMjJ3TUptVGloS2VhWFlmYW1ITGJvVjJpNzNCdkYyQ3hTdXIzUlhaUElJN01UQzVWc2NfSjE?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Financial Times"
+        },
+        {
+          "title": "Could Anthropic And SpaceX Lose Their Founders After NVIDIA Lost Jensen Huang?",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYkJJWlZTMDFaT1M1N1QwVzRsMXc4ZHZsN2ZDeFJiY0diRlFObkZzU1psOVRMaUZLVGdSLUNIcm5BUlNpbFNMcl9sWGtTRjhjWU9RTE51OEtQSV9ZOUEwLS1wSkpCbzJMSkdOMXkxZ3JlbVhTc2JWcDJPVHE3djBDRWpoZlkwVm92TUlrUmN3akdZcHVPeDl2TjljSUQxMXVwUnhqU29kVGRvSmxJNFdOZVplUHBhVTdIRG1GQW9WeEw2Mjh1R21ORHpB?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Forbes"
+        },
+        {
+          "title": "Anthropic IPO Arrives at a Pivotal AI Moment",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObmQ5V0gzY0Q0T3lqQ25CUG5NRng1NWZUVTdUeF9XeG8xYXVpUlBCNEtkZGRNV2NvT19NTHFxWHdFZWZGbXYyYThpN1l2dzYwXy1lRjVvV0k1RC0xbDRFUnRrU01EeXBkRUlkZWgxY1BURUxQdTlmMnZQQVBUa2l0Y3hCN3kxOUsxckZhRTZaYWsxZkU?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Moomoo"
+        },
+        {
+          "title": "Anthropic Just Delivered Great News for AMD Investors and Bad News for Nvidia",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbTBKTWc2Y1k4cXU1MGwwTUk3NnBndW9FQ2xTS0lkR21nVnpRRlRSNVZWZE95dUFKTzBBdkx4VVZyOWU2TDB3ejNZYVpzX3NQQno3OVJxNnpFWG8tUjdiNGpVZ1ZNRVVUVkhXTVRzU3FoZVZkcGMxZzQ5QlpLM3BFc2ZwMjI4YWlmNGluY01Hc3RIZEx2RzlVLW5ydzhiR1gy?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "Anthropic’s IPO: A make-or-break test for the trillion-dollar AI trade",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWF8xNENwM04xaGVLVHA2cEhqamRIZC1PejdHLXlDb0dHejk2Q2QwQTl5RDlOVTluMUszN1pueW5zN2ppRjN6Mmc3ZXhmZTZPZXRMZVE5c3p6NW1iMHFWMFVta3A3bVB4STd6RzRtY1U2N2dkNlhCenV4Y0wza25VdVl5ZmJmZ2liUHFDZjQwamthQTRiRzVSNkFjTGxYcVZkUDREUUlybUE?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "MarketPulse"
+        },
+        {
+          "title": "Nvidia, Anthropic, Walmart, Home Depot, the Fed, Home Sales, and More to Watch This Week",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMEFCc1RYenNXbXpFQ2R6dXl5eWphbE4taTBCU0N3aGZoVFNsMVdKb094eEpBU3JIdDNsbzB2V1VNXzNRVjNLT1gzd2VDTEZUS0JwTXd0RC1HbEktc1VSTUw4bVloREZ5LWlXZl8zd2dnVGVBejNMMngwRnlDemE2TUFfcnllNnFlQzNkc3lYNDc1MTJybHA3WllGUzVDc0RRMlhJUUVmbEV3RTRjZ0ZYVUhMREVQUEJTbzVJaEhzMGZNQQ?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Barron's"
+        },
+        {
+          "title": "Anthropic Set for Nov. 19 Nasdaq IPO, With $900 Billion in Commitments Testing AI Tech Rebound",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zZXFQWTBFTndVNnhOd3JEWDZUcm9GcEJtR182Z1RoVkxZVnVRYWh0akNXUHVESUVJdWhkLVBPRm41MTVfMWVLMHl2YU1LcFV3c1dmTA?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "bloomingbit"
+        },
+        {
+          "title": "Anthropic heads to market with billions riding on AI's promise",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qUUxGOFUzY2I1c3lpSnlxTGlmWFZxcHpCNUlFZGpjSnk2TDNOUE9DZy1CY2NjVzhKSk9BdHVUdVdUaFkwZWV3ajVrM3hDOXkwc3JFRGRuTkM?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "TRT World"
+        },
+        {
+          "title": "Anthropic IPO Is Coming Up: Top Companies Set to Benefit if ANT Stock Jumps",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVHlmX09MNndOVkxaaklyWmREeS1wTWFoV2FUUEZWWXRRVWNiNEdyeUEyQmRlUDBXZTBLLXB5Y0ZINmxDZG96R0w3TTNzWkNPUW1PNVY0WDN3aTd2S1JwSUcxQVFsSS1kVGprRHltYUR4RUdCMWhvVVBkVWd0aXpXQlFQcGFmRG4zMkhUdDJQTHFQZGJYR0ZKeFd1ZXdwT3dmY29rVzNMbHlUQkdaSWM5b25IZU5feVpsTmNYQ1JXaTk3NmRTOVE?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Benzinga"
+        },
+        {
+          "title": "This Week: Nvidia Earnings, Anthropic’s Nasdaq Listing, and Fed Minutes in Focus",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLVEzLXhWMVFyT2NNQlB0R29hTGVmaHl5blRjNXEyQUo1eHBxSml0eGl3NUF2LTV3Zld5SWJfNk5PWFlhNnp0bXBrd0tPSnFiLVJXaHYwd3JMaVFQMFlXQ2c2MzFJRGc4TFJibmVsX2FwMnV2SDhudDM0Z2xad0syVThDZHgzeEV2NG1ZUEpJYUc3b2ljS3Mzd0gwcTRIcUhBWlpHaE1xRmEybEdwbVR3ZHNBNVZOWkFuVGdEZS1FR2Nocy05bGw2S2diYlFrWkZtUjVKWkRoVQ?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "TradingView"
+        },
+        {
+          "title": "Anthropic IPO to further fuel the AI news cycle",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcDlQQXRRTW1SQk1YR1Rfd1ZZQkhfZVF2SEpfMUJLSEk3d21tWE5telBvb0VmOFpjTG1mdzd0cmFMZE1JeGRNRkU1ZmxxaUp5eGdUZXNXRTg1enlkU0tSS2RKeUhjbFBaeF9EVGhhTWd0ZHdrWE1jT0p2S0Fka2hVWExfZzA?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Financial Times"
+        },
+        {
+          "title": "Nvidia’s Earnings on Deck; Anthropic’s Public Debut",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQmxNT1EtbEVyR3VoLWlSb0llcU94cllCWmQySXFjQzYwR2RJdjQ3d20zSnBSSWZ6OHpON1l0Y2pIMWRBVm8xTFo1d05OUzNwUjNsajE4SWkwaS1HNzBIQ1pfZWxnUFhPRzlnQUtMaHpQS2h0M3pQVjM5M3g2YU5pZEY5X2MwSnhxSVZoMTk4OG11bW1xZjJTYUl4S2FCOVVVZWdz?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "The Information"
+        },
+        {
+          "title": "Markets Brace For Nvidia’s Earnings And Anthropic’s IPO",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbi13RWVLQVd5WUloaHlWWk9KMVd3Xy02UjlkV2h3QkdONXZHd3lRNWtwb2YzbGJvOEpGZTlFMWxNVTFJS3AzYmtHVGxxdlhuMWpzM0NqbVoxSEFjLTA4RkFDNXVYM0tzQXVTSVJWR3ZWUm9ySGhjV1NUWXdQNDdBOFRvbnpIMHJ2M3c?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Finimize"
+        },
+        {
+          "title": "Will the Anthropic IPO create a disturbance in the broader U.S. equity market, like SpaceX did?",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZEhmQUdXRVh3Z3JUcGtnTXZGNVlZbnhWYUFwWlUxa19QelNaek1yM3UyV0g5WUxydGoyREFYdUlyYV9wRk96ZGdpd2FVaTNZNWQ2NElZR3hQVTAzcVFvSnVvOS1CLWpUYzUzRzNUU2JkUnZhS1otaVBieUR2TzV0UExqbENqMkxGTmlSd3h0WE1fUldkTHBLMjJoX1dOUWJISFhLcXg2cThDZlZUOWVlRnFMc3U2M1RzelJOMG5JeS1wMGYxWDV0QnNya2RSMkxW?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "MarketWatch"
+        },
+        {
+          "title": "Anthropic's blockbuster IPO \"draws its sword\" this week—does the U.S. stock market's AI faith face its toughest test yet?",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRDg3bEFRUGF4c0lmWEhTOTQ0TkxPWC13eTJ3WFN4azY4QUp2bWQtZmFETHB0a2U0X1NOcDhkQ2RFbHZRYS16aEhkLTlXVTRDSi05QVY1a0w2ZDgxQ3ZhMmlxQk1PX2VJRWsyd3JwbjFKZ1NoeVBGalJmSGd4bmlvWTFVbW11dFluLVZYYjQzSldKbnJ1a3ZBb1lUN3Rsa0FERTdV?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "富途牛牛"
+        },
+        {
+          "title": "Will Anthropic's IPO lead to better AI regulation?",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdlRTbTgxMXEtcUJadGlXdFdjdzdNY2dGZU11aUZtMDdOV0dBaXFfYjl2ZFhiZ19hdzFzVEhzM2VPUEFkUVM0VG9JTUdjdHNSbFc1Y3dHOXdWVzN0ajEwMVRMdkwzNFpoT0dQd1hmYmxjMl9wMzJZRVJ0b1dibDd1RHV2amtyUmgzSFNEZEM5c9IBnwFBVV95cUxNNTJWdG56cEJKTi1QWHZHR3FYNmJ0NmIxNnRkWm10QWt2X0hDYlg0dUR4bFlMRDdBTmR3SHN0RzVpNkQxZzV6WkNfUTFtVS01R3FfTzlJRmNtZzlwS2dkOTIwUTlOVVd2Y1JETFpOeC1iT1JhZjVhakJvZ0c2aTNYMkVkZmRVV1F0OGRCSnBfZk9wVlpIWmpKNGFjOW52ZFU?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "The Korea Times"
+        },
+        {
+          "title": "This week on the stock market: the Anthropic IPO and Nvidia’s earnings",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWUVHbXhqTmZkX2RjWTI4amZVbUVDcWo5R2x1cTdtb3JGbWMyWFUwU2NVSW1KQ0VHWF9kUGZLQm9yVFBVTnMwaTRvalVqQ1pyQW9iTTYwRzlsNDdreUpsNEpFcmdPLTM5bHpHbEVHZzAxZ21jQTZIcW5hRkc1UUJTOTJzMnBPNzA?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance UK"
+        },
+        {
+          "title": "Nvidia Earnings And Anthropic's IPO Could Trigger A Market Reckoning",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNndlLUNaaXpuNWpjS21LYVQ5akxCcGxuVmZIT29sZ0ZrYWY5elFpel9feUd4R3JZbVMtc1czOGhIeEY0ZUprVDVuaFJTZWl4MGVMV0NiS3ZrV2prN2NaZGtSOUIyVUVzRVluQXZER1hIZjlaQlZWQjNrajhRV3NrLVNLRlNsV2I2RmU1MHI0RDYzWUk5VWFoMGE0VEtwY09zSVBR?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Seeking Alpha"
+        },
+        {
+          "title": "Wall Street futures edge higher as Nvidia earnings, Anthropic IPO loom",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWDRPRDljTWxRcmN6RFJIUGE3SnJDRHJ1LVQyUWsyLVBiQnBGVUE3ZVh2ZUh1TlVXMUhGcTZTQlZaT3lXaVEwN3IyV21POHhvbjhDZ1ZOZHA4YjdLd2lacWszeWN4dFd6aXZpY0JSdGNOcW44dF85amVmbDVJSUM4UzB5MTlwTWEyNDlaaEV0WU8?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Traders Union"
+        },
+        {
+          "title": "Stock Futures Edge Higher as Traders Await Nvidia Earnings, Anthropic IPO",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNmhFRmwxdkRGU0Z0dU1fSFloOUM5ZmhCTnpVR2VQQzhleGpBbnhuQkJLXzVYU1QyVm1QLUNTLUI0Sjc5UWY2UUFjN0lrR0hvZ1E2VXMwVmtIT2EweEhzYnN4dmVHaXhXdldReTFfdWM1M1RfZlZrQ3FLY1c4cC1IY3lmVjE4MnpOSHJTZk1HbzRTVWdGWUczYjNfcTRWUnlxaHZJeEM0aFF3STRWV0FIWjBka2RZWGN6UmVKelR4LXhhOXRNdGtxLUxyX1NHZWZ1?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "TradingView"
+        },
+        {
+          "title": "Nvidia Earnings and Anthropic's Record IPO Debut to Test Wall Street's AI Faith",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Hekk0ZGdVemJjUks5NzZMeUpwaGRWN05WTDBzWTc4QlhlWThjRXRCenFsMHd6dEhmZnc4a1lmWnB4REJzWndkNUg3eDZKTkJWYl9CNmVtSXBjOXZhS285eWdtZXh1Y29PSW1mTDZTZEJaVTRPc1E?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "BigGo Finance"
+        },
+        {
+          "title": "Asian investors chase indirect access to Anthropic shares amid IPO fever",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOOHRmdnFxRElCVVhhQ2Y0d2VkMVZyNkdaQ0J2U2h6WThfc2ZPTThmSFFTZU1VT19Pbm9aZ2xwTzI2eUdTMDhXYXBlRnA0NEdneU1Yamhqa0JCa1lfRWhaNlh3bU9GVmRIQ01Bdi1sSTM2d1B4UmM3bXZYX2o4VXA4ZGZ5SnJYQjU5eUZMNi1FRUh3U1ExcC1RTldvV3BiNDcyV1l1S1hTcG1qNUZFQmd6YWJJSlRHTWRqS25RZG80ZkpyNDdL?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Nikkei Asia"
+        },
+        {
+          "title": "Anthropic’s IPO is about more than huge fees for bankers",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOUE5dWpLdm8wOE1ZbHNPNi1taVJvZFR5ZF9NYndUcUlYN000R2RKT1VHSmlfV092OTM4bDR2NDZDRTlxTTF3TWNWRjR6M1BDNzdkT0g0NUtZaXpiTEs2MXFtMkRYYU9UUUVQOGRkLUdud3NadFZTM0NyUkljNkdVbF9wNkZadUdYOUlraXptSDMxenV3WWIxT2R6UXp1cmM?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Financial News London"
+        },
+        {
+          "title": "When it comes to Anthropic stock, should I take the Warren Buffett approach?",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVTJLUmxrVEVXMnFKTFU3VmhIV1pfdDlzb2hUcTV5OEs4RUdibU5RLVVjT3ZsODFmd3A3U3R1UmRFdGljSHFCU1k2OHBKazk3WGdnZ0R6OE9DeDN1MktzNDVSQWpOeFJnSHVqMkJqN01KbEV3VExvb2NRY2l2bW95aXNJcDNhVWpqMjBVemF3?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance UK"
+        },
+        {
+          "title": "Anthropic CEO pitches safety, culture ahead of IPO",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41VVZJSUNWa0JqVmhrWlVoM1lpRUhjRFMta2NIVkYyM1QyY0Z3ODh0UEhFOVhldlB4VkNCWkdGSmZ2eUItRjhYbWFNUDFNZjd4MGFINUF1cGpOWHREb3JzSEdhZnZ0Z0dvUEtRWjJZY1otbnZoZGc?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Taipei Times"
+        },
+        {
+          "title": "Opinion | The Flaw at the Heart of Anthropic’s I.P.O.",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0bDdBVlVjS0RNUHFRM2hUa1pldy1mMlRqa3pnbDItM1VlN2EyMDlQOGRDQVh2UDRDTUlFNTRxbWR1ZDNENm9qRWFlYzF0c0lkVG9uVWVXektpbnRsR2M4dnhQX3ZqNWN2RHZkYVN3VFBpZjJCbHVGMDVLeVlzOWs?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "The New York Times"
+        },
+        {
+          "title": "Nasdaq's Best Two-Month Week Ends With A Key-Level Failure As Nvidia (NASDAQ: NVDA) Earnings And Anthropic IPO Approach",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPZEdOTThyeVJTN0dPZ01rVkxqQnRnRU12WnRLUU9OTU9GemhpZmdRNGN4cjE2NVVPXzBWN1lrYzZlMFphM3JvcUVGS0FTTmdEUm9HdVMtUWM3cFhtQUNkaFNlUnhFTVhBWTFGMGJPdTJGRVdHbFBlc1FRSTJRNDJ6VmlXYURzTTZGZGEzZ3MtVmw5ZUt1OXVzd0FoVE9odHdXSFFHQ0g3RVc5R3R2MllVcWh4M1dJdVE3Rk5jajZicGxqQjlTRElQMUFEa2xyajIxbUxERm8yMlN2TG9JUDViWXYtWVRqSDFScEpIMzdXN1NEeDVTSkMw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Foreign Policy Journal"
+        },
+        {
+          "title": "Some Asian investors offer 30% premiums for indirect stakes in Anthropic before its IPO, Nikkei reports",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYk95VDRCMTB3LXZadloxTXJMdHZiT0dwMTMyX3hUNzhpTGd3QlRuUkxrT0owNXFVYUxhQU9CejJlTTFGcVRtZzYxMmtuRnhOc0lEYmZpMS1Zd3dQQVZwaDVqLTZOSFBzODllSlZKcm5KRVFtZl9Sem90TjNaZ0hkdXVJaURqV0FUZkN1YVhBUG9FYm9TbTRLckhqS0tvdXdIcHREN2JQcmZBOVdNRlVzQndLakRlVGhROVVpZ3lhQQ?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "MLQ.ai"
+        },
+        {
+          "title": "Anthropic's IPO is oversubscribed sevenfold, seen as a barometer for the AI industry",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd1hYb1FrRnZSdXkxMmtoTEZxdDRnTVRaSDRBdTMyVjVFU1FNOUdOTjVMcFpGSjRzNXE2d2U2TUFJVHg5N3VJR2ZKZFFvQjBBT2pMWFQ0R2VLOUhuMVNrdEl4NHNEcDdFMzg4bDlIMWFmdDlKa3hsNThHSW5OQ2Q0UlpFQUN4V1daTVp3T1NnOElWX0hlbndHNkh6cw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "KuCoin"
+        },
+        {
+          "title": "‘It feels like a game of Jenga’: Why activists are protesting Anthropic’s mega-IPO",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaDdkN3JhRHlQT0huQ3g1cVAweHp0VDJLWDBLekFlM1lNTmc1S3VBM0FqNU1EbGRtb1VPVlRlZC1TQ2FhQ294MkZNSGZvSDJrMVcxR21lZWJhcnBzNHp0ZUJyMkZiTFVIcnlCTFJ1dTB1UEhMakVFaU1maFRxcnVhV0lfLVYzQQ?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Business Insider"
+        },
+        {
+          "title": "Anthropic IPO excludes China and Hong Kong investors amid U.S. AI security push",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9BaGxqUzJkcmduSjFQeWREVGJROGt1eHk1N2VHSkhfQnQ1WUk0Rld0YUN4T2pHMEpsUE9aTVUwNm8tQlhLV0ZSeU8zU1RtWWVFeGZvVTktTkhxTUliYTdLVDN6QlZzUVR4Y0tPRTM1SGt5Vk40VmdYSUFn0gGOAUFVX3lxTE8xSG8zTW5uVXNKcnlEVXBHQkFtbmZBcUthX3RsR2llbFZ2dTNVNzh3VnYybTlYZHRKaWhhUnZreGxVRTMwNFIwM0h5R3l2a0p1c291OHlSN3pXRVcxQmJka0pnTVhOeUdoeTRTNnlkMm9pUEFQQUQ0bjVuZm5scWdOYlhtdDdidlJKdGVTZnc?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Chosunbiz"
+        },
+        {
+          "title": "Anthropic IPO orders hit nearly 7 times shares on offer",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdkRIUk1sZkdTMXJTRk5VM05iZ1AzOFBGY1VtUUFCZTZmVUpFdWNacmNneXJCLWlQRmxGUUhmRnBISlpIc1dzZWNVbGVOeXpXT2dNMDlOei0xX1VMdHBmTTdyT3hXZF9UR3kzYjhsMk1ZeXhZSGN4VmotOWlvcS1USGRfcTBUdGFPajZGYl9WZFlEYXdrM3J2RUZ1Q2hSQdIBrgFBVV95cUxPWS12azhtU2xTUzV1anRxSTV3YUZJMzVZMDZyZmRnVV8tYU00dThkdVo0MDhUT2cwaDVWLVM3bktLVndRSGZCN2pnWE52MG9HM0pQTUc5dzYtN0lZZVdtY295Uk5kc3U3VVloQWZ4THc0TlNSUUUtRjlKbVQ5bHN4MG9HOEVncEtvd3poSHFYV1Y1NW9faGp0bVBBaklveU1vd2dUbklFb2RlS1RrVmc?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Gulf News"
+        },
+        {
+          "title": "Anthropic's $64 billion IPO lands in the middle of an AI selloff",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa0E5Z0ZIZDR2Nm1zM2xobkpzZUdJVlFhSTVUd0dJSURzbmxzMUlmdHplcEY4T2xPdlZLekR2RlpZVXlPSW5zel94WG9aQTBpU2JOWkR6Qzdsa1RWU3hqYnlHWGtKYXJZM3AzUjJ1c2ZnUkstZVJWNGU1R1NROXJVN3NFaVVLVXNUM3hmQ2VfbE9wVUJa?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Startup Fortune"
+        },
+        {
+          "title": "Sound Ventures Invests in Anthropic, Stake Valued at $7 Billion",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaTQ4RGZ2UDVkLThIaUptc0tTeXJsOUtURWFUd2FSazIyUnFMWnFlaHp0SndhdV9pRGNyeWNuTzNObXZVejhGb3EzSW53YmhPYkxzY1hYNDJ0ZHhJdF9yV3BzcjJkTDBYUWpOaUpQVms3M3h3N3o2c3ZBYmxzeVVETnlFTElGY3RZUWxjNDV3azJpVk1xVGtQS3ZYSlRpb25laDFLamFUSDdkaDd0Vl8wdDRJaXloOUpSR3pMVGZBMVpHQQ?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "TradingView"
+        },
+        {
+          "title": "Anthropic CEO cites compute crunch as key IPO driver and urges cautious valuation",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9Qb3RhX0oxSzV6UlF5RDF2dGhRYk9qSW93cjdGZF96T2N2dHBkYnJSMThxc0NoN1NPMXFNbnpYeVpsLTF0YVNRWXVIS2N6eHNWQmJ0dFBKVVJUZ1g5US0tZ1duNzRMTXdxVDBPT1N0a1RTSUMtcWdxQ0hR0gGOAUFVX3lxTFBiRDF5OEtIcnRkTG93TXVqODZnRXZUUzA1UlpZeDZIR2JwejVlUGJ5aGhOcWt0a25Ya2pRR3ZiN1BBc0FHYjN0N2hRSzBFQnlra285TjliZzJCTkNsZjdNRlVMZ3dFNUY2RGNkM0FaMVgxNnExZXZ0djRRMXBfdHN4MXhkUmRRVVNXVHBKaWc?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Chosunbiz"
+        },
+        {
+          "title": "Anthropic’s $90 Billion IPO Tests Investor Confidence in the Global AI Boom",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNEhOYlJvYTBPYkhSeUdDanpla0VMdTV4UkJVVno2cHRsNGljVlFDdVYxRnRCVFowTXRJYUNjd2lteWRlQUdJdlZtZTI5SFZ6WTJScktvYW1wMDJJcmxUR3NBSHBUdXhBQ0kwdV9CLWluY3lXRlVheE5pSGllYVNWbVAtNnBwRzBHWnQwWi1ieHlQMXlkSW1CdWtCMGo1UQ?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "Sri Lanka Guardian"
+        },
+        {
+          "title": "Anthropic’s IPO marks a new phase in the rivalry among AI labs",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUTNfbmpJYnd5VjIxcGpDNFFYNFJydzVaakZHSmdDMVJwX25aU2Q0ODh2U0w4dUI1N21rWTBhZ185VkdfUkx2d2pNMEg1enREclhJQ0pESklKbFVpUmxGdnh6NEswdmZjaTBRanhfNjBPNFNSOVZoV191dXoyR1AtcmxON3NZem1tX3Ztclh5TTJXUklDbTJtOVFncHVmNmNDbUlRakN6Sk0wWmc?oc=5",
+          "source": "Google News: AI private equity",
+          "publisher": "The Economist"
+        },
+        {
+          "title": "Sources: Anthropic's IPO is ~7x oversubscribed; Anthropic and some of its backers are seeking to raise up to $90.4B via the IPO and a separate private placement (Bloomberg)",
+          "url": "https://www.bloomberg.com/news/features/2026-11-15/anthropic-s-ipo-makes-dario-amodei-the-new-face-of-the-ai-boom",
+          "source": "Techmeme",
+          "publisher": "bloomberg.com"
+        }
+      ],
+      "section": "lead"
+    },
+    {
+      "id": "c02",
+      "label": "Alibaba launches Qwen4-Max flagship model with benchmark claims",
+      "importance": 7,
+      "category": "models",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme pickup plus Bloomberg and independent index; benchmarks partly self-reported but major Chinese flagship launch",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 4,
+      "n_publishers": 4,
+      "items": [
+        {
+          "title": "Alibaba says it filtered Qwen4-Max's training data to remove offensive cyber capabilities and mitigate chemical, biological, radiological, and nuclear risks (Ann Cao/South China Morning Post)",
+          "url": "http://www.scmp.com/",
+          "source": "Techmeme",
+          "publisher": "scmp.com"
+        },
+        {
+          "title": "Qwen4-Max scores 43 on the Artificial Analysis Intelligence Index, beating Qwen3.8 Max at ~67% lower cost per task but trailing Kimi K3.1 Pro at ~11% lower cost (Artificial Analysis)",
+          "url": "https://artificialanalysis.ai/",
+          "source": "Techmeme",
+          "publisher": "artificialanalysis.ai"
+        },
+        {
+          "title": "Alibaba says Qwen4-Max, which isn't open weight, beats Fable 5.1 and Kimi K3.1 Pro in coding benchmarks, and plans to release weights for smaller Qwen4 models (Luz Ding/Bloomberg)",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals",
+          "source": "Techmeme",
+          "publisher": "bloomberg.com"
+        },
+        {
+          "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens (Qwen)",
+          "url": "https://qwen.ai/blog?id=qwen4-max",
+          "source": "Techmeme",
+          "publisher": "qwen.ai"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c03",
+      "label": "Trump administration to name AI national champions including Nvidia and OpenAI",
+      "importance": 7,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme plus 10+ outlets citing WSJ sources; concrete federal program affecting major US AI firms",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 11,
+      "n_publishers": 14,
+      "items": [
+        {
+          "title": "Sources: the Trump admin plans to name Nvidia, Amazon, Microsoft, OpenAI, and Anthropic among 24+ AI \"national champions\" to help them win overseas business (Wall Street Journal)",
+          "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344",
+          "source": "Techmeme",
+          "publisher": "wsj.com"
+        },
+        {
+          "title": "Amazon, Microsoft, OpenAI, Anthropic to be named AI ‘national champions’: WSJ",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOemJiejJ6X1h6blBrVnJsX0t2ZnlCblk0VEVaV19rWW1mMndaQjVHeVg4UkxFNUFtUUp6ZFJxX0otWEZxTFdmU3dzUUY2RGJDb2V1VmtvTHYxWU9ZVVFpUkRmUUUxQ1VlVmZMNl91cVZuZ0VPWGhMOHFXUGlIN3QtR29xTW1ZRVBwTjlTVGJ0UWctTmJtelFFZ3NBbW9GTWhR?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Crypto Briefing"
+        },
+        {
+          "title": "US said to name Nvidia, Anthropic AI 'national champions'",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPU1JSaEVhejBGYnVyTmh3aTJ3THpGMHZpRU1fc092YmwyTHpmT1lFbU95WlB4cUdpMWh1MUFLSUNqazNQM1lPZW5lZ1dfU1pkMHg0bFRKVW00WEstYThhR3Qtb3J0TjhOeFdROERxeUJkdDRjaUxQQTJpaFFFUHBaUmFhSHJST0g3RngtSTRkMUtGVEQ5UERpLUhGcEYyN05PY0cw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Breakingthenews.net"
+        },
+        {
+          "title": "Trump picks Nvidia, OpenAI, Microsoft among AI 'national champions' to take on China: Report",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNjc3bTVnUFpsdl9BdzI5RGZPYmszQVNsZmJEZzNhQlNndnZOQzFBYmtQbGw1djFpVGszc3dPSDJJYjgwSUhobWo1VjBIbmlNWlFyVkMtSl9vQnI0UDQ4Q1IzMm5ENnA5dlMzT3hPTzg2V3BQTE5QSXF4QlVadUQtcjhUSXh0YXFYcFJ1ZFJqOFVFRmp0T2ZoNGpIcmkybnR6b3NEdmJRQzZCa2lIa1M2X1V0THA0OFFWcVBKamVmYjVpVUcyVzhsTEREUXUtcjRrbUZmdUpoR1piY29R0gHiAUFVX3lxTFBtQzlzemtEVFVQeWNFd2FLZ3BMckRoc1hzblZBdHo4aEVKSVlqLWFNM1poZ3dTOVAwVXdtN1Q5Wndfb1M1XzRheHoycm94Z0hsVWxVNEVXdnB3ZWlWRkptbUNOb3k2bzlsa0ttYUhzbmdlS2RNRk9GbjRtUGJUVXRnRnB3ay1ST2xsUlAwNjFSQTBGTlpsYTlHUjR4dEtZSXNvbUJ1ZWVreDhNeGJyUml6bGZvNmhGbEt2d3BqX0ZzdGpCWTcyUVZDRE5nMFktMm5uRklNMGJGeTRTWVh0d28xVHc?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Moneycontrol.com"
+        },
+        {
+          "title": "Exclusive | Trump Administration to Name Nvidia Among AI ‘National Champions’",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbVZuRkZvWWp2cTVZRkh3Tm96YThHTGFtSmk4TjhOMWZqT0xsSXZkbEFQRzRZcWFaMHlzNGYxZHBzTF9YYUZJa0ktNFNua1ZiLTVvNDRNZGViZlFxMVVsQlZXM09faWZOSDZkNDRiaTJjYXFfMUgxN3p1UWZkZXVuOEQxUFJRSHI4TG9yRU1kT0Rlb2ZoUGQtQUNndkdnajdTZmc?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "WSJ"
+        },
+        {
+          "title": "Trump administration to name Nvidia, other AI firms as US 'national champions', WSJ reports",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbzFERGNkd2ZLODdReVZtV3pnNVdJT3RyNDdpbUZQRXZHUEgzbVYtZTBwelhfV1hRbVVfOGsxeDJURWd2bEJubFlFUjFXZC1HM2Z4U3l2TXVhTXR3OTFPZ2xUaDhOVlBDWF93dDE0V2lsOEI3bGFGWXlmbnVldjNCQkJKQlFNbDVfaWR6cGpJdktZWlJXcEdNQkZnWWsxSlZGX19tQTIxYW5NVWQxb2NQclEza1JHaHBma3lmaFNzQWRtQld0UkRwT01IZEY0eUk?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Reuters"
+        },
+        {
+          "title": "Trump administration plans to name Nvidia an AI national champion",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbktOLUVLT2ZSYmhUM1VDUG1ud2kxZGRpUllLMjhZR2NBcjI4aTM4cWs4LWp4ODFwQzBQVk1YY01jU1Z6Y2pOZDdvU0Z3R3hnakJ2ZGFXMnlMYmViQUhUelRGcGJjcmQ5b2VsYkNYZlpoZzc0SXJGZ0diZWxuaVFsS3Vn?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Crypto Briefing"
+        },
+        {
+          "title": "U.S. plans to name Nvidia among AI ‘national champions’, WSJ reports",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZWExcER0NE5sSDg1Y0FKN3AxVU1XUWJUcjAtLUgySUhkU1dwN3FhczM2Tmt3UnlPeTVRcjIzWXBiTmI0dk9TSC1SNm5CSzlZcXJnMDM1WkxYUnpiRzhRSGUxb0J0a0lRQkVVblZKZFhMLVpPd21YeEgtVTIwdTlrQ2tfWUJfMktFY1Fzc1F1LW1DUXpiZXFaZ3hNNEJ5M0JNbzNUbThvRVBwNERXU0FieC1FbWRwc0NSZG03aw?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Investing.com"
+        },
+        {
+          "title": "Trump Administration To Name Nvidia Among Ai 'National Champions' - WSJ",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdG1zSzdQMVhqVnhlRDZFZEFUS1QxMi1LRDR5SEFZeVg0eHlUXzdCb040TmJsbjNUa3A0MjZyQUktbUUwcjVPTV9DMC13UHY1LXRhMWQ0bUR3RnVGSlRoNUpFeUY2SkUxYnFJNkY5QkZ1Y01sRjZ3UTN6bjdjNTBsWlpFYkItUmQ1RUN5U1BHMDRidUJycjFBX01QWWVnU2VTUE1ackZtemItVENndGkybGhmOGRONlFuTXNCMkItMzFkZ0g4dVFJWmJjb215OEFmTEMw?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "TradingView"
+        },
+        {
+          "title": "Donald Trump to name dozen AI firms as 'national champions'",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LZWZiQU1wUS1LR19OUF9sNHVzSE50WU04cXV6RDlqTE1yeExFcGkzd1JaSXNBb1phd3hrWjI1QjFjRXA3MDczRTEwXzF1d01qYkdTaFA3bWpvME9FTi13?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "The Jerusalem Post"
+        },
+        {
+          "title": "Trump Administration to Name Nvidia, 20-Plus Firms as US 'AI National Champions'",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBLelRHUV9HQWowMmVyMWhwak9CTFhqU0lONVhDdGFVSjRCS0F4RWp1Tm4xUEl5SGlUY19iZWxPeURPUUVFY1IzQ3hHWkI1ck43SHNYSA?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "bloomingbit"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c04",
+      "label": "Jensen Huang reportedly discussing return as Nvidia CEO",
+      "importance": 7,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "HN curator plus FT, Reuters, Bloomberg, Forbes, Verge; new report on comeback follows resignation",
+      "covered_before": true,
+      "new_development": true,
+      "n_items": 8,
+      "n_publishers": 12,
+      "items": [
+        {
+          "title": "Jensen Huang might return to Nvidia as CEO",
+          "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
+          "source": "Hacker News",
+          "publisher": "reuters.com"
+        },
+        {
+          "title": "Jensen Huang discusses comeback as Nvidia CEO with allies",
+          "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1",
+          "source": "Hacker News",
+          "publisher": "ft.com"
+        },
+        {
+          "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
+          "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+          "source": "The Verge AI",
+          "publisher": "The Verge AI"
+        },
+        {
+          "title": "Jensen Huang is discussing a return to Nvidia, FT reports",
+          "url": "https://thenextweb.com/news/jensen-huang-is-discussing-a-return-to-nvidia-ft-reports",
+          "source": "The Next Web",
+          "publisher": "The Next Web"
+        },
+        {
+          "title": "Jensen Huang Comeback Report Primes Nvidia Shares for a Bounce",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbFZxVFh3T0hqYnIySTZ0RzRNR0FWN3FkNWxMN2NTbDI5RjlNLUo4Z05mZFEwbzR2YW52bGdzdTZjWEJEM2JvQ01Bd2ZrYXNBa0E2c1Z3SWJSQ1ZIdVZXSEJyTXo3SXVFMXZRZEFSM0xSMHJoSDJPWG9qX2xIeHpLYThFWURtaFRwVC1OU2dKUUR1Wmd5ZnhYQ21FZ3l1N2RuSzJ5cmpQSmpPQUV5S29aUngtUjB6QQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Bloomberg.com"
+        },
+        {
+          "title": "Jensen Huang Is Already Considering Returning To Nvidia, Report Says",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOa3E3cUNQYmpNNDRkbXlac1dOeC1qWWF3cjdUcnRPLWtONW5QM3FUVk1PVXBuamhCQzdZOHdMYUdxMHd0LTNkTFF3UVV2VzFFenAzaGtEYnFsY3BuOVU4VVp6YmRpSExBUm9PSjhaXzVzWE1mbmx2R2pKa2tGM2V0bDRrMlNJMEZqLWVGYXVvUlY1ek9lQm9UOFRBeUdrNkU4UVhuVlBTSlFJcWFtVzMwQ1VNM2RsaDlwcm10Vg?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Forbes"
+        },
+        {
+          "title": "Jensen Huang weighs comeback as Nvidia CEO as allies lobby board, FT reports; Bessent calls for ‘dramatic shakeup’",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOTHhsQ2k2SHVzbU9YMFVMU2RNTnB5anNMT1REeTc1U2M5NjByeFdKWmJoZkdOUC1LTUNKc00wdUVuc0JFS3BTRktOd0pkdjdfMlFaRk1tUWlOOTZ5SE9RTFkzY0xlTXAyYVVIM0ZVV016YVk0ZGNlVFM2MXdIVG5FVExURG1UclVBWF9VNjJxQ3hWQVB2X2J1RTlYU0NTc1NSMm5oeXVxREdmRWZNbmpFWjB5bTkwLWxYT1hBa01fQlVFd2I2ODlUZGRhajBCakdQVmxYdjhUQjdhZkcxSUpkN3JkenBnU091NHp2eURUN3AxSWtQSmd1MjdfREFXelh2dnZFd3A5aVFBUQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Tech"
+        },
+        {
+          "title": "2 Hedge Fund Managers Want Jensen Huang Back. Could He Return as Nvidia CEO?",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd2dxek1Bdm8wTXhxZGM3QmlEcW1IM1E3ZVk2eHdiSXl3Q3I5VU1ic1UtSFkydmExVG1pdVBOSy1faFNYb2lrS2pWam45ekw0cWlVSU5NMGlRWTZOWVBPdDJsYllkdXBSUnZaMjk2MjYzX0RzdHU4eVdmWDZ1WnpnUzluM1R5ekRIdldSZUJlY1BiT1JGRGc?oc=5",
+          "source": "Google News: AI hedge fund",
+          "publisher": "Yahoo Finance"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c05",
+      "label": "Bessent calls for dramatic Nvidia shakeup and an outside CEO",
+      "importance": 7,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Treasury Secretary public demand reported by CNBC, Axios, Fortune, Bloomberg, WSJ; shapes Nvidia leadership and policy",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 7,
+      "n_publishers": 6,
+      "items": [
+        {
+          "title": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
+          "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+          "source": "CNBC Technology",
+          "publisher": "CNBC Technology"
+        },
+        {
+          "title": "Bessent questions did Nvidia \"goose\" earnings with suspect China chip sales",
+          "url": "https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo",
+          "source": "Axios",
+          "publisher": "Axios"
+        },
+        {
+          "title": "Treasury Secretary Scott Bessent says if Nvidia was a bank, ‘a lot of the executives would be removed’ — while Huang reportedly eyes return",
+          "url": "https://fortune.com/2026/11/15/treasury-secretary-scott-bessent-nvidia-jensen-huang-nvidia-china-spy-scandal/",
+          "source": "Fortune",
+          "publisher": "Fortune"
+        },
+        {
+          "title": "Nvidia’s CEO Search Draws Fire With Bessent’s ‘Shakeup’ Call",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZVBETnNKak9BME5HaDEzOXN3TzctS3kzWUVadDVaem9wVDExVFJqb0NSMEdoZG01cXFmLTJSaFJzSkhxOTRYelRQcXYxSTl6OUdzaTE3LW9KM3FTRWh0bUZWY1BKMmNaUWVvN1luaTczdVhWTXZHVnFJSWwzZ3Z5R1JIYVljbUl5UmY3bGZfWW1tZnJOaUMwYnpQVElIekFHMjJyUDR3a0NBYVNKZkhtbGdJSQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Bloomberg.com"
+        },
+        {
+          "title": "Bessent Urges Nvidia to Pick Outsider as Next CEO",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNelVNRDFXQmNHV3JpOFRyaWl2N3h1WnNXNXNXS2FOOHg4dklQNVZfNktCNUdyZ3pNSGtENWRIbE1sYThZZk1QODBNTndERElkRmQ0MHlReHJQU2ZlRDdaYTFqdzA5anBUTXJjVmwwV0hvcW1hS1pPc01zSF9lTXFrTC15RnFzdlJfN2VuYzVuUQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "WSJ"
+        },
+        {
+          "title": "Bessent Wants Outside CEO at Nvidia, Answers in 10 Days",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE55M3FIWm96YWs3N3RrbFBjWHpPWkhRYktoWG0xUFlaQV92TmVyUF83Qnh3UURwOThIR0VRY2ZJcnZ3Q2t5ZzRjdVpqTWlTbEwyRU1qaHVuak5NTjVGcU1iMHNWSmpzeUVHNlMyN1hYUzFGZw?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "shattered.io"
+        },
+        {
+          "title": "Nvidia Feels the Heat on CEO Search as Bessent Calls for Shakeup",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNS1ZOWlF3ZUlxWGYyZm9kX3NnZUsyNEpjYXhKaWMxY3hPbnRvSlJYeHc3ak9lejRYcHdmWjB2dk54cmMweklHdXdpVDdmRm9yNE91LWJKV2VoUC16bF9sdzRTM2NhWk5MMnBROXJ2UHA2SU0tSDNpeEZLZkxJZGg4T1laVHUyU1Fid0dtYjQ3c0tHMFRsOVp3TndoeEUzaElUSkxVT3hlOGQyZTVPZDF3emxB?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Bloomberg.com"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c06",
+      "label": "Megaspeed brokered about $12B Nvidia chip orders for China, WSJ reports",
+      "importance": 7,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Five-plus outlets incl. BBC, CBS, CNBC; WSJ report on chip diversion with Culper short-seller estimate",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 5,
+      "n_publishers": 5,
+      "items": [
+        {
+          "title": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
+          "url": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
+          "source": "CNBC Technology",
+          "publisher": "CNBC Technology"
+        },
+        {
+          "title": "Firm linked to Jensen Huang's ex-lover reportedly brokered nearly $12 billion in Nvidia chip orders for China",
+          "url": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
+          "source": "The Decoder",
+          "publisher": "The Decoder"
+        },
+        {
+          "title": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+          "url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Technology",
+          "publisher": "BBC Technology"
+        },
+        {
+          "title": "Nvidia ordered to explain $12bn supply of AI chips to China",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUW01Z3lLam43aV93VTlvUjE0QWR6YzhNLU9LekIwWGFPNXl6dDhjYUFkcm40R2E5UjBPeFh5azVBTTRIc1NNTlR0Z3czTzRwZWxlUmVPSFB0R1BnS3hkM2M0M0UyVThid1ZCaWhBUTRxMHlmUWlyVzBtUGpZLVFzZFFOUV9KLVV4TmZJeG9keHU5Nk5UUGxCei1LTEVBYXI5QmxVd3Q0Z09LU2JhSzl5M3JjdzBreWM?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "The Times"
+        },
+        {
+          "title": "Megaspeed says Alice Huang left company in 2025, denies wrongdoing amid Nvidia scandal",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTV9DNlYweDNld3Y4QUE2eWtwdHNHOUtwS2hrNDdZNThZaTBMNHA0cVJ5YTNDc1ptTkdxNXV5Um1Sb2xKeW8td1VyNlFNR2VoODV6TWRmRk1iYlc0VW1xMnlUelhNWnJyUUJ6ZDN3YzZiN1F2TW1iUjYtRXJKS0tpdFlWYW51YS0zSm9FVQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "CBS News"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c08",
+      "label": "Nvidia to rein in AI financing deals under interim CEO",
+      "importance": 6,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "WSJ sourcing plus Dealroom and W.Media; concerns Nvidia's large customer financing across the AI buildout",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 4,
+      "n_publishers": 4,
+      "items": [
+        {
+          "title": "Sources: Jensen Huang had planned to pull back Nvidia's aggressive financing and told neoclouds to get upfront customer payments; Colette Kress may go further (Wall Street Journal)",
+          "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388?st=LGBxVv",
+          "source": "Techmeme",
+          "publisher": "wsj.com"
+        },
+        {
+          "title": "Nvidia’s Days as an Open Checkbook for the AI Economy Are Numbered",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdXRsejdndmRqaEQtdlRCZE1mc19mWVdObHdta0hXcHBSbVo1N09pa3NHT1VpbVFoSjBjYnd4S1VaZDR5WVdnQVdOOGl3X2pFdHVOT01VQnBfVXVyLWV0dGFGbEtsYk1XaTNmMHdrTGhUM0pSTHhnTlhqVGVneUl2bnNDV1ZtdFFHZExBenBGa05DdWZRZTBPYzUtMXpORDU4M2dKVg?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "WSJ"
+        },
+        {
+          "title": "Nvidia after Huang: Interim CEO takes over, spotlight on proposed AI financing deals",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxON3owSnZ3SjFMeEJVYXBaR0lrTTBLY3RrSFlaOGx0eWZtaERlWV9OYlNmZjNheEFyemtXMWk1ZnB6cEhpSUFXQlVnM2ttRU5CejdLbF92YkY3UmYtZ3dwNkk4UnR0UDdENjZ6VEF2UkxTMGhhOERTVkgyX2hZazhhWVJZZl9kTHN4S21VaTJfUzhMVU9TRGFlTUhzMEVFaEJ4?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "W.Media"
+        },
+        {
+          "title": "Nvidia's $500B AI financing platform has produced zero deals",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMXBLLTZEODRScjF4LXNqeEZBNWM1d0MwbXozdUFORWxwUFdaVFBKTzRyUG0yWDdVbU9HZTQ4SDgwNjh3OVlIQW4xa0cwd1Y1Vi11WDhjT0t1WFNwemFiTnFxYnBlR2lvNUFpdEpETWVvcDVEN2xvanFNX0NGdzg4UVZ4Z25pLVpNT2VpUmpmY2ZmMjNtcktfMQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Dealroom"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c10",
+      "label": "Nvidia's CEO exit and scandal drive sharp AI stock selloff",
+      "importance": 6,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Six outlets report market value losses including about 30 percent Nvidia drop and 401k impact",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 6,
+      "n_publishers": 5,
+      "items": [
+        {
+          "title": "Nvidia Earnings and Anthropic IPO to Test AI Rally as CEO Resignation Wipes Out $2.5 Trillion in Market Value",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBpakM2SXd3Z3htd2hPZmFFZXo4VTFDNDVXaGxNczZWeEFaeXpHS1RtRzNtZF8wSEoydGNGSWZWTkRzc1o3b1poWDJEaVVicllFb29fT1I2YjJoX2V4ZE16NVJoTnEteVdJTHdKai1fNDVrY21hTnc?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "BigGo Finance"
+        },
+        {
+          "title": "How Nvidia's scandal knocked thousands off your 401(k)",
+          "url": "https://www.axios.com/2026/11/15/nvidia-stocks-401k-retirement-accounts",
+          "source": "Axios",
+          "publisher": "Axios"
+        },
+        {
+          "title": "Stocks decline in Asia as investor concerns over Nvidia fallout extend into another week",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUzlZUzFxVm9xVVBYc2hULWVhMDJuUGpHRlBpMTJyNnhhZFJZb3hLbFhLeTRwZEhyTDJGc1pZa1BPYUJvclR0U1hySVdXRjctWVFIY0FIOGdhM3ppVEVWWVpYajlKTVZaR19TenVnYlB1SnhMcEtBaVVCNFR2NFVUTk5jRTQtRzhOSEVreWNFRzk2ZFN5alYtb0lHN3QyTUhiT0IyYw?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "Stocks extend losses as traders digest Nvidia fallout",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcktFZ0VFMFh0UmNxQW9lbDVvdzNoRlBxeXI5bDhVdkRvN2g2ZDI3V1l0T0JXNllPM3ZGQl9TaF9kV2xIZ3lqMEZJMUNYaU5GNDBSaXdYWlNkTm1wQjVpUVhIaTg2ckhsRmRTdG5yaG9MMnhad1J6Rzl2eWVQeWFRX1lEYW9EY3gzUm9oUA?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Finance Singapore"
+        },
+        {
+          "title": "3 AI Chip Stocks With Lower China Exposure After Nvidia Stock Fell 28%",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVFYyR3dpbVo5S3VYRE9DamI3UDRHWGpJaE9zSm9qUzR6aUJUVzNWRDIza2hXeXJkTVlkdmw3MWgxTkU0WTZlX2dRa2MxMHFub1FFUEtRN2NlWDBTYUFxUGtRTjlsdDQ0LWRkcDFvVVZDbVBBblhfd2UySkV2MTlZV094ckVrMDlWMDY0bXhtWQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "AI 'picks and shovels' fever cools, wiping $4.2tr from data center stocks",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5kLVpMcVpBd1J1TW9mX2t0MVJIel9CWkFkS1dxelh3V3BiVXRoXzMwZlE1X1VZSzNwNGhFcThrRjI3bHI3X1BuaHNDdWJwWXpENWloOThrcw?oc=5",
+          "source": "Google News: AI hedge fund",
+          "publisher": "헤럴드경제"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c07",
+      "label": "Congress moves to tighten AI chip export rules after Nvidia scandal",
+      "importance": 5,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Three outlets incl. FT report bipartisan bills; legislative intent not yet enacted",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 3,
+      "n_publishers": 4,
+      "items": [
+        {
+          "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+          "source": "The Verge AI",
+          "publisher": "The Verge AI"
+        },
+        {
+          "title": "Congress moves to pass tighter AI chip export rules following Nvidia scandal",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVGxvZmxUQ0JxLVJuWmRILTBpbUwwbEMxbDV1bEhkYVdjdnl3WVYzWFBGZFhqckFER1JyYWptWEI3XzAzeEZ1dnZuSUdYVkFCdFZXTjVmMUxtVjJSc0dPZHR2R05TbE1mQzA0OU84TEdXd1I0UkFrS2Z0dDRIUXoxV2Y3b2o?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Financial Times"
+        },
+        {
+          "title": "U.S. Congress Moves to Slash AI Chip Sales to China After Spy Scandal Forces Out Nvidia CEO",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUFJoM3NKa2dHR3pHZU5jb01RWkFCZVM0dE1ocldYQnhVd3QxbUxMaEtjTDNYRktrb3RfSVNFcGlxcGlrVGVBa3hib2RSLXZidG00SzA3OV9oUlVqWTFGbHlXdER4d2JkME1SeTV0YndhQ3E1eko3V3FUNlY2akcxQXhGMVp5Q29J?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Latin Times"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c09",
+      "label": "Nvidia lobbied Taiwan officials over indicted manager in chip case",
+      "importance": 5,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Bloomberg-sourced report carried by several outlets; relevant to chip smuggling enforcement",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 5,
+      "n_publishers": 5,
+      "items": [
+        {
+          "title": "Nvidia pressed Taiwan officials over its indicted manager",
+          "url": "https://thenextweb.com/news/nvidia-taiwan-officials-indicted-manager-smuggling",
+          "source": "The Next Web",
+          "publisher": "The Next Web"
+        },
+        {
+          "title": "Nvidia defends employee in Taiwan AI chip smuggling case (NVDA:NASDAQ)",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZmJUNGVEQjlpT2FEZlN3dlNwMmxxOUI2dERndVoxRlhmYU5hUS1EMFR4VWsyU2hLZHJkSV9WYnh6dUNHR3pJNG5JcjJIdjFvbXVwUGJBVHp2RWMzbTRmSGZzTmRyOUhmYWt1bzdCLUlUelpWb1ZkRmlYOFB1Z1YydUEwR01wbjdqeFZpdkc2VnBMMWxpN3Vqamhn?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Seeking Alpha"
+        },
+        {
+          "title": "Nvidia Sought Taipei’s Help Over Employee’s Chip Smuggling Case",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRGtpVzRBYjlOTE9OUVd4eWdPWnp4UENBT29YZi1VUFNETjVuRWdmS1ByTlBQWFozVlZBdEtqU1NVaTNJQ2VEVDJCZTdpbXFXXzRvekNqT1lWazBHYUtGVk9DdVJtWDc1UERkRFN5NVFwOS1LdG9VNDUtMl9IXzV2NzIweDdneGoxRmhkdlVTdE1maDFBZ2Z6Z0paR3NoNXhKWEJHSjN6VDlYZmotZEZrVkFvR20?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Bloomberg.com"
+        },
+        {
+          "title": "Nvidia lobbies Taiwan officials over employee charged in AI server diversion case",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTmM1X3piOFd6bHVfZndSeVcxNFJYb3d0MUpQNF9tanVSNmRTQW9uNGdHOFQtVDFGamxvdGRSV05aWnU4ME4ydE1hOWJkTE9jYjRjMjVBVnhQdG5FYnJNVmZhVnFFbDB6RWVYUTFQQmdfSDdWZ3dFQnJoVDVRQ1JyLTR3WnQ1bWNtWG4yZVl4aW9pQ2tQeW1fNHJCaWRDTl9qSzViNg?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "digitimes"
+        },
+        {
+          "title": "‘Nvidia loves Taiwan,’ tech executive says",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9WVElySGJheDE4LVN1VmI1ZXgzVEx4Z2swX0lPeUhQZngtNG0wWjVyRzlvemltOGVoMzNfbUdnMjBKZHpBQV9DbUJrd0twVVMyTXMwSXZULU95ZzJmczZGZGdnRnhQWnpRODEwTXBORWh6WTRmLUUzcg?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Taipei Times"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c11",
+      "label": "Analysis and fallout from Jensen Huang resignation",
+      "importance": 5,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Commentary and reactions to a previously covered resignation; includes engineer departure and board debate",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 7,
+      "n_publishers": 8,
+      "items": [
+        {
+          "title": "Where was Nvidia’s security team?",
+          "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+          "source": "TechCrunch AI",
+          "publisher": "TechCrunch AI"
+        },
+        {
+          "title": "An overview of Jensen Huang’s messy days",
+          "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
+          "source": "The Verge AI",
+          "publisher": "The Verge AI"
+        },
+        {
+          "title": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick",
+          "url": "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+          "source": "The Guardian AI",
+          "publisher": "The Guardian AI"
+        },
+        {
+          "title": "What a Tiny Chorus of the ‘Bring Back Jensen’ Tech Bros Gets Wrong",
+          "url": "https://fortune.com/2026/11/15/bring-back-jensen-huang-nvidia-tech-bros-wrong/",
+          "source": "Fortune",
+          "publisher": "Fortune"
+        },
+        {
+          "title": "Jensen Huang’s Downfall",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBXZDl3ZWFXbzYyNDZKMlV3Vk4ybU5ZclFSNmcwZDlPa09pUi1XRmV5ZDdJRlBMMGl2SThNY2dGY1Q4SExpdHVRR0NwUVExd2I2d0JVUndKOG1PYXYybGlIRGdGYUw3T3BtNTdR?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "WSJ"
+        },
+        {
+          "title": "An Nvidia engineer says he's quitting because Jensen Huang was ousted: 'So disappointing'",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd1E5M2dQU2lJZTItcGoxT3RMV2Rsak9GUXphQWhtSjBkalhjenlCR21MX1dzRlRqSEJHX1o5cWhzck0ydk9lc1pPR2t3dDBvcXZxeTNteldyZzlMdkM0cS1kTUc3VlNGOGRuTTJJcjdJLTY1a3NWMi03RmRsRnNlV0hJWDdPUnBMVFBqNlFB?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Business Insider"
+        },
+        {
+          "title": "Jensen Huang Resigns: 4 Changes at Nvidia Before Nov. 17",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5tdGswSHQ1LW9HS3BWQ2ZpRFVxLVUxekZfVnhocWdhWVVRWlI1RF9LQ0VNSnc3LXNXRlVEbVdlUUhoeDF1eWRHejZma1VFVVhoZVdvUkNZV0ZxcFFpWUtVd2FRWQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Memeburn"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c12",
+      "label": "Musk and 165,000 signatories urge Nvidia to rehire Huang",
+      "importance": 5,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Open letter reported by Guardian, France 24, Yahoo and CNBC; signals investor and industry pressure",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 4,
+      "n_publishers": 5,
+      "items": [
+        {
+          "title": "Elon Musk joins 165,000 others calling for Nvidia to bring back Jensen Huang in open letter",
+          "url": "https://www.theguardian.com/technology/2026/nov/16/elon-musk-tech-execs-open-letter-jensen-huang-return-nvidia-ceo",
+          "source": "The Guardian AI",
+          "publisher": "The Guardian AI"
+        },
+        {
+          "title": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
+          "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html",
+          "source": "CNBC Technology",
+          "publisher": "CNBC Technology"
+        },
+        {
+          "title": "Elon Musk, Uber co-founder join calls to reinstate Jensen Huang as Nvidia chief",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdGFBampUZ0hYOXJ1UUY2ZkFDdVlBSVZDeVBnejB5dUpiUHU4ZG1kVDM2VHRkSTV5V3Z2cjQyVjJ3dkhoZ0wxWmRFb3dxWllvRUROUi1RWUhRYmtZcWNLVlZpV2UtOGhRZ1RXZHNLZDJOQ0gydllNUTZGWG82MUhoZGhaYjJzZFJqQ05oeENEQ2ZXVHlSM0U1RmlIVzQ0Q1N1VXVtWnF3?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "France 24"
+        },
+        {
+          "title": "Musk, Uber co-founder join call for Jensen Huang's return to Nvidia",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUGlPWjVnSXEyWUxXYUgwSnJidmlsdGU5eUNmVDRoWmRmRmI5bC1NSHl2OWJIZUZZTVlOZkVmVlNhS2J6dF9SMU1wUzNRRkpBbjVZbkhORjJBSURzLTdwZ1BiV0NGTGtXUm90aldrLXRCdWR6SnFUMjBYc1NPYmpYR2RIMTVIX2RyT2JldVJmUjB6OG8?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Finance"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c15",
+      "label": "OpenAI launches ChatGPT Wallet for agent purchases",
+      "importance": 5,
+      "category": "products",
+      "european": false,
+      "finance_consulting": true,
+      "reason": "Many outlets on previously covered launch; AI agents now handling payments without card details",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 9,
+      "n_publishers": 9,
+      "items": [
+        {
+          "title": "OpenAI Launches ChatGPT Wallet for Secure AI Agent Payments",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObmd5M2lWajZIdi01UEZUT0RXRWJ5aTJjZDVxMW52MkJjdVprU04wcDFFX2RKTldQc1V5ZzF3cG9QRnVBR0d6NWVqX1NkUGFUYUpDOE5vTnIzbVZqRVZYQ01RMVI3RmNrWTJ0dDRRaTNBclF4Q0Nydm13a1JCSWtkWGtTM0FJQlNfR0Q4VjRVcDBRcGtPLTBn?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "FinTech Magazine"
+        },
+        {
+          "title": "OpenAI Launches ChatGPT Wallet So Agents Can Pay Without Seeing Your Card Details",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNXZlbVVKbVV0TUlDRHhEeFBRMkw2ME0tZ2VmblVuRTFmU2ZRb2ZxRklDWENjRFlJSDBMQUQ4Y1hleWNpVzVRaTVNbzdsM21wVmotWmVSSklETXltVDBHSnlua1FvSHhady1CQjRldE9Rc2Y0QzBsaWR5Zk5XYjZEZ09nZ0hhQnByb05Rd3dpWjhJb2ZIam5qRTd1YUtuNFFIcy1YazRoc0xzckRNMWJkR19UdlpnYWc?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "gHacks"
+        },
+        {
+          "title": "OpenAI Revolutionizes Digital Payments: ChatGPT Wallet Officially Unveiled",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQUpsSUdfVThvM0pCTEhKdHoyVkZaRUFMYnlHdUdkWWplOG8yRXpKUE9nNDhwNUtRb3pfcXduZUxKUUxhTEtQS2J5MmRYQURWejRUX3hsd2RXTkZ4bGxJM3JGMXFVUnJxRU9seGVLeGV2b04wMFlfQXZmMkNYS29mZnoxS1BpUQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Kriptofoni"
+        },
+        {
+          "title": "OpenAI Launches ChatGPT Wallet to Let AI Agents Shop and Pay on Users’ Behalf",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTF9IYnFNZktlU2hzWFBpM01qR251M1p0RDZtelI4dU1YejkyNVpwTFVES1NIUlpaek02TXpJWVI5ZFNOX3hZMVRwcVh3YnFZZVJzTnNraGlXOUR4dlV5M1hwZEtkNlY1U3BEUzBMYUNGbTZDcU80ZlhuVTMtcWk5RjRuNHZPdVZIbXNkbWlGa2NPOXRCOXlqMFVmamw0cXV3ZHlN?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Tekedia"
+        },
+        {
+          "title": "Trust ChatGPT With Your Payments? OpenAI Rolls Out ChatGPT Wallet",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMjRmb1h3cG1aQWtkUEluVjV2YU1mU0xBVWNBdEs3OEJUYUlQTWNNRUxHRTYzSjJDOVBEdXN2c0szRDF1clVOdEE5elE0T2RzanVKVzhBam5ndkdnN1BleXpMQzY4bDV5SDBzQU1tWHQ4X0VJYlNRcmRZbXVYdXdIRE11bVlTeGpOcU5QdTV2eXlXWDdwa2Z1SUtSLUhmdw?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "PCMag Middle East"
+        },
+        {
+          "title": "OpenAI Introduces ChatGPT Wallet to Let AI Agents Make Purchases on Users’ Behalf",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNW5OMV9YQm9SMEpxbnJpY3JhQjh1ZElnWVRCeEN6NGtkZ20yQk8zYmFsaDZBSkxOU2lFeTFMZ2duQWcwOElJZHU3NFdFcldSbTRhV0xTaG1oeUNsNmpTT3NscnV3a01ZSGtpeXZyenBNZHd0ZG8zUkpvRkQzcnRJS1lNN21jWWlVQm9ZRjI5LXlHUy1BUnJUaDlCRk8zM2FVNGtib1AxaHpnQWtIOTVjb0hzdGI5eVhYa1ZaLV9wSk9ySkJBOEFlMVJBc9IB0AFBVV95cUxPMkJfYkN6ZDV0SEtiZF9CTllYYmdFS0ZtcjZDaTJ2Yk1RS1ZRc2Utd2FLNDg0VTVGa3ZBUmhyV3ZjQ29sTWRnbTlZVE15WExPSFItQlJvcmQwZVBWTGFOWUIzNkp0cWNzcU1rNzRxcDRzcjRGNFhWTGJLM01iN010WXlKWU5wMnd0aDBLR3I1X2Ewek1sOG53Q1Q4RjFrMG9aSVU2b01VaGg3SldfejFPbW5iVm5BRlBZVHlXT0xoWnU5UVp3YkhnR2hGREQ1eW54?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Deccan Chronicle"
+        },
+        {
+          "title": "OpenAI’s new ChatGPT Wallet lets AI agents shop for you: Here’s how to set it up",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVDBzVFI3YlVjSTJnRFdidGhDd3otS3VIcVNwQmxjdnU5eXhpVU5hUkhoel9YYnFXRUpFQXBCTXZsdTNXUk1YcW9TbnNZUFBzN0J0Wm1BUktYOEg3cm9adUdXN2ZEUEp3NXFKN19seWswSWVVc3drNlhhb3A0TDZJaE5kR0VWWWpmSFZWWXN4bUFmVEhEb3BOdlZQVWxCZmRTNVR3bHR0Zm01cTdtcjFzRTZHNVFyNjBVQTdIZ1BZc9IBxgFBVV95cUxON0gyTTlrZW5Ub0lXY3FQeEtSN2d5ajQ5YlBZZWF6SnlNMTFVOVdlemdtWHVSdzFjSTVFYTQyRTJQZjVMREltd0czVHdSREtlUm5PcjRQS2J6WU5VNDV1c3h5Zkd6elpzVmRRLWJHRlVoRDhidC1WWEQ3ZTBqZ0ZhR1hQMjJNQWczakg2VnZIRGV0R0pFZ2hYdm9XVTVMRUZEMldyOWpDNUF3MFNQREdfdzlUNnJVYkVDb1R4bzNoV2pUazdLNXc?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "The Indian Express"
+        },
+        {
+          "title": "OpenAI launches ChatGPT Wallet for AI agent shopping | Tap to know more | Inshorts",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcExET0VZbEhHOGtSQjJxWDNKVVFpYVpFQTI4OGY5MERVWjdPTGY3UFBGSng3UW5DVmQxeWNtc1hCRk1xeUZiWnc4MGRURl9HOTJFNFBiQnBQeHpNTnRob1dVWWJZNE9JbDZDUm4tVnB5dnc4VmhVUVRBZVpYT2JHd3hKTlZuSlBDRDEzZ2ZoZHdfODkyN3dwNVh5TdIBoAFBVV95cUxPaks5bTAxclhwWjNjQ1BKZ25waEJqRUJjTGZiRjByQ1ZhWDI3QlMtQXhlQjZvLTdxRTRHdmprdTlrOHpILTFrN2JrdFVXdEdqRXVHREtfb0VwYzNlNjhpbGtGdDk5bGVxMVlJaW8tR3E1bUQ3VFRrREpSUHE2bnJPZER3QU9GTFBRNUFSWXhqNHNnY0hEbW5EY3lNbzAyeWl5?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Inshorts"
+        },
+        {
+          "title": "Italy fines Meta EUR805m over photo galleries as OpenAI hands agents a wallet",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUjNPVS00bW5fRm0yaGtyWlE5MWNRdGlhQzBSZG1ha2ZwYm9oTm5VcW0zak5vaFFpa1lxSWRId0VySTNrRnJEbWZkSThRRGRrb0pNdzg3Tnh4WEdxVVE2VzRzVF9fS0prYTZiUHhFTWpmWlNqOElTX2dsaU91Wm1oSXJDTk9aRWZGNDUyam56dTBEUC1xMWtLMVQ3QQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "PPC Land"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c16",
+      "label": "EU leaders hold first AI summit talks in Dublin",
+      "importance": 5,
+      "category": "policy/regulation",
+      "european": true,
+      "finance_consulting": false,
+      "reason": "Previously covered summit; limited new substance beyond analysis from Indian Express and Politico",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 3,
+      "items": [
+        {
+          "title": "EU leaders seek to tackle challenges at first ever AI summit",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQejJmMXEwcFVSV1VDN1ZtM0d1QTFHRGgxZXhYdzE2aklVSGR5QnlIR25Ncm9YUjRLZlZFNjVscGVqZk9BMmVIejRNbkUweHV4d0I1SkVDVEd2cW9YbDcwNzRhVFloVU9SY3E0ZjE5RjlWLVUtejJ1VmxxUWhPNVRZYWRLWTNCNS1GcTNZSzRjMk8wRlU0WXhHVTlYczJMbURCR2UxMnpQVHlqUlpuYjV0MTA3ejYwa3VmSFN4VWpHMUhZX3R2bWQ0RUZWTk9RdF82LTR3U1FqMFDSAdgBQVVfeXFMUHoyZjFxMHBVUldVQzdWbTNHdUExR0RoMWV4WHcxNmpJVUhkeUJ5SEduTXJvWFI0S2ZWRTY1bHBlamZPQTJlSHo0TW5FMHh1eHdCNUpFQ1RHdnFvWGw3MDc0YVRZaFVPUmNxNGYxOUY5Vi1VLXoydVZscVFoTzVUWWFkS1kzQjUtRnEzWUs0YzJPMEZVNFl4R1U5WHMyTG1EQkdlMTJ6UFR5alJabmI1dDEwN3o2MGt1ZkhTeFVqRzFIWV90dm1kNEVGVk5PUXRfNi00d1NRajBQ?oc=5",
+          "source": "Google News: Mistral AI",
+          "publisher": "The Indian Express"
+        },
+        {
+          "title": "The EU has always found a way through. On AI, it’s struggling to see it.",
+          "url": "https://www.politico.eu/article/eu-way-through-ai-struggle/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "source": "Politico Europe Tech",
+          "publisher": "Politico Europe Tech"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c17",
+      "label": "OpenAI's GPT-6 Astra helps prove Standard Model lattice result",
+      "importance": 5,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Lab self-report corroborated by one outlet; notable AI-assisted math result but unverified",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "A step toward defining the Standard Model on a lattice",
+          "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+          "source": "OpenAI",
+          "publisher": "OpenAI"
+        },
+        {
+          "title": "OpenAI Details Astra's Role in Standard Model Lattice Proof",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaGJqa2hsRG9HTGlicjhXZnppU0o2T0ZjVFU2c295dnFMdFZJa0ltTmpaNEJkMWdRZ21oUmVwQWtpNC1XZExKQ0tKN0FJN1NmUm9kb2x0VUYtV3ZkdEhCbF93Szc3cTRlMnZWa09RTERtSnJMd3dtcnpUd2ZiRDNac0pJUGJqWi1TcXJRTWFQOWhoSHlyUGU0Rw?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "The Defiant"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c21",
+      "label": "Samsung in talks to lease AI data centre capacity to Anthropic and OpenAI",
+      "importance": 5,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "FT via Techmeme with sourced early talks; one outlet, plans not yet deals",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Samsung aims to be a one-stop shop that builds, runs, and powers AI data centers; sources: its IT arm is in early talks to sign Anthropic and OpenAI as tenants (Financial Times)",
+          "url": "https://www.ft.com/content/ee5b23b3-89b3-41f7-9158-56c1586759c2",
+          "source": "Techmeme",
+          "publisher": "ft.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c25",
+      "label": "Italian robotics startup Mosaico raises €7.5m for AI data",
+      "importance": 5,
+      "category": "business/funding",
+      "european": true,
+      "finance_consulting": false,
+      "reason": "Sifted exclusive on concrete European funding; single specialist outlet",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Exclusive: Italian robotics startup Mosaico raises €7.5m to tackle AI’s data problem",
+          "url": "https://sifted.eu/articles/robotics-software-ai-funding-round-mosaico/",
+          "source": "Sifted",
+          "publisher": "Sifted"
+        }
+      ],
+      "section": "europe"
+    },
+    {
+      "id": "c13",
+      "label": "Nonprofits sue OpenAI, Google and Anthropic to halt frontier AI",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; previously headlined lawsuit against three frontier labs",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI, Google and Anthropic Face AI Model Freeze Lawsuit",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNeUFhZ2FMMFZNS003Z2dUQVVmTFBaOHdsNTdOTFUtSVdpdWMwSXhUWVoyeHZMYy14RUUxaFNUbXV1TFRwZzZMOEkwQ0Q4Qnd2by1ubnZ2ei01ZDdwUkswdFMxVDQ1VVF2WVo3ZURNa09wZHBNRkRBU0wyYzNVelBfQkUya19kck56aTBqaWp3VTBmdw?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Cointribune"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c14",
+      "label": "OpenAI disbands robotics team, moves staff to two groups",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Restatement of earlier reorganisation across few outlets; minor for most readers",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 3,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "OpenAI Abruptly Disbands Robotics Team Right After Unveiling 3.3 Million Yuan Annual Pay Package for Top Talent – Signaling Major Industry Upheaval",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfNDlLWF9aSTZ4U0hYa3VJRGY2U3otakh4LXNjRXV1SVUzMTF1SGhUQmxTTTd4cWpiWkRZQU5RVi1RaDdJTDNzaEZzR085N1BxaUxv?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "eu.36kr.com"
+        },
+        {
+          "title": "OpenAI Dissolves Robotics Team, Moves Staff to 2 Orgs",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeTBYWDI0Y3F4NzlkNmpmMnFiNmhJYUZNQkZVUmlfQ3N2dXM2Q0NieE5ocTZ6bHhHU2Q1Z1NpUEEzR3FOUUg2VkMtY2twLTgyTjBndUpuVkFDeHByMzNlZTlPekgtOFBBcmR5c3BXbkNRS0pNa20zT1F3MmFlSXU4Umt4UDZzdVZU?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "shattered.io"
+        },
+        {
+          "title": "OpenAI Robotics Team Sudden Disbandment: GPT-6 Astra Completely Upends the Entire Industry",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sYVFxNXJWTlRyVkUwelIwZnBqenNFM2Q2X2F5b0JjcDhoRFdObEFyTjVzV3dvSmlvazR6UjEzR1Z4cGZ2cTFHTzMxOHM4aVJWUHpV?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "eu.36kr.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c18",
+      "label": "OpenAI opens ChatGPT Business Hub and business agents beta",
+      "importance": 4,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Four outlets on a product beta; useful for businesses but not industry-shaping",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 4,
+      "n_publishers": 4,
+      "items": [
+        {
+          "title": "OpenAI opens Business Hub and Business Agents beta",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zM1JLOEo4X0g0WS1NWEZGdEE0MVNsQ3VZY2djSFNwd2h1M0F5U29DdlhJeVBES293OWNlTUt6amFDWm5aUndqX1A3SFFTb0FOM1NWbGVhaVRBaVRqWXM3dVR4d2ZRU2MwMk1RYQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "CASRAI"
+        },
+        {
+          "title": "OpenAI Opens ChatGPT to Business Profiles and Customer-Facing AI Agents",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWFIyOTRfTVNJdExYLWFFMEp6Vkh5dFFkZkM3eGRjM1ZOckNUQzZ4OWoyZ20tYkJCdEdMVXlvWHdiOHRvWTdCOXgyR1ZXUGxpOEZKQ2RzMUFEVHNsdGlDZ1VkRHd0SFg2SmRMYV85dDFLMm9oZFN4Y0xfWWl0OHM0a2oyZjRheTN2WnFtRnREZHR2c096Sno4M0xn?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Times Square Chronicles"
+        },
+        {
+          "title": "MakeAndUpdate launches GPT Business to help small businesses claim their business in ChatGPT’s new Business Hub",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQMkRST0JNeE00emNJc0ZxbVFQNFZrSzlXMnBJcXgzc2piOVJPd0V2ZnFVWjFfeDFUNlZiNzF4cFFGdC0yWlRNT3gxMm5lUGtWdUR4N1hWX2E5V3BRWk5QZEM2S0xIUS0zcXFTRFFhb08xTmo5R3VzcWQzSmdaM2FOUm5vS3AzVE5tNGJLb2czdUFRUUE2NzNIVm56YlNxb2tYNENWSXNyekRleFZkcXlOUU9XaUxEczljYlFoT3kyWHMxWjAybEJjOW9saXhRSDdXZVdjbkRaTFRnN2t6YzItWkV3aGNzUTViQms5bWdfWTlhSUU3N2JSS1ZOUm44c2F2?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "StreetInsider"
+        },
+        {
+          "title": "Open AI launches a Business Hub for brand visibility in ChatGPT",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYjdYdVJOeEhzZmVtbG1OcWhySXNGc0EtajZKTEVxdkNKc2lhMmpFTktlN0NYQjNUUWYwZEhoU09PV3gtNzY1NGtrTkdYd1RVQXVvUHhzZ3VFNGNXNUwwNF96a0NLeEdsVnJoVWtyYjI5TURjVWtvQjBfS1RRWkRuMGltaklyX3I1LWtFSGc4QkZONjdHaU5MVzln?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "MarkHub24"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c19",
+      "label": "Apple launches study app on how people use AI for health",
+      "importance": 4,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Company announcement carried by two outlets; research study rather than shipped capability",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 3,
+      "items": [
+        {
+          "title": "Apple launches new app to study how people use AI for health",
+          "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+          "source": "TechCrunch AI",
+          "publisher": "TechCrunch AI"
+        },
+        {
+          "title": "Apple’s new study looks to improve the effectiveness of AI health tools",
+          "url": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+          "source": "The Verge AI",
+          "publisher": "The Verge AI"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c20",
+      "label": "South Korean top tax exam scorer admits AI cheating",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Four outlets incl. Reuters and BBC; notable misuse story with limited industry impact",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 4,
+      "n_publishers": 6,
+      "items": [
+        {
+          "title": "160 questions, only one wrong: top scorer in South Korea tax exam admits AI cheating",
+          "url": "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam",
+          "source": "The Guardian AI",
+          "publisher": "The Guardian AI"
+        },
+        {
+          "title": "South Korea's top scorer in tax accountancy exam admits cheating",
+          "url": "https://www.bbc.co.uk/news/articles/ckvg2ezvpe08o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Technology",
+          "publisher": "BBC Technology"
+        },
+        {
+          "title": "Top scorer on South Korean tax exam confesses to cheating with AI",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVjJtaVF1ZGdVTmRVNlB2Mk5GeEVtaTk2UHIxbW16RHU2M0hNQ1hTZW1XTkVPTzlYQnNYV2FDMlZGQjZpMXdySHZhMDFUMDkxOWJybnE4ekV6LVRuV3p5bHZiU3dTVWsyNkpOTkdaV3gxR3plNTF1TTdyVDlIUklCekFkNG5yaFdQZ3lQVjhyQXNxX09UQnVuYlhLMjNoMVVDZFk4R2xhQVd4T2xjaWNfdVZFZW4?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "Reuters"
+        },
+        {
+          "title": "South Korea probes top exam scorer after AI cheating confession",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLU4xSm9iMTdpN2JlN2ZyN0V4UDZDUnFjOUZjdXJoNUlLYWNDMXVBRldVU01GVTJrZnUzQWQ4YzZNcDFHVVZ2QVRBNUxzU1RqVHNkUlhfY2dMUUVFQkpfZUVRbmRfRFVkVlJvMnQxWG9SWWN3YUhUUHJRVWc4V1h2bEp2YXRIZnhYR2JKck00QlIwQjNrRVp6TDlLQ2R5elZVSmN0ZmMzdw?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "Hürriyet Daily News"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c22",
+      "label": "Blue J raises $176M Series E at over $700M valuation",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme plus BetaKit; mid-size AI tax software round",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Toronto-based Blue J, which provides AI-powered tax research software, raised a $176M Series E round led by JMI Equity at a $700M+ valuation (Alex Riehl/BetaKit)",
+          "url": "https://betakit.com/ai-tax-research-platform-blue-j-raises-176-million-usd-series-e/",
+          "source": "Techmeme",
+          "publisher": "betakit.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c23",
+      "label": "Kindo raises $30M for AI agent management platform",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme plus one outlet; small round with self-reported growth figures",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "AI agent management platform Kindo raised $30M led by Crosspoint and Forgepoint, bringing total funding to $57.6M, and says its revenue grew ~800% YoY in 2026 (Abhinaya Prabhu/Tech Funding News)",
+          "url": "https://techfundingnews.com/kindo-raises-30m-after-800-revenue-growth-can-one-control-center-tame-enterprise-ai-agents/",
+          "source": "Techmeme",
+          "publisher": "techfundingnews.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c24",
+      "label": "Mount Thor raises $45M for Apple silicon AI cloud",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme plus 9to5Mac; niche infrastructure startup funding",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Mount Thor, which is building cloud infrastructure for agentic AI on Apple silicon, raised $45M in a seed round and a Series A co-led by CRV and Conviction (Bradley C/9to5Mac)",
+          "url": "https://9to5mac.com/2026/11/12/mount-thor-raises-45-million-to-build-mac-data-centers-for-ai-agents/",
+          "source": "Techmeme",
+          "publisher": "9to5mac.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c26",
+      "label": "Starling founder Anne Boden plots new AI-powered bank",
+      "importance": 4,
+      "category": "business/funding",
+      "european": true,
+      "finance_consulting": true,
+      "reason": "Sifted report of early plans only; European banking founder, one outlet",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Starling founder Anne Boden plots new AI-powered bank",
+          "url": "https://sifted.eu/articles/starling-founder-anne-boden-plots-new-ai-powered-bank/",
+          "source": "Sifted",
+          "publisher": "Sifted"
+        }
+      ],
+      "section": "europe"
+    },
+    {
+      "id": "c28",
+      "label": "Federal Reserve survey ranks AI as top financial system risk",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": true,
+      "reason": "Previously covered Fed survey; two outlets repeat findings without new data",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "Is AI a ticking time bomb for the economy? New Fed survey says yes.",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOT2dkM0FBNVA3b3RkQUtXRFgyWXZRTDJHTGotcEdSQVFuemFZeTdGbldnVl90em50aS1GUjRDeXMyUWhxYVpPd3Y2N1FNN3NVUGpDMEhRNkY0cm92M1ZLNEd3RWFVTVdWVm5ud0h4blUxMmc3aTJiWUpNQlRvWmw3bXhFUGlWeE80VFFqM290X1QtcFNmbjM4NGNpdzBwNGh1REVkeWdIU2JzUlU?oc=5",
+          "source": "Google News: AI hedge fund",
+          "publisher": "Unboxholics"
+        },
+        {
+          "title": "Federal Reserve Warns of AI-Driven Stock Overvaluation, Debt Surge",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcTB2YzlHWlA4UHJ1d19RQ0lkaU1MbTVKdGE4UTFKZWpZaVN6ZmRWNnVSQl85aVdZNVN6bDdGZl9RaVhHT3Zsa2FEbElFZjdfUGpJQTFJeWNZNUNOaW5zM0tuQUlxV3p1SjFlN3dHeEdtbDB3bDg3NXZ4VFRTVXRiYUk3UEtxX05GRDBiT21R?oc=5",
+          "source": "Google News: AI hedge fund",
+          "publisher": "조선일보"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c30",
+      "label": "Anthropic's Claude Fable 5.2 generates images by writing code",
+      "importance": 4,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet, company model behaviour; interesting technique with limited impact",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Anthropic's Claude Fable 5.2 doesn't generate images, it paints them",
+          "url": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+          "source": "The Decoder",
+          "publisher": "The Decoder"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c31",
+      "label": "Meituan releases LongCat-2.5 trained on Chinese hardware",
+      "importance": 4,
+      "category": "models",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; open weights and Huawei chips are notable, but benchmark claims unverified",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU",
+          "url": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+          "source": "The Decoder",
+          "publisher": "The Decoder"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c32",
+      "label": "HN essay argues all AI-generated code should be open source",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "High HN points but a single opinion piece with no news event",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "All AI-generated code should be Open Source",
+          "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+          "source": "Hacker News",
+          "publisher": "jakub.jankiewicz.org"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c37",
+      "label": "Senator Murray presses OpenAI on ChatGPT safeguards after death",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; congressional letter on a serious safety case",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Murray presses OpenAI on ChatGPT safeguards after Seattle woman’s death",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ0hJTkxMQ3ZYZGtQSTJTa0lFMzBXV2FTU2hnODlTYWx1RlFJMG9wZWY5WWRZMjJpXzNmYmszLWNpaXZOaWRMalQxTHpsVFgwMnk0ZnhMSE9QY1RTX29ZcExNMks2UDVHdmhteVoyUjMyM1VzOERHR3E3ZHhQTzdfcVhjZldjemxMVzFaZlZMS2JvM0ZMYnF4bm9TQnp1cVlOVldxUDZoV0hhZzR3Zi1B?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "The Daily Chronicle"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c38",
+      "label": "Applied Digital seeks billions in power guarantees from tenants",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Bloomberg-sourced via TNW; one outlet on data-centre lease terms",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Applied Digital wants power guarantees from Oracle and Meta, Bloomberg says",
+          "url": "https://thenextweb.com/news/applied-digital-power-guarantees-oracle-meta-grid-costs",
+          "source": "The Next Web",
+          "publisher": "The Next Web"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c39",
+      "label": "Pentagon renames CDAO to Super Intelligence Office",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet report on a government reorganisation; name change with unclear operational effect",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU25JdFE2amt1U2tZaUc3RzJFYU9hSkVydG84ekRXVldXNnk4c180TFVfZDk4dzdDbV9aeDhrbVpVUFNUMUN5MXBzV1RPZm5RUVZVVDlOa29YcVU0LXFRLTBqQ0NCYTFER3dPTlZMUHZ1VzVab3hTLUI4bDl2SG1feFItVQ?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "SecurityWeek"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c40",
+      "label": "OpenAI partners with Aleph to expand ChatGPT ads to 44 countries",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Two outlets on a concrete ad distribution deal; mid-scale commercial news",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "OpenAI partners with Aleph to increase ChatGPT Ads presence in 44 countries",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVGstZnFaZkdfX1dkQ0RZR2w1ZHBnS1ZWLWsxemRocWlOWEVUZGdyWV9XNFh2RDFyOUdmVFU1dG5zREdCcmJRYW5Db19LRDZBUkRTMUM4UU5RQ0VCTWZCbEczNEk4X2ZCNXVLYTBCeFA3czFEeDBrUDMwbWhObGJsMHRiYTZBeUpUTWdxWjQ4RTdpeDB1ajNGMEtJOW9aVFZQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Campaign Middle East"
+        },
+        {
+          "title": "OpenAI, Aleph and the 44-market ChatGPT ad deal",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9KSVcyN2xaSEcxUG9VWTQyMXBybHNNNVdDUGhJd2t2ejB1cGJOaUxwS0ZVN0c0R1JPY0o5VkRLX1NuWjU1RjU4OUJhYUhFMUlGSC15ZkZPbnBhZ2xQRkdzNmZLMA?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "ContentGrip"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c41",
+      "label": "AI-linked child sexual abuse reports rise 8,400% in two years",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet citing Childlight research; serious harm data but single source",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Reports of AI-related child sexual abuse material rise 8,400% in two years, data shows",
+          "url": "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes",
+          "source": "The Guardian AI",
+          "publisher": "The Guardian AI"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c42",
+      "label": "Indian chip startup Bharat Semi raises $24M seed",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Two outlets on a seed round with design wins; niche hardware startup",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 3,
+      "items": [
+        {
+          "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+          "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+          "source": "TechCrunch AI",
+          "publisher": "TechCrunch AI"
+        },
+        {
+          "title": "Bharat Semi: New funding of 24 million for image sensors",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9zTDVTQVRKalZiak56cm5WTUV3cUtFeUJ4OGxoNHZjbm9qTmM1cDZBUS10RFNJQ0liTm5IdUpEVV9oOFN3UnZ6WThvVXk2T3dhbm5wb3lVSFcxLXR1eE9IMjdXS2V1QWp4NTAybWhOQllpUV82cE00eUhB?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "SecNews.gr"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c43",
+      "label": "Nvidia Blackwell chips found in six Chinese AI models",
+      "importance": 4,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet relaying a third-party report; relevant to chip controls but unconfirmed",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Nvidia Blackwell Chips Leave Traces in Six Chinese AI Models, Report Finds",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE81RHM4ZVNkWlhfZVF5MGRYTFJqV1lTUFdYbEtOS2kyM0ZvYUhueEFQRG9veHF1bEJoTS0yNGJaWUk5ZWVmV013bXItM3RIQzRwWnJsUGwzeG1GUHlOb1c3ZzBzOWwtUkI3cEp2N2dBUGhEU2Qt?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Businesskorea"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c44",
+      "label": "Mirendil Series A raises $1B at reported $5B valuation",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet on a large round at reported valuation; limited independent confirmation",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Mirendil Series A: $1B Round at a Reported $5B Valuation",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcVlheWxiQ2FJUk0xdHdrNWRvbHRLY2Zvb19ZQTJhWmFHM3o4VExQYktCUnRmbGlocEUtOGsyaDFJcERwYjYwOVZDZTFPMW5SNWZyN1hGN0s3MjFwbDN0MU5SM3NqdUJMa21kRHpHQzBVdlBGNWV1ellBblJ0WlNuYVNqMkQyRDZIV2NXUA?oc=5",
+          "source": "Google News: AI private equity",
+          "publisher": "Admirals"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c27",
+      "label": "Fintech AI back-office market getting crowded",
+      "importance": 3,
+      "category": "other",
+      "european": true,
+      "finance_consulting": true,
+      "reason": "Sifted trend piece with no single concrete event",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "‘Build what can’t be cloned’: Fintech’s AI-native back office is getting crowded",
+          "url": "https://sifted.eu/articles/ai-native-fintech-crowding/",
+          "source": "Sifted",
+          "publisher": "Sifted"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c29",
+      "label": "McKinsey says early-adopter banks see nearly 3x AI returns",
+      "importance": 3,
+      "category": "research",
+      "european": false,
+      "finance_consulting": true,
+      "reason": "Consultancy report repeated by outlets; marketing-style claim with no independent data",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 3,
+      "n_publishers": 5,
+      "items": [
+        {
+          "title": "AI agents could help banks generate nearly 3x returns over three years: McKinsey",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQUFZFSm9kaFYzbDFtWFppTW4ybFUweFB1cmk3Yjk1NGhnWnhFOFNZVVd0bHNrR3NVVkZPdXIyODAzeUwwM0tyU2FoS3hBYzJKazdXTlNUUW1wVFVnZlNCZV95Z2tFaDBQS3o5clFrWG5lQkU0UHJNeUx2R0FTZTVLNXFMVTRGTEplcUJ0RVJBeVJNekphelVWZlQ0SWhiVFhSMmlrQnJOZjRYTzJaMzJHejNsWkt5XzJ1R2gwQzlFMktjUF9HSFpBekNRcEhpZnZWYjVZVW9qeHlhRUNkV3ctSGJRRDZETVBnTEJVbExhOVJabWx2M0d6d9IB_gFBVV95cUxQT0lzNFNUUGJGb3NnQnB0OHpibkR2SWRseHNqbngzYzQwSFI2TGdIdWE0SDVBNkh5SzcyWURqN3NjSkZRWGRzNDFXeVlQQWozN1JCVjlNSm04Uk14Y1ZnMnVKektoTzVJSkJCemZIVFllT01qSHhoUmJ1U2xYR0RNLXNaRGh3eUVfQ2lyRWgzUjNST3Vyb3NacHNIVURaUjVKbXMySk9WbGptekg4UXRSZGpWMVNtWC1MLVlpcWZsM1ZYZ1lnYklhUXlINkViZzBvcjA5cWU1WlkybURtcTJXLVNyYXI2d1lGdnQ3R2VQRXVjbUlrQ2JuWDkzSmZWZw?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "The Times of India"
+        },
+        {
+          "title": "AI could reshape banking economics as early adopters see nearly 3x returns",
+          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOcmpjNTZxOUNCVWVJUVhVbk0taHRkV2RabTNhNHJBWU4zMUItbzNjTVF0cjlyVnZFTklYenJ0YmFZOFNvb0dkN2RYeTV4UGtrLWxQQXpsQVRLNlJaY2pvY1lFUGZfMG1aUWVaRGtlODVCcHRKenh0NHZOVlNvaG1GX1A4LVlhSUxJODFKdlZxSWhCaWFENXplTDI3cWZZUDIzRVN6U0NpeUNtUnJKODZoaHRWTGptaFphTFhPN1FKSXhPT1cwQU0zY01KWHh0RFRUaHJvM2VMMmc4YVh2RzFaaWhGa0VxU3Q1YnRpVnB0SXN4Z3JSME5keTRMWVZNQ2FITXI0TjhjTVZuMTllUUZsLXNsdDZUNlhHMHVyVHB4Ny1vZVnSAe8BQVVfeXFMTnpkbWcwQTVuZnR6OFpxYWZhTHBSTU9yaS1lVUozQ0JLWi1qajZWdGtzYlAzbVE3MXNzVmpHUkV2Rk9FcHBhX0Uxb3BKZmpseFRsRXZrbUplUW5UZm9SR1RURWJmTFhxTjdzVUR4TXhfNF91ZkM5VnhvbkpqSVd0T1ZhZTBfOW1NUkRQWjZjTWNXTUVCTkVqYTZ1ZlBhUEFySmFkVG92SXhhR0xxU0E4VF8ya2ZOR0RBTmUyeUZSbU5fdkprV2pWVWpLd3dERHd1OGEyOVJTaWh2bW4yNmFteFh3Zm5COHU4NEM1LTBSMW8?oc=5",
+          "source": "Google News: AI bank",
+          "publisher": "ET CIO"
+        },
+        {
+          "title": "AI Set to Revolutionize Banking, Early Adopters See Nearly 3x Returns: McKinsey Report",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZ1N4ZEhwVkJjVHBmcmVWcHBlTXZ3LTZCLUpmZWFGQ0tOTGduQVpSa1NQamNkNDBKVkI1QlMzS0dNQ3dBdVppWEZJX1Q3VDZIMGo5djI3VlR6ODFGMmFKYk8xbkV0OWlCU2xFa29PbE9DRkxMN0RKanVzWnE2TkJZbmNNYy0yX1JhU1B2V2JsWXdXUEpGMkFMTUhBdEFqaEhIUzNQV1ZyRkhJbEtkNkZ5Y2ZzRmhId01zNmFtXzRkNVlDUjQ1Y2VRc0l1ONIB0AFBVV95cUxNSEZoUDJTUEUxNzFrOFlWbzh3bnpmVWREeHFMOGN4QTRQMzdHVFB3ZmxiZEtxTHFJOERWalRQaU9sQ29yZHctcXRZT21hVW9CbUVWN0ltbkdXWURmMDFGcVRQOXlCSUNsZHY0c1RIai1rZjhhbzZka19mcTliNElmMWxtSFotRW93RVo4c1FuQUVJTVE5ZUZnak9oMm9kZHZveXdCS2JkNEI4bm9aVHpod3l1YzRFRWpFQ1AzNFZiUkcxcXV5YUEwWGtab0NhcTg5?oc=5",
+          "source": "Google News: AI bank",
+          "publisher": "Lokmat Times"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c33",
+      "label": "Explainer on positional embeddings in modern LLMs",
+      "importance": 3,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Technical explainer with decent HN pickup; no news event",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Understanding Positional Embeddings in Modern LLMs",
+          "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+          "source": "Hacker News",
+          "publisher": "magazine.sebastianraschka.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c34",
+      "label": "Paper proposes roadmap for agentic robotics evaluation",
+      "importance": 3,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Moderately upvoted HF paper; position paper with no concrete results",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+          "url": "https://huggingface.co/papers/2611.18359",
+          "source": "Hugging Face Daily Papers",
+          "publisher": "Hugging Face Papers"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c36",
+      "label": "OpenAI board member warns AI accidents could top human deaths",
+      "importance": 3,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Speculative warning repeated across outlets; opinion rather than event",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 3,
+      "n_publishers": 3,
+      "items": [
+        {
+          "title": "OpenAI Foundation Board Member: \"AI Accidents Will Soon Become the Leading Cause of Death for Humanity\"",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE82LXMwc3A2S1hvWjgxSUlsWHlLVkdBdUFIbUc5elZiMEllMC1JN0lrN085TjB4aVlVSWY1ME5vZjRNTzBqSXpEdGZMbWVNS1RneGdJNlNTcnNsTUs0eUoxb3AtbEtORmFwTzhjbFBnZE5Mc1NROUE?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "BigGo Finance"
+        },
+        {
+          "title": "OpenAI Foundation director warns AI accidents could soon top human deaths",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUHNtWS00bm5qU2V0dEZ3WnZhSk1tWDRoeUVxb0hhM1J0N3NPem1LelhQVXRNT21XNUxiZGF0cTREQ2Nxdy01eGY1Rmo1UmxBX3lZZFR5RnZ4Tl9reUZlOUJiQXdheXZqRXd2MUloSWhfOV95QTR2U0JOR2JDaXRmSU5yLWJmWUli0gGcAUFVX3lxTE5XQnhfb3ZiVm1CRDA5QnRtZ0lUTnRMTzFJbFBSNnRCSGtNUVJLNnkxY3pXS29hY3IyaW5nRnhqOVZHcF9TRWNnc0FlaEJ1WnpiSGcydUJ1dDU0dFREYm5lSmpXSi1uVWg2aDZ2NTIzLWRCRXZTQ2lab1FCZnVvRE1CU1B1azNkOXhqSi1Pa3VPTEczdjNoYU1idl9TOA?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Chosunbiz"
+        },
+        {
+          "title": "\"AI-Dominated Society Could Arrive Within 3 Years,\" Warns OpenAI Board Member",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmRkhrM2VjdnU0bTRENVBmaVFqQ3RCRHVIUXVqSFNVV0MtemVzYk4weVZQUGlpaDhqeWJjZUZwWi1mNFByNkpWZVR0ZENtaV9TS1lUcUVJQ05YaXpiQ1QtQ25zaU9Yc3VHRzdhejZn?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "news.sbs.co.kr"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c45",
+      "label": "Meta's Muse AI launch faces activation problem",
+      "importance": 3,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet analysis of a product launch with weak adoption signal",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Meta's Muse Held Its Launch for Seven Months. Now It Has an Activation Problem",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqRG50T2dlMFZmeW9WMnMzLUUtN2RJSlpzY0lWN0pYNlh4WE9ZdXlOSml0VVJLQkdGbHF2a2ZXNEFsVVkzTmhXX2NSX2NYUFQ3YlI5VXNvc0o3VE0?oc=5",
+          "source": "Google News: Meta AI",
+          "publisher": "BigGo Finance"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c46",
+      "label": "Meta lets AI handle phone calls for paying users",
+      "importance": 3,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet feature with privacy concerns; minor product change",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Meta Now Lets AI Handle Phone Calls for Paying Users, Raising Privacy and Security Concerns",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdFNXcDBDblIzR1ktOWVXVTc2N3U4UmZmUHFvcEctZDZwYUR5SVNUSklsejJjTHhsbmJmVmhiRm8tRElQU29JZzg0cmxfRHIwcloyTFdrQnU2U1NYX0x2ZHNacUpvSTdnWTl2TFRJUVVVOV9JckdEMTF2cFpOSmo1WlM1RQ?oc=5",
+          "source": "Google News: Meta AI",
+          "publisher": "Baller Alert"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c47",
+      "label": "Anthropic launches Claude Meetings for live video calls",
+      "importance": 3,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet report on a minor product feature",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Anthropic launches Claude Meetings for live video calls",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZDlyN3N5NU5EV0lQck5pU1hNa1VrQWRPS21pUXJ1aVM4VEg5dFhiWENZMUtHa1NLa19YTGVxeWlMZ011NW9RTGdlbHg5aHo5NWcwWjZPSVZhVElqeVU5TUQ2TlpuRkZ4Tm9wODh0SF9CcHI4bU0taXpMeF9rZlFpZTlDdW1faEF6VDJfMA?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "IT Brief Australia"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c48",
+      "label": "United Airlines blocks AI travel agents from its booking systems",
+      "importance": 3,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet report on a company policy against AI booking agents",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "United Airlines declares war on AI travel agents - in a major blow to Meta's plans to let chatbots book your holidays",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMmxqMmJIQW1QZTlrcFN2TlVaT3B0TzRfTkVBdUw0amI4ZWxkVVo5U0dJWlJBLS1uV3I4a2Z1c01BcGhGM1hrb2E4RjRTWWZ2NWJHMmJXN3BneTV6UXRaemRBS29WODBqNlRPem1ISUpJRFNPaldzRVMtbFNLQlFuWFZMY05jSHowc3MtZjY0czkwTDUtcWZzZUpzWdIBoAFBVV95cUxOZzZuSkZYcTdhWmZ3TFJZMXB5WFVBVm1SM19fbU9FX0R1bElKSURQeGY5WmZJeU94b3ZRWW9iRzU5bDU1Skd1N3NQYUVZMkRxYlRXRmF2TEVrbVQyRTlGZm8yU0JpWEE0b1dVVVRRSEpkUFpWNE9zWklFeXdoT0xQMTBnX2RSV2p4NnZCNms5MGFLc0x4UWYzclBUT3ZBaG1M?oc=5",
+          "source": "Google News: Meta AI",
+          "publisher": "Daily Mail"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c35",
+      "label": "OpenAI launches a science blog for researchers",
+      "importance": 2,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Self-promotional blog launch with no substantive findings",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "Our new blog for science",
+          "url": "https://openai.com/index/our-new-blog-for-science",
+          "source": "OpenAI",
+          "publisher": "OpenAI"
+        },
+        {
+          "title": "OpenAI launches a science blog for researchers",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5aaGNrN1BzNW41VFktR3lLT0RYY3dxREJfTFpzeEVKYW1Bbkh2T1VJNV9ub3A5aWJKSDdyaTVMMXdsaFYwNlRnN1RaNkRraGk5LXlhZHNlTEMwSlBfV2dCTW9TbXFvQQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "CASRAI"
+        }
+      ],
+      "section": null
+    }
+  ],
+  "models": {
+    "triage": "claude-haiku-5-5",
+    "write": "claude-sonnet-5-5"
+  },
+  "stats": {
+    "items_fetched": 3450,
+    "items_in_window": 480,
+    "items_already_covered": 12,
+    "items_triaged": 400,
+    "clusters": 48,
+    "per_source": {
+      "Techmeme": 15,
+      "Hacker News": 5,
+      "Hugging Face Daily Papers": 1,
+      "OpenAI": 2,
+      "Google News: Anthropic": 97,
+      "Google News: Meta AI": 14,
+      "Google News: Mistral AI": 5,
+      "TechCrunch AI": 5,
+      "The Verge AI": 4,
+      "VentureBeat AI": 2,
+      "The Guardian AI": 6,
+      "CNBC Technology": 5,
+      "Axios": 3,
+      "The Decoder": 4,
+      "Engadget": 1,
+      "Fortune": 3,
+      "BBC Technology": 2,
+      "The Next Web": 5,
+      "Wired AI": 2,
+      "Google News: artificial intelligence": 55,
+      "Google News: OpenAI": 65,
+      "Google News: Nvidia AI": 99,
+      "Google News: AI regulation": 10,
+      "Sifted": 3,
+      "Politico Europe Tech": 1,
+      "Computer Sweden": 1,
+      "PYMNTS": 1,
+      "The Fintech Times": 1,
+      "Google News: AI bank": 16,
+      "Google News: AI consulting": 13,
+      "Google News: AI private equity": 14,
+      "Google News: AI hedge fund": 20
+    },
+    "failed_sources": {
+      "Finextra": "HTTPError: 403 Client Error: Forbidden for url: https://www.finextra.com/rss/headlines.aspx",
+      "Finextra AI": "HTTPError: 403 Client Error: Forbidden for url: https://www.finextra.com/rss/channel.aspx?channel=ai"
+    },
+    "llm_calls": [
+      {
+        "step": "triage",
+        "model": "claude-haiku-5-5",
+        "input_tokens": 41080,
+        "output_tokens": 19666,
+        "cost_usd": 0.01394
+      },
+      {
+        "step": "write",
+        "model": "claude-sonnet-5-5",
+        "input_tokens": 21470,
+        "output_tokens": 3497,
+        "cost_usd": 0.07791
+      }
+    ],
+    "cost_usd": 0.0918
+  }
+}
