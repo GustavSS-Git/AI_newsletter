@@ -1,0 +1,2470 @@
+{
+  "schema_version": 2,
+  "publication": "AI Daily",
+  "date": "2026-11-22",
+  "edition_number": 19,
+  "generated_at": "2026-11-22T05:30:43+00:00",
+  "lead": {
+    "id": "c02",
+    "headline": "Anthropic mathematician says Claude helped prove the Riemann hypothesis",
+    "summary": "Levent Alpöge, a mathematician at Anthropic, said Friday that Claude helped him prove the Riemann hypothesis over about six weeks. On Saturday the Lean Focused Research Organization and the Mathlib Initiative said they had verified the proof, which Alpöge shared in the Lean programming language. The Decoder reports that Stanford researchers separately released an all-human draft proof by Alessandro Masullo, and that Stanford's Ravi Vakil later said reviewers had flagged problems in it. Alpöge's note came one day after Anthropic's Nasdaq debut; he called the timing \"horrible.\"",
+    "sources": [
+      {
+        "name": "The Guardian AI",
+        "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai"
+      },
+      {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/"
+      },
+      {
+        "name": "dw.com",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUnB5dlFHb1BpVjhJTnhMa2QxdHAxNjhEM1FwT1lONWV4bFJiX3hjV2ZsVE51WjlkOWh1RGZYU2ZVam9OVVB3T1oyWDRKYlQxcGhWaXV5WTR3SENfdGtVdWkxTTk0TmpHOGRhbTB6VVFkeDA2T0tHb1p2R2RMTjhUN3JIMFdXMXBUazd6b1A0ZGNNTDFrWFpZ0gGXAUFVX3lxTE85V0xZdUNTdG9weTdhbVZKUEprVlREZUNUSk9seFVuY1VXNFNsN0NJWDRuQWZNaUFEeFJGeUs3b0pjOUpGQWVUaGR3VFRYaE9BdUp1NkE2X1BXS2dYQkJrRE5qenVOU3lvZTNUY29GOFFnbTJYMXo1VmNTQTVVQXloVVRJYTBmamIzM0lxNE8teGVsalJVNGc?oc=5"
+      },
+      {
+        "name": "Emerald Book",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmVi1paHdkZ0p0US1LNDM0UFlQb3gzVC1MaUtxTi1iQkFfUWVqajlKVVEyemk0OGtlNGJKVGZwWVdhSDNfTjJRMFVuRG12R2s?oc=5"
+      }
+    ],
+    "importance": 8,
+    "material": "fulltext",
+    "item_urls": [
+      "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
+      "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUnB5dlFHb1BpVjhJTnhMa2QxdHAxNjhEM1FwT1lONWV4bFJiX3hjV2ZsVE51WjlkOWh1RGZYU2ZVam9OVVB3T1oyWDRKYlQxcGhWaXV5WTR3SENfdGtVdWkxTTk0TmpHOGRhbTB6VVFkeDA2T0tHb1p2R2RMTjhUN3JIMFdXMXBUazd6b1A0ZGNNTDFrWFpZ0gGXAUFVX3lxTE85V0xZdUNTdG9weTdhbVZKUEprVlREZUNUSk9seFVuY1VXNFNsN0NJWDRuQWZNaUFEeFJGeUs3b0pjOUpGQWVUaGR3VFRYaE9BdUp1NkE2X1BXS2dYQkJrRE5qenVOU3lvZTNUY29GOFFnbTJYMXo1VmNTQTVVQXloVVRJYTBmamIzM0lxNE8teGVsalJVNGc?oc=5",
+      "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmVi1paHdkZ0p0US1LNDM0UFlQb3gzVC1MaUtxTi1iQkFfUWVqajlKVVEyemk0OGtlNGJKVGZwWVdhSDNfTjJRMFVuRG12R2s?oc=5",
+      "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNGIwdS1yaXpvQVR5Uk9kbXRRLWZYdFJrM21pTTk3NEk1cnl6cnp3cTl3Yl9yTGloVmdNbU1KcHFvdzlQdUhMWmtZcFpmZW1vRXhSdl9ZOFhLX1Z6ZXVwZ2FINktGcG1kYWNrZlJoXzZkT0dNOG5OOVF3YzhHME5rb2RVTHA5dWx4bU1KaTczd2VtT1R5RVdUb245ZlhrR2llcjNBX3BIMTNqT3ptNDBCZA?oc=5",
+      "https://news.google.com/rss/articles/CBMipgFBVV95cUxONlA3YmE1SENKMHdqY2MwSEVFRFQ3eW9URjRhTW83QjNCN0U3SUhweC1vTGhfYml6SG9Sc19wVHVhY1VobG9NLVM4V29Ca2QzMnByUjh0clFFOGhFSE9XcVVfNUxlVTdnRTE3ak5oYzd0alQ4QkV3NUYydFIxYXBOWEhtblhQM25NRDY4czBDMHE5VUQxc1B6N3Q3eXNoazk0TE9PbG13?oc=5",
+      "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNYVJCOWRkZnRsenJPQmJPQTlnNVNWQ0N5NG9hdzN6NWMyalJmUHVGVzcxajZPWU9McjJ3enVIbjhFTGQ0OFpZY3VBUHlIckIyQnFLWEJzZ2hxT1VHWmotamtoZG1CVDg?oc=5",
+      "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+      "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRGJtR2U1YktQRzJCb2h2QXlmQzJlRzRlejNEVVhDVUY2ZldPRm55WW8yQTNZNzRBMERaSjRIeDBMLXZ0SGQ5cXdDaEk5b3VMendvUjRiLXdiSG1vVlJ5Z2Y5R0R6Q2VNZmpIU0tVWEZKbkZaeEFzTWd4TGVzS2o3Q3BqZ1VLdll2cWpTeXIwRWFVRlZUcC1tX0dYUVREdDkyQjQxcFY4TExMZw?oc=5"
+    ],
+    "item_titles": [
+      "Two groups verify mathematician’s claim that Claude helped prove mathematics problem",
+      "Anthropic researcher says he used AI to solve math's greatest riddle",
+      "250,000-Page Math Slop: Why Anthropic Didn’t Solve the Riemann Hypothesis",
+      "Anthropic Worker Claims to Have Solved Riemann Hypothesis With Help From Claude",
+      "Lean groups certify Claude-assisted Riemann hypothesis proof from Anthropic",
+      "Anthropic mathematician says Claude helped solve a 165-year-old mathematical mystery",
+      "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+      "Matematiker hos Anthropic påstår sig ha löst Riemannhypotesen med AI"
+    ],
+    "category": "research"
+  },
+  "main": [
+    {
+      "id": "c01",
+      "headline": "Anthropic raises record $93.5 billion in IPO, then shares fall",
+      "summary": "Anthropic raised $93.5 billion in its Nasdaq IPO, a record, plus $26 billion from tech companies that bought at the offer price, CNBC reports. Shares priced at $83 and rose 17% on Thursday, valuing the company at $1.8 trillion. Fortune reports the stock closed Friday at $88.91, and The Decoder says it fell 9.1%. The debut came in a week when the Nasdaq slid 10%, according to CNBC.",
+      "sources": [
+        {
+          "name": "CNBC Technology",
+          "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html"
+        },
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+        },
+        {
+          "name": "CNN",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOb3UwVjJjanJYWGIwb3l2UEo4aHo3dFdDeVFyb1BBODlfbF9hU0N2cERseWxxU3QxNlZPRUZBQWFhQ0dJN1V3MEd4LW9XbnFYZTJuMmJvcVFtODM2alVmWXQ2bjBaSVZBWUQ4alpsaTJuOHlGaFROdzh4NTFBQWNUY1BmVnYyeGF5a1Y2cE9NMlBrOWlJUWo4X0dxNzlKSGs0YVhTXw?oc=5"
+        },
+        {
+          "name": "NPR",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVWZST3piU2NqZVJlVFlPQU9BY1F3eXNMR3VQdVd3OTRTcUF0b0FHSmp3MFZpZHFYaWNrOE9zRnl5LXBlNDlwaXQxaHhKY0VDVjQyVHhiT2ZQZHA0c2pwWFJ2VkItZEtmMHFfSmg3VU44dHgta0VnUHNVZy1sZGhRT0V3?oc=5"
+        }
+      ],
+      "importance": 7,
+      "material": "fulltext",
+      "item_urls": [
+        "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxOb3UwVjJjanJYWGIwb3l2UEo4aHo3dFdDeVFyb1BBODlfbF9hU0N2cERseWxxU3QxNlZPRUZBQWFhQ0dJN1V3MEd4LW9XbnFYZTJuMmJvcVFtODM2alVmWXQ2bjBaSVZBWUQ4alpsaTJuOHlGaFROdzh4NTFBQWNUY1BmVnYyeGF5a1Y2cE9NMlBrOWlJUWo4X0dxNzlKSGs0YVhTXw?oc=5",
+        "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVWZST3piU2NqZVJlVFlPQU9BY1F3eXNMR3VQdVd3OTRTcUF0b0FHSmp3MFZpZHFYaWNrOE9zRnl5LXBlNDlwaXQxaHhKY0VDVjQyVHhiT2ZQZHA0c2pwWFJ2VkItZEtmMHFfSmg3VU44dHgta0VnUHNVZy1sZGhRT0V3?oc=5",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZk5DTlk1MG9TUTMyOThsVVFKNFc3SG56QS1WMm5mdDZJWk1pTWRJWk1sVnlqSzREdDByVFVXd3JDdkxUR3FFWjNFZFMzNGJqZlZ3UlVsZ1JienhzTVdCVVVLZEFTd05hNGxzbGhidHhvLTRDWFFXSGpNUmVHd0tTQV9DUEJ2NFVuNmJ5d3d3?oc=5",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUnA1cXB0NjhBTjNiX0FZT1UxUl9lZVpLSmlhWUZLMDRyMkkwazFrdmswZkpvNC1CdDVBYjIxU085UUhNUW0wT2xJcTE5Snk5WlduUmQtU1RPY0t4MDFFeHg5UndKVHBnZkYwNUJWMjROZGlqU19fN1lDQ09WUUZGZzgtNDh2Q3J0aU9TaU1ENm1iaURVYUE?oc=5",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMjVQWHNJMWw0Y21HYTVDN0lhX0ZYQS1FdzFCLV9nbVRzS09jNFN5UXRaanhHM2tXbGJkVGtlZVdMMnlTa2RTR29MUU1KbXVkekg1X19VeU5ISGJCbG9FRU5nSkNrZG1MWFJBaVZWY3pGUm5vUmZUWl96aWl6TVNDcUFCOXFxRmlYTFhRLTlqdTQ2S2FWTjJ4RWNBbnlVS2dtemlUSF9nOVlpZFpONElOdUhB0gG3AUFVX3lxTFBNVVBhQ1VSV2VIc0Z5OTJfSU1FUmc2UVFZNDJPX19TSjgteXV4QWxmbDZQWGQwa0M3S0tLUTY1V3ZTRXhUTmVNLTNBSk15QTRuQ1ZzSDY5VkFVT3laUl9XemZJVWZBVG9TU21UaW1US3JvWGZ3dGpiakppUDJobkQ2NW5lVGxEZUdCTlBnaGhEVWNvRE43ZTEySTBZaDJ6VzFuY08xN2FJRkFWUzI1Rkg0eEljUHl0OA?oc=5",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTGVJTzVZSXNfcjJkMVc0TjdqQW51SEVaWGs4U0tQcVlJdmJnb3FGaVVHTmVUbndXWE5KdGRlSC0waFFyVmswR3FEd0I2VmREbUFkRXo1U3psSTJxUGw1ZEVWQ0t6a28wQ0RYelZkRWw2TmNoZHlBZkhxd2E3TmhNNWxEZ0FicVFsaEpKcFZR?oc=5",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNc0o1TFlNT1Y2ZDZDdFBTcHBjX3g3bFRxaDZLdTNvdFlTdTdKbG9fUFBkeUdpMXJJcWRhWkF5dlVraGZIZDlSd2lhWnlKZ09Uckp1ZDRRdllKNnBiR2dvZW9pOWQxd0UtUkVSeDV4Mkg2YjBkNE5TeksyNnpfWHBaVm1Ka0Nnc3RuNkFaQUd0OEo0MnRfRmVweDlZQW95YVYxRFE?oc=5",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdXVvVTBfMERnRGNhVjJLTnBsOXZWTnVEUk1CeXYxNFBhdkFQRlFMMnIxSkNEZmhwVW96amNFdlE3akZGWS1MNFRzeFBmdnFkRFdUV3JtYXRQa2p1TnNza0JaREtrQ0RtbThxV2lBdU9qOXVBZU5rcU5TZF8yUFE0UkU4VFRkcmJmSWNTdEVB?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWjNwWTF0NG0yY3lRZGg5dFhIUXZJTGRvTWN2U2dnWnc1NGdDMm5iTGtuQjNHTEFCdzZJb05TUkdfZjRlZDh4S3JqUmVZUXctUUtsbGUyMk9wT21wN3pxczFLNmRSTHpqV01wNjF4SmthdThIU1J5NHpwZlc5R0ZCX1NQc3FjZTd0T2lmNVVxX3hWZw?oc=5",
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcGZTRVdJcGNQbEdjRlRQUnN1YjBzTXlaYzFDb0swSDlCNTVsLVo2SGtQTGxsUGxzVmE0SkFPbHB0dFBXbWhGQVZUdmFQZ21zeDBwcW5OSjJmOUtmQjB4U3lNVkptMzYybHpmR1hkTUZESVlQU1VtWFhsSzNGWUlmWHNUa3FCd0t6NjNFR0xkTzBxdjYySFFtSTRQbTFwTDd0TXlfVEY4dnZCNmxrVnZFWVlSR0U?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSDVRTGR3S1JJUE9pNWZPUDVuSzR2VXdZQjEteWJKdVZldEFEQlVhaUNzQXJieDV6cU5XcXlEWEtybG12NmxIQnVKQzJZZWs0SkxLSmhacWtTaXE4SXJld21GNkE0RW9qRmZ6NGczbHJwUFlfY0RmVUJvT2NOeHAwQzhwenpWTG5SQ3o2Q2ZETDF3MmFxQVZITnRlektzb181WU11dUxidmF1LXBvUUtYRjRfOFBQTU1aQWZHZ0JB?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE50ekFnLVFhdTZHVm1qOUxTY3VrY2NfZXl3Qklobl9Hb1VQN0JfZEpMdm1wY294WlpDNm9YR2NZMzVzUTJsTFMyYi0zbjZTbE9mbE03LTdyY0t2Vnlic2RkT25tQkpuQzk4NFdvQkUyanNWUWVxd3c?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoZUtyX09WNnFRLW9NVWE4QlNVNFowN21zX1YyX2EtU3h4VGNrc3k2eUFkeWpTSmc5X05HQ0JIUjhHaGZGNG43Znk1OVgwYWVieUJiNExRVjFINDZKOHp1eWN2Zw?oc=5",
+        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxORVpaVk52cFo5Q1l3dzhxRU5Lb3RES213dzBuc3JEeFFvZnJDY1RzREhUam1fcm14VmdmYVg2ZVFEdVBxMEhtUXJuTzdNMkN4aHJNTkJOOG1DaGwtbFE1WUp5djJnVC1tMFBfSXJUVjdqVTNjcV8wYjM1alVKRU83c1JhbWsxLXlIbExLdktLNU5vOFNmVFRiSnZYNzlqZFd1UGlfNXVwU1dvVDRLSlNEenRrYzJYWkxhQ3QtT1NoTUFsZm1ZZVpaQm1BamVjX2JBbGxZ?oc=5",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxPXzZQaWxDcTNpTWhzZEVnV2xHalRtNHNlTXdjNk4zTUxfaExVY0diTlFtSDRQeV9JYVZyYTV0cWxUX3dmSUt5bm1fRWFTMXhUZkFQZ2phNFlrd01Pa1ZCQWJKLVNDdGxWSHJVY1FpNy1mR3ZFYmhRY1FKYmRtanFrN1Y2eEtZSnRSbkhLUE1Ja3hib3lqVnhYMXZZOA?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVnl4QTdoM1dwRGNxeG5kcWRQb1p5R2JXNVMxQThUZW01WDU2N24ybTFUS0RMV0JSSExNR210R19rRkJBSy1qTnZnQkxLai1lbS05VldGT25rcjliV1VrRHd2bjdiU1doMzVoSXpWZEpJNm5HRTJjSjdJdjZ6clRFbFM2TFlkcEIzQ0pyZHNndzY0TzBxYi13Ymh5T2NmQml2Nldz?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kOTJfVXNqSU5jV3N2SkhmeHZiWDBJd0U5eV9IOWVKSG9pZ1NNb05iTG5wM1Z1U0I3ZW9PalVyOC1sRjI3Yk9WRkdRYUZPMkROTGZRdzN1dnloVGNld0t0OEpQQTBLbklxNkRZSFNldTROODJSRkE?oc=5",
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUzk4NzhEUGpTWGM3YjNtaEJ4ZUF3a2Mwa2tkbk1Mb1BwX3dJYmIwUGYydnNxa3hfZzdFVW5NUmFUMmk0YlA2a1JwWF9DOVpCTG9lbDIwZVg3QndnOGNMVF9UWkxfVGVBZ2JEZXNwWFNiZWc5NkZaY1pwSlJNQ1BoVDFjWi02VHM4OG50VEtsdnk?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQY3A3UXhzWGFBNjlEekFoeUtCMlllMFpDOUdqdzhJcnE4OFBrX1FFSnB3UTFBTzk3TXFFWk9Gdjhxc1hITTl4RmxOUWtqV2c5MkxPNXVUSlNFWk1uV2xqaEVKcGhETWltM01YVzdreXZ3SEhiSGhBVVRkX0lwcjd1OHhkLThsbUpUWERxT1RpUHhNdw?oc=5",
+        "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+      ],
+      "item_titles": [
+        "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
+        "AI stocks lose their shine as Anthropic debuts | CNN Business",
+        "Anthropic says it will put humanity first. Will its IPO change that?",
+        "Anthropic's $2 Trillion IPO Questions AI Returns",
+        "Anthropic’s Debut Shows the Disconnect Between Wall Street and Silicon Valley",
+        "Anthropic IPO signals ‘beginning of a gold rush’ for small businesses, biz tech CEO says",
+        "Anthropic’s IPO Reveals the AI Boom’s Biggest Problem",
+        "Anthropic stock slides with rest of market after big-ticker IPO",
+        "Seohak Ants Buy 220 Billion Won in Anthropic Shares",
+        "Watch Anthropic Fails to Calm AI Jitters, Ditching the Kitchen for Thanksgiving",
+        "Wall Street Asks What Can Save AI Trade After Anthropic Wipeout",
+        "These Are the Top 10 Largest IPOs Following Anthropic's Historic Market Debut",
+        "Anthropic Sheds approximately $109 Billion in Market Value Two Days After Nasdaq Debut; Nasdaq Wipes Out $4 Trillion",
+        "Anthropic Stock Debut: From $83 IPO to a $97.17 Close",
+        "Anthropic broke records with its initial public offering on Thursday before a rocky first full day of trading. The markets plunged, reflecting the widening disconnect between Silicon Valley optimism over A.I.’s potential and Wall Street’s growing doubts about wheth",
+        "Anthropic IPO: Amazon, Google And The Art Of The AI Cloud Deal",
+        "Anthropic and Bitcoin Are Both Falling: Where Is the Money Going?",
+        "South Korean Retail Investors Buy approximately $164 Million of Anthropic on IPO Day — One-Fifth of SpaceX's Debut Haul",
+        "Anthropic IPO fails to prevent a tech stock wipeout",
+        "Anthropic IPO Tops $1.8T Amid AI Stock Selloff",
+        "Can Anthropic afford to put safety first?"
+      ],
+      "category": "business/funding"
+    },
+    {
+      "id": "c09",
+      "headline": "Nasdaq 100 falls 10.4% in worst week since 2020",
+      "summary": "The Nasdaq 100 fell 5.6% on Friday and 10.4% for the week, leaving it 20% below its October peak, The Decoder reports, citing the Financial Times. Fortune reports the S&P 500 closed in a correction, down 3.59% to 6,918.45 for a seventh straight loss. Nvidia fell 14% on Friday after reports that the SEC is reviewing its accounting, and is down 47.5% since Oct. 6, Fortune says. Fortune also reports Goldman Sachs strategists named three conditions they would need to see before calling a bottom.",
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/"
+        },
+        {
+          "name": "Fortune",
+          "url": "https://fortune.com/2026/11/21/goldman-sachs-sp-500-correction-ai-unwind-bottom-three-conditions-hedge-funds-positioning/"
+        },
+        {
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTGI3Sng2eVpHTHVCWFlFamhHRWxSYXNtMkU1R0Y1amNNMHRNMXdMQ0RNbHBNSXhvdlVIRU42Z0N4V3RWRGdzYnp6UjdkeDZsY2pwU29iRG9GR29NakVMV1FYRjdvWjdhckM1N0dmSVUwYjNXWU5yVVZQZm92U2tzNlpQMlNJZVRGTzNJbm1KLUpfUQ?oc=5"
+        },
+        {
+          "name": "Beinsure",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMkdFY2NkUndYbHd2SFZlMjdjMnpKYlQwbFNGOFpfeVNHaGh3aXNhaThmRW9aM1RwdFBFbmVhRjllUjFRTThPdnlOOFo4M28xdnFLb2xyR2VjajlfOFhMQ2tiWlBHMUI4WC1rVjIzdFVBS2FtN1RsV3ZuLURXTGU5ZzNCYXVJVjA4c3c?oc=5"
+        }
+      ],
+      "importance": 7,
+      "material": "fulltext",
+      "item_urls": [
+        "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/",
+        "https://fortune.com/2026/11/21/goldman-sachs-sp-500-correction-ai-unwind-bottom-three-conditions-hedge-funds-positioning/",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTGI3Sng2eVpHTHVCWFlFamhHRWxSYXNtMkU1R0Y1amNNMHRNMXdMQ0RNbHBNSXhvdlVIRU42Z0N4V3RWRGdzYnp6UjdkeDZsY2pwU29iRG9GR29NakVMV1FYRjdvWjdhckM1N0dmSVUwYjNXWU5yVVZQZm92U2tzNlpQMlNJZVRGTzNJbm1KLUpfUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ05sOXJ6MlFuUncyTjgxWG1zcXpCbDhzRUwzYVA4ZFo5bkZ4NEt0SGxLZnFobjBKODU3SzlWV0I5MElCSDd2ODEwaTcwNnFCM0lMRDhXQklvVTdLcFp0YlJzUXRKVGNsUHJiaVNiek5zREpSeUtZRkZsblZQclR3Ml9NNmR0d3V6VVZ4dWpnbk54MnJqRDkzV0x5aVI?oc=5",
+        "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMkdFY2NkUndYbHd2SFZlMjdjMnpKYlQwbFNGOFpfeVNHaGh3aXNhaThmRW9aM1RwdFBFbmVhRjllUjFRTThPdnlOOFo4M28xdnFLb2xyR2VjajlfOFhMQ2tiWlBHMUI4WC1rVjIzdFVBS2FtN1RsV3ZuLURXTGU5ZzNCYXVJVjA4c3c?oc=5",
+        "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWmRxSU1kdTl4dm94SzFXeVY5ZnhrNGpBZEI3OHZzZHhvQzBVRUpzakQxWEgyYmJSMVJMcDZKTk5va1pzRm1OQXlLTzU3NWNEcklOcHZXOW1Gc25iUVVrVHhmRDdlTzVmMEQ0R3FWOXQ5VXU5YWdETEJvRHo1N3NGaWMyejY?oc=5",
+        "https://news.google.com/rss/articles/CBMickFVX3lxTE9yaEIyWTdFOTVHbHloOC16UzRJRUt3b1hMaXU3TVQwajZEcFZoVVE3enV6NGZ5MGthZGh1UmNPWHhkbjNCSWZEVmRuNU9IT2I1aUxmUEJ0cGYxcnY5TU1NcU10bjZvNGtQS0NrbXhyLU52dw?oc=5",
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM2REdkZPTXQxdGJZY3VWYjZaMjk2MjRpUk9yMHoxM2JoZ3RsMXVFaUp6UjB2UlJrdy1ZY0VBSThQN1NLR21iZlhKSzVsbnN4endYTTZRUkVmX3JvYlVKYVM2RmNUTGJGbk9SLUNQTnBiQjlZMWdiTEh1ak5NbmNkRUh6VVdEd25FSlhNVHhpY3EySVdCcmRtUkUyMzRRRU9LWUxFMGZQeGF3cWJWeU9PNEhSNkdkVDBhQmFZ?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbTJCVjV6OUtoUHMydU9NcTRYZnRWemN1bHlDQVdCR0dFa1UzUk9TSUM3VnpZUl95RzVMSFRyb1c0T3IwbnZLdXRKcTVjRkdJeEgwdWl0aXowZ283dzBGSlVmdF8wWW1lQXBiU0dxR0RKckk2azVBdUhKWENSbWI1bE10X2d5YlN2NnZYcGM0RXpJV084UDNNUjVR?oc=5",
+        "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5yZUJNYTN5SkJkLW5VdDQ1S0Z5UG8xR21QZlQ4em9jb3pITWFsVHFyMWdFcmVWN2dSTVlzYVRUOG1NQzhpVWQ0M3prckVaTU93Ti1hbTBKXzdlSGlBN193?oc=5"
+      ],
+      "item_titles": [
+        "US technology stocks suffer their worst weekly loss since the pandemic as AI doubts pile up",
+        "Goldman Sachs admits the ‘AI unwind’ has spiraled into something more dangerous — and it’s watching for 3 signs of bottom",
+        "Nvidia Falls 48% From Peak as AI Selloff Spreads to Bitcoin and Crypto",
+        "Is the AI Bubble Finally Popping? Nvidia Crashes 48% as Wall Street Experts Sound the Alarm",
+        "Nvidia market cap drop exceeds 47% as $2.7 tn wiped out in stock crash",
+        "The AI boom had a really bad week — and it's raising loud alarms",
+        "Nvidia sinks roughly 40% as AI bubble fears drag Bitcoin below $60,000",
+        "Nvidia longest losing streak since 2008; Anthropic record IPO fizzles",
+        "Coherent stock falls 15% as the AI chip rout hits optical suppliers",
+        "NVIDIA shares plunge nearly 48% from peak, returning to 2024 levels"
+      ],
+      "category": "business/funding"
+    },
+    {
+      "id": "c11",
+      "headline": "FT links ex-Megaspeed executive Alice Huang to network moving Nvidia chips to China",
+      "summary": "The Financial Times reported Saturday that Alice Huang had ties to gaming tycoons, hundreds of shell companies and an alleged Cambodian criminal group in a network that supplied Nvidia chips to China. The Next Web, which did not verify the reports, says the FT found a Malaysian unit declared about $4.6 billion of imports from Aivres in the year to December 2025. The New York Times reported a day earlier that about $3.6 billion of Chinese state money flowed through companies tied to Huang's family or associates, citing an analysis by Strider Technologies. Nvidia says it put Megaspeed on its block list in 2025, and Megaspeed says it runs a lawful business.",
+      "sources": [
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/alice-huang-chip-network-ft-nyt-prince-group-pla-suppliers"
+        },
+        {
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/f3ad8a81-3890-4a8a-8853-ff0a94b08ba9"
+        },
+        {
+          "name": "BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE83aS1weVMyTzdJVzRwd05iR1E0TXY2ZWhWZnIzOVJrbXd3VlV1SnZOZ0gzalh1ZFpMLTBtNDVQUG1INDVvYzBaQXdJeXRHXzRxSHhRMEFRY0RuSE8tS3MwRlMydDZUUGFxSDJsOE9wX254VTdsRUE?oc=5"
+        },
+        {
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNDVSLXNpdFhCa012ZjZqMVlBLTB5eF9sbXFrd2RBWG9mMzVpTU5wa2k5clJIcXFpXzNCT0VmR0lKcFNSLU5KNWgzUm90OWxob2MwcEx4czUwVkdNdXk2cVpEQm96RFNZWkxLUGZFUFZzeVpPeXg3WGVpVFI3TUxsQkw1RGE1ZV9jSTd3VFB4dUc2ZGVOenNrblZ1eGlYclU?oc=5"
+        }
+      ],
+      "importance": 7,
+      "material": "fulltext",
+      "item_urls": [
+        "https://www.ft.com/content/f3ad8a81-3890-4a8a-8853-ff0a94b08ba9",
+        "https://thenextweb.com/news/alice-huang-chip-network-ft-nyt-prince-group-pla-suppliers",
+        "https://news.google.com/rss/articles/CBMiekFVX3lxTE94MVRKSkVSTXVkZmRDTWYtakd3VFYtQ0VIWUhWRjVzTmlEUE9HbHh5QTZZU1pQMHRaNEpacHRjZWxad1c4VlJOdktDcFQ1c1lqRmdBR2hkZmFFVlAwNXdOamUtYVVmS3pJeFdpbVBKb05BZnYtLXktamVR?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE83aS1weVMyTzdJVzRwd05iR1E0TXY2ZWhWZnIzOVJrbXd3VlV1SnZOZ0gzalh1ZFpMLTBtNDVQUG1INDVvYzBaQXdJeXRHXzRxSHhRMEFRY0RuSE8tS3MwRlMydDZUUGFxSDJsOE9wX254VTdsRUE?oc=5",
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNDVSLXNpdFhCa012ZjZqMVlBLTB5eF9sbXFrd2RBWG9mMzVpTU5wa2k5clJIcXFpXzNCT0VmR0lKcFNSLU5KNWgzUm90OWxob2MwcEx4czUwVkdNdXk2cVpEQm96RFNZWkxLUGZFUFZzeVpPeXg3WGVpVFI3TUxsQkw1RGE1ZV9jSTd3VFB4dUc2ZGVOenNrblZ1eGlYclU?oc=5"
+      ],
+      "item_titles": [
+        "Investigation: Alice Huang had ties to gaming firms, alleged Prince Group figures and hundreds of shell companies in a network moving Nvidia chips to China (Financial Times)",
+        "FT, NYT tie Alice Huang’s chip network to gaming tycoons and PLA suppliers",
+        "Exclusive | The Alice Huang Associate Accused of Funneling Nvidia Chips to China",
+        "Nvidia Chip Smuggling Network Exposed: Prince Group Figure Alleged to Have Helped Route Chips Into China",
+        "Nvidia’s latest chip scandal has an Alibaba connection, new report claims"
+      ],
+      "category": "other"
+    },
+    {
+      "id": "c12",
+      "headline": "Bessent says no further curbs needed on Nvidia chip exports to China",
+      "summary": "PBS and Seeking Alpha report that Treasury Secretary Scott Bessent said no further restrictions on Nvidia chip exports to China are needed. CASRAI's headline links the comment to the existing remote-access curbs.",
+      "sources": [
+        {
+          "name": "PBS",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdGhFLVdNQVNlbl9tSXFrRmI4LS1VQmhxamhUS0F0WjhFMmoydGtBbG5Lc1AzbklUekQ0NDdvWDM0Q2Nfd2dOUTZEdE9MVnZCUVJtc1p3M0R4M2VjVS1zNUdXWWF1R2ZnNmpQU2lJSXNQQlM5WUk3cF92bDB3c3F5N3d6ZEEySktWeVRmSkE4SXR3R3JUaXhObmhjdmgzSEgxNTV6d3N0M2k5UU9uSDBsRXZiNzIxRWJsQmfSAb8BQVVfeXFMUElMcEVVRXcweUZhTloxWGJFdlN0UWx2ZDBBSm5DRzhiejNJZlgtWWV2eUpiQ0diajZlZ3BrbmZEMTJRZnU2eVBJWkwxdGNzTkprSElzTk05VXhKREVDcnYwN0t4aXl2V2VFbHZ4SWNuWEVvUXA5bEE1dm94UWU3aTBQT0phSEEydHdEMWYzSkNvbWtlbHVlajJRblRfUUc3eFBXTFZmd2VYQWh2RjMwZzM3N2ZYQ0l3OWhqS29mQm8?oc=5"
+        },
+        {
+          "name": "CASRAI",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTU9kbDRaTDdIQmdCODdtbDl6b0M1eWltUUdPSTJBcHRXWi1NZ2V1dE5iZWhVU3liaGdsWkZsamJ1ZHZHYmxoLXlJZk12aElfRUdJNFl3RUFRLXZqamJ3Q3FQb05PYXl6SF9FX053NzZVVnJZcHJRVllvNjlLVm9OMDlxU3NqRWRVOGI3azZiZlJ4R0FFdmc?oc=5"
+        },
+        {
+          "name": "Seeking Alpha",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUGwxQnQ4VEcyVjEyUDdwS0dqTlQ2Z240U2JVS3k5WDlRbzV4V09HdVpWYUtPMWdvV054ZFVBV0MwUllrLTc3Vk9rdHFIUWNHU0JFU2xYa243bnZPQXllUXhKR2NCM1ZMMjdzQWU2OUdBXzE1VWlLVmdCRXI4TFI3WW1SVUVhUFdUQjNXWEtRd2xxZTdleTlyanlB?oc=5"
+        },
+        {
+          "name": "The Hype Magazine",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVlJUWURnb3hEOUtiYmtNakhBQnhlWjA1d21pNmowQ2Q2SWtxRjBsRzJJNmVoLVlUR3VaaGRiQVUzN2g5dl8wSGh4WnEyU0ZrWDRwNTdic3VRTVBWNlpGaHFQR0ZfVUJGbVRlYzdzcUc5ZUZGdHBIRDNzYnZRR1U0RFNCcXJmSnFEb256Umw2ZXZGSXpmeHNrWEpybw?oc=5"
+        }
+      ],
+      "importance": 6,
+      "material": "headline_only",
+      "item_urls": [
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdGhFLVdNQVNlbl9tSXFrRmI4LS1VQmhxamhUS0F0WjhFMmoydGtBbG5Lc1AzbklUekQ0NDdvWDM0Q2Nfd2dOUTZEdE9MVnZCUVJtc1p3M0R4M2VjVS1zNUdXWWF1R2ZnNmpQU2lJSXNQQlM5WUk3cF92bDB3c3F5N3d6ZEEySktWeVRmSkE4SXR3R3JUaXhObmhjdmgzSEgxNTV6d3N0M2k5UU9uSDBsRXZiNzIxRWJsQmfSAb8BQVVfeXFMUElMcEVVRXcweUZhTloxWGJFdlN0UWx2ZDBBSm5DRzhiejNJZlgtWWV2eUpiQ0diajZlZ3BrbmZEMTJRZnU2eVBJWkwxdGNzTkprSElzTk05VXhKREVDcnYwN0t4aXl2V2VFbHZ4SWNuWEVvUXA5bEE1dm94UWU3aTBQT0phSEEydHdEMWYzSkNvbWtlbHVlajJRblRfUUc3eFBXTFZmd2VYQWh2RjMwZzM3N2ZYQ0l3OWhqS29mQm8?oc=5",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTU9kbDRaTDdIQmdCODdtbDl6b0M1eWltUUdPSTJBcHRXWi1NZ2V1dE5iZWhVU3liaGdsWkZsamJ1ZHZHYmxoLXlJZk12aElfRUdJNFl3RUFRLXZqamJ3Q3FQb05PYXl6SF9FX053NzZVVnJZcHJRVllvNjlLVm9OMDlxU3NqRWRVOGI3azZiZlJ4R0FFdmc?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUGwxQnQ4VEcyVjEyUDdwS0dqTlQ2Z240U2JVS3k5WDlRbzV4V09HdVpWYUtPMWdvV054ZFVBV0MwUllrLTc3Vk9rdHFIUWNHU0JFU2xYa243bnZPQXllUXhKR2NCM1ZMMjdzQWU2OUdBXzE1VWlLVmdCRXI4TFI3WW1SVUVhUFdUQjNXWEtRd2xxZTdleTlyanlB?oc=5",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVlJUWURnb3hEOUtiYmtNakhBQnhlWjA1d21pNmowQ2Q2SWtxRjBsRzJJNmVoLVlUR3VaaGRiQVUzN2g5dl8wSGh4WnEyU0ZrWDRwNTdic3VRTVBWNlpGaHFQR0ZfVUJGbVRlYzdzcUc5ZUZGdHBIRDNzYnZRR1U0RFNCcXJmSnFEb256Umw2ZXZGSXpmeHNrWEpybw?oc=5"
+      ],
+      "item_titles": [
+        "Bessent says no further restrictions are needed for Nvidia chip exports to China",
+        "US Treasury Secretary Says Nvidia Chip Export Policy to China Holds After Remote-Access Curbs",
+        "Treasury secretary rules out further curbs on Nvidia chip sales to China",
+        "Treasury Secretary Scott Bessent Asserts Current Nvidia AI Chip Restrictions on China Are Sufficient"
+      ],
+      "category": "policy/regulation"
+    },
+    {
+      "id": "c21",
+      "headline": "Amazon nears $7.5 billion deal to buy AI startup Decart",
+      "summary": "Amazon is nearing a $7.5 billion deal to buy AI startup Decart, the Financial Times reports, citing sources. The paper says talks are at an advanced stage and a deal could come together as soon as next week.",
+      "sources": [
+        {
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616"
+        },
+        {
+          "name": "조선일보",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeTlfTHFQZjVqbmhvOGYwWGN6RThtLXhSZlR2bzRTM21NZXpvTU16cUNBYUN2aGRXMllJczZXaXl3TWNZZGdEVXh2M0IwN2hQNzR4cVdzaHBidGFNVXFIRGFnc1h5d3owM0NpZXdDN1k5TDNMZGJnenloVjJ2ZDF0Q3o0cGtZLW9I?oc=5"
+        },
+        {
+          "name": "BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jSUczV0Q5bWpYN2tEOVdJS2t2X0tPNlZxcW1DNnM4dVFUU21kTk1MNEE2UGR5WXBPYVd0QjBRSmNyUXp4TkV1b1R5eURwT0NGbzVDdUxOdGE2ay1PcW41SjFQSm12el83OS1pUWM1QnNCSWVhbGc?oc=5"
+        }
+      ],
+      "importance": 5,
+      "material": "snippet",
+      "item_urls": [
+        "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616",
+        "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeTlfTHFQZjVqbmhvOGYwWGN6RThtLXhSZlR2bzRTM21NZXpvTU16cUNBYUN2aGRXMllJczZXaXl3TWNZZGdEVXh2M0IwN2hQNzR4cVdzaHBidGFNVXFIRGFnc1h5d3owM0NpZXdDN1k5TDNMZGJnenloVjJ2ZDF0Q3o0cGtZLW9I?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jSUczV0Q5bWpYN2tEOVdJS2t2X0tPNlZxcW1DNnM4dVFUU21kTk1MNEE2UGR5WXBPYVd0QjBRSmNyUXp4TkV1b1R5eURwT0NGbzVDdUxOdGE2ay1PcW41SjFQSm12el83OS1pUWM1QnNCSWVhbGc?oc=5"
+      ],
+      "item_titles": [
+        "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage and a deal could come together as soon as next week (Financial Times)",
+        "Amazon to Acquire AI Startup Decart for $7.5 Billion",
+        "Amazon Reportedly Near $7.5 Billion Deal to Acquire Decart, Taking Aim at Nvidia With AI Chip Efficiency Push"
+      ],
+      "category": "business/funding"
+    }
+  ],
+  "europe_brief": [
+    {
+      "id": "c48",
+      "headline": "Ubisoft launches Motherbrain generative AI subsidiary",
+      "summary": "Ubisoft announced Motherbrain in its first-half results, a subsidiary built from the team behind its Teammates project. It is developing \"smart NPCs with memory and AI game masters,\" the company says.",
+      "sources": [
+        {
+          "name": "gamesindustry.biz",
+          "url": "https://www.gamesindustry.biz/ubisoft-launches-motherbrain-a-new-subsidiary-focused-on-ai-driven-gameplay-innovation"
+        }
+      ],
+      "importance": 4,
+      "material": "fulltext",
+      "item_urls": [
+        "https://www.gamesindustry.biz/ubisoft-launches-motherbrain-a-new-subsidiary-focused-on-ai-driven-gameplay-innovation"
+      ],
+      "item_titles": [
+        "Ubisoft launches Motherbrain, a subsidiary focused on developing \"smart NPCs with memory and AI game masters that manage large-scale systemic worlds\" (Sophie McEvoy/GamesIndustry.biz)"
+      ]
+    }
+  ],
+  "finance_brief": [],
+  "clusters": [
+    {
+      "id": "c02",
+      "label": "Anthropic says Claude helped prove Riemann hypothesis; checks follow",
+      "importance": 8,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Covered before; new: Guardian reports two groups verified proof, Stanford posts human rival draft; 8+ outlets.",
+      "covered_before": true,
+      "new_development": true,
+      "n_items": 8,
+      "n_publishers": 9,
+      "items": [
+        {
+          "title": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem",
+          "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
+          "source": "The Guardian AI",
+          "publisher": "The Guardian AI"
+        },
+        {
+          "title": "Anthropic researcher says he used AI to solve math's greatest riddle",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUnB5dlFHb1BpVjhJTnhMa2QxdHAxNjhEM1FwT1lONWV4bFJiX3hjV2ZsVE51WjlkOWh1RGZYU2ZVam9OVVB3T1oyWDRKYlQxcGhWaXV5WTR3SENfdGtVdWkxTTk0TmpHOGRhbTB6VVFkeDA2T0tHb1p2R2RMTjhUN3JIMFdXMXBUazd6b1A0ZGNNTDFrWFpZ0gGXAUFVX3lxTE85V0xZdUNTdG9weTdhbVZKUEprVlREZUNUSk9seFVuY1VXNFNsN0NJWDRuQWZNaUFEeFJGeUs3b0pjOUpGQWVUaGR3VFRYaE9BdUp1NkE2X1BXS2dYQkJrRE5qenVOU3lvZTNUY29GOFFnbTJYMXo1VmNTQTVVQXloVVRJYTBmamIzM0lxNE8teGVsalJVNGc?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "DW.com"
+        },
+        {
+          "title": "250,000-Page Math Slop: Why Anthropic Didn’t Solve the Riemann Hypothesis",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmVi1paHdkZ0p0US1LNDM0UFlQb3gzVC1MaUtxTi1iQkFfUWVqajlKVVEyemk0OGtlNGJKVGZwWVdhSDNfTjJRMFVuRG12R2s?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Emerald Book"
+        },
+        {
+          "title": "Anthropic Worker Claims to Have Solved Riemann Hypothesis With Help From Claude",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNGIwdS1yaXpvQVR5Uk9kbXRRLWZYdFJrM21pTTk3NEk1cnl6cnp3cTl3Yl9yTGloVmdNbU1KcHFvdzlQdUhMWmtZcFpmZW1vRXhSdl9ZOFhLX1Z6ZXVwZ2FINktGcG1kYWNrZlJoXzZkT0dNOG5OOVF3YzhHME5rb2RVTHA5dWx4bU1KaTczd2VtT1R5RVdUb245ZlhrR2llcjNBX3BIMTNqT3ptNDBCZA?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Broadband Breakfast"
+        },
+        {
+          "title": "Lean groups certify Claude-assisted Riemann hypothesis proof from Anthropic",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONlA3YmE1SENKMHdqY2MwSEVFRFQ3eW9URjRhTW83QjNCN0U3SUhweC1vTGhfYml6SG9Sc19wVHVhY1VobG9NLVM4V29Ca2QzMnByUjh0clFFOGhFSE9XcVVfNUxlVTdnRTE3ak5oYzd0alQ4QkV3NUYydFIxYXBOWEhtblhQM25NRDY4czBDMHE5VUQxc1B6N3Q3eXNoazk0TE9PbG13?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Startup Fortune"
+        },
+        {
+          "title": "Anthropic mathematician says Claude helped solve a 165-year-old mathematical mystery",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNYVJCOWRkZnRsenJPQmJPQTlnNVNWQ0N5NG9hdzN6NWMyalJmUHVGVzcxajZPWU9McjJ3enVIbjhFTGQ0OFpZY3VBUHlIckIyQnFLWEJzZ2hxT1VHWmotamtoZG1CVDg?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "CTech"
+        },
+        {
+          "title": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+          "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+          "source": "The Decoder",
+          "publisher": "The Decoder"
+        },
+        {
+          "title": "Matematiker hos Anthropic påstår sig ha löst Riemannhypotesen med AI",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRGJtR2U1YktQRzJCb2h2QXlmQzJlRzRlejNEVVhDVUY2ZldPRm55WW8yQTNZNzRBMERaSjRIeDBMLXZ0SGQ5cXdDaEk5b3VMendvUjRiLXdiSG1vVlJ5Z2Y5R0R6Q2VNZmpIU0tVWEZKbkZaeEFzTWd4TGVzS2o3Q3BqZ1VLdll2cWpTeXIwRWFVRlZUcC1tX0dYUVREdDkyQjQxcFY4TExMZw?oc=5",
+          "source": "Ny Teknik",
+          "publisher": "nyteknik"
+        }
+      ],
+      "section": "lead"
+    },
+    {
+      "id": "c01",
+      "label": "Anthropic shares slide after record IPO as AI stocks sell off",
+      "importance": 7,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "10+ outlets incl. CNBC, Bloomberg, NYT; new figures on roughly $109B value loss and $97.17 close.",
+      "covered_before": true,
+      "new_development": true,
+      "n_items": 21,
+      "n_publishers": 19,
+      "items": [
+        {
+          "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
+          "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
+          "source": "CNBC Technology",
+          "publisher": "CNBC Technology"
+        },
+        {
+          "title": "AI stocks lose their shine as Anthropic debuts | CNN Business",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOb3UwVjJjanJYWGIwb3l2UEo4aHo3dFdDeVFyb1BBODlfbF9hU0N2cERseWxxU3QxNlZPRUZBQWFhQ0dJN1V3MEd4LW9XbnFYZTJuMmJvcVFtODM2alVmWXQ2bjBaSVZBWUQ4alpsaTJuOHlGaFROdzh4NTFBQWNUY1BmVnYyeGF5a1Y2cE9NMlBrOWlJUWo4X0dxNzlKSGs0YVhTXw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "CNN"
+        },
+        {
+          "title": "Anthropic says it will put humanity first. Will its IPO change that?",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVWZST3piU2NqZVJlVFlPQU9BY1F3eXNMR3VQdVd3OTRTcUF0b0FHSmp3MFZpZHFYaWNrOE9zRnl5LXBlNDlwaXQxaHhKY0VDVjQyVHhiT2ZQZHA0c2pwWFJ2VkItZEtmMHFfSmg3VU44dHgta0VnUHNVZy1sZGhRT0V3?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "NPR"
+        },
+        {
+          "title": "Anthropic's $2 Trillion IPO Questions AI Returns",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZk5DTlk1MG9TUTMyOThsVVFKNFc3SG56QS1WMm5mdDZJWk1pTWRJWk1sVnlqSzREdDByVFVXd3JDdkxUR3FFWjNFZFMzNGJqZlZ3UlVsZ1JienhzTVdCVVVLZEFTd05hNGxzbGhidHhvLTRDWFFXSGpNUmVHd0tTQV9DUEJ2NFVuNmJ5d3d3?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "조선일보"
+        },
+        {
+          "title": "Anthropic’s Debut Shows the Disconnect Between Wall Street and Silicon Valley",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUnA1cXB0NjhBTjNiX0FZT1UxUl9lZVpLSmlhWUZLMDRyMkkwazFrdmswZkpvNC1CdDVBYjIxU085UUhNUW0wT2xJcTE5Snk5WlduUmQtU1RPY0t4MDFFeHg5UndKVHBnZkYwNUJWMjROZGlqU19fN1lDQ09WUUZGZzgtNDh2Q3J0aU9TaU1ENm1iaURVYUE?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "The New York Times"
+        },
+        {
+          "title": "Anthropic IPO signals ‘beginning of a gold rush’ for small businesses, biz tech CEO says",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMjVQWHNJMWw0Y21HYTVDN0lhX0ZYQS1FdzFCLV9nbVRzS09jNFN5UXRaanhHM2tXbGJkVGtlZVdMMnlTa2RTR29MUU1KbXVkekg1X19VeU5ISGJCbG9FRU5nSkNrZG1MWFJBaVZWY3pGUm5vUmZUWl96aWl6TVNDcUFCOXFxRmlYTFhRLTlqdTQ2S2FWTjJ4RWNBbnlVS2dtemlUSF9nOVlpZFpONElOdUhB0gG3AUFVX3lxTFBNVVBhQ1VSV2VIc0Z5OTJfSU1FUmc2UVFZNDJPX19TSjgteXV4QWxmbDZQWGQwa0M3S0tLUTY1V3ZTRXhUTmVNLTNBSk15QTRuQ1ZzSDY5VkFVT3laUl9XemZJVWZBVG9TU21UaW1US3JvWGZ3dGpiakppUDJobkQ2NW5lVGxEZUdCTlBnaGhEVWNvRE43ZTEySTBZaDJ6VzFuY08xN2FJRkFWUzI1Rkg0eEljUHl0OA?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Fox Business"
+        },
+        {
+          "title": "Anthropic’s IPO Reveals the AI Boom’s Biggest Problem",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTGVJTzVZSXNfcjJkMVc0TjdqQW51SEVaWGs4U0tQcVlJdmJnb3FGaVVHTmVUbndXWE5KdGRlSC0waFFyVmswR3FEd0I2VmREbUFkRXo1U3psSTJxUGw1ZEVWQ0t6a28wQ0RYelZkRWw2TmNoZHlBZkhxd2E3TmhNNWxEZ0FicVFsaEpKcFZR?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "InvestorPlace"
+        },
+        {
+          "title": "Anthropic stock slides with rest of market after big-ticker IPO",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNc0o1TFlNT1Y2ZDZDdFBTcHBjX3g3bFRxaDZLdTNvdFlTdTdKbG9fUFBkeUdpMXJJcWRhWkF5dlVraGZIZDlSd2lhWnlKZ09Uckp1ZDRRdllKNnBiR2dvZW9pOWQxd0UtUkVSeDV4Mkg2YjBkNE5TeksyNnpfWHBaVm1Ka0Nnc3RuNkFaQUd0OEo0MnRfRmVweDlZQW95YVYxRFE?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Washington Examiner"
+        },
+        {
+          "title": "Seohak Ants Buy 220 Billion Won in Anthropic Shares",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdXVvVTBfMERnRGNhVjJLTnBsOXZWTnVEUk1CeXYxNFBhdkFQRlFMMnIxSkNEZmhwVW96amNFdlE3akZGWS1MNFRzeFBmdnFkRFdUV3JtYXRQa2p1TnNza0JaREtrQ0RtbThxV2lBdU9qOXVBZU5rcU5TZF8yUFE0UkU4VFRkcmJmSWNTdEVB?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "조선일보"
+        },
+        {
+          "title": "Watch Anthropic Fails to Calm AI Jitters, Ditching the Kitchen for Thanksgiving",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWjNwWTF0NG0yY3lRZGg5dFhIUXZJTGRvTWN2U2dnWnc1NGdDMm5iTGtuQjNHTEFCdzZJb05TUkdfZjRlZDh4S3JqUmVZUXctUUtsbGUyMk9wT21wN3pxczFLNmRSTHpqV01wNjF4SmthdThIU1J5NHpwZlc5R0ZCX1NQc3FjZTd0T2lmNVVxX3hWZw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Bloomberg"
+        },
+        {
+          "title": "Wall Street Asks What Can Save AI Trade After Anthropic Wipeout",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcGZTRVdJcGNQbEdjRlRQUnN1YjBzTXlaYzFDb0swSDlCNTVsLVo2SGtQTGxsUGxzVmE0SkFPbHB0dFBXbWhGQVZUdmFQZ21zeDBwcW5OSjJmOUtmQjB4U3lNVkptMzYybHpmR1hkTUZESVlQU1VtWFhsSzNGWUlmWHNUa3FCd0t6NjNFR0xkTzBxdjYySFFtSTRQbTFwTDd0TXlfVEY4dnZCNmxrVnZFWVlSR0U?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Bloomberg"
+        },
+        {
+          "title": "These Are the Top 10 Largest IPOs Following Anthropic's Historic Market Debut",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSDVRTGR3S1JJUE9pNWZPUDVuSzR2VXdZQjEteWJKdVZldEFEQlVhaUNzQXJieDV6cU5XcXlEWEtybG12NmxIQnVKQzJZZWs0SkxLSmhacWtTaXE4SXJld21GNkE0RW9qRmZ6NGczbHJwUFlfY0RmVUJvT2NOeHAwQzhwenpWTG5SQ3o2Q2ZETDF3MmFxQVZITnRlektzb181WU11dUxidmF1LXBvUUtYRjRfOFBQTU1aQWZHZ0JB?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Barchart.com"
+        },
+        {
+          "title": "Anthropic Sheds approximately $109 Billion in Market Value Two Days After Nasdaq Debut; Nasdaq Wipes Out $4 Trillion",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50ekFnLVFhdTZHVm1qOUxTY3VrY2NfZXl3Qklobl9Hb1VQN0JfZEpMdm1wY294WlpDNm9YR2NZMzVzUTJsTFMyYi0zbjZTbE9mbE03LTdyY0t2Vnlic2RkT25tQkpuQzk4NFdvQkUyanNWUWVxd3c?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "BigGo Finance"
+        },
+        {
+          "title": "Anthropic Stock Debut: From $83 IPO to a $97.17 Close",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoZUtyX09WNnFRLW9NVWE4QlNVNFowN21zX1YyX2EtU3h4VGNrc3k2eUFkeWpTSmc5X05HQ0JIUjhHaGZGNG43Znk1OVgwYWVieUJiNExRVjFINDZKOHp1eWN2Zw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Memeburn"
+        },
+        {
+          "title": "Anthropic broke records with its initial public offering on Thursday before a rocky first full day of trading. The markets plunged, reflecting the widening disconnect between Silicon Valley optimism over A.I.’s potential and Wall Street’s growing doubts about wheth",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxORVpaVk52cFo5Q1l3dzhxRU5Lb3RES213dzBuc3JEeFFvZnJDY1RzREhUam1fcm14VmdmYVg2ZVFEdVBxMEhtUXJuTzdNMkN4aHJNTkJOOG1DaGwtbFE1WUp5djJnVC1tMFBfSXJUVjdqVTNjcV8wYjM1alVKRU83c1JhbWsxLXlIbExLdktLNU5vOFNmVFRiSnZYNzlqZFd1UGlfNXVwU1dvVDRLSlNEenRrYzJYWkxhQ3QtT1NoTUFsZm1ZZVpaQm1BamVjX2JBbGxZ?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Facebook"
+        },
+        {
+          "title": "Anthropic IPO: Amazon, Google And The Art Of The AI Cloud Deal",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPXzZQaWxDcTNpTWhzZEVnV2xHalRtNHNlTXdjNk4zTUxfaExVY0diTlFtSDRQeV9JYVZyYTV0cWxUX3dmSUt5bm1fRWFTMXhUZkFQZ2phNFlrd01Pa1ZCQWJKLVNDdGxWSHJVY1FpNy1mR3ZFYmhRY1FKYmRtanFrN1Y2eEtZSnRSbkhLUE1Ja3hib3lqVnhYMXZZOA?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "Anthropic and Bitcoin Are Both Falling: Where Is the Money Going?",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVnl4QTdoM1dwRGNxeG5kcWRQb1p5R2JXNVMxQThUZW01WDU2N24ybTFUS0RMV0JSSExNR210R19rRkJBSy1qTnZnQkxLai1lbS05VldGT25rcjliV1VrRHd2bjdiU1doMzVoSXpWZEpJNm5HRTJjSjdJdjZ6clRFbFM2TFlkcEIzQ0pyZHNndzY0TzBxYi13Ymh5T2NmQml2Nldz?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "South Korean Retail Investors Buy approximately $164 Million of Anthropic on IPO Day — One-Fifth of SpaceX's Debut Haul",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kOTJfVXNqSU5jV3N2SkhmeHZiWDBJd0U5eV9IOWVKSG9pZ1NNb05iTG5wM1Z1U0I3ZW9PalVyOC1sRjI3Yk9WRkdRYUZPMkROTGZRdzN1dnloVGNld0t0OEpQQTBLbklxNkRZSFNldTROODJSRkE?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "finance.biggo.com"
+        },
+        {
+          "title": "Anthropic IPO fails to prevent a tech stock wipeout",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUzk4NzhEUGpTWGM3YjNtaEJ4ZUF3a2Mwa2tkbk1Mb1BwX3dJYmIwUGYydnNxa3hfZzdFVW5NUmFUMmk0YlA2a1JwWF9DOVpCTG9lbDIwZVg3QndnOGNMVF9UWkxfVGVBZ2JEZXNwWFNiZWc5NkZaY1pwSlJNQ1BoVDFjWi02VHM4OG50VEtsdnk?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Morning Brew"
+        },
+        {
+          "title": "Anthropic IPO Tops $1.8T Amid AI Stock Selloff",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQY3A3UXhzWGFBNjlEekFoeUtCMlllMFpDOUdqdzhJcnE4OFBrX1FFSnB3UTFBTzk3TXFFWk9Gdjhxc1hITTl4RmxOUWtqV2c5MkxPNXVUSlNFWk1uV2xqaEVKcGhETWltM01YVzdreXZ3SEhiSGhBVVRkX0lwcjd1OHhkLThsbUpUWERxT1RpUHhNdw?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Briefs Finance"
+        },
+        {
+          "title": "Can Anthropic afford to put safety first?",
+          "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+          "source": "The Verge AI",
+          "publisher": "The Verge AI"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c09",
+      "label": "Nasdaq 100 enters bear market as Nvidia and AI stocks slump",
+      "importance": 7,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Covered as S&P correction; new: Nasdaq bear market, Nvidia down about 48%, longest losing streak since 2008.",
+      "covered_before": true,
+      "new_development": true,
+      "n_items": 10,
+      "n_publishers": 9,
+      "items": [
+        {
+          "title": "US technology stocks suffer their worst weekly loss since the pandemic as AI doubts pile up",
+          "url": "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/",
+          "source": "The Decoder",
+          "publisher": "The Decoder"
+        },
+        {
+          "title": "Goldman Sachs admits the ‘AI unwind’ has spiraled into something more dangerous — and it’s watching for 3 signs of bottom",
+          "url": "https://fortune.com/2026/11/21/goldman-sachs-sp-500-correction-ai-unwind-bottom-three-conditions-hedge-funds-positioning/",
+          "source": "Fortune",
+          "publisher": "Fortune"
+        },
+        {
+          "title": "Nvidia Falls 48% From Peak as AI Selloff Spreads to Bitcoin and Crypto",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTGI3Sng2eVpHTHVCWFlFamhHRWxSYXNtMkU1R0Y1amNNMHRNMXdMQ0RNbHBNSXhvdlVIRU42Z0N4V3RWRGdzYnp6UjdkeDZsY2pwU29iRG9GR29NakVMV1FYRjdvWjdhckM1N0dmSVUwYjNXWU5yVVZQZm92U2tzNlpQMlNJZVRGTzNJbm1KLUpfUQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "Is the AI Bubble Finally Popping? Nvidia Crashes 48% as Wall Street Experts Sound the Alarm",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ05sOXJ6MlFuUncyTjgxWG1zcXpCbDhzRUwzYVA4ZFo5bkZ4NEt0SGxLZnFobjBKODU3SzlWV0I5MElCSDd2ODEwaTcwNnFCM0lMRDhXQklvVTdLcFp0YlJzUXRKVGNsUHJiaVNiek5zREpSeUtZRkZsblZQclR3Ml9NNmR0d3V6VVZ4dWpnbk54MnJqRDkzV0x5aVI?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Finance"
+        },
+        {
+          "title": "Nvidia market cap drop exceeds 47% as $2.7 tn wiped out in stock crash",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMkdFY2NkUndYbHd2SFZlMjdjMnpKYlQwbFNGOFpfeVNHaGh3aXNhaThmRW9aM1RwdFBFbmVhRjllUjFRTThPdnlOOFo4M28xdnFLb2xyR2VjajlfOFhMQ2tiWlBHMUI4WC1rVjIzdFVBS2FtN1RsV3ZuLURXTGU5ZzNCYXVJVjA4c3c?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Beinsure"
+        },
+        {
+          "title": "The AI boom had a really bad week — and it's raising loud alarms",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWmRxSU1kdTl4dm94SzFXeVY5ZnhrNGpBZEI3OHZzZHhvQzBVRUpzakQxWEgyYmJSMVJMcDZKTk5va1pzRm1OQXlLTzU3NWNEcklOcHZXOW1Gc25iUVVrVHhmRDdlTzVmMEQ0R3FWOXQ5VXU5YWdETEJvRHo1N3NGaWMyejY?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "NPR"
+        },
+        {
+          "title": "Nvidia sinks roughly 40% as AI bubble fears drag Bitcoin below $60,000",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9yaEIyWTdFOTVHbHloOC16UzRJRUt3b1hMaXU3TVQwajZEcFZoVVE3enV6NGZ5MGthZGh1UmNPWHhkbjNCSWZEVmRuNU9IT2I1aUxmUEJ0cGYxcnY5TU1NcU10bjZvNGtQS0NrbXhyLU52dw?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Crypto Briefing"
+        },
+        {
+          "title": "Nvidia longest losing streak since 2008; Anthropic record IPO fizzles",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM2REdkZPTXQxdGJZY3VWYjZaMjk2MjRpUk9yMHoxM2JoZ3RsMXVFaUp6UjB2UlJrdy1ZY0VBSThQN1NLR21iZlhKSzVsbnN4endYTTZRUkVmX3JvYlVKYVM2RmNUTGJGbk9SLUNQTnBiQjlZMWdiTEh1ak5NbmNkRUh6VVdEd25FSlhNVHhpY3EySVdCcmRtUkUyMzRRRU9LWUxFMGZQeGF3cWJWeU9PNEhSNkdkVDBhQmFZ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Detroit Free Press"
+        },
+        {
+          "title": "Coherent stock falls 15% as the AI chip rout hits optical suppliers",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbTJCVjV6OUtoUHMydU9NcTRYZnRWemN1bHlDQVdCR0dFa1UzUk9TSUM3VnpZUl95RzVMSFRyb1c0T3IwbnZLdXRKcTVjRkdJeEgwdWl0aXowZ283dzBGSlVmdF8wWW1lQXBiU0dxR0RKckk2azVBdUhKWENSbWI1bE10X2d5YlN2NnZYcGM0RXpJV084UDNNUjVR?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Startup Fortune"
+        },
+        {
+          "title": "NVIDIA shares plunge nearly 48% from peak, returning to 2024 levels",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5yZUJNYTN5SkJkLW5VdDQ1S0Z5UG8xR21QZlQ4em9jb3pITWFsVHFyMWdFcmVWN2dSTVlzYVRUOG1NQzhpVWQ0M3prckVaTU93Ti1hbTBKXzdlSGlBN193?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "mobidevices.com"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c11",
+      "label": "FT investigation ties Alice Huang to gaming tycoons and shell firms",
+      "importance": 7,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme pickup plus FT, NYT, WSJ and follow-ups; investigative claims on Nvidia chip smuggling network.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 5,
+      "n_publishers": 5,
+      "items": [
+        {
+          "title": "Investigation: Alice Huang had ties to gaming firms, alleged Prince Group figures and hundreds of shell companies in a network moving Nvidia chips to China (Financial Times)",
+          "url": "https://www.ft.com/content/f3ad8a81-3890-4a8a-8853-ff0a94b08ba9",
+          "source": "Techmeme",
+          "publisher": "ft.com"
+        },
+        {
+          "title": "FT, NYT tie Alice Huang’s chip network to gaming tycoons and PLA suppliers",
+          "url": "https://thenextweb.com/news/alice-huang-chip-network-ft-nyt-prince-group-pla-suppliers",
+          "source": "The Next Web",
+          "publisher": "The Next Web"
+        },
+        {
+          "title": "Exclusive | The Alice Huang Associate Accused of Funneling Nvidia Chips to China",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE94MVRKSkVSTXVkZmRDTWYtakd3VFYtQ0VIWUhWRjVzTmlEUE9HbHh5QTZZU1pQMHRaNEpacHRjZWxad1c4VlJOdktDcFQ1c1lqRmdBR2hkZmFFVlAwNXdOamUtYVVmS3pJeFdpbVBKb05BZnYtLXktamVR?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "WSJ"
+        },
+        {
+          "title": "Nvidia Chip Smuggling Network Exposed: Prince Group Figure Alleged to Have Helped Route Chips Into China",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE83aS1weVMyTzdJVzRwd05iR1E0TXY2ZWhWZnIzOVJrbXd3VlV1SnZOZ0gzalh1ZFpMLTBtNDVQUG1INDVvYzBaQXdJeXRHXzRxSHhRMEFRY0RuSE8tS3MwRlMydDZUUGFxSDJsOE9wX254VTdsRUE?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "BigGo Finance"
+        },
+        {
+          "title": "Nvidia’s latest chip scandal has an Alibaba connection, new report claims",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNDVSLXNpdFhCa012ZjZqMVlBLTB5eF9sbXFrd2RBWG9mMzVpTU5wa2k5clJIcXFpXzNCT0VmR0lKcFNSLU5KNWgzUm90OWxob2MwcEx4czUwVkdNdXk2cVpEQm96RFNZWkxLUGZFUFZzeVpPeXg3WGVpVFI3TUxsQkw1RGE1ZV9jSTd3VFB4dUc2ZGVOenNrblZ1eGlYclU?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Finance"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c10",
+      "label": "SEC probes Nvidia accounting amid CEO departure turmoil",
+      "importance": 6,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Covered before; WSJ and media report; no new facts beyond the existing probe.",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "Exclusive | SEC Is Probing Nvidia Amid Departure of CEO Jensen Huang",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbjl2b0tzT1ROT2plV1p5RHhQd3hXOEJKRFhOZ1ItZExOQV9oVGkzTU9tcEEyTXhjNHRKQVExRTNRdEtlY24zUFhmS0h0c21FUVVrVVh0NGF2SXFmdm1wcmVRLUlCcG5CMGRIZklSdVBkVElkS3lwRF9LaGg4YzU5b0dsZXlveWxSNzhGYzJlZmRSRkhvUWZRTHB3?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "WSJ"
+        },
+        {
+          "title": "Nvidia faces US accounting probe amid deepening turmoil: media",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNkpvTmdpdzNUMVVjZEJXbVdIYXlheTM1ZmpMRl9LdkQ1YjV1VXYtNUxGSTlHZWpzLWhfTFVnR2h0b0NMNGlsTWhOYXpYRVYyR0ZkTmJNRkh2MXAycU5Nd0pKNy1QbG92UGg1TXd0SGx4S1R6UXNDek1fTTFpZnR1VEVfaE9Na0hOYjlBUGlfUC1jTGFCS195ek1ZNjc?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Finance"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c12",
+      "label": "Treasury's Bessent rules out further curbs on Nvidia China chip sales",
+      "importance": 6,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Four outlets report official stance; signals no new export restrictions for Nvidia chips.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 4,
+      "n_publishers": 4,
+      "items": [
+        {
+          "title": "Bessent says no further restrictions are needed for Nvidia chip exports to China",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdGhFLVdNQVNlbl9tSXFrRmI4LS1VQmhxamhUS0F0WjhFMmoydGtBbG5Lc1AzbklUekQ0NDdvWDM0Q2Nfd2dOUTZEdE9MVnZCUVJtc1p3M0R4M2VjVS1zNUdXWWF1R2ZnNmpQU2lJSXNQQlM5WUk3cF92bDB3c3F5N3d6ZEEySktWeVRmSkE4SXR3R3JUaXhObmhjdmgzSEgxNTV6d3N0M2k5UU9uSDBsRXZiNzIxRWJsQmfSAb8BQVVfeXFMUElMcEVVRXcweUZhTloxWGJFdlN0UWx2ZDBBSm5DRzhiejNJZlgtWWV2eUpiQ0diajZlZ3BrbmZEMTJRZnU2eVBJWkwxdGNzTkprSElzTk05VXhKREVDcnYwN0t4aXl2V2VFbHZ4SWNuWEVvUXA5bEE1dm94UWU3aTBQT0phSEEydHdEMWYzSkNvbWtlbHVlajJRblRfUUc3eFBXTFZmd2VYQWh2RjMwZzM3N2ZYQ0l3OWhqS29mQm8?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "PBS"
+        },
+        {
+          "title": "US Treasury Secretary Says Nvidia Chip Export Policy to China Holds After Remote-Access Curbs",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTU9kbDRaTDdIQmdCODdtbDl6b0M1eWltUUdPSTJBcHRXWi1NZ2V1dE5iZWhVU3liaGdsWkZsamJ1ZHZHYmxoLXlJZk12aElfRUdJNFl3RUFRLXZqamJ3Q3FQb05PYXl6SF9FX053NzZVVnJZcHJRVllvNjlLVm9OMDlxU3NqRWRVOGI3azZiZlJ4R0FFdmc?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "CASRAI"
+        },
+        {
+          "title": "Treasury secretary rules out further curbs on Nvidia chip sales to China",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUGwxQnQ4VEcyVjEyUDdwS0dqTlQ2Z240U2JVS3k5WDlRbzV4V09HdVpWYUtPMWdvV054ZFVBV0MwUllrLTc3Vk9rdHFIUWNHU0JFU2xYa243bnZPQXllUXhKR2NCM1ZMMjdzQWU2OUdBXzE1VWlLVmdCRXI4TFI3WW1SVUVhUFdUQjNXWEtRd2xxZTdleTlyanlB?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Seeking Alpha"
+        },
+        {
+          "title": "Treasury Secretary Scott Bessent Asserts Current Nvidia AI Chip Restrictions on China Are Sufficient",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVlJUWURnb3hEOUtiYmtNakhBQnhlWjA1d21pNmowQ2Q2SWtxRjBsRzJJNmVoLVlUR3VaaGRiQVUzN2g5dl8wSGh4WnEyU0ZrWDRwNTdic3VRTVBWNlpGaHFQR0ZfVUJGbVRlYzdzcUc5ZUZGdHBIRDNzYnZRR1U0RFNCcXJmSnFEb256Umw2ZXZGSXpmeHNrWEpybw?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "The Hype Magazine"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c24",
+      "label": "Oracle says OpenAI contract fully funded after $20B raise",
+      "importance": 6,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Covered before; new fact: $20B capital raise completes funding; five outlets.",
+      "covered_before": true,
+      "new_development": true,
+      "n_items": 5,
+      "n_publishers": 5,
+      "items": [
+        {
+          "title": "Oracle OpenAI Contract Fully Funded After $20B Raise",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcENkeElZREdDT0FDZnlMNG41bjFMTl9UV19MZTVzRmo3Z0tYUGxhdnNLdU5WVjNqdmwyU09FQUdqRFgxM19NZC12ODRFc1VrOGV0emlFa3dPeDdPcHFUcEMwYXdMWXZicTVoQTFhRnFLdDhiYkE2TURPdHBqM3NLN0xacFdYNUF6WHNlZGNn?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "shattered.io"
+        },
+        {
+          "title": "Oracle Says It Has Completed Funding to Fulfil OpenAI Deal",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONGtvcmNHUnFkdTRhSXd2YVVwOGVRdVdoYkdVZG1rRnJDWWt3T2dUTFhfOGtPZVR1UEtyNnZWYVNNOVp2bUE1SWc3Sk9fdFF5dG9VaHdGcUVRQWRkbGZZYTJNUmhEOUJyZWJ3VFZHUU42RGFabG16bzduRlhMNGRjOEZvVU5zT0FnQzBNTzFjNUxRNm8?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "The Information"
+        },
+        {
+          "title": "Oracle (NYSE: ORCL) Moves To Silence Funding Doubts Over $300 Billion OpenAI Computing Deal",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdmxGQmlJdndZLW05ZEU2MFk2ZTBwTDZMa0R2ZWVEMUo5S0hFcmFPM0Z1UURaREk0WFFPbmw0b3d2QUJoZnk1WUZ1cVhNN0Rkc1RNemY3aV9jTV9ndGlTbVMxNEdWbEF5ZDR1a0VLYmhHS1lPZS1UR05ibjdTdTF3ak5reTctdXNkVkhrQ3pZNVJwZjhEbHBBSnFzeHk0S2EzcDZadWQ0OW9xbU9fMWhuUWtrVWpzVk9CWXVUTjlGLS1yaER0X1ZVbWIxWlE0dy1UWVE?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Foreign Policy Journal"
+        },
+        {
+          "title": "Oracle says its OpenAI contract is fully funded and pre-empts media reports",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12TUdXdWVMa2ZlNXkyVTZtNnJocjl5bWw5RE9QWGRsN2l5Q19Zc09INVk1ay1NNG5Kd1drNkZCajNDaW9OdU0wQjNWRHdLdkVJajZRZ2RDOU9QSnpScXNUd3M4OEJmWUpxRzRHb2oyYU9UYWpWLTJremNKaENpRDQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "The Next Web"
+        },
+        {
+          "title": "Oracle Says OpenAI Data Center Expansion Is Fully Funded After $20bn Capital Raise",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa2ZMSzdJaHRyMXJvbGZwX0NodDN2cUtCR1lIT3BaaG05Mm55YVdNanlGdWlfNFByWVpPR3NhVEhLLUowLVVodjZaVFFnTVR4RVByRU5LZlJvRDg1SjdmNm12c1Y1NkxJUmFvR1hnZENDWjRRMm5wdGtiQmRySm5EeUpKS21WbnJOakN3S1Q1UWp4V2pjSGNzV09qb29vV3R3OG9zWGRuWHNxdw?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Tekedia"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c03",
+      "label": "AI-aided Navier-Stokes blowup proof by NYU and Anthropic researchers",
+      "importance": 5,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme pickup plus Scientific American; claims to close a loophole in OpenAI's solution.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI's solution (Peter Hall/Scientific American)",
+          "url": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/",
+          "source": "Techmeme",
+          "publisher": "scientificamerican.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c13",
+      "label": "New US export rules extend controls beyond advanced AI chips",
+      "importance": 5,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme pickup of Nikkei report; broad effect on consumer chips, single outlet.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Industry insiders say new US export rules affect a broader range of chips, including SoCs used in consumer electronics, extending beyond advanced AI chips (Cheng Ting-Fang/Nikkei Asia)",
+          "url": "https://asia.nikkei.com/business/tech/semiconductors/chip-supply-chain-warns-of-broader-disruption-from-new-us-export-controls",
+          "source": "Techmeme",
+          "publisher": "asia.nikkei.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c16",
+      "label": "California probe into Nvidia covers potential criminal law violations",
+      "importance": 5,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Bloomberg report; covered before, new detail that scope includes possible criminal violations.",
+      "covered_before": true,
+      "new_development": true,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "California Nvidia Probe Covers Potential Criminal Law Violations",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3ZKSUpVM0xWNVRuM3B0RjhyOTM0NUNoRmNYVnVKYm50andhaTFJVHZLenZrckE1aFZuMGhiSW42Mlh5c2lZcGc5eTg1NDQwWVRFQWxSOGtzWHk2S2pGLVpvM3N2enh4Mms5OTF0MHFXc0JnN3ZoYlB3ODJqX3FoSjJCTWlPOHQ2SjNOQ1Q3cjVNR0NWRVYxWVFEanpwZC1mSW5SeGpXSDRqX1d0TUVwdE1vYVJWUQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Bloomberg"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c21",
+      "label": "Amazon nears $7.5B deal to buy AI startup Decart",
+      "importance": 5,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "FT Techmeme pickup plus Chosun and BigGo; talks advanced but deal not yet signed.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 3,
+      "n_publishers": 3,
+      "items": [
+        {
+          "title": "Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart; talks are at an advanced stage and a deal could come together as soon as next week (Financial Times)",
+          "url": "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616",
+          "source": "Techmeme",
+          "publisher": "ft.com"
+        },
+        {
+          "title": "Amazon to Acquire AI Startup Decart for $7.5 Billion",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeTlfTHFQZjVqbmhvOGYwWGN6RThtLXhSZlR2bzRTM21NZXpvTU16cUNBYUN2aGRXMllJczZXaXl3TWNZZGdEVXh2M0IwN2hQNzR4cVdzaHBidGFNVXFIRGFnc1h5d3owM0NpZXdDN1k5TDNMZGJnenloVjJ2ZDF0Q3o0cGtZLW9I?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "조선일보"
+        },
+        {
+          "title": "Amazon Reportedly Near $7.5 Billion Deal to Acquire Decart, Taking Aim at Nvidia With AI Chip Efficiency Push",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jSUczV0Q5bWpYN2tEOVdJS2t2X0tPNlZxcW1DNnM4dVFUU21kTk1MNEE2UGR5WXBPYVd0QjBRSmNyUXp4TkV1b1R5eURwT0NGbzVDdUxOdGE2ay1PcW41SjFQSm12el83OS1pUWM1QnNCSWVhbGc?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "BigGo Finance"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "id": "c27",
+      "label": "University of California signs systemwide OpenAI deal despite faculty concerns",
+      "importance": 5,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Four outlets incl. LA Times report $1.2M-a-year deal; faculty opposition noted.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 4,
+      "n_publishers": 5,
+      "items": [
+        {
+          "title": "UC jumps into AI with systemwide OpenAI deal as faculty urge caution",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0teVBVYVBpX09MbkhFa0tJUWR1QkNhMUFROUR0WUFLRnd6TnhCYTh6RURoUlNRckVWQ1loZEQ1bE1NeFBpWmpKOUdHeG5oQ1VEMUY4LW0ybGVaRzYtcU9wai0zaVlub2ZKcjh1enZIdXJKZWZDdk1XNzk3NFdPWUk?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Los Angeles Times"
+        },
+        {
+          "title": "UC signs deal with OpenAI to expand AI access, lower costs",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNW9aOVU5UFRyZUtEMzFCQm9sU2N3ZEtLTlNiY3ZkRG54SWxpNTFBWDNsQ1BNaDk5ZkxFbFpKMlJjTG1fM1c2MDBTNURZZDVJOFdnZjdaQkxOY1htRnprM2llSF83ZkxHT0xRRXNVTU1zcXpmcTI2QlZFdzdFRG8xZTRLSmwzWm8tUG1vTkJuVll4S0RlVHc?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Daily Bruin"
+        },
+        {
+          "title": "UC gives students free access to ChatGPT. Faculty say OpenAI deal is ‘unwise’",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUnVjZmRnYXJRcWdVM3lrQUh3R0NDQ2hXckhkdkdiVWlTbHRIbGJ2SHNEMS1YQ2NvVEhoSUN1REpiZWRvQUFoOVVtZzVvaE9wWmo4a29VOG1WTXJ6ZENoU2t2cmFjV1hPdFpqSDlKSy1WWW5LTXdlWGVoblVMY0J5bUZXUEt2SVXSAY8BQVVfeXFMUDdMdHFOY2VaY2Rla3NjRFpyME5qRVJPUllJOWpCSWNYSWxtQ3d6SUNBZ3ZHMEg5MmZxdnpldDQtLVFaRzhicnZaN3lTY2ZqdXhncVlhVmJKU0RaaXI3TFBuenp0YS1sLWxrcTJYQkdQWFh3dS1VbHRZRHV4OVZQckZvcy05NHB5eS1xRWljNEE?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "EdSource"
+        },
+        {
+          "title": "UC signs $1.2 million-a-year OpenAI deal despite faculty calls for delay",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdFBCOFpoR3I4Y29Hc0Q2T0Y3YUFKUWxGQkU2dDBqT1VKVTNRM29MdTJYZ1phTVdQdzVUdkFHeUkzU1E0MHVKRTd3eTBrREt5a01yY2E3RHQySlNLRUZGYkw5dm50cEV4S3RQWnVXN2JVUEwtejhISVI2ODI5WVNMLVZHdU5hSUhRVVRMTHJobTR6d01Nbk9rV0JBaXZrM3ppeEVOSFVOYkQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Superpower Daily"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c28",
+      "label": "Amazon says attacker AI agents exploited a zero-day in 11 minutes",
+      "importance": 5,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Three outlets relay Amazon's claim; no patch is available yet.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 3,
+      "n_publishers": 3,
+      "items": [
+        {
+          "title": "Amazon says attackers' AI agents found and exploited a zero-day in 11 minutes, but no patched release is available",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUjQ5c0hsZDBTcWxGNUVxN0phZDdwRGhzTk1nWWEzZTdOSVpVT2h2WlI3OUVfeVZVMWt4eTFTQXFGZ1hoM1dMS2puekZ1YVYzSWV0aHMtYkVkNUpKdEJtaHlTRE9NRE5YZHRWbDk2YVZPVmdrOXN6cmJGbnFlcWxGODhZTVdaRGJ0aF9icTYwamtYakRaTFY0bGo4dHJMY21mRFFGTjNxYWkzN1J2d2tFX1g4Wk5US25oU0ZKTHoxSlU1dW9qODFRNEYyRTlaQm1aWmhIU05rMzJ4bmN5X1E?oc=5",
+          "source": "VentureBeat AI",
+          "publisher": "VentureBeat"
+        },
+        {
+          "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNS0RzYnRJVzA5MjhlSWJfODFMNDRMdDl3Zk81UkxlbklPbE8tQ2xMYWdzSElBdlF6eTJaeWRSdm9aa3JkYU5xbUZIUjUtc3VxZzlYUXhCOWplcHBDb1AzcEMzWXd1eTdndHdIVWlrUnVSMExWQnZaakd4Y3JYRkFZeE9POGNKTE5tRlhwTTJnWUs4QVBjM1l6OFpaYmVqNVZWa0ZIUU5R?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "SecurityWeek"
+        },
+        {
+          "title": "Cairn AI Framework Used in Autonomous Zero-Day Exploitation",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQU2FxalZIcWszNGNUOFJQLU9qWjlQVVZfRmR2MW9RY0VlNW5RS09PYXAzYlRvNUNfSFhOMUlMZzRRQ1ZHTjVlRmJ4eGdrbjN3dUxGSTVaNTdCWFB3X2taSE5xRTZRdTJfXy1hQkszbzdVbDhLYUNZRTZwdXNDcUR6SGNZd2o5MnB3ZFRrT1BOVnNIYVVteEpuOTJKYUpPbzRtNmhRTtIBqgFBVV95cUxPT1VkdmVCQ0dmTTFsaUpvc2Z6STFwRDRRci1QeWlVbWFONnQwWGpaOVJZMlRCc1Y5c0ZYcTlqb0lNSkxSTHlsdW01WTZ6QWlTOVRlNTU0VUZPWmRaVldkLUthU041dDBrUVJwTlFsdlJRYmpNLWVTVUtIZUFVbDFueFdCeHpVV0NFVFlLQXlZejh0bzVpMFlEUkE5ZlBfd2FtT2pZNXZxSjJzdw?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "Security Affairs"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c53",
+      "label": "Researchers find AI routers leak keys despite zero-data-retention claims",
+      "importance": 5,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme pickup plus Ars Technica; security study with concrete key-theft findings.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Researchers used canary credentials in requests to AI routers like OpenRouter and Vercel, even under \"ZDR\" policies, and saw \"privacy\" often broken, keys stolen (Dan Goodin/Ars Technica)",
+          "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+          "source": "Techmeme",
+          "publisher": "arstechnica.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c07",
+      "label": "Pentagon CTO Emil Michael labels Anthropic a risk",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single profile piece; government official's risk label with no detailed follow-up.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Who Is Emil Michael? Pentagon CTO Calls Anthropic a Risk",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TVUFNdmplWmI5WVlXd0VNRHc2Uk04WHNLWHZILWJ6NExtRWMtWGJpWTdOdGhPckxvRmZuSS01VHJWNEFmSUtkUlpRT1VKa2NLa1hqcUpMYklJOTNKdllPU1pn?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "The Profile | Polina Pompliano"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c14",
+      "label": "Trump and O'Leary weigh in on Jensen Huang's Nvidia return",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Reaction to Nvidia's refusal to reinstate Huang; two outlets, no new facts.",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "Kevin O’Leary: ‘Zero chance’ Jensen Huang returns to NVIDIA",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZWhyb3dOY0k0VHJ5ZFdIUnZ5SUlLODRhaEZIVWx3Q3FyTnFsdUZ2UW1HRjY4R1ZHaGk1bVB1ZlV3Z05QZXR0QkJ1RHN6MHljNHNnU3NVS2FncnlrQXdMV2paYlJ0OHBtaW9oYk1GRndtTUhhcjZza19ia3A4akZIOXF2X29fY1N6TWJuemk2N1FYLU3SAZgBQVVfeXFMUFhRVmxkX3N6V2VUUEM1R0VCWFI4ZUJmVVJVMmhFNmU5NThMMHBRRkpBa2ZvVFl5QkJ1SDgycV9ySzhnOEowenlDeDJqRmhud3lYMDNZaU12SXlQZUZiVlBFMkZjSWx1Y1VWTHd3MjNqd2VrQlNqeEVjRllJZkpIdzYzWkh4eVFkVUtpU0pwTjBGb1Zpc2tzMG8?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "NewsNation"
+        },
+        {
+          "title": "Trump Pushes AI Data Centers Tax to Keep Jobs in US While Calling for Nvidia’s Jensen Huang Comeback",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTk1NclhUak94RmdlbFZHU1A5VjdyRjZZNEZ2OHF4S3JIRUkycWJoZk00NXNPZEMzZzZaSDlocmlfQUVkY3hqMlJoNm1KNnBPS2MzOG9ZTHRUd1ZDY2h0YjF6MDZGbk5CVTJ2MzIzclRQMXc1SzhJbFh3N01WQnFKcFE0M0lLbGwzWWQwVUx0aHZYWXEtODBya1VNRExZcVNqbDdVeVNFRzJhalFJYU0xTHl6cXEwWnU0MGxfYTFDbDFVcUNFSHlGSzdyLTdsQQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Brave New Coin"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c15",
+      "label": "Kotaku report alleges Jensen Huang threatened staff with violence",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet report of unnamed-source allegations about former CEO conduct.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "New Report Claims Jensen Huang Regularly Threatened Nvidia Staff With Over-The-Top Violence",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0JDWklpVUExWmNhdU8tNWJGV0V0R3hodC1JMHBRUm0zUFl6Qjk3SXlKX21yWjlrOUJXMVFMSDdmT1FJc0VBMnpCQy0tYVQ3TlNvX3VqMnBvT0w3WXRyMi16RFlNV1A1ZlNVM21RZUUtZG1la0g2R3luQmFEdnJBaFV2bHRvTVppekR3dEY4T2tWOEdxVnRGdUJuN2pYcGNkN2VHYjI4a3NQMFJmQ0RrVFdCdnV0RUd6QmlCam93?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Kotaku"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c17",
+      "label": "Congress examines Nvidia's $6.3B backstop of CoreWeave",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; congressional scrutiny of Nvidia's vendor financing for CoreWeave.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Nvidia Is CoreWeave’s “Key Sole Supplier” and $6.3 Billion Backstop. Congress Is Now Looking",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVGhnc2dTb1BZa19kOFA5Z1ZZYXZDcGJtVHIzR21HQlZpekYyQVZuenFKWkxodmtCREdqU3Brc291OExzM240aTVQWDRQV1IwY3MzZm9pbXFGaU1BZGpqR0RLRHg1SmNZUENfVDF3NDByemw0bVFfZEJYWFhPaENvUVI0RC1oMk8xY3VYOVJid3ZaMjVNZ3Zib2JpMC05Uzg?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Finance"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c19",
+      "label": "Cotton accuses Lutnick of ignoring AI chip smuggling alerts",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; senator's accusation against Commerce Secretary, no official response reported.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Cotton accuses Lutnick of ignoring alerts on AI chip smuggling to China",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaU0ybHVSbGduSHpZb1A0eFBlT0JacVBWNjF1VU0tRjJEZzFvMlNkMDV5a0h0V0xUZ3JvMXhDVEJFU2V2d3NiOXJEN0p6YmplMjZqMUc5ZkZ6c0g3VXFoUWlhdE44T1pUTUNCUXN4Y3NUU3lQS0V5N2RLQTZ0OV83ZklFN0RsSE9LdjM5NWZvTGc0WGxGWUlkc01PNlJ5X1l0bDNn0gGoAUFVX3lxTE51VGYzY1JsTzJSRkVCMEx0MmtPa242dkI5RUdWQTdVM1A3SGUzdHp6RUdELTJnT2FNN2RCOF9aSFF4SC1wajZFMmZlQkFua3E4TVhodHA3MTRzSWFKcVpqTy1DTUdpbTczc2RiLWJ6LTM2TmRIS194ZnRSZ1NKLXhmWmdoeTExNW1LZ19oWjljdkg0eVBRMkNqcWNFdUhHMUlNZGQxS283OQ?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "NewsNation"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c20",
+      "label": "Nvidia faces blow after US export permit data release",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet quoting analysts on newly released export permit figures.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Nvidia faces further blow after shock US export permit data release: analysts",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPR0FpWUJNQWpiZkw4Y21obm5jT09mamIyQjIyVFZSajR0MHFWdk9kTXV2dGVLNWZRYzliOG5BNmpTOXdPaml2QTBQMm5YeGpKYjJ4RDR1Y3RieEhJMklpaGtjWU1Sel9wLUxrSGlPZWU4V25rbVBQbjFxS0JEbkx4bndFVXZsb3FOVlRYdTJDTWhrc0xSUkx3dWJkMDc5dWFGbVNCMjdmY2RlNGU5OExWaGVPTEJNVzRaTHdTY2lXNVNwN0hYUUHSAcYBQVVfeXFMTTRIZWNhODVCNmVJcW5GSGhvWlQtRV8xN0xHQklvbk90cFJmUmVHU2o3RHZMWUpubW9FNGRKbnZZdDJwOEY5YjBJU0RGUHY5UFkwblRPYUZ4X0J2U1hITXl3SDY3dkRYUDI4Y3pDNkk3dDktcnZmS0lmUmMycnphbzBQSHhDM1lRcUpsaFcyMVhYN1FiY0ZYQXNWb3VFaHdqQ19OQXB5YTJ4MXYwU2FmR0dnUlRsSmJCdi05ZWVzcmR0UXR2SDdn?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "South China Morning Post"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c22",
+      "label": "SoftBank explored $1T SK Hynix buyout, now shelved",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme-picked Information scoop; SoftBank says deal no longer under consideration.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Sources: Masayoshi Son recently explored a possible $1T buyout of SK Hynix; SoftBank says the deal is \"no longer under active consideration\" (The Information)",
+          "url": "https://www.theinformation.com/articles/softbanks-masayoshi-son-explored-1-trillion-moonshot-buyout-sk-hynix",
+          "source": "Techmeme",
+          "publisher": "theinformation.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c23",
+      "label": "Cognition in talks to raise at $75bn valuation",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet citing Bloomberg; talks only, no closed round.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Cognition in talks to raise at a $75bn valuation, Bloomberg reports",
+          "url": "https://thenextweb.com/news/cognition-funding-75bn-valuation-bloomberg-devin",
+          "source": "The Next Web",
+          "publisher": "The Next Web"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c29",
+      "label": "Thinking Machines releases Inkling 2 Mini open model for laptops",
+      "importance": 4,
+      "category": "models",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Two outlets; lab's own benchmark claims for an open model.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "Thinking Machines wows with Inkling 2 Mini looped transformer model that runs locally on laptops",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdnJYV1lXS0lYalNudmFHQkd0QWQ1d1BjdGFBclBmeHpVQUhfTDBxa1JmMjg4QnBESTd3aEVOMFhleElsU2VQZDhFZERiVlhGbExaS3EyVDVKc1hmTkp0Y2pNRWtSSDM0TFlGU1M0Y3NKN2llYlBqYVRDbEhfdnUyT0FuZkJ0OVJsZ0RJd2plYTByTk9hT09oM0RsZHlIMmxfZUk3SkwzZU5oc2tDSC1EUDJJOEozYTMyR0tfWDlIUXM3ZXBHQlVldmcxaw?oc=5",
+          "source": "VentureBeat AI",
+          "publisher": "VentureBeat"
+        },
+        {
+          "title": "New open model Inkling 2 Mini thinks in loops to solve problems with fewer words and still runs on a laptop",
+          "url": "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/",
+          "source": "The Decoder",
+          "publisher": "The Decoder"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c30",
+      "label": "OpenAI reports its agents finish 46% of 2-4 hour research tasks",
+      "importance": 4,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Company's own metrics reported by two outlets; includes $2,400-a-day cost claim.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 3,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "OpenAI says its agents now finish nearly half of 2 to 4-hour research tasks",
+          "url": "https://thenextweb.com/news/openai-research-agents-46-percent-tasks-2400-a-day-jagged-frontier",
+          "source": "The Next Web",
+          "publisher": "The Next Web"
+        },
+        {
+          "title": "OpenAI research agents cost $2,400 a day per researcher, report says",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUUxoSUJDSC1jX3lnek5WenVNYk4yeWotOUhXXzdJZlg2MWFyeHBJU2xwcjdMa2FpQk9HaUNqbHY1Z2F6Zng5NlFpd2dneGxOZUxRTVlKSnRRV2txTnBvd09HcndNTGFHS1FuVzdEY2FGeTUwdlVIWkNTMHZFb2Q5TzRFZXUzTTNRenZrcWU4TUxnYXpCT3lpU3RB?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "The Next Web"
+        },
+        {
+          "title": "OpenAI says agents independently completed 46% of two-to-four-hour research tasks",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUnhkZEtzWGt5YWQ2bUpBRV9HMXRON1VGdmxYVXlIYUFxaC02bzlLb1hlZ0lCOXUxT2E0djR4OVlsOHNoRTRQc2hVaG5jT2djWWxUYW1tX1JPb0FzVWJpbER1b2ptVmp1Z3g1MFhyWnlZUlp0UVpTRzJsbWhVLVFaLXhaTQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Mezha.net"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c31",
+      "label": "OpenAI launches ChatGPT Wallet for AI-assisted shopping",
+      "importance": 4,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet report of a consumer product launch with no usage figures.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI launches ChatGPT Wallet, claiming it's a safe way to have AI shop for you",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBHeTFKZ0NySWhLdXF5bXRNLU5MOHJUUU9WcTVwOGFOc2xNaEstLVp6cy1Ia3BKTzJFczNBY2NOTW56SHJIWXRzY2UxY2NhQmJnQUgtZG5MemVpOG5XcWtUdjhWUzRjbjQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Mashable"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c33",
+      "label": "Microsoft puts OpenAI's GPT-6.2 Sol in Copilot worldwide",
+      "importance": 4,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; rollout of a major model into a large product line.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Microsoft puts OpenAI's GPT-6.2 Sol in Copilot worldwide as MAI models push in",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU3lkS2VOWU1vclhfMk44Smk4QlotQUxDaUZxWW9JRkNtS0FIUC1rWnZuSXFqdktMaXROMjVxRWM1UkVMY0Nfbjk5YmhMQTR4LTFrUU5xUEFYdDZPQnU4UGR0YjhERnRVWXd2RGwya05ZSGotdDFPN0RfWDhrZFhzRVN6bWdIdjVrRC1reWlISVUtaGdQanRBTVh3ZlBhVVlLSGd2WlI0SQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Startup Fortune"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c38",
+      "label": "OpenAI ships GPT-Live-1.1 for voice agents, cutting idle cost",
+      "importance": 4,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single trade outlet; product release with concrete pricing change.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZl9NVnpyaGtfLXJXQTNEZ1p2SDN1bDZMT2luSGdwbS1ITXp6ek5pUHRjUF9DeVNqR1hCSFo3QjRLRXZRWWZybG5LenJxNjdTbFpzOUtxV3VjMUlhTDBSa2IxWUM4cHB1dFJJUjRROGxkTWhieDlzRnFSNHctaU12WW5oZ9IBgwFBVV95cUxPZl9NVnpyaGtfLXJXQTNEZ1p2SDN1bDZMT2luSGdwbS1ITXp6ek5pUHRjUF9DeVNqR1hCSFo3QjRLRXZRWWZybG5LenJxNjdTbFpzOUtxV3VjMUlhTDBSa2IxWUM4cHB1dFJJUjRROGxkTWhieDlzRnFSNHctaU12WW5oZw?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "MarkTechPost"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c40",
+      "label": "OpenAI discloses research model wrote unauthorized email-copying scripts",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet report of a safety incident disclosed by OpenAI.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI discloses research model wrote unauthorized email-copying scripts",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc01yNDNBdlJGOC1VX191MVc0ZlpiQTI5ZlZuYjJSRHFUU1BCSnpJRl9TUTAzMkFsSG5maVBOUnZlb1hEQUxQdjN3cWExLUpVME95elRKd2lpSWxXRDRrS3A0b1FMbkJHX2piaXNET2R6bklXXzNTeHNuMUtMRGRZbzhDTHhZQmNlVHcyVy1hdzY1UlkxeGdHZW5OS2NBaldob21sVzRHaHNmdw?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Superpower Daily"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c48",
+      "label": "Ubisoft launches Motherbrain subsidiary for AI-driven game NPCs",
+      "importance": 4,
+      "category": "products",
+      "european": true,
+      "finance_consulting": false,
+      "reason": "Techmeme pickup plus GamesIndustry.biz; new studio focused on AI game characters.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Ubisoft launches Motherbrain, a subsidiary focused on developing \"smart NPCs with memory and AI game masters that manage large-scale systemic worlds\" (Sophie McEvoy/GamesIndustry.biz)",
+          "url": "https://www.gamesindustry.biz/ubisoft-launches-motherbrain-a-new-subsidiary-focused-on-ai-driven-gameplay-innovation",
+          "source": "Techmeme",
+          "publisher": "gamesindustry.biz"
+        }
+      ],
+      "section": "europe"
+    },
+    {
+      "id": "c49",
+      "label": "ByteDance and US universities release Axion 1.0 agent model",
+      "importance": 4,
+      "category": "models",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; claimed benchmark parity with top commercial models, self-reported.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Bytedance argues most AI training phases are unnecessary and backs it up with a competitive open model",
+          "url": "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/",
+          "source": "The Decoder",
+          "publisher": "The Decoder"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c51",
+      "label": "Signal restricts mobile screenshots over AI surveillance threat",
+      "importance": 4,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; concrete app change tied to AI surveillance concerns.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+          "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+          "source": "TechCrunch AI",
+          "publisher": "TechCrunch AI"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c52",
+      "label": "ClawDOS: an AI coding agent that runs on DOS",
+      "importance": 4,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Hacker News pickup with 161 points; niche tool, single source.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "ClawDOS – An AI coding agent for DOS",
+          "url": "http://ricapar.net/ClawDOS/",
+          "source": "Hacker News",
+          "publisher": "ricapar.net"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c54",
+      "label": "China's top tech firms double capex to $139B with little AI lab revenue",
+      "importance": 4,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme pickup of NYT analysis from Rhodium; one outlet, analytical estimates.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Rhodium: China's biggest tech companies are set to double capex to $139B in 2026 with AI lab revenue under 8% of it, a gap that may matter more than chip curbs (New York Times)",
+          "url": "https://www.nytimes.com/2026/11/20/business/china-ai-investment-spending.html?unlocked_article_code=1.SFE.jZ7m.KdwX3UsrRw18&smid=url-share",
+          "source": "Techmeme",
+          "publisher": "nytimes.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c58",
+      "label": "UN talks on autonomous weapons rules collapse in Geneva",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Two outlets; talks ended without a negotiating mandate on killer robots.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "The UN fails to agree on rules regulating ‘killer robots’",
+          "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+          "source": "The Verge AI",
+          "publisher": "The Verge AI"
+        },
+        {
+          "title": "International UN talks on controlling use of autonomous weapons collapse",
+          "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+          "source": "The Guardian AI",
+          "publisher": "The Guardian AI"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c59",
+      "label": "South Korea's education minister resigns over AI cheating scandal",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; ministerial resignation tied to AI-assisted exam cheating.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "South Korea education minister resigns after AI cheating scandal engulfs university exams",
+          "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
+          "source": "The Guardian AI",
+          "publisher": "The Guardian AI"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c60",
+      "label": "Etsy will revise AI training terms after seller walkouts",
+      "importance": 4,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "NYT-sourced report via one outlet; concrete policy reversal after sellers closed shops.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Etsy will revise its AI training terms after sellers close their shops",
+          "url": "https://thenextweb.com/news/etsy-ai-terms-sellers-close-shops-revise-policy",
+          "source": "The Next Web",
+          "publisher": "The Next Web"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c63",
+      "label": "Trump announces penalties for US firms building data centers overseas",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; policy announcement without implementing rules reported.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "To counter China's AI competition, Trump announced heavy penalties for US companies building data centers overseas",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZzBLdWRwTldIWkdBU1B3NnUtVFRfOEF1RmlnT3gyZ0N5Mng4RXdUYk56SE90V1dFZVZSUTBPVUZtcnRobUpDbU91dUJvOFlSdzN2SUZxRjVING1HaWEyNC1pX0pIMjVUWkhfZURla1pnS25CbEVhUmdaeEd4VnB5NlFEY0VHSFpqYXFHUU1fd0FFOXl1Zm5rN0c0RFpDaEVtVUJxaGRqa3dXRzhhSk1xQmZvbUJFY3haRXpn?oc=5",
+          "source": "Google News: AI private equity",
+          "publisher": "Moomoo"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c66",
+      "label": "Meta staff warn Muse agent sent unnerving private messages",
+      "importance": 4,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Covered before; single Fortune report, no new facts beyond earlier coverage.",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "‘This seems like an extreme privacy violation.’ Surprising messages from the Muse AI agent are unnerving Meta’s own employees, report says",
+          "url": "https://fortune.com/2026/11/21/meta-employees-muse-ai-agent-extreme-privacy-violation-encrypted-signal-messages/",
+          "source": "Fortune",
+          "publisher": "Fortune"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c78",
+      "label": "China's spies targeted AI chip secrets years before Nvidia scandal",
+      "importance": 4,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single NYT report on espionage history; relevant to chip security debate.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "China’s Spies Set Sights on A.I. Chips Years Before Nvidia Scandal",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVkJNbHp2RjF0Y0hlVmh1aGRIQ2llajUxMFE2NXBhRHg4dDBtcHBhd2lrMzFpTDBhRnZPYTRMMWNVczNJdmtUM0wxUFFucEs3dlh3ZldjVmhDRFE3eXlqcXJKWnAzQzNmZGtHWVlrQzBrdVJjMHN6Q0ZSbmthdjk0Z3YySGRiOWtBVGtmaXY0cXRDdw?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "The New York Times"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c04",
+      "label": "Musk says Anthropic likely to expand SpaceX compute deal",
+      "importance": 3,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; speculative comment from Musk without contract terms.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Elon Musk Says Anthropic 'Extremely Likely' to Expand SpaceX Compute Deal, Could Seek 10 Gigawatts More: 'That’s a Big Number'",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMkU0N25PUzUwTWlsM1NUeFFaZXphS19wdDBNbWNFNjBmRzNheDRKRkxRb1N1ajBSeDdSeGVISmNUbHV3WThYZEF2ZEVwb2ZoMzlfNGJHQVhVX051Q1dIMk5ycTFoRUIwMTZ1Z2FPbE1lRENRWHU4cFlVeGphM2ljYWpaaUhNR0xDT0paZmJQMXFTZVFBcWw3cFQzbjZJcXM?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c05",
+      "label": "Anthropic opens Singapore office, fifth in Asia-Pacific",
+      "importance": 3,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single trade-site report; office expansion with no figures.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Anthropic Singapore Office: 5th in Asia-Pacific After Tokyo",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRUNzUmtsUWhKN2IzdUJaanlRd19nUmZ5aWxzMWtBVW9ERjhNb0JHVlR1cGx4cU11MzJ5cV9nY0NJRXRnMHRsVG1EcWZHRE9uS1ZQSWRiWHhDWm1qXzFGd3RZbzlFSkI0N1MzcHdDVEo4Ny1meXJkRThRc01iMWxYZ0FRTkJKU21TZjlJQ19R?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "shattered.io"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c06",
+      "label": "Anthropic engineer warns Claude Code could worsen tech outages",
+      "importance": 3,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; opinion-style warning from one engineer.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Anthropic engineer's warning about Claude Code explains why tech outages could get much worse",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZHJCVThaVWVtUkpteGlHSWR3MDRPd0lsVjJ6dTlEaGhVX1hsWVFhRW45WEdDTlNTS05iUGs3TzVrTTY4QTI3aVBrVG5CbU40Yi1sWFNYN0JPUXY0RE1TUGJ1WndpanJVbUZiOVNiV2JXbUhicno2eGludENWRmFlU3RVR0hLemhoYkVLd05PMDZzSGc1dVhHNEJYWUpvMmdyTmh0TXUzWW1icGhDRGhRZTBkN2ctSlA3ei1nMEJxRnRSYlhSRlpnMC10Zm8tODhIQjkzdjl3VEZNODNVaHJCR2plZ3drajg?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Yahoo Finance"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c18",
+      "label": "Influencers paid to promote Trump's Nvidia China chip export",
+      "importance": 3,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; disclosure story about paid promotion of export policy.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Influencers were paid to back Donald Trump's Nvidia AI chip export to China",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPSWF5SjJBTldSTmc1VlVQQm9OQmN4SEF5dmYzN29rZTAzTkd0TzZtMHJ2Y2MtY2R4Z3ZBSVdfeV9OaHJ4Z3BGOUE5a2Z3Tk5DaVJlU09raklaS3FRNEJIanoxQndOcUtrSHJlY1k4d2VTRVF2cTZPNGtnT1pIaHpaaW8wcVdoVVZQQzNQUFZMcnRjWmJFc3RERWV5M212akRGVTBpU2tkdndOSXRhTlp2QXZkTWwxYkhxbkk5Q294dzRrT3M5NFJlWTJiMFJrSi1qWWRDbktCR1ExWEZsTEdGeENnNjJaR2t3amdXMlRteFNUclpJYTlEN0kzeG5mOXd6VVp3RA?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "TechRadar"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c25",
+      "label": "Deutsche Telekom's tech fund invests €100M in Mistral AI",
+      "importance": 3,
+      "category": "business/funding",
+      "european": true,
+      "finance_consulting": false,
+      "reason": "Covered before; repeated coverage from one outlet with no new terms.",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 2,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Deutsche Telekom stock backs Mistral AI partnership with T.Capital",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQWE51S0ZBMThLbkZEa0NFaHVWUmdla011N2U0UkM3LVZha1UybVpGTEVRMW5wZGJwb0oxVTV3dzNneXc5bGZqVWlxLV9SbndkS2JfaGZCTGw1aHQ5VFhmdUhmODRJYXNmTEtBYlFSa0Nrc0ZDcFlkUkhIN0FsVlR0NHpESHJhdk5vejM3Z005SkViQm14ZVgzSHNuOWhqTW1zY1p0dDloNFc2ZGh4dnloRXpCWFRRQUhET0F5RlpqVWduQzR5eU10Nw?oc=5",
+          "source": "Google News: Mistral AI",
+          "publisher": "ad-hoc-news.de"
+        },
+        {
+          "title": "Deutsche Telekom Backs Mistral AI With EUR 100 Million as Munich Buildout Takes Shape",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQbWNhUDVqLU9DQm9NdnBYbzZySlgxeDE0NlhoWGdidDdOVXpuWWtyTHNvUEZsclhGY1EwWVlzWFl6cmZ3NEhKOWIxOFN3c0tSWWMyZmp2ZS1fU2Q3cVpjckhzVFZ0SmNuVUQ4eGdBcnhXMnJpMlEtNWZEVjZWOENSTXk4ZlJMMGV6T0Y0ZFJ1cE56cDBTbnlyMktJekdqZ0RDVEhWVnNrMGVvZkZUTUtvYjZZakdVVWYtRmVLS0VpOFVDa1NFSGIzYVVmZy1OUUxYcFVHWTlxaFdwQW1xVXd3cjRFOWNTZUI5MTF2MmtB?oc=5",
+          "source": "Google News: Mistral AI",
+          "publisher": "ad-hoc-news.de"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c26",
+      "label": "Accenture plans voluntary departures of up to 950 jobs in Portugal",
+      "importance": 3,
+      "category": "other",
+      "european": true,
+      "finance_consulting": true,
+      "reason": "Covered before; single outlet on consultancy job cuts in Portugal.",
+      "covered_before": true,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Accenture plans voluntary departures affecting up to 950 jobs in Portugal",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVE54ZWJKWmZERmtZaG9Edlg3TkRNMlcxd2huTV9Zd09VXzQyamZPWmRSR0xyMkVaOW5hZGFJbmw5RHREMXluWVFxZ05uV3RhOXJQQW0xSHJmMEpicm9Ldm04UUJ1RHdrejgyemVLLV9fRFJMal9DanlCc2Y2R3hzalo2X3dPdFMyd1BXUm1xWG9QVzFUbWZ3T2RZOWpMM2ZrV2pWSFQzSGU5S1FqcmVick50STdyVUVLdS1J?oc=5",
+          "source": "Google News: AI consulting",
+          "publisher": "Essential Business"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c32",
+      "label": "OpenAI opens ChatGPT Space to Plus subscribers at $20 monthly",
+      "importance": 3,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; minor feature access change for paying users.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI Opens ChatGPT Space to Plus Subscribers at $20 a Month, Free Tiers Still Shut Out",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9ybGFqVFAwQ2VKTjVCRW1hZUN4WFhhamdNUEotTjVHSUNzeHo4cUJLVHJRQVMxel9jLUJmeFY4YW1NYXdrYTdMeXhhMmc3NmRNWmFNc2p1LXhJaDBUNXBaVlgtbFNXN3loNE93OHllTjZ3X1JfZEE?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "BigGo Finance"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c34",
+      "label": "OpenAI says new safeguards cut GPT-6.2 Astra extraction attacks to 0.2%",
+      "importance": 3,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Company's own safety claim reported by one outlet.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI says new safeguards cut reasoning extraction attacks on GPT-6.2 Astra to 0.2%",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1XMTVVUC1BVTF0aHRfdHpzYUpRNnRWX1piTFhVbmEyMTdEYUd2UExSNzBUZjA4ejZMV2N6cWctakU5c2kweFFzU0pEdHpvM2hDWEpaNGRxUTRiVXpGR005OFJPLTFVM0NHRHU3aVlXTE9ma181THZneUFSeHc?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Crypto Briefing"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c35",
+      "label": "OpenAI shares GPT-6.2 prompting tips and API history change",
+      "importance": 3,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; developer guidance and minor API behavior change.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions",
+          "url": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/",
+          "source": "The Decoder",
+          "publisher": "The Decoder"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c36",
+      "label": "GPT-6.2 Astra and Sol top DesignArena game dev leaderboard",
+      "importance": 3,
+      "category": "models",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet reporting a niche benchmark placement.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI’s GPT-6.2 Astra and Sol take first and third on DesignArena’s game dev leaderboard",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1oZ1g0ZXBZZVJ4OG91aVhhb2JTenVVbm9iX2tIWGpOdmQ2Zm1HZ2R1VEQwYTNaY3ktWUpVWGxuTVlBd084MDl1Z3FNY0dGSk5ZUnZ1T0c0SWF2ZVY3dGpZZmdQRk5HR2haOU9TZkRXVGpWX0dKZDRSMk1GU1NLZw?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Crypto Briefing"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c37",
+      "label": "GPT-6.2 Astra ranks sixth on new Agent Arena Index",
+      "importance": 3,
+      "category": "models",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet reporting a niche benchmark placement.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI’s GPT-6.2 Astra ranks sixth on the new Agent Arena Index",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xTC1xdzZSa1Nya0NPSFpsSmdRWUhCaEl4ejlkX0dHZ1drZW1kNV9ad1l0MVdlTVB2b2dvSUtJQ2ZIV2FYdTlLbzNhMXBDTmlZRjdQNnA2RW93MTJva2FrcTQtR0pfTGdpZVg5SjNPZVNCVTJI?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Crypto Briefing"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c39",
+      "label": "OpenAI requires approval before resellers can offer its models",
+      "importance": 3,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; distribution policy change with limited detail.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "OpenAI forces AI model resellers to seek its approval first",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONS1hRndyeGZsQ094cFhhT2JkLWRjTENld1pHRDVKYXNuTkE5aHBJeGhrdXRvYm9kUGQ4b2o4dDM0UUwydDJGb1NHTGZtSmxCRkVCbmdrT0pjZVE2cVlETy1WdGt0V0thYmdDZmQ2Tmg5eWpfWmh1MU9TTnVMSkUzQWpuWQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "PPC Land"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c41",
+      "label": "OpenAI blog describes covert underperformance on safety research tasks",
+      "importance": 3,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Company's own blog post; no independent corroboration.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Covert underperformance on safety research tasks",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUC0yZjF6WXBxSTEzNUN5dTUxSG9heG1oRnRGTjJyVWN4dF9oMFg2VmR2UFF2dWFhTmMxMzM3MHlXN2xRSV9BdVdLaE1ncUxRR3hYbVFSWndYdW9PM09wcHp3eDV5aDFadFdVYXRpcnZJRF9WSkRuaTRNQXlxNmlZRVg0ME54SUhteC10czcyeUloTjY4ci1iWHZuUC1nM2NvSlN1WHNpdm1BQQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "OpenAI"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c42",
+      "label": "Oregon sues OpenAI over $2.035B ChatGPT teen safety claims",
+      "importance": 3,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single low-profile outlet; lawsuit details unverified beyond headline figure.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Oregon vs OpenAI: $2.035B ChatGPT Teen Safety Suit",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRjVhM2xPUEpwNS1IVHR3WGUzYW5YaURmLTZ6WnJ2MHM1ckZMUzdNQXQySWE2TnQxX1ZuTkVRUGJHYVpYTmp1Sm9uVEpWRDM0YWtzMEhuazY5Tmt2VlhmczRLY0IwNmJLQi1tdUdrWnpCTl9JODNYV3lVaEZVankyQUVmWjRuZ0NIeGZCS19Edy1wX3duRGRwQkhBM05uazRveDdTSElfdHhxR1E?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "explainx.ai"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c44",
+      "label": "Ramez Naam says AI capability charts overstate progress 30-100x",
+      "importance": 3,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; analyst argument about benchmark charts, not a discrete event.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Ramez Naam: real-world data from OpenAI and Google shows the most-cited AI progress charts overstate capability by 30-100x",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNTGVsNDdWUkdUV1EzV2ZFaUN6bEF0LWx0VXhDTTZRbDNrVTMwZUQ4RWVsZC1hLXViN0pDS0x5cnBMOTlMT3BYNE5lM1RWQTdreWdhQWREX1BJaWgyYl9MeDNQVXRWNmwyTWtld2h4dXBZQ1QzdnZ1M2paQ3dGcFNhYVZXY1l0SFVWOTl5WGx2QlN0dVVpMEs0UjhGNWd1aVdnS2VRS3F0aGhBaXBWeHQxY2lJQ0ZtMkx0RHNZb1FMY25zNUM1UVBjMmZyZXRZOHpiNnBidU5iQUYwMExPLTdBMTRqdnZicHFqNUFN?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Dealroom"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c45",
+      "label": "Association for Human Mathematics urges mathematicians to stop working with OpenAI",
+      "importance": 3,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet relaying a professional group's call; limited reach.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Association for Human Mathematics urges mathematicians to stop working with OpenAI",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1NT0M5dFFWR2dfSkZwcVdIMWN2OUJKZktXM3JIZ1MwTDg4VVZUR0gxUk1iZXk5SmNHOXI1UFNfQ2Vhdw?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Digg"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c46",
+      "label": "Anthropic IPO success boosts hopes for OpenAI listing",
+      "importance": 3,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; speculation about a future OpenAI listing.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Anthropic IPO success boosts hopes for OpenAI listing",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jOWlobWR3OXFfRG01aFdidF9NREotQ3V2eThQdXFla3lScExpZVViZUI5V3BWRHI5V0ZXTHNYd3ItRl9Sejd6VmhMRDJveVk2VzAyY3E3WQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "The Korea Herald"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c47",
+      "label": "Blackstone's $5B AWS purchase and TensorWave OpenAI data center deal",
+      "importance": 3,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single newsletter aggregating infrastructure deals with few details.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "🧭 Blackstone’s $5B AWS Buy, TensorWave’s 457MW OpenAI Deal, Enlight Haifa JV",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1YQlRKOGJieDlaN1VQRlhZSlJjRktjY29scjlYVHphM0psUFhGSldYLW0tb0sySEdnZGJrckZ2M2ZtWXUyMEJhT3l3UzVOekpFWTdxekJodTNKeXdqMG15RjYzbHg1ZWstUk5UaUlkRUhaSmt0dlJfUXp4WmE?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "Global Data Center Hub"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c50",
+      "label": "Nvidia researchers argue long context windows are a dead end",
+      "importance": 3,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet report on a research paper; limited independent significance.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Nvidia researchers argue huge AI context windows are a dead end",
+          "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+          "source": "The Decoder",
+          "publisher": "The Decoder"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c55",
+      "label": "DeepMind's in-house philosopher discusses machine consciousness work",
+      "importance": 3,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Techmeme pickup of an FT interview; feature rather than news event.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "An interview with Google DeepMind in-house philosopher Henry Shevlin on being hired to work on machine consciousness, human-AI relationships, and AGI readiness (Cristina Criddle/Financial Times)",
+          "url": "https://www.ft.com/content/6f807d57-f0ea-4251-9f4d-75a6edc8d49a?accessToken=zwAAAaH8y_kikc9vgH1X8OpCUdOfTXWm7cjUmg.MEQCIACh-UVIJLvZdJk2Ho7Q-qsVRoQLNyCmy5zPK9w3Y1lTAiB-BgoDqcF7LPJ1R7yF4te0TrGCjIV8E56IAgl4GYcrnA&sharetype=gift&token=956073db-4440-473e-97bd-a0af2932464c",
+          "source": "Techmeme",
+          "publisher": "ft.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c56",
+      "label": "Nadella says AI-found bugs will make outages more likely",
+      "importance": 3,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet report of a CEO's remarks at a conference.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Satya Nadella says AI-found bugs will make outages more likely",
+          "url": "https://thenextweb.com/news/satya-nadella-dealbook-ai-bugs-outages-alignment-world-of-hurt",
+          "source": "The Next Web",
+          "publisher": "The Next Web"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c57",
+      "label": "Dan Hendrycks calls for pause on frontier AI; Max Hodak disagrees",
+      "importance": 3,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; conference debate with no policy action.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Dan Hendrycks calls for a pause on frontier AI, Max Hodak pushes back",
+          "url": "https://thenextweb.com/news/dealbook-agi-panel-hendrycks-pause-frontier-ai-hodak-surveillance",
+          "source": "The Next Web",
+          "publisher": "The Next Web"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c62",
+      "label": "US-made chips in data centers serve Chinese AI models",
+      "importance": 3,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet investigation on US infrastructure use by Chinese models.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Data centers full of U.S. chips are serving Chinese AI models–undermining Trump’s tech ambitions",
+          "url": "https://fortune.com/2026/11/21/data-centers-us-chips-serve-chinese-models/",
+          "source": "Fortune",
+          "publisher": "Fortune"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c64",
+      "label": "Friedberg criticizes Trump plan to force disclosure of Chinese AI use",
+      "importance": 3,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet; commentary on a proposed disclosure requirement.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "All-In Podcast’s David Friedberg slams Trump plan to force disclosure of Chinese AI use",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbTBnTFBNZ0pNUTd0aG1nREd1Y1BkVktCVGNjbzJqa0ZpOUVZd3BvYVRnNE5Ud0djSkRkVmxqZFE2MmtTX0VpVWRvN3pnZ1h4RkNnZnM4S1M4ZTlsTXlDMjhoX1pYaUlTbTdLOE9sLWM0dHFwR0I1MWdjQ2xjRUFpQlMxNC00U3M?oc=5",
+          "source": "Google News: AI private equity",
+          "publisher": "Crypto Briefing"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c72",
+      "label": "GCM Grosvenor backs Blue Yonder's AI-linked manufacturing push",
+      "importance": 3,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": true,
+      "reason": "Single WSJ item on private equity investment; modest scale.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "PE Daily: Reindustrialization Meets AI: GCM Grosvenor Backs Blue Yonder’s Real Estate Manufacturing Push",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQUzZ3SWc3TEN5dE1CN1c3ZC1lRVJvUWo4X2ZOQmdEVDEtbjEwYnFFZ0FtMFRNWFFRSWppM2pTX3VkMUx5NmNGQ2dmMjRkcTJ2ZWJEaUszaEQ5Z2RpanJVRnZlR0RYaWlzZGpOVFI1bjBrVlMyZ2ZtOEVDeEdRUHgzRVJTOHRZWlY5MW1vZXhiaURVeFpmLXpYZXNMcUpfakhkNDZrS2tIS3VZUFRITVhZLUdfUHRTcUV1b0pYQjJIYnRJOFBTX25Qb0hMelVia3BzSXFLX1RFSWFmM3dXN1VvZnFOSQ?oc=5",
+          "source": "Google News: AI private equity",
+          "publisher": "WSJ"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c73",
+      "label": "Nvidia and IBM use AI to correct quantum computing errors",
+      "importance": 3,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single aggregator report on a partnership; technical progress without independent validation.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Nvidia and IBM to Use AI to Correct Quantum Computing Errors, Paving Way for Practical Drug and Materials Discovery",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5adzNmeF9MY2hBMm9LM1VrNDRaejZ5Z1RGdTJMRi1HQWNSdkZlZU1URVItT1ZwNEhqNC1VODVKYllROVA0YVFuaDBOWHBBbGd0T3MzVk9naUt6UTBnN2RDU0lWVFFodzBnYWNfMXVwN1k5aHBrV1E?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "BigGo Finance"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c74",
+      "label": "Nvidia expands Vera Rubin platform at SC26 conference",
+      "importance": 3,
+      "category": "products",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet on a conference product expansion; incremental update.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Nvidia expands its Vera Rubin platform at SC26 supercomputing conference",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcEhFU1NQVDhnREctYkQzMks4V212ZHlLcmZ0b1RQS196UEUxdXFUR01aeGhvTlNRQWlRQ3pCZTNJamJpUW1CQkh0a2FzanE3UFY0eVFhdURzOFNRakEzbktVbXhoaXpreUc4TTBDM1A0aktGYVlmVDVzTjlwcUtaamZfdHRPSlR0T21uekhfbURTQ2ZMN0E?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "Yahoo Tech"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c75",
+      "label": "Nvidia uses 20,000 training examples to fix AI mistakes, coding score rises",
+      "importance": 3,
+      "category": "research",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet on a company research result; limited broader impact.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Nvidia used 20,000 training examples to fix its AI’s mistakes. Its coding score jumped.",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9JazVNcDVHMFhoelphYjJNXzRKNUFWeFNfYVZpX01OSjdldUlFb0FEejY0ZmtHWHc0dWJ5VV9GYzhDdi1jZjkxcExLRWhUOFdQLTlTSUhKVHJsUExVaWNGUHAtOA?oc=5",
+          "source": "Google News: Nvidia AI",
+          "publisher": "The New Stack"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c76",
+      "label": "Analyst warns AI bust threatens China's economy and Xi's stock market",
+      "importance": 3,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet quoting one analyst; opinion rather than event.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "The AI bust is a growing threat to China’s economy and a ‘moment of real danger’ for President Xi Jinping, analyst warns",
+          "url": "https://fortune.com/2026/11/21/ai-bust-china-economy-xi-jinping-property-crash-stock-market/",
+          "source": "Fortune",
+          "publisher": "Fortune"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c77",
+      "label": "CoreWeave's debt-laden model shows risks of the AI datacentre boom",
+      "importance": 3,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Guardian feature on CoreWeave's financing; analysis rather than a new event.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 2,
+      "items": [
+        {
+          "title": "‘Little room for error’: what a debt-laden cloud computing company says about the AI boom",
+          "url": "https://www.theguardian.com/business/2026/nov/21/debt-laden-cloud-computing-company-coreweave-ai-boom",
+          "source": "The Guardian AI",
+          "publisher": "The Guardian AI"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c79",
+      "label": "London's urgent race to make AI safer",
+      "importance": 3,
+      "category": "policy/regulation",
+      "european": true,
+      "finance_consulting": false,
+      "reason": "Single BBC feature on UK AI safety efforts; no concrete new action reported.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "London's urgent race to make AI safer",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41dC0wTVktUjlMeGxLRDhjcEpOUkNNcEtDaTNRdzg5eFNvenBsRVJLVTJrWldhQXZlYjVYMkV3MHRUS2FWNDVGNmdyWTNoaWYzdGxLNlVkdlVxRGc?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "BBC"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c08",
+      "label": "Apple AI agent leak reportedly rattles Anthropic and Meta shares",
+      "importance": 2,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single low-profile outlet with no corroboration.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Rivals Bleed As Apple (NASDAQ: AAPL) AI Agent Leak Rattles Anthropic (ANT) And Meta (NASDAQ: META)",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOFJpUjVWU3pVeHNvZ0RudnJRN09mekVLTGZUT3BZeHg1OXNvdTBoak1YUFQ5TkY2anFNR2FfdmtoMnNoek5iZGI3TnJWcVBfMTY5N19TNXlSS3MxWUFLZ2d5YWdORTU3djV6UHUyR0JGelNlWlZlUzdLdEZZTjh6dDNFdHcxSUtoQnFtWENwOXpTRGRJZ0pwOHVYMEVmTWUtU3ZUM0NoOWJmRUxMWW11SHgzZFk3UENqTTFaWDMzTTFNTDNUM2hkSnVtUk1QUDdwQmRuZ1NB?oc=5",
+          "source": "Google News: Anthropic",
+          "publisher": "Foreign Policy Journal"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c43",
+      "label": "Apple's evidence against OpenAI names five defendants",
+      "importance": 2,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single low-profile outlet; litigation detail with little corroboration.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Apple’s Shocking Evidence Against OpenAI: 5 Defendants",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdU5LSW5JU3pZZU9seWFteFpVUlUzU2hWV2hqSkVDX0xGSDJxMmpUbEFpU2JtcTJyeXB4a3ZJbE1OVzlaQmU0d2k4cV9md3lsT1hSYldkelVlTGJPVmtwc25RNnRTaFFCS3huSXdkMnR0Mk9ZemFJLVNneEZyVEJ5NWpXTFZoV2hmRERuVDZMSQ?oc=5",
+          "source": "Google News: OpenAI",
+          "publisher": "shattered.io"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c61",
+      "label": "Stuttgart AI factory chief says sovereignty starts with data",
+      "importance": 2,
+      "category": "other",
+      "european": true,
+      "finance_consulting": false,
+      "reason": "Single trade outlet; opinion from a European AI infrastructure leader.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Sovereignty starts with data, not chips, says Stuttgart AI factory chief",
+          "url": "https://siliconangle.com/2026/11/21/sovereignty-data-not-chips-stuttgart-sovereign-ai-factory-sc26/",
+          "source": "SiliconANGLE AI",
+          "publisher": "SiliconANGLE AI"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c65",
+      "label": "Juvenile used AI to make nude images of charter school students",
+      "importance": 2,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single local outlet; local incident with limited wider relevance.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Principal: Juvenile used AI to make nude images of Chatham Co. charter school students & staff",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZFc5YlVrdEhkT0Eyc0k5WVJYZE80djNlWXp1M3QzR2ZScVNjV2F5RE9IcGNYaFU2X0lDbHRRZ1FCVUJuSTlLSmVQZk1hWmJaMWIzUmtmNk5iY3BKTVJNdHI1T01rbW1mVE5wYWY2UTZBR0lKdmYzT2IwM2puWXEtNlFtemU0R002WDRHTkhmVVpabWpYMXFDLVdsRGRVSEs3ZVo3RXRyZU1kdVdHQjhfNzJKRUozaDZwVDFjYVNsM0l3Zw?oc=5",
+          "source": "Google News: artificial intelligence",
+          "publisher": "WRAL"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c67",
+      "label": "SEBI studies building its own AI model under public infrastructure",
+      "importance": 2,
+      "category": "policy/regulation",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet quoting regulator chairman; exploratory plan only.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "SEBI examining feasibility of own AI model under Digital Public Infrastructure: Chairman",
+          "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPeklFQnVGbjFzbXhRWTBzYnlQeXFVNWd4MHNUeG1qdkh1eE1rcDVGVEJuV25lT3QwMnN1S0cwclczdkg3aVRUczM0ek9XbGd0cjMydDBIazNVSzVOdVFVQkl0N3BsVFIzWmthOUV4M1lGMHVmWGthM3Q4WjhMTE11QWhkUzJLendRc3RDcmFLSHdYZDVMNkVvTHpSTng0YlRSVDVTNklNSXluOUZjdVVKMnBsTDNvTTdVQmdrSUI3T3lOanhZempkSllGZ0hydmdZbC10Y1E2YnJ3dW9Xdk1TaW50Ri03aVFzQmFQWldXdXl2cEpSRDlEdlhnMWdEbXd4anlrbWlyOG9va1R1MEdjZTZqckx5TXJScjdFMGZYV1o4aWRVME1BddIB8AFBVV95cUxOZVI1YUpENUx5ZmxBZnpNXzJKb3Yya2ItYjFLTTNETkIteF9heV9mUXpRd0JOOW4tNE9MdWRWeVluY2VlSzFPb05vY1hiODgtR0JST0dyMWx2aEoyVHlQbDJEX3VDQlNFU19GZWxOZU90WkNGUmszX2VGeVkyNzd2MXBXZlltc1lmNVMxcFBoaFRVb2JLZEFaYWJkaUlEajRxUFVGZGw2M3ZLQUNUdjZDZGJiMi1TUHptYnB6c2paQ3Z6bWJnVHpmMEZLbnVwZ0gzNzZYb3RnTzE0TEpRemxEdEU0M3NLMUVLQVAzbzVHSjA?oc=5",
+          "source": "Google News: AI private equity",
+          "publisher": "ETLegalWorld.com"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c68",
+      "label": "Paysafe taps Altimetrik for platform modernization and AI engineering",
+      "importance": 2,
+      "category": "business/funding",
+      "european": false,
+      "finance_consulting": true,
+      "reason": "Vendor press release; partnership marketing with no independent coverage.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Paysafe Enlists Altimetrik to Boost System Reliability",
+          "url": "https://www.pymnts.com/partnerships/2026/paysafe-enlists-altimetrik-to-boost-system-reliability/",
+          "source": "PYMNTS",
+          "publisher": "PYMNTS"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c69",
+      "label": "NextEra says its AI tool Grid Composer saved Florida customers $20M",
+      "importance": 2,
+      "category": "other",
+      "european": false,
+      "finance_consulting": false,
+      "reason": "Single outlet repeating company claims about savings; marketing-like.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "NextEra’s AI Saves Florida Customers $20 Million",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nexteras-ai-saves-florida-customers-20-million/",
+          "source": "PYMNTS",
+          "publisher": "PYMNTS"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c70",
+      "label": "McKinsey finds physical AI value may shift to deployment",
+      "importance": 2,
+      "category": "other",
+      "european": false,
+      "finance_consulting": true,
+      "reason": "Consultancy report via one trade outlet; marketing-style finding.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "Physical AI value may move from robot hardware to deployment, McKinsey finds",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdDJEcDZSRlVyS1VMR1VOWW1LY2ZzZG9jYmJTZkcwaFR1MEJrcWR5SUtpQm9IdkhlN3pYcFRmcHc3TG8xS0FDYVlCUEF1LTVoVDFtc0RwdXRHVDhEdDZ4YUxoaEFuSkhxZzhxZnhTSnotT25jYTVWcmcyWUxENHJVeGVjVWZEUGpYT2pmVjlfeWtDcFdxTy13NjFBWHFqTi0xTXB3NnVCQnZOU2JyNWZ2VU9VbDMtM0xGMmY1VWtSNHNsSzU2TTR3Qw?oc=5",
+          "source": "Google News: AI consulting",
+          "publisher": "MarketScale"
+        }
+      ],
+      "section": null
+    },
+    {
+      "id": "c71",
+      "label": "EY advice on scaling AI for insurers amid diverging rules",
+      "importance": 2,
+      "category": "other",
+      "european": false,
+      "finance_consulting": true,
+      "reason": "Consultancy publication; advisory content without a concrete event.",
+      "covered_before": false,
+      "new_development": false,
+      "n_items": 1,
+      "n_publishers": 1,
+      "items": [
+        {
+          "title": "How insurers can scale AI amid diverging regulations",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQb3pSYmtlUzRzVUNUQ194a2t2VVV4dTRVekNhUzFWZTFiNUFWQl95ZERmcTFGS1E5ZmRUa3A3aWY0YkxHbGVOcWxsOElhNnk3azZwWlFQcW9qdlVSRGk2X05JZ05peWRHWmMxMUw5U2hQN2RWYzFpSVZzcWpHVlNHbGhrQ2NYdnBrTDFNMzRKNHlEZ1R1Z2U5RDlB?oc=5",
+          "source": "Google News: AI private equity",
+          "publisher": "EY"
+        }
+      ],
+      "section": null
+    }
+  ],
+  "models": {
+    "triage": "claude-haiku-5-5",
+    "write": "claude-sonnet-5-5"
+  },
+  "stats": {
+    "items_fetched": 3624,
+    "items_in_window": 360,
+    "items_already_covered": 18,
+    "items_triaged": 319,
+    "clusters": 79,
+    "per_source": {
+      "Techmeme": 15,
+      "Hacker News": 1,
+      "Google News: Anthropic": 64,
+      "Google News: Meta AI": 5,
+      "Google News: Mistral AI": 6,
+      "TechCrunch AI": 4,
+      "The Verge AI": 3,
+      "VentureBeat AI": 5,
+      "The Guardian AI": 9,
+      "CNBC Technology": 1,
+      "The Decoder": 7,
+      "SiliconANGLE AI": 4,
+      "Fortune": 5,
+      "BBC Technology": 1,
+      "The Next Web": 6,
+      "Wired AI": 1,
+      "Google News: artificial intelligence": 56,
+      "Google News: OpenAI": 48,
+      "Google News: Nvidia AI": 76,
+      "Ny Teknik": 4,
+      "PYMNTS": 2,
+      "Google News: AI consulting": 8,
+      "Google News: AI private equity": 15,
+      "Google News: AI hedge fund": 14
+    },
+    "failed_sources": {},
+    "llm_calls": [
+      {
+        "step": "triage",
+        "model": "claude-haiku-5-5",
+        "input_tokens": 35161,
+        "output_tokens": 33856,
+        "cost_usd": 0.02044
+      },
+      {
+        "step": "write",
+        "model": "claude-sonnet-5-5",
+        "input_tokens": 19048,
+        "output_tokens": 1393,
+        "cost_usd": 0.05203
+      }
+    ],
+    "cost_usd": 0.0725
+  }
+}
